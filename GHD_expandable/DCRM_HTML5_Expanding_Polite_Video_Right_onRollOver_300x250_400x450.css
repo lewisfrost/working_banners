@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#myLogoImg{
+	position:absolute;
+	top:4px;
+	left:4px;	
+}
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	width:850px;
+	height:600px;
+}
+
+#close_btn_dc {
+	position:absolute;
+	top:6px;
+	right:4px;
+	cursor: pointer;
+	width:25px;
+	height:25px;
+	z-index:600;
+}
+
+#content_dc {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #FFF;
+	z-index: 100;
+}
+
+#Exp_BgImage{
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 850px;
+    height: 600px;
+    background-image:url('Exp_BG.jpg');
+	background-repeat:no-repeat;
+}
+
+
+
+#expand_content_dc{
+	position: absolute;
+	width: 850px;
+	height: 600px;
+	
+	top: 0px;
+	left: 0px;
+	
+	z-index: 200;
+	display:none;
+}
+#exp_borderFrame {
+	background-image:url('exp_borderFrame.png');
+	background-repeat:no-repeat;
+	left: 0px;
+    top:0px;
+    position: absolute;
+    width: 852px;
+    height: 602px;
+	z-index:10;
+}
+
+
+
+/* Invisible button for background clickthrough. */
+#expanded_background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+/* EXP CONTENT */
+#copy1 {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('copy1.png');
+	background-repeat:no-repeat;
+}
+#copy2 {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('copy2.png');
+	background-repeat:no-repeat;
+}
+#copy3 {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('copy3.png');
+	background-repeat:no-repeat;
+}
+#copy4 {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('copy4.png');
+	background-repeat:no-repeat;
+}
+
+#separator {
+	position: absolute;
+	left:0px;
+	top: 275px;
+	width: 850px;
+	height: 5px;
+    background-image:url('seprator.png');
+	background-repeat:no-repeat;
+    z-index: 404;
+}
+
+#product1IMG {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product1.png');
+	background-repeat:no-repeat;
+}
+
+#product1DESC {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product_desc1.png');
+	background-repeat:no-repeat;
+}
+
+#product1CTA {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('cta.png');
+	background-repeat:no-repeat;
+}
+
+#product2IMG {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product2.png');
+	background-repeat:no-repeat;
+}
+
+#product2DESC {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product_desc2.png');
+	background-repeat:no-repeat;
+}
+
+#product2CTA {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('cta.png');
+	background-repeat:no-repeat;
+}
+
+#product3IMG {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product3.png');
+	background-repeat:no-repeat;
+}
+
+#product3DESC {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product_desc3.png');
+	background-repeat:no-repeat;
+}
+
+#product3CTA {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('cta.png');
+	background-repeat:no-repeat;
+}
+
+#product4IMG {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product4.png');
+	background-repeat:no-repeat;
+}
+
+#product4DESC {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product_desc4.png');
+	background-repeat:no-repeat;
+}
+
+#product4CTA {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('cta.png');
+	background-repeat:no-repeat;
+}
+
+#product5IMG {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product5.png');
+	background-repeat:no-repeat;
+}
+
+#product5DESC {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('product_desc5.png');
+	background-repeat:no-repeat;
+}
+
+#product5CTA {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 850px;
+	height: 600px;
+    background-image:url('cta.png');
+	background-repeat:no-repeat;
+}
+
+#product1{
+    display: block;
+}
+
+#product2{
+    display: none;
+}
+#product3{
+    display: none;
+}
+#product4{
+    display: none;
+}
+#product5{
+    display: none;
+}
+
+
+
+/* Div layer containing the video player and video controls. */
+#video_container_dc {
+	position: absolute;
+	width: 403px;
+	height: 228px;
+	top: 352px;
+	left: 19px;
+	background-color:#000;
+	border: 1px solid #030;
+	z-index: 500;
+}
+
+#video_dc {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 403px;
+	height: 228px;
+}
+
+#video_collapse {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 300px;
+	height: 194px;
+}
+
+.video_controls_dc {
+	position: absolute;
+	width: 20px;
+	bottom: 20px;
+	height:18px;
+	top: 195px;
+	cursor: pointer;
+}
+
+/* Video button hiding an positioning */
+.video_controls_dc:hover {
+	opacity:0.8;
+}
+
+#video_control_play_dc {
+		background-color:transparent;
+	    background-image: url(new-Play.png);
+		background-repeat: no-repeat;
+	background-position:center center;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		top: 0; 
+}
+
+#video_control_pause_dc {
+	background-color:transparent;
+	background-image: url(new-pause.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	top:0; 
+	visibility: hidden;
+	opacity:0; 
+}
+#video_control_pause_dc:hover{
+	opacity:1;
+}
+#video_control_stop_dc{
+	background-image:url('Stop.png');
+	background-repeat:no-repeat;
+	left: 30px;
+	opacity:0;
+}
+
+#video_control_unmute_dc {
+	background-image:url('Unmute1.png');
+	background-repeat:no-repeat;
+	right: 5px;
+	background-color:transparent;
+	height:30px;
+	width:30px; 
+	
+	
+
+}
+
+#video_control_mute_dc {
+	background-image:url('Mute1.png');
+	background-repeat:no-repeat;
+	right: 5px;
+	background-color:transparent;
+	height:30px;
+	width:30px; 
+	visibility: hidden;
+	 
+}
+
+#video_control_replay_dc {
+	background-image:url('Replay.png');
+	background-repeat:no-repeat;
+	left: 55px;
+	opacity:0;
+}
+
+
+.videobtn{
+    width: 118px;
+    height: 210px;
+	cursor:pointer;
+}
+
+#video_1{
+    position: absolute;
+   left:0px;
+    top:24px;
+    width: 125px;
+    height:154px;
+    background-image:url('girl_1.png');
+	background-repeat:no-repeat;
+}
+#video_2{
+    position: absolute;
+    left:111px;
+    top:12px;
+    width: 154px;
+    height:165px;
+    background-image:url('girl_2.png');
+	background-repeat:no-repeat;
+}
+#video_3{
+    position: absolute;
+    left:241px;
+    top:8px;
+    width: 134px;
+    height:170px;
+    background-image:url('girl_3.png');
+	background-repeat:no-repeat;
+}
+#video_4{
+    position: absolute;
+    left:375px;
+    top:33px;
+    width: 139px;
+    height:145px;
+    background-image:url('girl_4.png');
+	background-repeat:no-repeat;
+}
+#video_5{
+    position: absolute;
+    left:486px;
+    top:-10px;
+    width: 182px;
+    height:187px;
+    background-image:url('girl_5.png');
+	background-repeat:no-repeat;
+}
+
+#navigationDiv{
+    position: absolute;
+    left:90px;
+    top:100px;
+    z-index: 401;
+}
+
+
+#coll_image {
+	background-image:url('coll_bg.jpg');
+	background-repeat:no-repeat;
+	left: 0px;
+    top:0px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+
+}
+
+#coll_button {
+	background-image:url('coll_button.png');
+	background-repeat:no-repeat;
+	left: 0px;
+    top:0px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+}
+#coll_logo {
+	background-image:url('coll_logo.png');
+	background-repeat:no-repeat;
+	left: 0px;
+    top:0px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+
+}
+#coll_borderFrame {
+	background-image:url('coll_borderFrame.png');
+	background-repeat:no-repeat;
+	left: 0px;
+    top:0px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
