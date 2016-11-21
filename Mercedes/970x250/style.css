@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Defaults */
+body, body * {
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* Visual Containers */
+.container{ position:relative; width: 970px; height: 250px; background-color: #000; overflow: hidden;}
+
+#header{ position:absolute; }
+
+#flare {position: absolute; background: url(assets/flare.jpg) no-repeat;top:35px;left: 465px; width: 75px; height: 56px; background-size: cover; background-repeat: no-repeat;opacity: 0;}
+
+.copy{ position:absolute; opacity:0; visibility:hidden; z-index: 10 }
+
+#cta{ position:absolute; visibility:hidden; opacity:0; }
+
+#chevronA{ position:absolute; width: 970px; height: 250px; top: 0px; opacity: 0; z-index: 60; }
+
+#logo { position:absolute; width: 970px; height: 250px; margin: 0 0 0 0; opacity: 0; z-index: 1000; pointer-events: none; }
+
+/* Exits */
+#backgroundExit { position:absolute; width: 970px; /*should it be 100% */ height: 250px; top: 0px; left: 0px; cursor: pointer; opacity: 0; z-index: 400; background-color: black}
+.exit{ float: left; }
+.exit:hover{ opacity: 0.8; cursor: pointer; }
