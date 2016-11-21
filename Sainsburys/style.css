@@ -1,0 +1,10 @@
+body {background-color: #E6E6E6;margin: 0;}
+p{ font-size: 10px;font-family: sans-serif;color: white;position: absolute;top: 20px;left: 20px;width: 260px; }
+#container {width: 300px;height: 600px;background-color: #000;position: relative;margin: 0 auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;box-sizing: border-box;overflow: hidden;border: 1px solid #979797;}
+#container:hover {cursor: pointer;}
+#tandc {position: absolute;left: 0px;top: 580px; background: url("tandc.png"); background-repeat:no-repeat; width:300px; height:250px; }
+#bg{ position:absolute; background:url("wine_opt.jpg"); background-repeat: no-repeat; width:387px; height:606px; top:0px; left:0px; }
+#logo{ position:absolute; background:url("logos.png"); background-repeat: no-repeat; width:300px; height:600px; top:0px; left:0px; }
+#copy{ position:absolute; background:url("copy.png"); background-repeat: no-repeat; width:300px; height:600px; top:0px; left:0px; opacity:0;}
+#roundel{ position:absolute; background:url("roundel_fs.png"); background-repeat: no-repeat; width:300px; height:600px; top: 0px; left: 0px; opacity: 0; }
+#clickDiv img { text-decoration: none; border:0px; }
