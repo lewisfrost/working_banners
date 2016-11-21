@@ -1,0 +1,269 @@
+html {
+    overflow:hidden; 
+
+}
+body{
+    width:160px;
+    height:600px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    overflow:hidden;
+    position:absolute;
+}
+
+
+
+.background{
+
+    position: absolute;
+    background:url( "background.png") no-repeat ;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    background:url( "logo.png" ) no-repeat ;
+    width: 134px;
+    height:30px;
+    right:15px;
+    top:5px;
+    z-index: 20;
+}
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400;
+}
+
+
+/* ==========================PIZZA IMAGE=================================== */
+
+.pizza-image{
+    background: url(pizza.png) no-repeat;
+    position: absolute;
+    top:260px;
+    right: -400px;
+    width: 269px;
+    height:235px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* pizza-image_IN */
+@-webkit-keyframes pizza-image_IN { from { right:-300px; } to { right:-20px; } }
+@-moz-keyframes pizza-image_IN { from { right:-300px; } to { right:-20px; } }
+@keyframes pizza-image_IN { from { right:-300px; } to { right:-20px; } }
+
+.pizza-image.show{
+    -webkit-animation:pizza-image_IN 0.2s ease-out forwards;
+    -moz-animation:pizza-image_IN 0.2s ease-out forwards;
+    animation:pizza-image_IN 0.2s ease-out forwards;
+}
+
+/* =============================SIDES IMAGE================================ */
+
+.sides{
+    background: url(sides.png) no-repeat;
+    position: absolute;
+   
+    top:260px;
+    left: -400px;
+    width:192px;
+    height: 280px;
+    opacity: 1;
+    z-index: 2;
+}
+
+/* sides-image_IN */
+@-webkit-keyframes sides-image_IN { from { left:-300px; } to { left:-25px; } }
+@-moz-keyframes sides-image_IN { from { left:-300px; } to { left:-25px; } }
+@keyframes sides-image_IN { from { left:-300px; } to { left:-25px; } }
+
+.sides.show{
+    -webkit-animation:sides-image_IN 0.2s ease-out forwards;
+    -moz-animation:sides-image_IN 0.2s ease-out forwards;
+    animation:sides-image_IN 0.2s ease-out forwards;
+}
+/* ============================SUMMER LOCKUP================================= */
+
+.summer{
+    background: url(summer.png) no-repeat;
+    position: absolute;
+    width: 131px;
+    left:15px;
+    height: 126px;
+    z-index: 10;
+    opacity: 0;
+    bottom:250px;
+}
+
+@-webkit-keyframes summer_IN { from {bottom:250px; } to { bottom:250px;  opacity: 1 } }
+@-moz-keyframes summer_IN { from { bottom:250px;  } to {bottom:250px;  opacity: 1 } }
+@keyframes summer_IN { from {bottom:250px; } to {bottom:250px; opacity: 1 } }
+
+@-webkit-keyframes summer_BOUNCE { from{ -webkit-transform: scale( 0.1 ); opacity : 1 } to { -webkit-transform: scale(1.4); opacity : 1 } }
+@-moz-keyframes summer_BOUNCE { from{ -moz-transform: scale( 0.1 ); opacity : 1 } to { -moz-transform: scale(1.4); opacity : 1 } }
+@keyframes summer_BOUNCE { from{ transform: scale( 0.1 ); opacity : 1 } to { transform: scale(1.4); opacity : 1 } }
+
+@-webkit-keyframes summer_BOUNCEnew { from{ -webkit-transform: scale( 1.4 ); opacity : 1 } to { -webkit-transform: scale(1); opacity : 1 } }
+@-moz-keyframes summer_BOUNCEnew { from{ -moz-transform: scale( 1.4 ); opacity : 1 } to { -moz-transform: scale(1); opacity : 1 } }
+@keyframes summer_BOUNCEnew { from{ transform: scale( 1.4 ); opacity : 1 } to { transform: scale(1); opacity : 1 } }
+
+@-webkit-keyframes summer_TOP { from {bottom:250px; } to {bottom:445px;} }
+@-moz-keyframes summer_TOP { from {bottom:250px; } to {bottom:445px;} }
+@keyframes summer_TOP { from {bottom:250px; } to {bottom:445px;} }
+
+
+@-webkit-keyframes summer_BOUNCE { from{ -webkit-transform: scale( 0.1 ); opacity : 1 } to { -webkit-transform: scale(1.2); opacity : 1 }  }
+@-moz-keyframes summer_BOUNCE { from{ -moz-transform: scale( 0.1 ); opacity : 1 } to { -moz-transform: scale(1.2); opacity : 1 }  }
+@keyframes summer_BOUNCE { from{ transform: scale( 0.1 ); opacity : 1 } to { transform: scale(1.2); opacity : 1 }  }
+
+@-webkit-keyframes summer_BOUNCEnew { from{ -webkit-transform: scale( 1.9 ); opacity : 1 } to { -webkit-transform: scale(0.4); opacity : 1 }  }
+@-moz-keyframes summer_BOUNCEnew { from{ -moz-transform: scale( 1.9 ); opacity : 1 } to { -moz-transform: scale(0.4); opacity : 1 }  }
+@keyframes summer_BOUNCEnew { from{ transform: scale( 1.9 ); opacity : 1 } to { transform: scale(0.4); opacity : 1 }  }
+
+@-webkit-keyframes summer_TOP { from {bottom:250px; opacity : 1 } to { -webkit-transform: scale(1); bottom:427px; opacity : 1} }
+@-moz-keyframes summer_TOP { from {bottom:250px; opacity : 1 } to { -moz-transform: scale(1); bottom:427px; opacity : 1} }
+@keyframes summer_TOP { from {bottom:250px; opacity : 1 } to { transform: scale(1); bottom:427px; opacity : 1} }
+
+
+.summer.show{
+    -webkit-animation: summer_BOUNCEnew 1.5s 2 ease-in-out alternate, summer_BOUNCE 0.8s 1 ease-in-out alternate, summer_TOP 0.2s 2.3s 1  ease-out forwards;
+
+	
+	-moz-animation: summer_BOUNCEnew 1.5s 2 ease-in-out alternate, summer_BOUNCE 0.8s 1 ease-in-out alternate, summer_TOP 0.2s 2.3s 1  ease-out forwards;
+	
+
+    animation: summer_BOUNCEnew 1.5s 2 ease-in-out alternate, summer_BOUNCE 0.8s 1 ease-in-out alternate, summer_TOP 0.2s 2.3s 1  ease-out forwards;
+	
+}
+
+
+/* ==========================DEAL TEXT=================================== */
+
+
+.deal-text {
+    background: url(deal-text.png) no-repeat;
+    position: absolute;
+    left:15px;
+    bottom:350px;/*175px;*/
+    width: 100%;
+    height: 187px;
+    z-index:5;
+    opacity:0;
+}
+
+/* pizza-image_IN */
+@-webkit-keyframes deal-text_IN { from { top:50px; opacity:0; } to { top:121px; opacity:1; } }
+@-moz-keyframes deal-text_IN { from { top:50px; opacity:0; } to { top:121px; opacity:1; } }
+@keyframes deal-text_IN { from { top:50px; opacity:0; } to { top:121px; opacity:1; } }
+
+.deal-text.show{
+    -webkit-animation:deal-text_IN 0.1s ease-out forwards;
+    -moz-animation:deal-text_IN 0.1s ease-out forwards;
+    animation:deal-text_IN 0.1s ease-out forwards;
+}
+
+/* ==========================Price TEXT=================================== */
+
+
+.price {
+    background: url(price.png) no-repeat;
+    position: absolute;
+    right -300px;
+    bottom:38px;/*115px;*/
+    width: 100%;
+    height: 63px;
+    z-index:16;
+    opacity:0;
+}
+
+/* pizza-image_IN */
+@-webkit-keyframes price_IN { from { right:-300px; } to { right:-20px; opacity:1; } }
+@-moz-keyframes price_IN { from { right:-300px; } to { right:-20px; opacity:1;  } }
+@keyframes price_IN { from { right:-300px; } to { right:-20px; opacity:1;  } }
+
+@-webkit-keyframes price_BOUNCE { from{ -webkit-transform: scale( 1 ); opacity : 1 } to { -webkit-transform: scale(1.2); opacity : 1 } }
+@-moz-keyframes price_BOUNCE { from{ -moz-transform: scale( 1 ); opacity : 1 } to { -moz-transform: scale(1.2); opacity : 1 } }
+@keyframes price_BOUNCE { from{ transform: scale( 1 ); opacity : 1 } to { transform: scale(1.2); opacity : 1 } }
+
+.price.show{
+    -webkit-animation:price_IN 0.3s ease-out forwards, price_BOUNCE 0.2s 1s 4 linear alternate; 
+    -moz-animation: price_IN 0.3s ease-out forwards, price_BOUNCE 0.2s 1s 4 linear alternate; 
+    animation: price_IN 0.3s ease-out forwards, price_BOUNCE 0.2s 1s 4 linear alternate; 
+}
+
+
+/* ==========================CTA =================================== */
+
+
+
+.cta{
+    background: url(order-now-cta.png) no-repeat;
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    z-index: 15;
+    opacity: 0;
+    left: 20px;
+    bottom: 165px;
+}
+
+@-webkit-keyframes cta_BOUNCE { from{ -webkit-transform: scale( 0.9 ); opacity : 1 } to { -webkit-transform: scale(1); opacity : 1 } }
+@-moz-keyframes cta_BOUNCE { from{ -moz-transform: scale( 0.9 ); opacity : 1 } to { -moz-transform: scale(1); opacity : 1 } }
+@keyframes cta_BOUNCE { from{ transform: scale( 0.9 ); opacity : 1 } to { transform: scale(1); opacity : 1 } }
+
+.cta.show{
+    -webkit-animation: cta_IN 0.3s 1 ease-out forwards;
+    -moz-animation: cta_IN 0.3s 1 ease-out forwards;
+    animation: cta_IN 0.3s 1 ease-out forwards;
+}
+
+.cta.bounce{
+    -webkit-animation: cta_BOUNCE .3s infinite alternate;
+    -moz-animation: cta_BOUNCE .3s infinite alternate;
+    animation: cta_BOUNCE .3s infinite alternate;
+}
+
+
+/* legals ................................................ */
+.parent {
+    position:relative;
+    float:left;
+    /*left:1px;*/
+    width:160px;
+    height:600px;
+}
+.legal {
+    background-color:none;
+    z-index:110;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: auto;
+
+}
+
+.legal-text {
+   font-size:8px;
+    color:#FFFFFF;
+	line-height: 1.25;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+    margin-left:3px;
+    margin-right:3px;
+}
+

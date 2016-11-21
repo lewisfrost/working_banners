@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+	top: 0px;
+	left: 0px;
+	border:1px solid #666666;
+	background-color: #FFF;
+	z-index: 100;
+/*	background-image: url('background_300x250.png');*/
+}
+
+#myLogoDc{
+	width:149px;
+	height:36px;
+	position:absolute;
+	top:4px;
+	left:4px;
+}
+
+#text1{
+	position:absolute;
+	top:25px;
+	left:4px;
+	font-family: "Arial";
+	font-size: 20px;
+}
+
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#legalContainer {
+	
+	overflow: hidden;
+	
+	position: absolute;
+	left: -1px;
+	top: 250px;
+	width: 300px;
+	height: 250px;
+	z-index: 4000;
+}
+
+#legalClickBtn {
+	position: absolute;
+    left: 1px;
+    top: 233px;
+    width: 80px;
+    height: 15px;
+	z-index: 4000;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#legalClickBtnClose {
+	position: absolute;
+    left: 111px;
+    top: 233px;
+    width: 80px;
+    height: 15px;
+	z-index: 4000;
+	opacity: 0;
+	cursor: pointer;
+}
+#legals_exit_dc {
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}

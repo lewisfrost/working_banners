@@ -1,0 +1,134 @@
+html {
+    overflow:hidden;
+}
+
+
+/*////////////////////KEY FRAMES////////////////*/
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400;
+}
+
+.logo {
+    position:absolute;
+    bottom:20px;
+    right:0px;
+    width:61px;
+    height:30px;
+    background:url(logo.png);
+}
+
+body{
+    width:300px;
+    height:250px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    overflow:hidden;
+    position:absolute;
+}
+
+#banner{
+    position: absolute;
+    background:url( "night.png" ) no-repeat ;
+    width: 100%;
+    height: 100%;
+}
+
+.phone {
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:80px;
+    height:151px;
+    background:url(phone.png);
+
+}
+
+.app {
+    position:absolute;
+    bottom:19px;
+    left:111px;
+    width:75px;
+    height:22px;
+    background:url(app.jpg);
+    opacity: 0;
+    
+     -webkit-animation:fadein 0.3s 4.3s 1 linear forwards;
+	-moz-animation:fadein 0.3s 4.3s 1 linear forwards;
+	animation:fadein 0.3s 4.3s 1 linear forwards;
+}
+
+.frame-1 {
+    position:absolute;
+    top:54px;
+    left:111px;
+    width:117px;
+    height:100px;
+    background:url(frame-1.png);
+    opacity:0;
+    -webkit-animation:fadein 0.3s 1 linear forwards, fadeout  0.3s 2s 1 linear forwards;
+	-moz-animation:fadein  0.3s 1 linear forwards, fadeout  0.3s 2s 1 linear forwards;
+	animation:fadein  0.3s  1 linear forwards, fadeout  0.3s 2s 1 linear forwards;
+    
+}
+
+
+.frame-2 {
+    position:absolute;
+    top:64px;
+    left:111px;
+    width:119px;
+    height:89px;
+    background:url(frame-2.png);
+    opacity:0;
+    
+     -webkit-animation:fadein 0.3s 2.3s 1 linear forwards, fadeout 0.3s 4s 1 linear forwards;
+	-moz-animation:fadein 0.3s 2.3s 1 linear forwards, fadeout 0.3s 4s 1 linear forwards;
+	animation:fadein 0.3s 2.3s 1 linear forwards, fadeout 0.3s 4s 1 linear forwards;
+    
+}
+
+.frame-3 {
+    position:absolute;
+    top:103px;
+    left:111px;
+    width:164px;
+    height:46px;
+    background:url(frame-3.png);
+    opacity: 0;
+    
+     -webkit-animation:fadein 0.3s 4.3s 1 linear forwards;
+	-moz-animation:fadein 0.3s 4.3s 1 linear forwards;
+	animation:fadein 0.3s 4.3s 1 linear forwards;
+    
+}
+
+
+
+
+
+
+
+
+
+

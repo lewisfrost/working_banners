@@ -1,0 +1,613 @@
+/* Sky variables */
+/* Reset styles inside the widget */
+/* line 3, src/scss/_reset.scss */
+.sky-countdown {
+  /* HTML5 display-role reset for older browsers */
+}
+/* line 5, src/scss/_reset.scss */
+.sky-countdown div, .sky-countdown span, .sky-countdown applet, .sky-countdown object, .sky-countdown iframe,
+.sky-countdown h1, .sky-countdown h2, .sky-countdown h3, .sky-countdown h4, .sky-countdown h5, .sky-countdown h6, .sky-countdown p, .sky-countdown blockquote, .sky-countdown pre,
+.sky-countdown a, .sky-countdown abbr, .sky-countdown acronym, .sky-countdown address, .sky-countdown big, .sky-countdown cite, .sky-countdown code,
+.sky-countdown del, .sky-countdown dfn, .sky-countdown em, .sky-countdown img, .sky-countdown ins, .sky-countdown kbd, .sky-countdown q, .sky-countdown s, .sky-countdown samp,
+.sky-countdown small, .sky-countdown strike, .sky-countdown strong, .sky-countdown sub, .sky-countdown sup, .sky-countdown tt, .sky-countdown var,
+.sky-countdown b, .sky-countdown u, .sky-countdown i, .sky-countdown center,
+.sky-countdown dl, .sky-countdown dt, .sky-countdown dd, .sky-countdown ol, .sky-countdown ul, .sky-countdown li,
+.sky-countdown fieldset, .sky-countdown form, .sky-countdown label, .sky-countdown legend,
+.sky-countdown table, .sky-countdown caption, .sky-countdown tbody, .sky-countdown tfoot, .sky-countdown thead, .sky-countdown tr, .sky-countdown th, .sky-countdown td,
+.sky-countdown article, .sky-countdown aside, .sky-countdown canvas, .sky-countdown details, .sky-countdown embed,
+.sky-countdown figure, .sky-countdown figcaption, .sky-countdown footer, .sky-countdown header, .sky-countdown hgroup,
+.sky-countdown menu, .sky-countdown nav, .sky-countdown output, .sky-countdown ruby, .sky-countdown section, .sky-countdown summary,
+.sky-countdown time, .sky-countdown mark, .sky-countdown audio, .sky-countdown video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* line 27, src/scss/_reset.scss */
+.sky-countdown article, .sky-countdown aside, .sky-countdown details, .sky-countdown figcaption, .sky-countdown figure,
+.sky-countdown footer, .sky-countdown header, .sky-countdown hgroup, .sky-countdown menu, .sky-countdown nav, .sky-countdown section {
+  display: block;
+}
+/* line 31, src/scss/_reset.scss */
+.sky-countdown ol, .sky-countdown ul {
+  list-style: none;
+}
+/* line 34, src/scss/_reset.scss */
+.sky-countdown table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Wrap all to a namespace */
+/* line 4, src/scss/_widget.scss */
+.sky-countdown {
+  height: 130px;
+  width: 450px;
+  margin: auto;
+  padding-bottom: 20px;
+	z-index: 100; 
+  /* Animation start */
+  /* Animation end */
+  /* SMALL flipclock when small-clock class added */
+  /* SMALL flipclock when small screen */
+}
+/* line 10, src/scss/_widget.scss */
+.sky-countdown p {
+  text-align: left;
+  padding: 8px 5px;
+  font-family: SkyTextMedium;
+  font-size: 16px;
+}
+/* line 17, src/scss/_widget.scss */
+.sky-countdown .time {
+  border-radius: 5px;
+  
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  height: 95px;
+  width: 95px;
+  margin-right: 15px;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  -ms-perspective: 500px;
+  -o-perspective: 500px;
+  perspective: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 51, src/scss/_widget.scss */
+.sky-countdown .count {
+  background: transparent;
+  color: #f8f8f8;
+  display: block;
+  font-family: 'SkyTextMedium', sans-serif;
+  font-size: 3em;
+  line-height: 2em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  -ms-transform-style: flat;
+  -o-transform-style: flat;
+  transform-style: flat;
+}
+/* line 77, src/scss/_widget.scss */
+.sky-countdown .count.top {
+  border-top: none;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+/* line 89, src/scss/_widget.scss */
+.sky-countdown .count.bottom {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+  line-height: 0;
+  height: 50%;
+  top: 50%;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+/* line 110, src/scss/_widget.scss */
+.sky-countdown .label {
+  font-size: normal;
+  margin-top: 10px;
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  font-size: 13px;
+  font-family: SkyTextMedium;
+  text-transform: uppercase;
+}
+/* line 123, src/scss/_widget.scss */
+.sky-countdown .count.curr.top {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 3;
+}
+/* line 131, src/scss/_widget.scss */
+.sky-countdown .count.next.bottom {
+  -webkit-transform: rotateX(90.01deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90.01deg);
+  z-index: 2;
+}
+/* line 140, src/scss/_widget.scss */
+.sky-countdown .flip .count.curr.top {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+/* line 153, src/scss/_widget.scss */
+.sky-countdown .flip .count.next.bottom {
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 211, src/scss/_widget.scss */
+.sky-countdown.small {
+  width: 260px;
+  height: auto;
+  position: absolute;
+  left: 3px;
+  top: 267px;
+  padding-bottom: 15px;
+  transition: 0.3s all;
+}
+
+.movein {
+  top: 147px !important;
+  transition: 0.3s all;
+}
+/* line 173, src/scss/_widget.scss */
+.sky-countdown.small p {
+  text-align: left;
+  padding: 5px;
+  font-size: 12px;
+}
+/* line 179, src/scss/_widget.scss */
+.sky-countdown.small .time {
+  height: 48px;
+  width: 48px;
+}
+/* line 182, src/scss/_widget.scss */
+.sky-countdown.small .time .count {
+  font-size: 1.58em;
+}
+/* line 184, src/scss/_widget.scss */
+.sky-countdown.small .time .count.bottom {
+  border-top: 1px solid #ff0000;
+}
+/* line 188, src/scss/_widget.scss */
+.sky-countdown.small .time .handle {
+  top: 16px;
+  left: -2px;
+  width: 52px;
+}
+/* line 193, src/scss/_widget.scss */
+.sky-countdown.small .time .label {
+  font-size: 0.8em;
+  top: 40px;
+  height: 20px;
+  left: 1px;
+}
+/* line 200, src/scss/_widget.scss */
+.sky-countdown.small .time svg.seconds {
+  width: 42px;
+}
+/* line 201, src/scss/_widget.scss */
+.sky-countdown.small .time svg.minutes {
+  width: 40px;
+}
+/* line 202, src/scss/_widget.scss */
+.sky-countdown.small .time svg.hours {
+  width: 32px;
+}
+/* line 203, src/scss/_widget.scss */
+.sky-countdown.small .time svg.days {
+  width: 24px;
+    visibility: hidden;
+}
+/* line 204, src/scss/_widget.scss */
+.sky-countdown.small .time svg text {
+  font-size: 10px;
+}
+
+/* line 223, src/scss/_widget.scss */
+.sky-countdown .handle {
+  display: block;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  position: absolute;
+  top: 38px;
+  left: -5px;
+  z-index: -1;
+  
+}
+/* line 235, src/scss/_widget.scss */
+.sky-countdown .count {
+  background-size: 100% 100% !important;
+  text-shadow: none !important;
+}
+/* line 238, src/scss/_widget.scss */
+.sky-countdown .count.bottom {
+  border-bottom: 0 !important;
+  border-top: 2px solid transparent !important;
+}
+/* line 248, src/scss/_widget.scss */
+.sky-countdown .days .count b:first-child {
+  color: #000000;
+    visibility: hidden;
+}
+/* line 249, src/scss/_widget.scss */
+.sky-countdown .days .count b + b {
+  color: #000000;
+    visibility: hidden;
+}
+/* line 254, src/scss/_widget.scss */
+.sky-countdown .hours .count b:first-child {
+  color: #000000;
+}
+/* line 255, src/scss/_widget.scss */
+.sky-countdown .hours .count b + b {
+  color: #000000;
+}
+/* line 260, src/scss/_widget.scss */
+.sky-countdown .minutes .count b:first-child {
+  color: #000000;
+}
+/* line 261, src/scss/_widget.scss */
+.sky-countdown .minutes .count b + b {
+  color: #000000;
+}
+/* line 266, src/scss/_widget.scss */
+.sky-countdown .seconds .count b:first-child {
+  color: #000000;
+}
+/* line 267, src/scss/_widget.scss */
+.sky-countdown .seconds .count b + b {
+  color: #000000;
+}
+/* line 271, src/scss/_widget.scss */
+.sky-countdown svg {
+  width: 100%;
+  height: 20px;
+}
+/* line 274, src/scss/_widget.scss */
+.sky-countdown svg stop {
+  stop-opacity: 1;
+  text-anchor: middle;
+}
+/* line 275, src/scss/_widget.scss */
+.sky-countdown svg.seconds {
+  width: 58px;
+}
+/* line 276, src/scss/_widget.scss */
+.sky-countdown svg.minutes {
+  width: 55px;
+}
+/* line 277, src/scss/_widget.scss */
+.sky-countdown svg.hours {
+  width: 45px;
+}
+/* line 278, src/scss/_widget.scss */
+.sky-countdown svg.days {
+  width: 35px;
+    visibility: hidden;
+}
+/* line 281, src/scss/_widget.scss */
+.sky-countdown .seconds .gleft {
+  stop-color: #000000;
+}
+/* line 282, src/scss/_widget.scss */
+.sky-countdown .seconds .gright {
+  stop-color: #000000;
+}
+/* line 285, src/scss/_widget.scss */
+.sky-countdown .minutes .gleft {
+  stop-color: #000000;
+}
+/* line 286, src/scss/_widget.scss */
+.sky-countdown .minutes .gright {
+  stop-color: #000000;
+}
+/* line 289, src/scss/_widget.scss */
+.sky-countdown .hours .gleft {
+  stop-color: #000000;
+}
+/* line 290, src/scss/_widget.scss */
+.sky-countdown .hours .gright {
+  stop-color: #000000;
+}
+/* line 293, src/scss/_widget.scss */
+.sky-countdown .days .gleft {
+  stop-color: #000000;
+    visibility: hidden;
+}
+/* line 294, src/scss/_widget.scss */
+.sky-countdown .days .gright {
+  stop-color: #000000;
+    visibility: hidden;
+}
+
+/* line 4, src/scss/_widget.border.scss */
+/*
+.sky-countdown {
+  
+    .days{
+      .count {
+        &.top {    background: url("img/images/Countdown_03.png");  }
+        &.bottom { background: url("img/images/Countdown_15.png");  }
+      }
+    }
+    .hours {
+      .count {
+        &.top {    background: url("img/images/Countdown_05.png");  }
+        &.bottom { background: url("img/images/Countdown_16.png");  }
+      }
+    }
+    .minutes {
+      .count {
+        &.top {    background: url("img/images/Countdown_07.png");  }
+        &.bottom { background: url("img/images/Countdown_17.png");  }
+      }
+    }
+    .seconds {
+      .count {
+        &.top {    background: url("img/images/Countdown_09.png");  }
+        &.bottom { background: url("img/images/Countdown_18.png");  }
+      }
+    }
+  
+}*/
+/* line 39, src/scss/_widget.border.scss */
+.sky-countdown .days .count.top {
+    visibility: hidden;
+ 
+}
+/* line 41, src/scss/_widget.border.scss */
+.sky-countdown .days .count.bottom {
+
+}
+/* line 47, src/scss/_widget.border.scss */
+.sky-countdown .hours .count.top {
+ background: url(img/clock_top_new.png);
+}
+/* line 49, src/scss/_widget.border.scss */
+.sky-countdown .hours .count.bottom {
+  background: url(img/clock_bottom_new.png);
+}
+/* line 55, src/scss/_widget.border.scss */
+.sky-countdown .minutes .count.top {
+  background: url(img/clock_top_new.png);
+}
+/* line 57, src/scss/_widget.border.scss */
+.sky-countdown .minutes .count.bottom {
+  background: url(img/clock_bottom_new.png);
+}
+/* line 63, src/scss/_widget.border.scss */
+.sky-countdown .seconds .count.top {
+ background: url(img/clock_top_new.png);
+}
+/* line 65, src/scss/_widget.border.scss */
+.sky-countdown .seconds .count.bottom {
+  background: url(img/clock_bottom_new.png);
+}
+
+/* line 6, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .count.bottom {
+  background-repeat: none;
+  height: 49%;
+}
+/* line 7, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .count.curr {
+  display: none;
+}
+/* line 8, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .label {
+  margin-top: 3px;
+}
+/* line 12, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .days .label {
+    visibility: hidden;
+  
+}
+/* line 14, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .days .label .days .text {
+  visibility: hidden;
+}
+/* line 18, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .days .count.top {
+    visibility: hidden;
+
+}
+/* line 20, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .days .count.bottom {
+    visibility: hidden;
+
+}
+/* line 24, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .hours .label {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAARCAMAAACo2Q8bAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0NkQ2QkRDQzgzODExRTRCOTM1RUVFNzY0OTMzM0Q2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ0NkQ2QkREQzgzODExRTRCOTM1RUVFNzY0OTMzM0Q2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDQ2RDZCREFDODM4MTFFNEI5MzVFRUU3NjQ5MzMzRDYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDQ2RDZCREJDODM4MTFFNEI5MzVFRUU3NjQ5MzMzRDYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz49wdzQAAABgFBMVEXiTlvyu8LdMDz4ysT96+zwnJzpQi/tm6LeKS3mMR7qTDz73NzlMCHpNRf86ur4xsDbJjH1vrzbKTf/+/vuiITiNDLlMyPfKiriLSfmZ3L98vLrVUXjLyj5zs7uc2r/+fnwjYj65OfdMj7jT1b97/H85+X52dj529/cJzLndIHlNyzjLiThQUnmMx3iODj409X61dH99fb//f3rgoX+9/fkMSfgKyvqNhHrNxP4xL7sZFf0wMT99vf97u7eN0H3zdD75uf1xsn//Pz3x8P1qJ/ocHbyqKjoeoXkYm784N7shofhMS/tn6jiSE3wqq/zravxoqDphpPhLivnNiD60czgNz7qU0TeOkf41tr+9fX62tbpSj7cJzDgSFfnPTDsYlPoOCPtio7lNSnujI3wkI3sWkvqh5TkWWDnOijiWmr65ej50tHysLP3xcHzlovdKDLfLDHugXr//v7qOxzjNi/0srDztLb0tbLqhIvqh47wqrD40dH4y8bueXHvpq////9G0nyUAAABZUlEQVR42mKoJxkwDIwWExOitKgW8wNJOWmj+ppoTs44wfp6N1OW+npDvUQHUXGOggr5enUGDQGmtCKElhALSyAZz2XkzKlbqCDG41/PCtYiamxv5uuqzCEpbJfvoRmbaYTQYmDODCStuJzYgtXq6/m0kiJZZSBa9MUdgWp0VJjc0RxmYJFXw8/PJq0aXAvipvBUw2zRN7OuVwzVAdrCUJeFosXcnBcIwmQ5FUDcAB5BhC3iHBwcVfXq4RoCAoEotrh4RnlKc/ElyIG4IjxqrKa29fUOQUBblMU5HEGCij5CGoqYfjHi0s2ur+cW05Jn1QYGW5lEjr64PTtHJcR0dgFrZFssId4HhpiIiBhPaT2fqUyyl4S3Csgv6Rx+NkoM7ppCQizItoC0pHIZ1edmcHKKlQM5siUSEnr69fri1vVSoRwRkjHAeGFEjn1wjAsLg0gpKWjA2EohZIDYxmaAkyVhABBgABjGRyHyzmVjAAAAAElFTkSuQmCC) no-repeat center center;
+}
+/* line 26, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .hours .label .hours .text {
+  visibility: hidden;
+}
+/* line 29, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .hours .count.top {
+  background: url(img/clock_top_new.png) no-repeat;
+}
+/* line 31, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .hours .count.bottom {
+ background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 35, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .minutes .label {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAARCAMAAABZ0lSWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjgyRTA3RTE3Qzg0NTExRTRCOTM1RUVFNzY0OTMzM0Q2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjgyRTA3RTE4Qzg0NTExRTRCOTM1RUVFNzY0OTMzM0Q2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDQ2RDZCREVDODM4MTFFNEI5MzVFRUU3NjQ5MzMzRDYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODJFMDdFMTZDODQ1MTFFNEI5MzVFRUU3NjQ5MzMzRDYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6pUkZeAAABgFBMVEX56/DuZgD0qmXz097inLbymUrrwdT3uZH//f3BNGzxxtP89vjuXBDw0+HweznYd5vwhAC+PXrvdADuTwXvbgDDKVzKXpDzl1/ST3b849H0ooK6LW32sIryiFz34enXg6fOQm29K2jwhQDuwdDbVHHvajDVZYnxhzvuURPxfVHps8j+8+vxihHKKFPbaIXNJ0397OLuYQD02+b+9vPSJUX728v/+vjOJkr85Nzmk6j78/a4LXH5zqzUMVP51rPvdwDSOV3jhZ3ymDj5yqXDLWDcb43zmW7MMFr11+DalLjuzd3vfADljqPyytb4vKv66e3z3enovNP96t333OPwdi3++vzagKLjfJP++PTIVonveADdY37GKVrTW4HfgJzhc4zsyNrDL2X73NHzjm/fa4bvgADjrMfBKmL74cL506rykD3OcJ778vb87/L2qo/ussDYQ2H25e7//fy9L2zvYi+7M3Pdn77PMVfva0HvuMXNRXHaiKrgiqXcj6/CTof///8tgSTOAAABcklEQVR42tTTTWvCMBgH8IJSYoOIB0UozInFg1ALUig2FBQsraLYIVXEbioMe1DZROKYe3m++tJqZx3baScfckryI/nnhYP/FHftekU6ALw4Qdsdj1Mp1mu3OTsnsKFKoSLLliXLfeVF05QBflRVdYrjOk+yLuRFuumWmPbzCNJtLpErs6H72/dKRW6aNUFpmlOTYWkmGZuY1ikhW0zFHZcOtV+NawSu1QJIKP1grtREP3aO6Z7eOWJytw11cbLQLzS2HgLdE8oCzFSjkbjQDuE/i0vKl/hQf9T9TP0XrWiagfQpyy3Fc6eJ08lOVo44P64NI78YaHZq6HDWjaE9YLM3r8/qU0zPid4VxSWi+5PWU36gRwA3ngmR7kd5bXUc03vCrYlYx7R40lBlGh1ymWTb63/rgmnWNrXmuGWo5bimGOZdcLNH/RZc84IDruB5XjU4VSsJMAxyK4OexnL3/nhrOGxR6WsU9Z7Lxdf/S74EGAAqrY+El+j3GgAAAABJRU5ErkJggg==) no-repeat center center;
+}
+/* line 37, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .minutes .label .minutes .text {
+  visibility: hidden;
+}
+/* line 40, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .minutes .count.top {
+  background: url(img/clock_top_new.png) no-repeat; no-repeat;
+}
+/* line 42, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .minutes .count.bottom {
+  background: url(img/clock_bottom_new.png) no-repeat; no-repeat;
+}
+/* line 46, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .seconds .label {
+ background: url(img/text/text_04.png) no-repeat center center;
+}
+/* line 48, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .seconds .label .seconds .text {
+  visibility: hidden;
+}
+/* line 51, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .seconds .count.top {
+ background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 53, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie .seconds .count.bottom {
+ background: url(img/clock_bottom_new.png) no-repeat;
+}
+
+/* line 62, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .label {
+  margin-top: 10px;
+}
+/* line 67, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .days .count.top {
+    visibility: hidden;
+
+}
+/* line 69, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .days .count.bottom {
+    visibility: hidden;
+}
+/* line 74, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .hours .count.top {
+  background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 76, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .hours .count.bottom {
+  background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 80, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .minutes .label {
+  left: -1px;
+  width: 52px;
+}
+/* line 84, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .minutes .count.top {
+  background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 86, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .minutes .count.bottom {
+  background: url(img/clock_bottom_new.png) no-repeat;
+}
+/* line 90, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .seconds .label {
+  left: -3px;
+  width: 56px;
+}
+/* line 94, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .seconds .count.top {
+  background: url(img/clock_top_new.png) no-repeat;
+}
+/* line 96, src/scss/_widget.border.ie8.scss */
+.sky-countdown.ie.small .seconds .count.bottom {
+  background: url(img/clock_bottom_new.png) no-repeat;
+}
+
+#holder {
+    position: absolute;
+}
+
+.container {
+    background-color: aqua;
+}
+
+#sky-countdown-03 {
+    overflow: hidden;
+    transform: scale(0.75);
+}
+
+.sky-countdown.small {
+  width: 260px;
+  height: auto;
+  position: absolute;
+  left: -6px;
+  top: 267px;
+  padding-bottom: 15px;
+  transition: 0.3s all;
+}
+
+.movein {
+  top: 141px !important;
+  transition: 0.3s all;
+}
+

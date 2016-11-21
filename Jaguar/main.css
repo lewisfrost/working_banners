@@ -1,0 +1,105 @@
+/*---------------- WEBFONTS  ------------------*/
+
+
+
+body {
+	background-color: #ffffff;
+}
+
+#wrapper {
+	position:relative;
+	cursor: pointer;
+
+	border: 1px solid #000000;
+	width: 300px;
+	height: 250px;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+
+/*---------------- HEADER KEYFRAMES  ------------------*/
+
+@-webkit-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@keyframes header_in { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@keyframes header_out { from { opacity:1; } to { opacity:0; } }
+
+/*----------------  LOGOS & T&CS  ------------------*/
+
+#wrapper .tcs {
+	position: absolute;
+	width: 275px;
+	bottom:5px;
+	left:17px;
+	opacity: 1;
+}
+
+
+/*---------------- IMAGE  ------------------*/
+
+#wrapper #image-container {
+	position: relative;
+	width: 300px;
+	height: 151px;
+	overflow: hidden;
+}
+
+#wrapper #image-container img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+  	left: 0px;
+    color:black;
+    opacity: 1;
+}
+
+
+/*---------------- HEADER  ------------------*/
+
+#wrapper .header {
+	position: absolute;
+	width:160px;
+	top: 120px;
+  	left: 70px;
+  	opacity:1;
+    
+  	-webkit-animation: header_out 0.5s 3s ease-out forwards;
+    -moz-animation: header_out 0.5s 3s ease-out forwards;
+    animation: header_out 0.5s 3s ease-out forwards;
+    
+}
+
+
+/*---------------- CTA  ------------------*/
+
+#wrapper #cta-button {
+	position: absolute;
+	height: 25px;
+	width: 160px;
+	top: 130px;
+  	left: 70px;
+  	opacity: 0;
+  	background-color: #971f30;
+}
+
+#wrapper #cta-button #cta-text {
+	position: absolute;
+	font-family: 'Arial', serif;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	top: 7px;
+  	left: 12px;
+}
+
+#wrapper #cta-button #cta-arrow {
+	position: absolute;
+	height: 10px;
+	top: 8px;
+  	left: 141px;
+}
+

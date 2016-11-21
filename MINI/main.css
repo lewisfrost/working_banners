@@ -1,0 +1,186 @@
+
+body {
+	background-color: #ffffff;
+}
+
+#mini-beauty-shots-wrapper {
+	position:relative;
+	cursor: pointer;
+
+	border: 1px solid #000000;
+	width: 297px;
+	height: 247px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+
+
+/*---------------- HEADER KEYFRAMES  ------------------*/
+
+@-webkit-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@keyframes header_in { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@keyframes header_out { from { opacity:1; } to { opacity:0; } }
+
+
+/*---------------- LOGO  ------------------*/
+
+#mini-beauty-shots-wrapper #mini-logo {
+	position: absolute;
+	width: 67px;
+	top: 200px;
+	left: 223px;
+}
+
+
+/*---------------- IMAGE  ------------------*/
+
+#mini-beauty-shots-wrapper #image-container {
+	position: relative;
+	width: 280px;
+	height: 165px;
+	top: 10px;
+	left: 10px;
+	overflow: hidden;
+    
+
+}
+
+@-webkit-keyframes zoom_out { from { -webkit-transform: scale(1.6); -webkit-transform-origin:55% 0%;} to { -webkit-transform: scale(1.0);opacity:1;} }
+@-moz-keyframes zoom_out { from { -moz-transform: scale(1.6); -moz-transform-origin:40% 0%; } to { -moz-transform: scale(1.0);} }
+@keyframes zoom_out { from { transform: scale(1.6); transform-origin:55% 0%; } to { transform: scale(1.0); opacity:1;} }
+
+#mini-beauty-shots-wrapper #image-container img {
+	position: absolute;
+	width: 100%;
+
+	top: -20px;
+  	left: 0px;
+    
+    -webkit-animation: zoom_out 4s 0s 1 ease-in-out forwards;
+	-moz-animation:  zoom_out 4s 0s 1 ease-in-out forwards;
+	-o-animation:  zoom_out 4s 0s 1 ease-in-out forwards;
+	animation:  zoom_out 4s 0s 1 ease-in-out forwards;
+}
+
+
+/*---------------- COLORED BAR  ------------------*/
+
+#mini-beauty-shots-wrapper #colored-bar {
+	position: absolute;
+	width: 280px;
+	height: 10px;
+	top: 175px;
+  	left: 10px;
+  	background-color: #971f30;
+}
+
+
+/*---------------- HEADER  ------------------*/
+
+#mini-beauty-shots-wrapper #header {
+	position: absolute;
+	font-family: 'Noto Serif', serif;
+    color:black;
+	font-size: 14px;
+	top: 195px;
+  	left: 10px;
+    
+     -webkit-animation: header_in 0.5s 0s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    -moz-animation: header_in 0.5s 0s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    animation: header_in 0.5s 0s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    
+}
+
+
+/*---------------- HEADER 2  ------------------*/
+
+#mini-beauty-shots-wrapper #header-2 {
+	position: absolute;
+	font-family: 'Noto Serif', serif;
+    color:black;
+	font-size: 14px;
+	top: 212px;
+  	left: 10px;
+    opacity:0;
+    
+      -webkit-animation: header_in 0.5s 1s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+    -moz-animation: header_in 0.5s 1s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+    animation: header_in 0.5s 1s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+    
+    
+}
+
+
+
+/*---------------- HEADER 3 ------------------*/
+
+#mini-beauty-shots-wrapper #header-3 {
+	position: absolute;
+	font-family: 'Noto Serif', serif;
+    color:black;
+	font-size: 14px;
+	top: 212px;
+  	left: 10px;
+    opacity:0;
+    
+    -webkit-animation: header_in 0.5s 4s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    -moz-animation: header_in 0.5s 4s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    animation: header_in 0.5s 4s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+}
+
+
+
+
+/*---------------- HEADER 4 ------------------*/
+
+#mini-beauty-shots-wrapper #header-4 {
+	position: absolute;
+	font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color:black;
+	font-size: 14px;
+	top: 195px;
+  	left: 10px;
+    opacity:0;
+    
+	
+	 -webkit-animation: header_in 0.5s 7s ease-out forwards;
+    -moz-animation: header_in 0.5s 7s ease-out forwards;
+    animation: header_in 0.5s 7s ease-out forwards;
+}
+
+
+
+/*---------------- CTA  ------------------*/
+
+#mini-beauty-shots-wrapper #cta-button {
+	position: absolute;
+	height: 22px;
+	width: 155px;
+	top: 220px;
+  	left: 10px;
+  	opacity: 0;
+  	background-color: #971f30;
+}
+
+#mini-beauty-shots-wrapper #cta-button #cta-text {
+	position: absolute;
+	font-family: 'Noto Serif', serif;
+	font-size: 10px;
+	color: #ffffff;
+	top: 3px;
+  	left: 16px;
+}
+
+#mini-beauty-shots-wrapper #cta-button #cta-arrow {
+	position: absolute;
+	height: 10px;
+	top: 6px;
+  	left: 135px;
+}
+

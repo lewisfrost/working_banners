@@ -1,0 +1,95 @@
+html {
+    overflow:hidden;
+}
+
+
+/*////////////////////KEY FRAMES////////////////*/
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400;
+}
+
+body{
+    width:970px;
+    height:250px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    overflow:hidden;
+    position:absolute;
+}
+
+#banner{
+    position: absolute;
+    background:url( "bg.jpg" ) no-repeat ;
+    width: 100%;
+    height: 100%;
+}
+
+
+.copy {
+    position:absolute;
+	top: 23px;
+	left: 657px;
+    width:198px;
+    height:16px;
+    background:url(copy.png);
+    opacity:0;
+    -webkit-animation:fadein 0.3s 1 linear forwards;
+	-moz-animation:fadein  0.3s 1 linear forwards;
+	animation:fadein  0.3s  1 linear forwards;
+    
+}
+
+
+.copy1 {
+    position:absolute;
+	top: 50px;
+	left: 657px;
+	z-index: 4;
+	opacity: 0;
+	width: 217px;
+	height: 81px;
+    background:url(copy-1.png);
+
+    
+    -webkit-animation:fadein 0.3s 2.3s 1 linear forwards;
+	-moz-animation:fadein 0.3s 2.3s 1 linear forwards;
+	animation:fadein 0.3s 2.3s 1 linear forwards;
+    
+}
+
+.cta {
+    position: absolute;
+	top: 160px;
+	left: 657px;
+	z-index: 9;
+    width:91px;
+    height:13px;
+    background:url(cta.png);
+    opacity: 0;
+    
+     -webkit-animation:fadein 0.3s 4.3s 1 linear forwards;
+	-moz-animation:fadein 0.3s 4.3s 1 linear forwards;
+	animation:fadein 0.3s 4.3s 1 linear forwards;
+    
+}

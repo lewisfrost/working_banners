@@ -1,0 +1,317 @@
+
+/* reset */
+
+body {
+    margin: 0px;
+}
+
+html, body, object, img {
+    margin: 0;
+    padding: 0;
+	}
+
+a:active,
+a:hover {
+    outline: 0;
+	}
+
+img {
+    border: 0;
+	}
+
+/* structure */
+
+#content{
+	display: block;
+    border: rgb(255, 255, 255) 2px solid;
+    overflow: hidden;
+    width: 296px;
+    height: 246px;
+	position: relative;
+	background: #fff;
+    border: 1px solid #636363;
+  box-sizing: border-box;
+	}
+	
+	#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+
+/* elements */
+
+#forMen{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+#text_1{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+#dort{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+
+#text_2{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+#text_2_1{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+
+
+#dunya{
+	width: 356px;
+	height: 354px;
+	display: block;
+	position: absolute;
+	top: 140px;
+	left: -20px;
+	opacity: 0;
+	z-index: 101;
+	}
+	
+
+#van{
+	width: 49px;
+	height: 41px;
+	display: block;
+	position: absolute;
+	top: 170px;
+	left: 108px;
+	opacity: 0;
+	z-index: 102;
+	}
+
+#line{
+	width: 73px;
+	height: 21px;
+	display: block;
+	position: absolute;
+	top: 190px;
+	left: 115px;
+	opacity: 0;
+	z-index: 101;
+    transform-origin: top left;
+
+	}
+
+#text_3{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+#text_3_1{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+
+
+#text_5{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 101;
+	}
+
+#text_5_1{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 101;
+	}
+
+
+
+#text_4{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 101;
+	}
+
+#onAware{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 101;
+	}
+
+#ctaBtn{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 101;
+	}
+
+
+#bg{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	z-index: 100;
+	}
+
+
+
+
+
+#clickthrough{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:300px;
+    height: 250px;
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    z-index:120;
+}
+
+
+
+
+/* Animations */
+
+
+.slow{
+	-webkit-transition: all 1.5s ease-in-out;
+	-ms-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
+}
+
+.medium{
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.fast{
+	-webkit-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+
+.off{
+	-webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+}
+
+
+.offrightlogo{
+	-webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+}
+
+
+.fadein{
+	opacity: 1 !important;
+}
+.fadeout{
+	opacity: 0 !important;
+}
+
+
+
+
+.animClass {
+	-webkit-transform: translate3d(0, 0, 0); /* Force Hardware Acceleration */
+	}

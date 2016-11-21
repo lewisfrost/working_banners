@@ -1,0 +1,211 @@
+/* Div layer for the entire banner. */
+h1, h2, p {
+  font-weight: normal;
+  font-size: 15px;
+  padding: 0px;
+  margin: 1px;
+}
+
+#container_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+#content_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 15px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  
+}
+
+#plane{
+ position: absolute;
+  width: 300px;
+  height: 250px;
+  background:url(plane.png) top left no-repeat;
+  text-indent:-99999px;
+ opacity:0;
+    -webkit-opacity:0;
+     -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+
+}
+#plane h1{
+ width:300px;
+ height:100px;
+background:url(copy1.png) top left no-repeat;
+position:absolute;
+top:149px;
+left:0px;
+
+ opacity:0;
+    -webkit-opacity:0;
+     -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+#plane h2{
+ width:300px;
+ height:100px;
+background:url(copy2.png) top left no-repeat;
+position:absolute;
+top:149px;
+left:-1px;
+
+ opacity:0;
+    -webkit-opacity:0;
+     -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+
+#endframe_wrapper{
+ position: absolute;
+  width: 300px;
+  height: 250px;
+ 
+  text-indent:-99999px;
+
+}
+#endframe_wrapper h1{
+background:url(copy3.png) top left no-repeat;
+width:300px;
+height:99px;
+position:absolute;
+z-index:4;
+top:0px;
+left:0px;
+text-indent:-99999px;
+ opacity:0;
+    -webkit-opacity:0;
+
+}
+#car{
+background:url(car.png) top left no-repeat;
+width:300px;
+height:250px;
+ opacity:0;
+    -webkit-opacity:0;
+}
+
+#cta {
+  width: 133px;
+  height: 37px;
+  position: absolute;
+  bottom: 32px;
+  left: 23px;
+ background:url(cta.png) top left no-repeat;
+  z-index:12;
+   opacity:0;
+    -webkit-opacity:0;
+
+}
+
+#tandc {
+  width: 103px;
+  height: 11px;
+  position: absolute;
+  bottom: 7px;
+  left: 23px;
+ background:url(tandc.png) top left no-repeat;
+
+   opacity:0;
+    -webkit-opacity:0;
+
+}
+#logo{
+width:300px;
+height:250px;
+position:absolute;
+top:0px;
+left:0px;
+display:block;
+z-index:10;
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+.fadeIn {
+  -webkit-animation: fadeUpAnim ease-in-out .5s 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation: fadeUpAnim ease-in-out .5s 0s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOutAnim ease-in-out .5s 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation: fadeOutAnim ease-in-out .5s 0s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeUpAnim {
+  0% {
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-opacity: 1;
+  }
+}
+
+@keyframes fadeUpAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOutAnim {
+  0% {
+    -webkit-opacity: 1;
+  }
+
+  100% {
+    -webkit-opacity: 0;
+  }
+}
+
+@keyframes fadeOutAnim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

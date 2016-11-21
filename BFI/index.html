@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>300x250</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+<script src="scripts/EBLoader.js"></script>
+<script>
+
+	function init(){
+		EBinit();
+		frame1Animation()
+	}
+	function frame1Animation(){
+		TweenLite.to([".copy_4",".copy_5",".copy_6",".copy_7"],0,{alpha:0})		
+		TweenLite.to(".bg1",0,{alpha:1,delay:0})
+		TweenLite.to(".copy_1",.5,{alpha:1,delay:0})
+		TweenLite.to(".bg1",4,{alpha:0,ease:Quad.easeOut,delay:2})
+		TweenLite.to(".bg",5,{scale:1.2, y:20, ease:Quad.easeOut, delay:2})
+		TweenLite.to(".copy_2",2,{alpha:1,delay:1})
+			TweenLite.delayedCall(3,frame2Animation);
+	}
+	function frame2Animation(){
+		TweenLite.to(".copy_2",1,{alpha:0, delay:0})
+		TweenLite.to(".copy_3",2,{alpha:1,delay:.9})
+		TweenLite.to(".copy_3",1,{alpha:0,delay:3})
+			TweenLite.delayedCall(3,frame3Animation);
+	}
+	function frame3Animation(){
+		TweenLite.to(".copy_4",0,{ alpha:0,ease:Quad.easeOut,delay:0})
+		TweenLite.to(".copy_5",0,{ alpha:0.2,ease:Quad.easeOut,delay:0})
+		TweenLite.to(".copy_6",0,{ alpha:0.5,ease:Quad.easeOut,delay:0})
+		TweenLite.to(".copy_7",0,{ alpha:1,ease:Quad.easeOut,delay:0})
+	
+		TweenLite.from(".copy_4",5,{ y:"100",alpha:1,ease:Quad.easeOut,delay:0})
+		TweenLite.from(".copy_5",5,{ y:"100",alpha:1,ease:Quad.easeOut,delay:0})
+		TweenLite.from(".copy_6",5,{ y:"100",alpha:1,ease:Quad.easeOut,delay:0})
+		TweenLite.from(".copy_7",5,{ y:"100",alpha:1,ease:Quad.easeOut,delay:0})
+			TweenLite.delayedCall(5.2,frame4Animation);
+	}
+	function frame4Animation(){
+		TweenLite.to([".copy_4",".copy_5",".copy_6",".copy_7"],.5,{alpha:0, delay:0})	
+			
+		TweenLite.to(".copy_8",.5,{ alpha:1,ease:Quad.easeOut,delay:.5})
+		TweenLite.to(".copy_8",.1,{ alpha:0,ease:Quad.easeOut,delay:1.5})
+		TweenLite.to(".copy_8",.1,{ alpha:1,ease:Quad.easeOut,delay:1.7})
+		TweenLite.to(".copy_9",.5,{ alpha:1,ease:Quad.easeOut,delay:.5})
+		
+		TweenLite.to(".copy_8",.5,{ alpha:0,ease:Quad.easeOut,delay:3})
+		TweenLite.to(".copy_9",.5,{ alpha:0,ease:Quad.easeOut,delay:3})
+		TweenLite.to(".copy_1",.5,{alpha:0,delay:3})
+		TweenLite.to(".bg1",.5,{alpha:1,delay:3})
+		
+		TweenLite.to(".logo",.5,{ alpha:1,ease:Quad.easeOut,delay:3.3})
+	}
+// clickTags Code/////
+	function EBinit(){
+		
+		document.getElementById("bannerCTA").addEventListener("click", trackClick);
+	}
+	function trackClick(){
+			console.log("clicked")	
+			EB.clickthrough();
+	}
+</script>
+
+<style>
+	*{margin:0px; padding:0px;}
+	
+     #ad{width:300px; height:250px; position:relative;overflow:hidden; background-color:#FFF;}
+	 
+	 .bg{position:absolute; top:0px; left:0px;z-index:1;}
+	 .bg1{position:absolute; top:0px; left:0px; opacity:0;z-index:2;}
+	 .copy_1{position:absolute; left:0px; top:47px; opacity:0;z-index:3;}
+	 
+	.frame1{width:300px; height:250px; position:absolute; top:0px; left:0px;}
+	
+	.copy_2{position:absolute; left:68px; top:190px; opacity:0;z-index:5; opacity:0; }
+	.copy_3{position:absolute; left:68px; top:190px;opacity:0;z-index:5;}
+	
+	.copy_4{position:absolute; left:49px; top:170px;opacity:1;z-index:5;}
+	.copy_5{position:absolute; left:74px; top:190px; z-index:5;}
+	.copy_6{position:absolute; left:85px; top:209px;opacity:1;z-index:5;}
+	.copy_7{position:absolute; left:69px; top:229px;opacity:1;z-index:5;}
+	.copy_8{position:absolute; left:72px; top:170px;opacity:0 ;z-index:5;}
+	.copy_9{position:absolute; left:-5px; top:0px;opacity:0 ;z-index:5;}
+	.logo{position:absolute; left:0px; top:0px;opacity:0 ;z-index:5;}
+	
+	.hiddenCTA{width:300px; height:250px; position:absolute; top:0px; left:0px;z-index:379;cursor:pointer;}
+</style>
+<body onLoad="init()">
+<div class="hiddenCTA" id="bannerCTA"></div>
+	
+    <div id="ad">
+        <div class="frame1">
+        <img class="copy_1" src="assets/copy_1.png"/>
+         <img class="bg1" src="assets/bg1.jpg"/>
+         <img class="bg" src="assets/bg.jpg"/>
+         <img class="copy_2" src="assets/copy_2.png"/>
+         <img class="copy_3" src="assets/copy_3.png"/>
+         <img class="copy_4" src="assets/copy_4.png"/>
+         <img class="copy_5" src="assets/copy_5.png"/>
+         <img class="copy_6" src="assets/copy_6.png"/>
+         <img class="copy_7" src="assets/copy_7.png"/>
+         <img class="copy_8" src="assets/copy_8.png"/>
+         <img class="copy_9" src="assets/copy_9.png"/>
+         <img class="logo" src="assets/logo.png"/>
+        </div>
+    </div>
+</body>
+</html>

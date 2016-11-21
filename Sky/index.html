@@ -1,0 +1,132 @@
+<!-- HTML 5 Ad Template from DoubleClick by Google -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Studio Enabler Required -->
+	<script src="http://s0.2mdn.net/ads/studio/Enabler.js"></script>
+	<script src="https://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+	<script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script>
+	<script src="https://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		#loading_dc {
+			width: 100%;
+			height: 100%x;
+			background-color: white;
+			z-index: 10;
+		}
+		
+		#loading_image_dc {
+			position: absolute;
+			left: 50%;
+			margin-left: -15px;
+			top: 50%;
+			margin-top: -15px;
+		}
+		
+		#container_dc {
+			display: none;
+			z-index: 20
+		}
+/*
+		
+		#mainCanvas{
+			z-index: 4000;
+			
+		}
+*/
+	</style>
+	<script language="javascript">
+			//Initialize Enabler
+			if (Enabler.isInitialized()) {
+				init();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+			}
+			//Run when Enabler is ready
+			function init(){
+				if(Enabler.isPageLoaded()){
+					politeInit();
+				}else{
+					Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+				} 
+			}
+			//Thanks to Jack @ Greensock for this sweet loader https://greensock.com/
+			function politeLoad(urls, onComplete) {
+			    var l = urls.length,
+			        loaded = 0,
+			        checkProgress = function() {
+			            if (++loaded === l && onComplete) {
+			                onComplete();
+			            }
+			        },
+			        i;
+			    for (i = 0; i < l; i++) {
+			    	//Using the Enabler script loader to politely load the javascript
+			        Enabler.loadScript(urls[i], checkProgress);
+			    }
+			}
+			//now you can just feed stuff into that one function and give it a callback...
+			function politeInit(){
+            politeLoad(['jquery.js',
+                        'DCRM_HTML5_inPage_Dynamic_300x250.js',
+                        'countdown.min.js'], 
+                       function() {
+				            	BannerInit();
+				           });
+				//Load in CSS
+				var extCSS=document.createElement('link');
+				extCSS.setAttribute("rel", "stylesheet");
+				extCSS.setAttribute("type", "text/css");
+				extCSS.setAttribute("href", Enabler.getUrl("DCRM_HTML5_inPage_Dynamic_300x250.css")); 
+				document.getElementsByTagName("head")[0].appendChild(extCSS);
+                
+                var extCSS=document.createElement('link');
+				extCSS.setAttribute("rel", "stylesheet");
+				extCSS.setAttribute("type", "text/css");
+				extCSS.setAttribute("href", Enabler.getUrl("countdown.css")); 
+				document.getElementsByTagName("head")[0].appendChild(extCSS);
+                
+                var extCSS=document.createElement('link');
+				extCSS.setAttribute("rel", "stylesheet");
+				extCSS.setAttribute("type", "text/css");
+				extCSS.setAttribute("href", Enabler.getUrl("font/fonts.css")); 
+				document.getElementsByTagName("head")[0].appendChild(extCSS);
+                
+                
+	           //Bring in listeners i.e. if a user clicks or rollsover
+	           addListeners();
+	           //Show Ad
+	           container.style.display = "block";
+
+	           //Call Dynamic
+	           getDynamic();
+			};
+		</script>
+
+	<!-- Template Tracker -->
+	<meta data-template-name="Template_DCRM_HTML5_InPage_Dynamic_300x250">
+
+</head>
+
+<body>
+
+	<div id="container_dc">
+
+		<div id="content_dc">
+			<!--	        <img src="logo_dc.jpg" id="myLogoDc">	 -->
+			<canvas id="mainCanvas" width="300" height="250"></canvas>
+<!--            <div class="sky-countdown small" data-parent-id="place" data-end="2015/12/10 13:10:40" id="sky-countdown-03"></div>-->
+			<div id="legalContainer"> <img id="legalsBigHolder" /> </div>
+			<!--	         <div id="text1"></div> -->
+		</div>
+
+		<button id="background_exit_dc"></button>
+		<button id="legals_exit_dc"></button>
+		<button id="legalClickBtn" onclick="expandLegals()"></button>
+		<button id="legalClickBtnClose" onclick="expandLegals()"></button>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,478 @@
+// out: main.css , compress: true, strictMath: true
+
+//banner size, changes these to set up next sizes.eg 300x600
+
+/*** barclaycard light ***/
+@font-face {
+    font-family: 'barclaycard_co_ltregular';
+    src: url('http://poweredbybarclaycard.co.uk/fonts/barclaycardcolt-regular-webfont.eot');
+    src: url('http://poweredbybarclaycard.co.uk/fonts/barclaycardcolt-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardcolt-regular-webfont.woff') format('woff'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardcolt-regular-webfont.ttf') format('truetype'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardcolt-regular-webfont.svg#barclaycard_co_ltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** barclaycard regular ***/
+@font-face {
+    font-family: 'barclaycard_coregular';
+    src: url('http://poweredbybarclaycard.co.uk/fonts/barclaycardco-regular-webfont.eot');
+    src: url('http://poweredbybarclaycard.co.uk/fonts/barclaycardco-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardco-regular-webfont.woff') format('woff'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardco-regular-webfont.ttf') format('truetype'),
+         url('http://poweredbybarclaycard.co.uk/fonts/barclaycardco-regular-webfont.svg#barclaycard_coregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@colour1: #333333;
+@colour2: #666666;
+@colour3: #666666;
+
+@width: 300px;
+@height: 250px;
+
+body {
+    height: @height;
+    margin: 0;
+    padding: 0;
+    width: @width;
+    
+    p, div {
+        margin: 0; 
+        padding: 0;
+    }
+
+    #banner {
+        background: url(../images/bg.jpg) no-repeat 0 0 #ffffff;
+        border: 1px solid #333333;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        height: @height;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: @width;
+
+        #elements {
+            cursor: pointer;
+            height: 100%;
+            left: 0;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            >div, >img {
+                z-index: 200;
+            }
+            
+            img { 
+                display: block;
+            }
+            
+            .logo {
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+            
+            .frame {
+                color: #00a1e4;
+                font-family: 'barclaycard_co_ltregular', verdana, sans-serif;
+                left: 15px;
+                opacity: 0;
+                position: absolute;
+                top: 40px;
+                
+                -webkit-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                   -moz-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                     -o-transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                        transition: opacity 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+                
+                &.anim {
+                    opacity: 1;
+                    -webkit-transition: opacity 2000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                       -moz-transition: opacity 2000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                         -o-transition: opacity 2000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                            transition: opacity 2000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+                }
+                
+                &.stay {
+                    opacity: 1;
+                }
+                
+                &#frame-1 {
+                    p {
+                        font-size: 20px;
+                    }
+
+                    em {
+                        background: -webkit-linear-gradient(#52238e, #00a1e4);
+                        color: #52238e;
+                        font-family: 'barclaycard_coregular', verdana, sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                
+                &#frame-2, &#frame-3 {
+                    background: url(../images/tick.png) no-repeat 100% 50%;
+                    color: #5d528c;
+                    padding: 3px 63px 3px 0;
+                    top: 50px;
+                }
+                
+                &#frame-4 {
+                    top: 30px;
+                    
+                    h2 {
+                        font-size: 38px;
+                        margin: 0;
+                    }
+                    
+                    p {
+                        font-size: 17px;
+                    }
+                    
+                    small {
+                        display: block;
+                        font-size: 11px;
+                        margin: 5px 0;
+                    }
+                }
+            }
+            
+            .bound {
+                left: 15px;
+                position: absolute;
+                top: 103px;
+            }
+            
+            .flip-container {
+                display: block;
+                float: left;
+                height: 68px;
+                -webkit-perspective: 200px;
+                        perspective: 200px;
+                position: absolute;
+                width: 68px;
+                
+                &.hide .flipper {
+                    opacity: 0;
+                }
+                
+                .flipper {
+                    display: block;
+                    height: 100%; 
+                    -webkit-transform-style: preserve-3d;
+                            transform-style: preserve-3d;
+                    transition: 0.75s;
+                    position: relative;
+                    width: 100%;
+                    
+                    -webkit-transition: 0.6s ease-in-out;
+                       -moz-transition: 0.6s ease-in-out;
+                         -o-transition: 0.6s ease-in-out;
+                            transition: 0.6s ease-in-out;
+                    
+                    .front, .back {
+                        -webkit-backface-visibility: hidden;
+                                backface-visibility: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 68px;
+                        height: 68px;
+                        overflow: hidden;
+                    }
+                    
+                    .front {
+                        z-index: 2;
+                        -webkit-transform: rotateY(0deg);
+                                transform: rotateY(0deg);
+                    }
+                    
+                    .back {
+                        display: none;
+                        -webkit-transform: rotateY(180deg);
+                                transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-1 {
+                    z-index: 100;
+                    
+                    .flipper {
+                        transform: rotateY(90deg);
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateY(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        -webkit-transform-origin: 50% 50% 0;
+                                transform-origin: 50% 50% 0;
+                        
+                        .flipper {
+                            transform: rotateY(0);
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-2 {
+                    left: 68px;
+                    z-index: 90;
+                    
+                    .flipper {
+                        transform: rotateY(180deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateY(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        
+                        .flipper {
+                            transform: rotateY(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-3 {
+                    left: 136px;
+                    z-index: 100;
+                    
+                    .flipper {
+                        transform: rotateX(90deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateX(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateX(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-4 {
+                    left: 204px;
+                    top: 0;
+                    z-index: 90;
+                    
+                    .flipper {
+                        transform: rotateY(180deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateY(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateY(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-5 {
+                    left: 0;
+                    top: 68px;
+                    z-index: 70;
+                    
+                    .flipper {
+                        transform: rotateY(-180deg);
+                        -webkit-transform-origin: 100% 0 0;
+                                transform-origin: 100% 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateY(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateY(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-6 {
+                    left: 68px;
+                    top: 68px;
+                    z-index: 80;
+                    
+                    .flipper {
+                        transform: rotateX(-180deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateX(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateX(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-7 {
+                    left: 136px;
+                    top: 68px;
+                    z-index: 60;
+                    
+                    .flipper {
+                        transform: rotateX(-180deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateX(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateX(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                &#shell-8 {
+                    left: 204px;
+                    top: 68px;
+                    z-index: 50;
+                    
+                    .flipper {
+                        transform: rotateX(-180deg);
+                        -webkit-transform-origin: 0 0 0;
+                                transform-origin: 0 0 0;
+                    }
+                    
+                    &.step1 {
+                        .flipper {
+                            transform: rotateX(0);
+                        }
+                    }
+                    
+                    &.inpos {
+                        .flipper {
+                            transform: rotateX(0);
+                            -webkit-transform-origin: 50% 50% 0;
+                                    transform-origin: 50% 50% 0;
+                        }
+                        
+                        .back {
+                            display: block;
+                        }
+                    }
+                    
+                    &.flip .flipper {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

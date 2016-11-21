@@ -1,0 +1,48 @@
+
+Notes:
+
+Never implement a JUMP tag without a corresponding AD tag, as this will result in no impressions or clicks being counted for the associated tag set.
+
+To ensure proper cache-busting, replace [timestamp] with a dynamically generated random number.Learn more at
+https://support.google.com/dfa/partner/answer/134520
+
+===============================================
+
+DoubleClick DART for Advertisers tags for  B3_Google Network
+
+Advertiser: Templates V2
+Campaign: Templates xstudio Dynamic
+
+===============================================
+Placement: Sherwin_DCRM_HTML5_InPage_Dynamic_300x250
+Run Dates: 04/29/2014 - 05/31/2015
+Size: 300x250
+
+Standard Tags:
+<A HREF="http://ad-ace.doubleclick.net/jump/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?">
+
+<IMG SRC="http://ad-ace.doubleclick.net/ad/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Advertisement"></A>
+
+Iframe/JavaScript:
+<IFRAME SRC="http://ad-ace.doubleclick.net/adi/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?" WIDTH=300 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad-ace.doubleclick.net/adj/N378.150781.4704472308521/B8086779.3;abr=!ie;dcadv=3254261;sz=300x250;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad-ace.doubleclick.net/jump/N378.150781.4704472308521/B8086779.3;abr=!ie4;abr=!ie5;dcadv=3254261;sz=300x250;ord=[timestamp]?">
+<IMG SRC="http://ad-ace.doubleclick.net/ad/N378.150781.4704472308521/B8086779.3;abr=!ie4;abr=!ie5;dcadv=3254261;sz=300x250;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME>
+
+JavaScript Tag:
+<SCRIPT language='JavaScript1.1' SRC="http://ad-ace.doubleclick.net/adj/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad-ace.doubleclick.net/jump/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?">
+<IMG SRC="http://ad-ace.doubleclick.net/ad/N378.150781.4704472308521/B8086779.3;dcadv=3254261;sz=300x250;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Advertisement"></A>
+</NOSCRIPT>
+
+
+
+
+===============================================
+

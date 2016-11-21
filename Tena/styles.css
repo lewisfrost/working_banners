@@ -1,0 +1,313 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Images
+3.0 Copy Elements
+4.0 CTA
+5.0 Sprites
+6.0 Miscellaneous
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+/*--------------------------------------------------------------
+2.0 Images
+--------------------------------------------------------------*/
+.img {
+    position: absolute;
+}
+
+#product {
+    background: url("package.png");
+    width: 154px;
+    height: 211px;
+    top: 35px;
+    left: 300px;
+}
+
+#bkg {
+    background: url("bkg.jpg");
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    left: -1px;
+}
+/*--------------------------------------------------------------
+3.0 Copy Elements 
+--------------------------------------------------------------*/
+.copy{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+#copy0{
+    top: 95px;
+    left: -250px;
+    background: url("copy0.png");
+    width: 259px;
+    height: 23px;
+    opacity: 1;
+}
+#copy1{
+    top: 95px;
+    left: -280px;
+    background: url("copy1.png");
+    width: 37px;
+    height: 23px;
+    opacity: 1;
+}
+
+#copy2{
+    top: 125px;
+    left: -280px;
+    background: url("copy2.png");
+    width: 250px;
+    height: 22px;
+    opacity: 1;
+}
+
+#copy3{
+    top: 95px;
+    left: -280px;
+    background: url("copy3.png");
+    width: 252px;
+    height: 52px;
+    opacity: 1;
+}
+
+#copy3b{
+    top: 58px;
+    left: 125px;
+    background: url("copy3b.png");
+    width: 0px;
+    height: 53px;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+4.0 CTA Elements
+--------------------------------------------------------------*/
+#clickthrough {
+    cursor: pointer;
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    opacity: 0;
+}
+#cta{
+
+    top: 100px;
+    left: 18px;
+    background: url("cta.png");
+    width: 102px;
+    height: 58px;
+    opacity: 0;
+}
+/*--------------------------------------------------------------
+5.0 Sprites
+--------------------------------------------------------------*/
+
+.sprite {display:inline-block; overflow:hidden; z-index: 100; background-repeat: no-repeat;background-image:url(sprite.png);}
+
+.regular_0 {width:213px; height:41px; background-position: -0px -0px}
+.regular_1 {width:213px; height:41px; background-position: -0px -0px}
+.regular_2 {width:213px; height:41px; background-position: -213px -0px}
+.regular_3 {width:213px; height:41px; background-position: -426px -0px}
+.regular_4 {width:213px; height:41px; background-position: -639px -0px}
+.regular_5 {width:213px; height:41px; background-position: -852px -0px}
+.regular_6 {width:213px; height:41px; background-position: -1065px -0px}
+.regular_7 {width:213px; height:41px; background-position: -1278px -0px}
+.regular_8 {width:213px; height:41px; background-position: -0px -41px}
+.regular_9 {width:213px; height:41px; background-position: -213px -41px}
+.regular_10 {width:213px; height:41px; background-position: -426px -41px}
+.regular_11 {width:213px; height:41px; background-position: -639px -41px}
+.regular_12 {width:213px; height:41px; background-position: -852px -41px}
+.regular_13 {width:213px; height:41px; background-position: -1065px -41px}
+.regular_14 {width:213px; height:41px; background-position: -1278px -41px}
+.regular_15 {width:213px; height:41px; background-position: -0px -82px}
+.regular_16 {width:213px; height:41px; background-position: -213px -82px}
+.regular_17 {width:213px; height:41px; background-position: -426px -82px}
+.regular_18 {width:213px; height:41px; background-position: -639px -82px}
+.regular_19 {width:213px; height:41px; background-position: -852px -82px}
+.regular_20 {width:213px; height:41px; background-position: -1065px -82px}
+.regular_21 {width:213px; height:41px; background-position: -1278px -82px}
+.regular_22 {width:213px; height:41px; background-position: -0px -123px}
+.regular_23 {width:213px; height:41px; background-position: -213px -123px}
+.regular_24 {width:213px; height:41px; background-position: -426px -123px}
+.regular_25 {width:213px; height:41px; background-position: -639px -123px}
+.regular_26 {width:213px; height:41px; background-position: -852px -123px}
+.regular_27 {width:213px; height:41px; background-position: -1065px -123px}
+.regular_28 {width:213px; height:41px; background-position: -1278px -123px}
+.regular_29 {width:213px; height:41px; background-position: -0px -164px}
+.regular_30 {width:213px; height:41px; background-position: -213px -164px}
+.regular_31 {width:213px; height:41px; background-position: -426px -164px}
+.regular_32 {width:213px; height:41px; background-position: -639px -164px}
+.regular_33 {width:213px; height:41px; background-position: -852px -164px}
+.regular_34 {width:213px; height:41px; background-position: -1065px -164px}
+.regular_35 {width:213px; height:41px; background-position: -1278px -164px}
+.regular_36 {width:213px; height:41px; background-position: -0px -205px}
+.regular_37 {width:213px; height:41px; background-position: -213px -205px}
+.regular_38 {width:213px; height:41px; background-position: -426px -205px}
+.regular_39 {width:213px; height:41px; background-position: -639px -205px}
+.regular_40 {width:213px; height:41px; background-position: -852px -205px}
+.regular_41 {width:213px; height:41px; background-position: -1065px -205px}
+.regular_42 {width:213px; height:41px; background-position: -1278px -205px}
+.regular_43 {width:213px; height:41px; background-position: -0px -246px}
+.regular_44 {width:213px; height:41px; background-position: -213px -246px}
+.regular_45 {width:213px; height:41px; background-position: -426px -246px}
+.regular_46 {width:213px; height:41px; background-position: -639px -246px}
+.regular_47 {width:213px; height:41px; background-position: -852px -246px}
+.regular_48 {width:213px; height:41px; background-position: -1065px -246px}
+.regular_49 {width:213px; height:41px; background-position: -1278px -246px}
+.regular_50 {width:213px; height:41px; background-position: -0px -287px}
+.regular_51 {width:213px; height:41px; background-position: -213px -287px}
+.regular_52 {width:213px; height:41px; background-position: -426px -287px}
+.regular_53 {width:213px; height:41px; background-position: -639px -287px}
+.regular_54 {width:213px; height:41px; background-position: -852px -287px}
+.regular_55 {width:213px; height:41px; background-position: -1065px -287px}
+.regular_56 {width:213px; height:41px; background-position: -1278px -287px}
+.regular_57 {width:213px; height:41px; background-position: -0px -328px}
+.regular_58 {width:213px; height:41px; background-position: -213px -328px}
+.regular_59 {width:213px; height:41px; background-position: -426px -328px}
+.regular_60 {width:213px; height:41px; background-position: -639px -328px}
+.regular_61 {width:213px; height:41px; background-position: -852px -328px}
+.regular_62 {width:213px; height:41px; background-position: -1065px -328px}
+.regular_63 {width:213px; height:41px; background-position: -1278px -328px}
+.regular_64 {width:213px; height:41px; background-position: -0px -369px}
+.regular_65 {width:213px; height:41px; background-position: -213px -369px}
+.regular_66 {width:213px; height:41px; background-position: -426px -369px}
+.regular_67 {width:213px; height:41px; background-position: -639px -369px}
+.regular_68 {width:213px; height:41px; background-position: -852px -369px}
+.regular_69 {width:213px; height:41px; background-position: -1065px -369px}
+.regular_70 {width:213px; height:41px; background-position: -1278px -369px}
+.regular_71 {width:213px; height:41px; background-position: -0px -410px}
+.regular_72 {width:213px; height:41px; background-position: -213px -410px}
+.regular_73 {width:213px; height:41px; background-position: -426px -410px}
+.regular_74 {width:213px; height:41px; background-position: -639px -410px}
+.regular_75 {width:213px; height:41px; background-position: -852px -410px}
+.regular_76 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_77 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_78 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_79 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_80 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_81 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_82 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_83 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_84 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_85 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_86 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_87 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_88 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_89 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_90 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_91 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_92 {width:213px; height:41px; background-position: -1065px -410px}
+.regular_93 {width:213px; height:41px; background-position: -1065px -410px}
+
+
+/*--------------------------------------------------------------
+6.0 Miscellaneous
+--------------------------------------------------------------*/
+.wrapper {
+    width: 300px;
+    height: 250px;
+    background-color: #000;
+    position: relative;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+#overlay {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: #000;
+    opacity: 0;
+}
+
+#regular {
+    position: absolute;
+    top: 70px;
+    left:65px;
+    width: 213px;
+    height: 41px;
+    opacity: 0;
+}
+#arrow {
+    position: absolute;
+    top: 144px;
+    left: 125px;
+    background: url("arrow.png");
+    width: 9px;
+    height: 11px;
+    opacity: 0;
+}
+#star {
+    position: absolute;
+    background: url("star.png");
+    width: 82px;
+    height: 83px;
+    top: 11px;
+    left: 9px;
+    opacity: 0;
+}
