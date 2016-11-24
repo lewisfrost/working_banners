@@ -141,7 +141,7 @@ Banner.prototype.setup = function () {
   //SCENE 1 LONDON 
   this.scene1_bkg.set({ zIndex: 12 });
   this.scene1_clouds.set({ left: 200, zIndex: 13 });
-  this.scene1_bus.set({ top: 320, left: 400, zIndex: 13 });
+  this.scene1_bus.set({ top: 320, left: 100, zIndex: 13 });
   this.copy1.set({ autoAlpha: 0, top: 15, left: 70, zIndex: 13 });
 
   //SCENE 2 OCEAN
@@ -193,13 +193,13 @@ Banner.prototype.animate = function () {
   this.timeline = new TimelineMax({ repeat: 2 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 700, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: 700, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
 
   //SCENE 1 LONDON 
-  TweenMax.to(this.scene1_clouds, 8, { left: -50, delay: 1 }), TweenMax.to(this.scene1_bus, 4, { left: -150, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 4 }),
+  TweenMax.to(this.scene1_clouds, 8, { left: -50, delay: 1 }), TweenMax.to(this.scene1_bus, 6, { left: -150, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bus, 1, { autoAlpha: 0, delay: 4 }),
 
   //SCENE 2 OCEAN
-  TweenMax.to(this.scene2_clouds, 8, { left: -50, delay: 4.5 }), TweenMax.to(this.scene2_plane, 4, { x: 500, y: -100, top: 0, delay: 5 }), TweenMax.to(this.scene2_boat, 7, { x: 50, delay: 4.5 }), TweenMax.to(this.scene2_fish, 5, { x: 50, delay: 4.5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_boat, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_fish, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_clouds, 1, { autoAlpha: 0, delay: 7 }),
+  TweenMax.to(this.scene2_clouds, 8, { left: -50, delay: 4.5 }), TweenMax.to(this.scene2_plane, 7, { x: 500, y: -100, top: 0, delay: 5 }), TweenMax.to(this.scene2_boat, 7, { x: 50, delay: 4.5 }), TweenMax.to(this.scene2_fish, 5, { x: 50, delay: 4.5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_boat, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_fish, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_clouds, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_plane, 1, { autoAlpha: 0, delay: 7 }),
 
   //SCENE 3 PARIS
-  TweenMax.to(this.scene3_clouds, 8, { left: -50, delay: 7 }), TweenMax.to(this.scene3_balloon, 9, { y: -100, delay: 7 }), TweenMax.to(this.scene3_bike, 7, { x: -150, delay: 7 }), TweenMax.to(this.scene3_bkg, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene3_balloon, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.copy3, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene3_clouds, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.train, 0.5, { autoAlpha: 0, delay: 10 }),
+  TweenMax.to(this.scene3_clouds, 10, { left: -50, delay: 7 }), TweenMax.to(this.scene3_balloon, 9, { y: -100, delay: 7 }), TweenMax.to(this.scene3_bike, 7, { x: -150, delay: 7 }), TweenMax.to(this.scene3_bkg, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene3_balloon, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.copy3, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene3_clouds, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.train, 0.5, { autoAlpha: 0, delay: 10 }),
 
   //SCENE 4 LONDON TO PARIS
   TweenMax.to(this.scene4_line1, 1, { y: -35, delay: 10.5 }), TweenMax.to(this.scene4_line2, 1, { y: 35, delay: 10.5 }), TweenMax.to(this.copy4, 1, { autoAlpha: 1, scale: 1, delay: 11.5 }), TweenMax.to(this.scene4_line1, 1, { autoAlpha: 0, delay: 14 }), TweenMax.to(this.scene4_line2, 1, { autoAlpha: 0, delay: 14 }), TweenMax.to(this.copy4, 1, { autoAlpha: 0, delay: 14 }),
