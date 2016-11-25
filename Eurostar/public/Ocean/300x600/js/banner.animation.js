@@ -190,7 +190,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 2 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 700, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: 700, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 700, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: 700, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
 
   //SCENE 1 LONDON 
   TweenMax.to(this.scene1_clouds, 8, { left: -50, delay: 1 }), TweenMax.to(this.scene1_bus, 6, { left: -150, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bus, 1, { autoAlpha: 0, delay: 4 }),
