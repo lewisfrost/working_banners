@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_clothes.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
+  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -75,8 +75,16 @@ Banner.prototype.createElements = function () {
     backgroundImage: 'images/scene2_man.png',
     parent: this.banner
   });
-  this.scene2_clothes = this.smartObject({
-    backgroundImage: 'images/scene2_clothes.png',
+  this.scene2_clothes1 = this.smartObject({
+    backgroundImage: 'images/scene2_clothes1.png',
+    parent: this.banner
+  });
+  this.scene2_clothes2 = this.smartObject({
+    backgroundImage: 'images/scene2_clothes2.png',
+    parent: this.banner
+  });
+  this.scene2_clothes3 = this.smartObject({
+    backgroundImage: 'images/scene2_clothes3.png',
     parent: this.banner
   });
   this.scene2_boat = this.smartObject({
@@ -143,7 +151,9 @@ Banner.prototype.setup = function () {
   //SCENE 2 PARIS
   this.scene2_bkg.set({ zIndex: 10 });
   this.scene2_man.set({ top: 310, left: 90, zIndex: 11 });
-  this.scene2_clothes.set({ autoAlpha: 0, top: 355, left: 90, zIndex: 12 });
+  this.scene2_clothes1.set({ autoAlpha: 0, top: 355, left: 90, zIndex: 12 });
+  this.scene2_clothes2.set({ autoAlpha: 0, top: 355, left: 90, zIndex: 12 });
+  this.scene2_clothes3.set({ autoAlpha: 0, top: 355, left: 90, zIndex: 12 });
 
   //SCENE 4 LONDON TO PARIS
 
@@ -181,10 +191,10 @@ Banner.prototype.animate = function () {
   TweenMax.to(this.scene1_bkg, 2, { scale: 1, y: 50, x: -40, delay: 1.5 }), TweenMax.to(this.scene1_clouds, 2, { scale: 1, y: 100, x: -30, delay: 1.5 }), TweenMax.to(this.scene1_hut, 2, { scale: 1, y: 30, x: -30, delay: 1.5 }), TweenMax.to(this.scene1_man, 2, { scale: 1, y: 25, x: -30, delay: 1.5 }),
 
   //SCENE 2 ZOOMED OUT LONDON
-  TweenMax.to(this.train, 7, { left: 330, delay: 3 }), TweenMax.to(this.scene1_clouds, 11, { x: -200, delay: 3 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 3 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 8.3 }),
+  TweenMax.to(this.train, 7, { left: 330, delay: 3 }), TweenMax.to(this.scene1_clouds, 11, { x: -200, delay: 3 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 3 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 7 }),
 
   //SCENE 3 PARIS
-  TweenMax.to(this.scene1_hut, 4, { y: -20, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 8.3 }), TweenMax.to(this.scene2_clothes, 0.1, { autoAlpha: 1, delay: 8.5 }), TweenMax.to(this.scene2_clothes, 4, { y: -10, x: 250, delay: 8.7 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy1, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy2, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.scene2_clothes, 0.5, { autoAlpha: 0, delay: 12 }),
+  TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 6 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes1, 2, { y: -100, x: 250, rotation: 90, transformOrigin: "left 50%", delay: 6.5 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes2, 2, { y: -100, x: 250, rotation: 140, transformOrigin: "left 50%", delay: 7 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes3, 2, { y: -100, x: 250, rotation: 180, transformOrigin: "left 50%", delay: 7.5 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy1, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy2, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.scene2_clothes, 0.5, { autoAlpha: 0, delay: 12 }),
 
   //SCENE 4 LONDON TO PARIS
   TweenMax.to(this.scene4_line1, 1, { y: -35, delay: 12.5 }), TweenMax.to(this.scene4_line2, 1, { y: 35, delay: 12.5 }), TweenMax.to(this.copy4, 1, { autoAlpha: 1, scale: 1, delay: 13.5 }), TweenMax.to(this.scene4_line1, 1, { autoAlpha: 0, delay: 16 }), TweenMax.to(this.scene4_line2, 1, { autoAlpha: 0, delay: 16 }), TweenMax.to(this.copy4, 1, { autoAlpha: 0, delay: 16 }),
