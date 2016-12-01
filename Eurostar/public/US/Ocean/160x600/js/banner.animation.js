@@ -13,7 +13,7 @@ Banner.prototype.start = function () {
   // Image array for preloading
   this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_bus.png', 'images/copy1.png', 'images/scene2_clouds.png', 'images/scene2_bkg.png',
   //'images/scene2_plane.png',
-  'images/scene2_boat.png', 'images/scene2_fish.png', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_clouds.png', 'images/scene3_balloon.png', 'images/scene3_bike.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
+  'images/scene2_boat.png', 'images/scene2_fish.png', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_clouds.png', 'images/scene3_balloon.png', 'images/scene3_bike.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png', 'images/eurostar.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -31,6 +31,10 @@ Banner.prototype.start = function () {
 Banner.prototype.createElements = function () {
   this.logo = this.smartObject({
     backgroundImage: 'images/logo.png',
+    parent: this.banner
+  });
+  this.eurostar = this.smartObject({
+    backgroundImage: 'images/eurostar.png',
     parent: this.banner
   });
   this.blue_bkg = this.smartObject({
@@ -139,12 +143,13 @@ Banner.prototype.setup = function () {
   this.logo.set({ zIndex: 15 });
   this.blue_bkg.set({ left: -370, top: 0, zIndex: 14 });
   this.train.set({ top: 412, left: -14000, zIndex: 14 });
+  this.eurostar.set({ top: 555, left: 25, zIndex: 14 });
 
   //SCENE 1 LONDON 
   this.scene1_bkg.set({ zIndex: 12 });
   this.scene1_clouds.set({ left: 200, top: -40, zIndex: 13 });
   this.scene1_bus.set({ top: 320, left: 100, zIndex: 13 });
-  this.copy1.set({ autoAlpha: 0, top: 15, left: 2, zIndex: 13 });
+  this.copy1.set({ autoAlpha: 0, top: 15, left: 15, zIndex: 13 });
 
   //SCENE 2 OCEAN
   this.scene2_clouds.set({ left: 0, zIndex: 11 });
@@ -160,19 +165,19 @@ Banner.prototype.setup = function () {
   this.scene3_balloon.set({ top: 150, left: 20, zIndex: 9 });
   this.scene3_bike.set({ top: 330, left: 70, zIndex: 9 });
   this.scene3_clouds.set({ top: 100, left: 200, zIndex: 9 });
-  this.copy3.set({ top: 30, left: 20, zIndex: 9 });
+  this.copy3.set({ top: 30, left: 10, zIndex: 9 });
 
   //SCENE 4 LONDON TO PARIS
 
   this.scene4_bkg.set({ zIndex: 6 });
-  this.scene4_line1.set({ top: 220, zIndex: 7 });
-  this.scene4_line2.set({ top: 250, zIndex: 7 });
-  this.copy4.set({ autoAlpha: 0, scale: 0.4, top: 220, left: 70, zIndex: 7 });
+  this.scene4_line1.set({ top: 230, zIndex: 7 });
+  this.scene4_line2.set({ top: 245, zIndex: 7 });
+  this.copy4.set({ autoAlpha: 0, scale: 0.4, top: 220, left: 15, zIndex: 7 });
 
   //SCENE 5 CTA & PRICE
-  this.scene5_price.set({ autoAlpha: 0, top: 200, left: 65, zIndex: 7 });
-  this.copy5.set({ autoAlpha: 0, top: 150, left: 40, zIndex: 7 });
-  this.cta.set({ autoAlpha: 0, scale: 0.4, top: 340, left: 80, zIndex: 7 });
+  this.scene5_price.set({ autoAlpha: 0, top: 200, left: 15, zIndex: 7 });
+  this.copy5.set({ autoAlpha: 0, top: 150, left: 15, zIndex: 7 });
+  this.cta.set({ autoAlpha: 0, scale: 0.4, top: 340, left: 13, zIndex: 7 });
 };
 
 /**
