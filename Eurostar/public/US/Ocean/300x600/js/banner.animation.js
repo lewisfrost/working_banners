@@ -151,8 +151,8 @@ Banner.prototype.setup = function () {
   this.scene2_bkg.set({ zIndex: 10 });
   //this.scene2_plane.set({ left:-200, zIndex:11})
   this.scene2_boat.set({ left: 120, top: 245, zIndex: 11 });
-  this.scene2_fish.set({ left: 10, top: 300, zIndex: 11 });
-  this.copy2.set({ autoAlpha: 0, top: 300, left: 70, zIndex: 11 });
+  this.scene2_fish.set({ left: 30, top: 280, zIndex: 11 });
+  this.copy2.set({ autoAlpha: 0, top: 320, left: 70, zIndex: 11 });
 
   //SCENE 3 PARIS
 
@@ -200,7 +200,7 @@ Banner.prototype.animate = function () {
   //SCENE 2 OCEAN
   TweenMax.to(this.scene2_clouds, 8, { left: -50, delay: 4.5 }),
   //TweenMax.to(this.scene2_plane, 7, { x:500, y:-100, top:0, delay: 5}),
-  TweenMax.to(this.scene2_boat, 7, { x: 50, delay: 4.5 }), TweenMax.to(this.scene2_fish, 5, { x: 50, delay: 4.5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_boat, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_fish, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_clouds, 1, { autoAlpha: 0, delay: 7 }),
+  TweenMax.to(this.scene2_boat, 4, { x: 50, delay: 4.5 }), TweenMax.to(this.scene2_fish, 8, { x: 20, delay: 4.5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_boat, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_fish, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene2_clouds, 1, { autoAlpha: 0, delay: 7 }),
   //TweenMax.to(this.scene2_plane, 1, {autoAlpha: 0, delay: 7}),
 
   //SCENE 3 PARIS
