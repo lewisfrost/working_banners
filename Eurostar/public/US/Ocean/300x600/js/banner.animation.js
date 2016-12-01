@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_bus.png', 'images/copy1.png', 'images/scene2_clouds.png', 'images/scene2_bkg.png',
+  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_bus.png', 'images/copy1.png', 'images/scene2_clouds.png', 'images/scene2_bkg.png',
   //'images/scene2_plane.png',
   'images/scene2_boat.png', 'images/scene2_fish.png', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_clouds.png', 'images/scene3_balloon.png', 'images/scene3_bike.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
 
@@ -39,6 +39,10 @@ Banner.prototype.createElements = function () {
   });
   this.train = this.smartObject({
     backgroundImage: 'images/train.png',
+    parent: this.banner
+  });
+  this.eurostar = this.smartObject({
+    backgroundImage: 'images/eurostar.png',
     parent: this.banner
   });
   this.scene1_bkg = this.smartObject({
@@ -136,9 +140,10 @@ Banner.prototype.createElements = function () {
  */
 Banner.prototype.setup = function () {
   this.logo.center();
-  this.logo.set({ zIndex: 15 });
-  this.blue_bkg.set({ left: -298, top: 0, zIndex: 14 });
+  this.logo.set({ zIndex: 16 });
+  this.blue_bkg.set({ left: -298, top: 0, zIndex: 15 });
   this.train.set({ top: 412, left: -14000, zIndex: 14 });
+  this.eurostar.set({ top: 550, left: 75, zIndex: 14 });
 
   //SCENE 1 LONDON 
   this.scene1_bkg.set({ zIndex: 12 });
