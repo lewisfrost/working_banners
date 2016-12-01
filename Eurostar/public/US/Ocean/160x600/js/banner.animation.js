@@ -156,8 +156,8 @@ Banner.prototype.setup = function () {
   this.scene2_bkg.set({ zIndex: 10 });
   //this.scene2_plane.set({ left:-200, zIndex:11})
   this.scene2_boat.set({ left: 10, top: 245, zIndex: 11 });
-  this.scene2_fish.set({ left: 10, top: 300, zIndex: 11 });
-  this.copy2.set({ autoAlpha: 0, top: 310, left: 15, zIndex: 11 });
+  this.scene2_fish.set({ left: 10, top: 280, zIndex: 11 });
+  this.copy2.set({ autoAlpha: 0, top: 320, left: 15, zIndex: 11 });
 
   //SCENE 3 PARIS
 
