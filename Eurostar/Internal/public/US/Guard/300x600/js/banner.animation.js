@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
+  this.images = ['images/logo.png', 'images/tcs.png', 'images/blue_bkg.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -31,8 +31,16 @@ Banner.prototype.createElements = function () {
     backgroundImage: 'images/logo.png',
     parent: this.banner
   });
+  this.tcs = this.smartObject({
+    backgroundImage: 'images/tcs.png',
+    parent: this.banner
+  });
   this.blue_bkg = this.smartObject({
     backgroundImage: 'images/blue_bkg.png',
+    parent: this.banner
+  });
+  this.white_bkg = this.smartObject({
+    backgroundImage: 'images/white_bkg.png',
     parent: this.banner
   });
   this.train = this.smartObject({
@@ -135,7 +143,8 @@ Banner.prototype.createElements = function () {
 Banner.prototype.setup = function () {
   this.logo.center();
   this.logo.set({ zIndex: 15 });
-  this.blue_bkg.set({ left: -298, top: 0, zIndex: 14 });
+  this.blue_bkg.set({ left: 0, top: 0, zIndex: 14 });
+  this.white_bkg.set({ left: 150, top: 0, zIndex: 14 });
   this.train.set({ top: 335, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 540, left: 75, zIndex: 13 });
 
@@ -166,6 +175,7 @@ Banner.prototype.setup = function () {
   this.scene5_price.set({ autoAlpha: 0, top: 200, left: 65, zIndex: 7 });
   this.copy5.set({ autoAlpha: 0, top: 150, left: 40, zIndex: 7 });
   this.cta.set({ autoAlpha: 0, scale: 0.4, top: 340, left: 80, zIndex: 7 });
+  this.tcs.set({ autoAlpha: 0, top: 527, left: 288, zIndex: 7 });
 };
 
 /**
@@ -185,7 +195,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 700, delay: 0.8 }), TweenMax.to(this.blue_bkg, 2, { left: 700, delay: 0.8 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 2, { left: 500, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: -150, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }),
 
   //SCENE 1 ZOOMED IN LONDON
   TweenMax.to(this.scene1_bkg, 1.5, { scale: 1, y: 50, x: -40, delay: 1 }), TweenMax.to(this.scene1_clouds, 1.5, { scale: 1, y: 100, x: -30, delay: 1 }), TweenMax.to(this.scene1_hut, 1.5, { scale: 1, y: 30, x: -30, delay: 1 }), TweenMax.to(this.scene1_man, 1.5, { scale: 1, y: 25, x: -30, delay: 1 }),
@@ -197,9 +207,9 @@ Banner.prototype.animate = function () {
   TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 5 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes1, 2, { y: -100, x: 250, rotation: 90, transformOrigin: "left 50%", delay: 5.5 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes2, 2, { y: -100, x: 250, rotation: 140, transformOrigin: "left 50%", delay: 5.8 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes3, 2, { y: -100, x: 250, rotation: 180, transformOrigin: "left 50%", delay: 6.1 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 8 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 8 }), TweenMax.to(this.copy1, 0.5, { autoAlpha: 0, delay: 8 }), TweenMax.to(this.copy2, 0.5, { autoAlpha: 0, delay: 8 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 8 }),
 
   //SCENE 4 LONDON TO PARIS
-  TweenMax.to(this.scene4_line1, 1, { y: -35, delay: 8.5 }), TweenMax.to(this.scene4_line2, 1, { y: 35, delay: 8.5 }), TweenMax.to(this.copy4, 1, { autoAlpha: 1, scale: 1, delay: 9 }), TweenMax.to(this.scene4_line1, 1, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.scene4_line2, 1, { autoAlpha: 0, delay: 12 }), TweenMax.to(this.copy4, 1, { autoAlpha: 0, delay: 12 }),
+  TweenMax.to(this.scene4_line1, 1, { y: -35, delay: 8.5 }), TweenMax.to(this.scene4_line2, 1, { y: 35, delay: 8.5 }), TweenMax.to(this.copy4, 1, { autoAlpha: 1, scale: 1, delay: 9 }), TweenMax.to(this.scene4_line1, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.scene4_line2, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.copy4, 1, { autoAlpha: 0, delay: 13 }),
 
   //SCENE 5 CTA & PRICE
-  TweenMax.to(this.scene5_price, 1, { autoAlpha: 1, delay: 12.5 }), TweenMax.to(this.copy5, 1, { autoAlpha: 1, delay: 12.5 }), TweenMax.to(this.cta, 1, { autoAlpha: 1, scale: 1, delay: 12.5 }), TweenMax.to(this.cta, 0.5, { scale: 1.05, repeat: 5, yoyo: true, delay: 13 })]);
+  TweenMax.to(this.scene5_price, 1, { autoAlpha: 1, delay: 13.5 }), TweenMax.to(this.copy5, 1, { autoAlpha: 1, delay: 13.5 }), TweenMax.to(this.cta, 1, { autoAlpha: 1, scale: 1, delay: 13.5 }), TweenMax.to(this.tcs, 1, { autoAlpha: 1, delay: 13.5 }), TweenMax.to(this.cta, 0.5, { scale: 1.05, repeat: 5, yoyo: true, delay: 14 })]);
   console.log(this.timeline.totalDuration());
 };
