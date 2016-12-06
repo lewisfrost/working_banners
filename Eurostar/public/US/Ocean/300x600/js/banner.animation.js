@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/tcs.png', 'images/blue_bkg.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_bus.png', 'images/copy1.png', 'images/scene2_clouds.png', 'images/scene2_bkg.png',
+  this.images = ['images/logo.png', 'images/tcs.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_bus.png', 'images/copy1.png', 'images/scene2_clouds.png', 'images/scene2_bkg.png',
   //'images/scene2_plane.png',
   'images/scene2_boat.png', 'images/scene2_fish.png', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_clouds.png', 'images/scene3_balloon.png', 'images/scene3_bike.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
 
@@ -35,10 +35,6 @@ Banner.prototype.createElements = function () {
   });
   this.tcs = this.smartObject({
     backgroundImage: 'images/tcs.png',
-    parent: this.banner
-  });
-  this.blue_bkg = this.smartObject({
-    backgroundImage: 'images/blue_bkg.png',
     parent: this.banner
   });
   this.white_bkg = this.smartObject({
@@ -149,7 +145,6 @@ Banner.prototype.createElements = function () {
 Banner.prototype.setup = function () {
   this.logo.center();
   this.logo.set({ zIndex: 16 });
-  this.blue_bkg.set({ left: 0, top: 0, zIndex: 15 });
   this.white_bkg.set({ left: 150, top: 0, zIndex: 15 });
   this.train.set({ top: 412, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 550, left: 75, zIndex: 14 });
@@ -207,7 +202,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 500, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: -150, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 500, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
 
   //SCENE 1 LONDON 
   TweenMax.to(this.scene1_clouds, 8, { left: -50, delay: 1 }), TweenMax.to(this.scene1_bus, 6, { left: -150, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 1 }), TweenMax.to(this.copy1, 0.5, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 3 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 3 }), TweenMax.to(this.scene1_bus, 1, { autoAlpha: 0, delay: 3 }),

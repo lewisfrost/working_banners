@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_horse.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
+  this.images = ['images/logo.png', 'images/blue_bkg.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_horse.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -33,6 +33,10 @@ Banner.prototype.createElements = function () {
   });
   this.blue_bkg = this.smartObject({
     backgroundImage: 'images/blue_bkg.png',
+    parent: this.banner
+  });
+  this.white_bkg = this.smartObject({
+    backgroundImage: 'images/white_bkg.png',
     parent: this.banner
   });
   this.train = this.smartObject({
@@ -135,7 +139,8 @@ Banner.prototype.createElements = function () {
 Banner.prototype.setup = function () {
   this.logo.center();
   this.logo.set({ zIndex: 15 });
-  this.blue_bkg.set({ left: -298, top: 0, zIndex: 14 });
+  this.blue_bkg.set({ left: 0, top: 0, zIndex: 14 });
+  this.white_bkg.set({ left: 150, top: 0, zIndex: 14 });
   this.train.set({ top: 70, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 210, left: 95, zIndex: 13 });
 
@@ -186,7 +191,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 700, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: 700, delay: 1 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 2, { left: 500, delay: 1 }), TweenMax.to(this.blue_bkg, 2, { left: -150, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }),
 
   //SCENE 2 ZOOMED OUT LONDON
   TweenMax.to(this.train, 7, { left: 330, delay: 2 }), TweenMax.to(this.scene1_clouds, 11, { x: -200, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 5.5 }),
