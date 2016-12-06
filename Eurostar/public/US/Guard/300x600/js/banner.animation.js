@@ -137,8 +137,7 @@ Banner.prototype.createElements = function () {
  * Setup initial element states.
  */
 Banner.prototype.setup = function () {
-  this.logo.center();
-  this.logo.set({ zIndex: 15 });
+  this.logo.set({ left: 22, top: 248, zIndex: 15 });
   this.white_bkg.set({ left: 150, top: 0, zIndex: 14 });
   this.train.set({ top: 335, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 540, left: 75, zIndex: 13 });
@@ -190,7 +189,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 2, { left: 500, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1.5, { left: 300, delay: 1 }), TweenMax.to(this.white_bkg, 2.6, { left: 600, delay: 1 }),
 
   //SCENE 1 ZOOMED IN LONDON
   TweenMax.to(this.scene1_bkg, 1.5, { scale: 1, y: 50, x: -40, delay: 1 }), TweenMax.to(this.scene1_clouds, 1.5, { scale: 1, y: 100, x: -30, delay: 1 }), TweenMax.to(this.scene1_hut, 1.5, { scale: 1, y: 30, x: -30, delay: 1 }), TweenMax.to(this.scene1_man, 1.5, { scale: 1, y: 25, x: -30, delay: 1 }),

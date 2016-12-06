@@ -143,8 +143,7 @@ Banner.prototype.createElements = function () {
  * Setup initial element states.
  */
 Banner.prototype.setup = function () {
-  this.logo.center();
-  this.logo.set({ zIndex: 16 });
+  this.logo.set({ left: 22, top: 248, zIndex: 15 });
   this.white_bkg.set({ left: 150, top: 0, zIndex: 15 });
   this.train.set({ top: 412, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 550, left: 75, zIndex: 14 });
@@ -202,7 +201,7 @@ Banner.prototype.animate = function () {
     _this.timeline.gotoAndPlay('start');
   }
 
-  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1, { left: 500, delay: 1 }), TweenMax.to(this.white_bkg, 2, { left: 300, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
+  this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1.5, { left: 300, delay: 1 }), TweenMax.to(this.white_bkg, 2.6, { left: 600, delay: 1 }), TweenMax.to(this.train, 9, { left: 10, delay: 1.5, ease: Power2.easeOut, y: 0 }),
 
   //SCENE 1 LONDON 
   TweenMax.to(this.scene1_clouds, 8, { left: -50, delay: 1 }), TweenMax.to(this.scene1_bus, 6, { left: -150, delay: 1 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 1 }), TweenMax.to(this.copy1, 0.5, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 3 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 3 }), TweenMax.to(this.scene1_bus, 1, { autoAlpha: 0, delay: 3 }),
