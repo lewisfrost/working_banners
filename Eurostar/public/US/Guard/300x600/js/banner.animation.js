@@ -39,6 +39,10 @@ Banner.prototype.createElements = function () {
     backgroundImage: 'images/white_bkg.png',
     parent: this.banner
   });
+  this.blue_bkg = this.smartObject({
+    backgroundImage: 'images/blue_bkg.png',
+    parent: this.banner
+  });
   this.train = this.smartObject({
     backgroundImage: 'images/train.png',
     parent: this.banner
