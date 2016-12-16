@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_horse.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png', 'images/tcs.png'];
+  this.images = ['images/logo.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/scene1_bkg.png', 'images/scene1_clouds.png', 'images/scene1_hut.png', 'images/scene1_man.png', 'images/copy1.png', 'images/scene2_man.png', 'images/scene2_bkg.png', 'images/scene2_clothes1.png', 'images/scene2_clothes2.png', 'images/scene2_clothes3.png', 'images/copy2.png', 'images/copy3.png', 'images/scene4_bkg.png', 'images/scene4_line1.png', 'images/scene4_line2.png', 'images/copy4.png', 'images/scene5_price.png', 'images/cta.png', 'images/copy5.png', 'images/tcs.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -89,10 +89,6 @@ Banner.prototype.createElements = function () {
   });
   this.scene2_boat = this.smartObject({
     backgroundImage: 'images/scene2_boat.png',
-    parent: this.banner
-  });
-  this.scene2_horse = this.smartObject({
-    backgroundImage: 'images/scene2_horse.png',
     parent: this.banner
   });
   this.copy2 = this.smartObject({
@@ -193,10 +189,10 @@ Banner.prototype.animate = function () {
   this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.logo, 1.5, { left: 300, delay: 1 }), TweenMax.to(this.white_bkg, 2.6, { left: 600, delay: 1 }),
 
   //SCENE 2 ZOOMED OUT LONDON
-  TweenMax.to(this.train, 7, { left: 330, delay: 2 }), TweenMax.to(this.scene1_clouds, 11, { x: -200, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 5.5 }),
+  TweenMax.to(this.train, 4.5, { left: 330, delay: 2 }), TweenMax.to(this.scene1_clouds, 11, { x: -200, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 5 }), TweenMax.to(this.scene1_clouds, 1, { autoAlpha: 0, delay: 5 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 5.5 }),
 
   //SCENE 3 PARIS
-  TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 7 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes1, 2, { y: -200, x: 280, rotation: 90, transformOrigin: "left 50%", delay: 6.5 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes2, 2, { y: -200, x: 280, rotation: 140, transformOrigin: "left 50%", delay: 7 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes3, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 7.5 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 9.5 }),
+  TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 5 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes1, 2, { y: -200, x: 280, rotation: 90, transformOrigin: "left 50%", delay: 5.5 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes2, 2, { y: -200, x: 280, rotation: 140, transformOrigin: "left 50%", delay: 5.8 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes3, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 6.1 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 9.5 }),
   //TweenMax.to(this.scene2_horse, 0.5, {autoAlpha:0, delay: 12}),
   TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 7.5 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 9.5 }),
 

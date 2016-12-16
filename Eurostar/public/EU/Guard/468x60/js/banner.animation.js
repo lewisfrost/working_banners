@@ -154,9 +154,9 @@ Banner.prototype.setup = function () {
   this.scene2_bkg.set({ zIndex: 10 });
   this.scene2_man.set({ top: 10, left: 260, zIndex: 11 });
   //this.scene2_horse.set({top:40, left:250, zIndex:11})
-  this.scene2_clothes1.set({ autoAlpha: 0, top: 15, left: 255, zIndex: 11 });
-  this.scene2_clothes2.set({ autoAlpha: 0, top: 10, left: 250, zIndex: 11 });
-  this.scene2_clothes3.set({ autoAlpha: 0, top: 20, left: 260, zIndex: 11 });
+  this.scene2_clothes1.set({ autoAlpha: 0, top: 30, left: 255, zIndex: 11 });
+  this.scene2_clothes2.set({ autoAlpha: 0, top: 30, left: 250, zIndex: 11 });
+  this.scene2_clothes3.set({ autoAlpha: 0, top: 30, left: 260, zIndex: 11 });
 
   //SCENE 4 LONDON TO PARIS
 
@@ -194,12 +194,12 @@ Banner.prototype.animate = function () {
   this.timeline = new TimelineMax({ repeat: 1 }).addLabel('start', 0).add([TweenMax.to(this.white_bkg, 2.6, { left: 600, delay: 1 }),
 
   //SCENE 2 ZOOMED OUT LONDON
-  TweenMax.to(this.train, 7, { left: 650, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 4 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 7 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 7 }),
+  TweenMax.to(this.train, 6, { left: 900, delay: 1.5 }), TweenMax.to(this.copy1, 1, { autoAlpha: 1, delay: 2 }), TweenMax.to(this.copy1, 1, { autoAlpha: 0, delay: 3.5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 4 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 5.5 }), TweenMax.to(this.scene1_bkg, 1, { autoAlpha: 0, delay: 5 }), TweenMax.to(this.scene1_man, 0.1, { autoAlpha: 0, delay: 5.5 }),
 
   //SCENE 3 PARIS
-  TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 7 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes1, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 7 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes3, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 7.2 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.scene2_clothes2, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 7.5 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 9.5 }),
+  TweenMax.to(this.scene1_hut, 2, { y: -50, x: 300, rotation: 45, transformOrigin: "left 50%", delay: 5 }), TweenMax.to(this.scene2_clothes1, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes1, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 5.5 }), TweenMax.to(this.scene2_clothes2, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes3, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 5.8 }), TweenMax.to(this.scene2_clothes3, 0.1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.scene2_clothes2, 2, { y: -200, x: 280, rotation: 180, transformOrigin: "left 50%", delay: 6.1 }), TweenMax.to(this.scene2_bkg, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.scene2_man, 0.5, { autoAlpha: 0, delay: 9.5 }),
   //TweenMax.to(this.scene2_horse, 0.5, {autoAlpha:0, delay: 12}),
-  TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 7.5 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.train, 0.5, { autoAlpha: 0, delay: 9.5 }),
+  TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 6 }), TweenMax.to(this.copy3, 0.5, { autoAlpha: 0, delay: 9.5 }), TweenMax.to(this.train, 0.5, { autoAlpha: 0, delay: 9.5 }),
 
   //SCENE 4 LONDON TO PARIS
   TweenMax.to(this.scene4_line1, 1, { y: -12, delay: 10 }), TweenMax.to(this.scene4_line2, 1, { y: 30, delay: 10 }), TweenMax.to(this.copy4, 1, { autoAlpha: 1, scale: 1, delay: 10.5 }), TweenMax.to(this.scene4_line1, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.scene4_line2, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.scene4_copy1, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.scene4_copy2, 1, { autoAlpha: 0, delay: 13 }), TweenMax.to(this.copy4, 1, { autoAlpha: 0, delay: 13 }),

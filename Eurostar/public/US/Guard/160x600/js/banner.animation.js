@@ -91,10 +91,6 @@ Banner.prototype.createElements = function () {
     backgroundImage: 'images/scene2_boat.png',
     parent: this.banner
   });
-  this.scene2_fish = this.smartObject({
-    backgroundImage: 'images/scene2_fish.png',
-    parent: this.banner
-  });
   this.copy2 = this.smartObject({
     backgroundImage: 'images/copy2.png',
     parent: this.banner
