@@ -141,8 +141,8 @@ Banner.prototype.createElements = function () {
  * Setup initial element states.
  */
 Banner.prototype.setup = function () {
-  this.logo.set({ left: 22, top: 99, zIndex: 15 });
-  this.white_bkg.set({ left: 150, top: 0, zIndex: 14 });
+  this.logo.set({ left: 22, top: 70, zIndex: 15 });
+  this.white_bkg.set({ left: 150, top: -65, zIndex: 14 });
   this.train.set({ top: 120, left: -14000, zIndex: 14 });
   this.eurostar.set({ top: 210, left: 95, zIndex: 13 });
 
