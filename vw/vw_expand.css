@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------- Expand Content ---------------------*/
+#ad_container .sprite2 { background: transparent url('sprite2.svg') 0 0 no-repeat; text-indent: 0;
+background-size: 656px 254px;	
+-o-background-size: 656px 254px;	
+-webkit-background-size: 656px 254px;
+-ms-background-size: 656px 254px;
+}
+.ie #ad_container .sprite2 { background: transparent url('sprite2.png') 0 0 no-repeat;
+background-size: 656px 254px;	
+-ms-background-size: 656px 254px;
+}
+#ad_container #vw_expand_container p { color: #000; font-size: 105%; }
+#ad_container #vw_expand_container #txt_exp_l3_container { top: 337px; left: 0px; width: 850px; height: auto; text-align: center; text-indent: 0; overflow: visible; }
+#ad_container #vw_expand_container #txt_exp_l3 { letter-spacing: -.25px; position: relative; }
+#ad_container #vw_expand_container ul { background: transparent; width: 478px; height: 54px; position: absolute; left: 185px; top: 364px; overflow: visible; }
+#ad_container #vw_expand_container ul li { background: transparent; width: 64px; height: 54px; list-style: none; cursor: pointer; position: absolute; top: 10px; visibility: hidden; opacity: 0; }
+#ad_container #vw_expand_container ul li .icon_exp_bg { background-position: -448px top; width: 64px; height: 54px; text-indent: 0; }
+#ad_container #vw_expand_container ul li .icon_exp { width: 64px; height: 54px; position: absolute; text-indent: 0; }
+#ad_container #vw_expand_container ul li:hover .icon_exp_bg { background-position: -448px -54px; }
+
+#ad_container #vw_expand_container ul #front_assist_exp { left: 0px; }
+#ad_container #vw_expand_container ul #front_assist_exp.selected .icon_exp  { background-position: 0px -108px; }
+
+#ad_container #vw_expand_container ul #blind_spot_exp { left: 69px; }
+#ad_container #vw_expand_container ul #blind_spot_exp .icon_exp  { background-position: -64px 0px; }
+#ad_container #vw_expand_container ul #blind_spot_exp.selected .icon_exp  { background-position: -64px -108px; }
+
+#ad_container #vw_expand_container ul #rear_traffic_exp { left: 138px; }
+#ad_container #vw_expand_container ul #rear_traffic_exp .icon_exp  { background-position: -128px 0px; }
+#ad_container #vw_expand_container ul #rear_traffic_exp.selected .icon_exp  { background-position: -128px -108px; }
+
+#ad_container #vw_expand_container ul #lane_assist_exp { left: 207px; }
+#ad_container #vw_expand_container ul #lane_assist_exp .icon_exp  { background-position: -192px 0px; }
+#ad_container #vw_expand_container ul #lane_assist_exp.selected .icon_exp  { background-position: -192px -108px; }
+
+#ad_container #vw_expand_container ul #park_assist_exp { left: 276px; }
+#ad_container #vw_expand_container ul #park_assist_exp .icon_exp  { background-position: -256px 0px; }
+#ad_container #vw_expand_container ul #park_assist_exp.selected .icon_exp  { background-position: -256px -108px; }
+
+#ad_container #vw_expand_container ul #cruise_control_exp { left: 345px; }
+#ad_container #vw_expand_container ul #cruise_control_exp .icon_exp  { background-position: -320px 0px; }
+#ad_container #vw_expand_container ul #cruise_control_exp.selected .icon_exp  { background-position: -320px -108px; }
+
+#ad_container #vw_expand_container ul #park_control_exp { left: 414px; }
+#ad_container #vw_expand_container ul #park_control_exp .icon_exp  { background-position: -384px 0px; }
+#ad_container #vw_expand_container ul #park_control_exp.selected .icon_exp  { background-position: -384px -108px; }
+#ad_container #vw_expand_container #icons_expand .icon_out { background: #999fa2; width: 64px; height: 54px; top: 0px; border-radius: 8px; -webkit-border-radius: 8px;
+background: -moz-linear-gradient(top,  #878c8f 75%, #b2b5b6 100%);
+background: -webkit-linear-gradient(top,  #878c8f 75%,#b2b5b6 100%);
+background: linear-gradient(to bottom,  #878c8f 75%,#b2b5b6 100%);
+}
+#ad_container #vw_expand_container #icons_expand .icon_out_shadow { background: #dde5e7; width: 64px; height: 54px; top: 0px; border-radius: 8px; -webkit-border-radius: 8px; }
+#ad_container #vw_expand_container #icons_expand li:hover .icon_out { background: #1d282c; }
+
+#ad_container #vw_expand_container #cta_more_container { background: transparent; width: 127px; height: 48px; position: absolute; top: 450px; left: 357px; }
+#ad_container #vw_expand_container #cta_more_container #cta_out,
+#ad_container #vw_expand_container #cta_more_container #cta_out_shadow,
+#ad_container #vw_expand_container #cta_more_container #cta_more { background: #3c5059; width: 127px; height: 33px; position: absolute; top: 0; left: 0; border-radius: 7px; -webkit-border-radius: 7px; cursor: pointer; }
+#ad_container #vw_expand_container #cta_more_container #cta_more #cta_more_txt { background-position: -253px bottom; width: 101px; height: 11px; top: 10px; left: 12px; text-indent: 0; }
+#ad_container #vw_expand_container #cta_more_container:hover #cta_out,
+#ad_container #vw_expand_container #cta_more_container:hover #cta_more { background: #e8eaeb; border: 2px solid #adb4b7; width: 123px; height: 29px; }
+#ad_container #vw_expand_container #cta_more_container:hover #cta_more #cta_more_txt { background-position: -253px -162px; top: 8px; left: 10px; }
+#ad_container #vw_expand_container #cta_more_container #cta_out { background: #192226; }
+#ad_container #vw_expand_container #cta_more_container #cta_out_shadow { background: #dde5e7; /* top: 15px; */ }
+#ad_container #vw_expand_container #cta_more_container:hover #cta_out { background: #cfd2d3;
+background: -moz-linear-gradient(top,  #b2b5b6 75%, #cfd2d3 100%);
+background: -webkit-linear-gradient(top,  #b2b5b6 75%,#cfd2d3 100%);
+background: linear-gradient(to bottom,  #b2b5b6 75%,#cfd2d3 100%);
+}
+
+#ad_container #popup_anim_container { background: #32434b url('expand_popup_bg.jpg') 0 0 repeat-x; width: 850px; height: 500px; position: absolute; top: 500px; visibility: hidden; opacity: 0; }
+#ad_container #popup_anim_container #popup_icon_container { background-position: -448px top; width: 64px; height: 54px; top: 18px; left: 393px; }
+#ad_container #popup_anim_container #popup_icon_container .sprite { width: 64px; height: 54px; }
+#ad_container #popup_anim_container #popup_icon_container .front_assist { background-position: left top; }
+#ad_container #popup_anim_container #popup_icon_container .blind_spot { background-position: -64px top; }
+#ad_container #popup_anim_container #popup_icon_container .rear_traffic { background-position: -128px top; }
+#ad_container #popup_anim_container #popup_icon_container .lane_assist { background-position: -192px top; }
+#ad_container #popup_anim_container #popup_icon_container .park_assist { background-position: -256px top; }
+#ad_container #popup_anim_container #popup_icon_container .cruise_control { background-position: -320px top; }
+#ad_container #popup_anim_container #popup_icon_container .park_control { background-position: -384px top; }
+#ad_container #popup_anim_container h1 { color: #fff; font-family: "Bold",Helvetica,Arial,"sans-serif"; font-size: 200%; text-indent: 0; line-height: 100%; margin: 86px 0 0; padding: 0 100px; text-align: center; }
+#ad_container #popup_anim_container h2 { color: #fff; font-size: 82%; text-indent: 0; line-height: 135%; margin: 14px 0 0; padding: 0 160px; text-align: center; }
+#ad_container #vw_expand_container #btn_exp_feature_info,
+#ad_container #popup_anim_container #btn_feature_info { color: #b2b2b2; top: 471px; right: 20px; }
+#ad_container #vw_expand_container #btn_exp_feature_info { color: #4c4c4c; right: 140px; }
+#ad_container #popup_anim_container #drama { color: #fff; bottom: 12px; left: 385px; }
+
+#ad_container #popup_anim_container #trees_blur_container,
+#ad_container #popup_anim_container .popup_anim { background: transparent; width: 850px; height: 500px; position: absolute; top: 0; left: 0; display: none; }
+#ad_container #popup_anim_container #road_blur { background: transparent url('road_blur.jpg') 0 0 repeat-x; width: 850px; height: 167px; display: none; }
+#ad_container #popup_anim_container #trees_blur_container .tree_blur_lg { background: transparent url('trees_blur.png') 0 0 no-repeat; width: 106px; height: 91px; left: 855px; }
+#ad_container #popup_anim_container #trees_blur_container .tree_blur_sm { background: transparent url('trees_blur.png') -106px 0 no-repeat; width: 70px; height: 91px; left: 855px; }
+#ad_container #popup_anim_container #trees_blur_container #tree_top_sm,
+#ad_container #popup_anim_container #trees_blur_container #tree_top_lg { top: 196px; transform-origin: 50% 0%; z-index: 100; }
+#ad_container #popup_anim_container #trees_blur_container #tree_btm_sm,
+#ad_container #popup_anim_container #trees_blur_container #tree_btm_lg { top: 398px; transform-origin: 50% 100%; z-index: 100; }
+#ad_container #popup_anim_container #road_unblur_container { background: transparent; width: 1700px; height: 500px; left: 850px; }
+#ad_container #popup_anim_container #road_unblur_container #road_unblur { background: transparent url('road_unblur.jpg') 0 0 repeat-x; width: 1940px; height: 167px; top: 272px; }
+#ad_container #popup_anim_container #road_unblur_container .tree_unblur_lg { background: transparent url('trees_blur.png') left bottom no-repeat; width: 106px; height: 91px; }
+#ad_container #popup_anim_container #road_unblur_container .tree_unblur_sm { background: transparent url('trees_blur.png') -106px bottom no-repeat; width: 70px; height: 91px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_top_1 { top: 196px; left: 50px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_top_2 { top: 196px; left: 650px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_top_3 { top: 196px; left: 1540px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_top_4 { top: 196px; left: 1000px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_btm_1 { top: 398px; left: 150px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_btm_2 { top: 398px; left: 1400px; }
+#ad_container #popup_anim_container #road_unblur_container #tree_btm_3 { top: 398px; left: 1100px; }
+
+#ad_container #popup_anim_container #road_park { background: transparent url('road_pattern.jpg') 0 0 repeat; width: 850px; height: 234px; border-bottom: 8px solid #bfc4c6; border-top: 8px solid #bfc4c6; top: 202px; display: none; }
+#ad_container #popup_anim_container #road_park #road_park_shadow { background: transparent; width: 850px; height: 230px; border-bottom: 2px solid #000; border-top: 2px solid #000; opacity: .3; }
+#ad_container #popup_anim_container .road_lines { background: transparent url('road_lines_pattern.jpg') 0 0 repeat-x; width: 850px; height: 4px; top: 289px; }
+#ad_container #popup_anim_container .road_highlight { background: #919391; width: 850px; opacity: .2; }
+#ad_container #popup_anim_container .road_highlight_top { height: 110px; top: 212px; }
+#ad_container #popup_anim_container .road_highlight_btm { height: 72px; top: 371px; }
+
+#ad_container #popup_anim_container .tree { background: transparent url('expand_content.png') 0 0 no-repeat; width: 166px; height: 136px;
+filter: drop-shadow(-25px 0px 0px rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(-25px 0px 0px rgba(0,0,0,0.2));
+/* filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-25, OffY=0, Color='#2a3940', Positive='true')"; */
+}
+#ad_container #popup_anim_container .park_top_tree1 { top: 135px; left: 10px; }
+#ad_container #popup_anim_container .park_top_tree2 { background-position: left bottom; width: 76px; height: 76px; top: 154px; left: 722px; }
+#ad_container #popup_anim_container .park_top_tree3 { background-position: left bottom; width: 76px; height: 76px; top: 411px; left: 120px;
+transform: scale(.8);
+-webkit-transform: scale(.8);
+-ms-transform: scale(.8);
+}
+#ad_container #popup_anim_container .park_top_tree4 { background-position: -76px bottom; width: 75px; height: 71px; top: 422px; left: 650px; }
+#ad_container #popup_anim_container .park_top_tree5 { background-position: -76px bottom; width: 75px; height: 71px; top: 430px; left: 595px;
+transform: scale(.8);
+-webkit-transform: scale(.8);
+-ms-transform: scale(.8);	
+}
+#ad_container #popup_anim_container .park_btm_tree1 { top: 130px; left: 10px;
+transform: scale(.9);
+-webkit-transform: scale(.9);
+-ms-transform: scale(.9);
+}
+#ad_container #popup_anim_container .park_btm_tree2 { background-position: -212px -62px; width: 89px; height: 89px; top: 422px; left: 111px; }
+#ad_container #popup_anim_container .park_btm_tree3 { background-position: -76px bottom; width: 75px; height: 71px; top: 164px; left: 673px; }
+#ad_container #popup_anim_container .parking_lines_container { background: transparent; width: 490px; height: 60px; top: 384px; left: 198px; }
+#ad_container #popup_anim_container .parking_lines_container li { width: 10px; height: 60px; list-style: none; position: absolute; opacity: .6; }
+#ad_container #popup_anim_container .parking_lines_container li .top_line { background: #fff; width: 100%; height: 2px; top: 0; }
+#ad_container #popup_anim_container .parking_lines_container li .cntr_line { background: #fff; width: 2px; height: 100%; left: 4px; }
+#ad_container #popup_anim_container .parking_lines_container li:nth-child(2) { left: 160px; }
+#ad_container #popup_anim_container .parking_lines_container li:nth-child(3) { left: 320px; }
+#ad_container #popup_anim_container .parking_lines_container li:nth-child(4) { left: 480px; }
+
+#ad_container #popup_anim_container #rear_traffic_anim ul { background: transparent; width: 430px; height: 103px; top: 210px; left: 213px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li { width: 10px; height: 103px; position: absolute; opacity: .6; list-style: none; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li .btm_line { background: #fff; width: 100%; height: 2px; bottom: 0; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li .cntr_line { background: #fff; width: 2px; height: 100%; left: 4px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(2) { left: 60px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(3) { left: 120px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(4) { left: 180px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(5) { left: 240px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(6) { left: 300px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(7) { left: 360px; }
+#ad_container #popup_anim_container #rear_traffic_anim ul li:nth-child(8) { left: 420px; }
+
+#ad_container #popup_anim_container .car_park_top { background: transparent url('expand_content.png') -166px top no-repeat; width: 135px; height: 59px; top: 234px;
+transform: scale(.73) rotate3d(0,1,0,-180deg) rotate(-90deg);
+-webkit-transform: scale(.73) rotate3d(0,1,0,-180deg) rotate(-90deg);
+-ms-transform: scale(.73) rotate3d(0,1,0,-180deg) rotate(-90deg);
+-sand-transform: rotate(-90deg);
+filter: drop-shadow(0px 10px 0px rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(0px 10px 0px rgba(0,0,0,0.2));
+}
+#ad_container #popup_anim_container .car_park_btm { background: transparent url('expand_content.png') -166px top no-repeat; width: 135px; height: 59px; top: 380px;
+transform: scale(.95) rotate3d(1,0,0,-180deg);
+-webkit-transform: scale(.95) rotate3d(1,0,0,-180deg);
+-ms-transform: scale(.95) rotate3d(1,0,0,-180deg);
+filter: drop-shadow(0px -10px 0px rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(0px -10px 0px rgba(0,0,0,0.2));
+}
+#ad_container #popup_anim_container .car_drive { background: transparent url('expand_content.png') -166px top no-repeat; width: 135px; height: 59px; top: 290px;
+filter: drop-shadow(0px -10px 0px rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(0px -10px 0px rgba(0,0,0,0.2));
+}
+#ad_container #popup_anim_container .park_top_car1 { left: 181px; z-index: 100; }
+#ad_container #popup_anim_container .park_top_car2 { left: 301px; z-index: 100; }
+#ad_container #popup_anim_container .park_top_car3 { left: 421px; z-index: 100; }
+#ad_container #popup_anim_container .park_top_car4 { left: 481px; z-index: 100; }
+#ad_container #popup_anim_container .park_btm_car1 { left: 215px; z-index: 100; }
+#ad_container #popup_anim_container .park_btm_car2 { left: 535px; z-index: 100; }
+
+#ad_container #popup_anim_container #front_assist_anim #fa_car_blue { left: 461px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container,
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container { background: transparent; width: 238px; height: 111px; top: 265px; left: -65px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_car_white,
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_car_white,
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white { background-position: -166px bottom; left: 0; top: 25px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container,
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container,
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container { background: transparent; width: 103px; height: 111px; top: 0; left: 118px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul,
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul,
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul,
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul,
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul,
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul { width: 103px; height: 111px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul li,
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul li,
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul li,
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul li,
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li,
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul li { height: 111px; position: absolute; list-style: none; opacity: 0; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul li:nth-child(1),
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul li:nth-child(1),
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul li:nth-child(1),
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul li:nth-child(1),
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li:nth-child(1),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul li:nth-child(1) { width: 25px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul li:nth-child(2),
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul li:nth-child(2),
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul li:nth-child(2),
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul li:nth-child(2),
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li:nth-child(2),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul li:nth-child(2) { background-position: -25px top; width: 19px; left: 25px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul li:nth-child(3),
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul li:nth-child(3),
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul li:nth-child(3),
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul li:nth-child(3),
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li:nth-child(3),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul li:nth-child(3) { background-position: -44px top; width: 19px; left: 44px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container ul li:nth-child(4),
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container ul li:nth-child(4),
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container ul li:nth-child(4),
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container ul li:nth-child(4),
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li:nth-child(4),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container ul li:nth-child(4) { background-position: -63px top; width: 19px; left: 63px; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #la_radar_container ul li:nth-child(5) { background-position: -83px top; width: 21px; left: 83px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container #cc_radar_pink li:nth-child(1),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container #fa_radar_pink li:nth-child(1) { background-position: 0px -111px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container #cc_radar_pink li:nth-child(2),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container #fa_radar_pink li:nth-child(2) { background-position: -25px -111px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container #cc_radar_pink li:nth-child(3),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container #fa_radar_pink li:nth-child(3) { background-position: -44px -111px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container #cc_radar_container #cc_radar_pink li:nth-child(4),
+#ad_container #popup_anim_container #front_assist_anim #fa_car_white_container #fa_radar_container #fa_radar_pink li:nth-child(4) { background-position: -63px -111px; }
+
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_blue { top: 257px; left: -65px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container { background: transparent; width: 260px; height: 116px; top: 279px; left: 340px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_car_white { background-position: -166px bottom; right: 0; top: 57px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_car_white #blinker { background: transparent url('expand_content.png') -192px -60px no-repeat; width: 12px; height: 13px; top: 5px; left: 0px; -webkit-transform: translate3d(0,0,0); }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_car_white #front_blinker { background: transparent url('expand_content.png') -166px -110px no-repeat; width: 46px; height: 20px; top: 0px; right: 1px; -webkit-transform: translate3d(0,0,0); }
+
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container { background: transparent; width: 190px; height: 80px; top: 0; left: 0; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul { width: 190px; height: 80px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li { background-position: right top; height: 80px; position: absolute; right: 0; list-style: none; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li:nth-child(1) { width: 28px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li:nth-child(2) { background-position: -587px top; width: 30px; right: 38px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li:nth-child(3) { background-position: -548px top; width: 32px; right: 75px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li:nth-child(4) { background-position: -508px top; width: 35px; right: 112px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container ul li:nth-child(5) { background-position: -465px top; width: 39px; right: 151px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container #bs_radar_pink li:nth-child(1) { background-position: right -80px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container #bs_radar_pink li:nth-child(2) { background-position: -587px -80px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container #bs_radar_pink li:nth-child(3) { background-position: -548px -80px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container #bs_radar_pink li:nth-child(4) { background-position: -508px -80px; }
+#ad_container #popup_anim_container #blind_spot_anim #bs_car_white_container #bs_radar_container #bs_radar_pink li:nth-child(5) { background-position: -465px -80px; }
+
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_blue { top:342px; left: 855px; -webkit-transform: translate3d(0,0,100px); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop { background: transparent; width: 850px; height: 444px; top: 0; left: 0; }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container { background: transparent; width: 360px; height: 260px; top: 213px; left: 248px;
+transform-origin: 50% 15%;
+-webkit-transform-origin: 50% 15%;
+-ms-transform-origin: 50% 15%;
+}
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container #rt_car_white { background-position: -166px bottom; top: 21px; left: 113px; }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar { background: transparent; width: 360px; height: 184px; left: 0; top: 76px; }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li { background-position: -104px top; width: 360px; height: 184px; top: 0; left: 0; list-style: none;
+transform-origin: 50% 0%;
+-webkit-transform-origin: 50% 0%;
+-ms-transform-origin: 50% 0%;
+}
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(1) { transform: scale(.15); -webkit-transform: scale(.15); -ms-transform: scale(.15); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(2) { transform: scale(.2); -webkit-transform: scale(.2); -ms-transform: scale(.2); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(3) { transform: scale(.25); -webkit-transform: scale(.25); -ms-transform: scale(.25); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(4) { transform: scale(.3); -webkit-transform: scale(.3); -ms-transform: scale(.3); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(5) { transform: scale(.35); -webkit-transform: scale(.35); -ms-transform: scale(.35); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(6) { transform: scale(.4); -webkit-transform: scale(.4); -ms-transform: scale(.4); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(7) { transform: scale(.45); -webkit-transform: scale(.45); -ms-transform: scale(.45); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(8) { transform: scale(.5); -webkit-transform: scale(.5); -ms-transform: scale(.5); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(9) { transform: scale(.55); -webkit-transform: scale(.55); -ms-transform: scale(.55); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(10) { transform: scale(.6); -webkit-transform: scale(.6); -ms-transform: scale(.6); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(11) { transform: scale(.65); -webkit-transform: scale(.65); -ms-transform: scale(.65); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(12) { transform: scale(.7); -webkit-transform: scale(.7); -ms-transform: scale(.7); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(13) { transform: scale(.75); -webkit-transform: scale(.75); -ms-transform: scale(.75); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(14) { transform: scale(.8); -webkit-transform: scale(.8); -ms-transform: scale(.8); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(15) { transform: scale(.85); -webkit-transform: scale(.85); -ms-transform: scale(.85); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(16) { transform: scale(.9); -webkit-transform: scale(.9); -ms-transform: scale(.9); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container .radar li:nth-child(17) { transform: scale(.95); -webkit-transform: scale(.95); -ms-transform: scale(.95); }
+#ad_container #popup_anim_container #rear_traffic_anim #rt_car_white_crop #rt_car_white_container #rt_radar_pink { background: transparent url('expand_content.png') right top no-repeat; width: 171px; height: 212px; top: 70px; left: 96px; mix-blend-mode: color; opacity: 0;
+transform-origin: 50% 10%;
+-webkit-transform-origin: 50% 10%;;
+-ms-transform-origin: 50% 10%;;
+}
+
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container { background: transparent; width: 315px; height: 111px; top: 234px; left: 252px; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #yellow_arrow_container { background: transparent; width: 180px; height: 6px; top: 50px; left: 134px; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #yellow_arrow_container #yellow_arrow { background-position: -6px bottom; width: 180px; height: 6px; top: 0; left: 0; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #blue_arrow_container { background: transparent; width: 178px; height: 65px; top: 27px; left: 135px; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #blue_arrow_container #blue_arrows { background-position: -106px -186px; width: 324px; height: 62px; top: 0; left: 0; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container #blue_arrow_container #blue_arrow { background-position: left bottom; width: 5px; height: 5px; top: 29px; right: 0; }
+#ad_container #popup_anim_container #lane_assist_anim #la_car_white_container.flip #blue_arrow_container {
+transform: rotate3d(1,0,0,-180deg);
+-webkit-transform: rotate3d(1,0,0,-180deg);
+-ms-transform: rotate3d(1,0,0,-180deg);
+}
+
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container { background: transparent; width: 135px; height: 141px; top: 302px; left: -140px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container #pa_car_white { background-position: -166px bottom; top: 0; left: 0; }
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container #pa_car_white #pa_blinker { background: transparent url('expand_content.png') -193px -60px no-repeat; width: 12px; height: 13px; left: 1px; top: 5px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container #pa_car_white #pa_front_blinker { background: transparent url('expand_content.png') -166px -110px no-repeat; width: 46px; height: 20px; top: 0px; right: 1px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_container { background: transparent; width: 151px; height: 88px; top: 315px; left: 376px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_container #pa_radar { background-position: right bottom; width: 151px; height: 88px; }
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container #pa_radar_blue { bottom: 48px; left: 68px;
+transform: rotate(90deg);
+transform-origin: 0% 50%;
+}
+#ad_container #popup_anim_container #park_assist_anim #pa_car_white_container #pa_radar_blue li { opacity: 1; }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container { background: transparent; width: 300px; height: 104px; top: 277px; left: -300px; }
+
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_blue { left: -140px; top: 258px; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_blue #cc_blinker { background: transparent url('expand_content.png') -193px -60px no-repeat; width: 12px; height: 13px; left: 1px; top: 6px; display: none; }
+#ad_container #popup_anim_container #cruise_control_anim #cc_car_white_container { left: 245px; top: 233px; }
+
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container { background: transparent; width: 300px; height: 104px; top: 355px; left: 294px; }
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container #pc_car_white { background-position: -166px bottom; top: 25px; left: 82px; }
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container #pc_car_white #pc_blinker { background: transparent url('expand_content.png') -193px -94px no-repeat; width: 12px; height: 13px; left: 1px; bottom: 5px; }
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container #pc_car_white #pc_front_blinker { background: transparent url('expand_content.png') -166px -132px no-repeat; width: 46px; height: 20px; bottom: -2px; right: 2px; }
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container #pc_radar_back {  }
+#ad_container #popup_anim_container #park_assist_anim #pa_radar_pulse_container #pa_radar_front,
+#ad_container #popup_anim_container #park_control_anim #pc_car_white_container #pc_radar_front { right: 0px; }
