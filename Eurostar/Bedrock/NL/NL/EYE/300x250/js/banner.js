@@ -1,6 +1,6 @@
 'use strict';
 
-var Banner = function () {
+var Banner = function Banner() {
   this.loader();
   this.imageCache = {};
 };
@@ -19,12 +19,7 @@ Banner.prototype.onPolite = function () {
 Banner.prototype.onVisible = function () {
   var _this = this;
 
-  this.politeLoad([
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineLite.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js'
-  ], function () {
+  this.politeLoad(['https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineLite.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js'], function () {
     _this.start();
   });
 };
@@ -48,19 +43,31 @@ Banner.prototype.smartObject = function (_settings) {
   }
 
   switch (settings.type) {
-    case 'canvas' :
+    case 'canvas':
       element.width = settings.width;
       element.height = settings.height;
       break;
-    case 'video' :
-      if (settings.autoplay) { element.autoplay = settings.autoplay; }
-      if (settings.loop) { element.loop = settings.loop; }
-      if (settings.controls) { element.controls = settings.controls; }
-      if (settings.muted) { element.muted = settings.muted; }
-      if (settings.poster) { element.poster = settings.poster; }
-      if (settings.preload) { element.preload = settings.preload; }
+    case 'video':
+      if (settings.autoplay) {
+        element.autoplay = settings.autoplay;
+      }
+      if (settings.loop) {
+        element.loop = settings.loop;
+      }
+      if (settings.controls) {
+        element.controls = settings.controls;
+      }
+      if (settings.muted) {
+        element.muted = settings.muted;
+      }
+      if (settings.poster) {
+        element.poster = settings.poster;
+      }
+      if (settings.preload) {
+        element.preload = settings.preload;
+      }
       break;
-    case 'img' :
+    case 'img':
       element.src = settings.src;
       element.alt = settings.alt;
       break;
@@ -176,7 +183,7 @@ Banner.prototype.smartObject = function (_settings) {
   };
 
   element.get = function (property) {
-    return ((this._gsTransform && this._gsTransform[property]) || (this._gsTransform && this._gsTransform[property] === 0)) ? this._gsTransform[property] : (this.style[property].slice(-2) === 'px') ? parseFloat(this.style[property]) : this.style[property];
+    return this._gsTransform && this._gsTransform[property] || this._gsTransform && this._gsTransform[property] === 0 ? this._gsTransform[property] : this.style[property].slice(-2) === 'px' ? parseFloat(this.style[property]) : this.style[property];
   };
 
   element.center = function () {
