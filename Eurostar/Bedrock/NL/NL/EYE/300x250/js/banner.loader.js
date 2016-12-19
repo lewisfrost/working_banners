@@ -3,6 +3,7 @@
 /**
  * DoubleClick enabler events.
  */
+
 Banner.prototype.loader = function () {
   var _this = this;
 
@@ -42,7 +43,7 @@ Banner.prototype.loader = function () {
  */
 Banner.prototype.politeLoad = function (urls, onComplete) {
   var loaded = 0;
-  var checkProgress = function () {
+  var checkProgress = function checkProgress() {
     if (++loaded === urls.length && onComplete) {
       onComplete();
     }
