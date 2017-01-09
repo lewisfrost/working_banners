@@ -212,7 +212,7 @@ Banner.prototype.setup = function () {
   this.scene3_price.set({ autoAlpha: 0, top: 75, left: 35, zIndex: 7 });
   this.copy3.set({ autoAlpha: 0, top: 20, left: 90, zIndex: 7 });
   this.cta.set({ autoAlpha: 0, scale: 0.4, top: 145, left: 90, zIndex: 7 });
-  this.tcs.set({ autoAlpha: 0, top: 185, left: 36, zIndex: 7 });
+  this.tcs.set({ autoAlpha: 0, top: 176, left: 36, zIndex: 7 });
 };
 
 /**
