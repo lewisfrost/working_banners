@@ -175,8 +175,8 @@ Banner.prototype.createElements = function () {
 Banner.prototype.setup = function () {
   this.logo.set({ left: 22, top: 70, zIndex: 20 });
   this.white_bkg.set({ left: 150, top: -65, zIndex: 20 });
-  this.eurostar.set({ autoAlpha: 0, top: 210, left: 95, zIndex: 20 });
-  this.eurostar_yellow.set({ autoAlpha: 0, top: 210, left: 95, zIndex: 20 });
+  this.eurostar.set({ autoAlpha: 0, top: 210, left: 90, zIndex: 20 });
+  this.eurostar_yellow.set({ autoAlpha: 0, top: 210, left: 90, zIndex: 20 });
 
   //SCENE 1 HOLLAND
   this.scene1_bkg.set({ zIndex: 15 });
@@ -212,7 +212,7 @@ Banner.prototype.setup = function () {
   this.scene3_price.set({ autoAlpha: 0, top: 75, left: 35, zIndex: 7 });
   this.copy3.set({ autoAlpha: 0, top: 20, left: 90, zIndex: 7 });
   this.cta.set({ autoAlpha: 0, scale: 0.4, top: 145, left: 90, zIndex: 7 });
-  this.tcs.set({ autoAlpha: 0, top: 176, left: 36, zIndex: 7 });
+  this.tcs.set({ autoAlpha: 0, top: 176, left: 38, zIndex: 7 });
 };
 
 /**
