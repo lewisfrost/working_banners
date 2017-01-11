@@ -192,7 +192,7 @@ Banner.prototype.setup = function () {
   this.scene1_clouds.set({ top: 140, left: 30, zIndex: 16 });
   this.scene1_heart.set({ top: 282, left: 2, zIndex: 17 });
   this.scene1_boat.set({ top: 376, left: 150, zIndex: 18 });
-  this.copy1.set({ autoAlpha: 0, top: 35, left: 40, zIndex: 19 });
+  this.copy1.set({ autoAlpha: 0, top: 50, left: 40, zIndex: 19 });
   this.bike_mum.set({ top: 370, left: -60, zIndex: 19 });
   this.mum_wheel1.set({ top: 418, left: -70, zIndex: 19 });
   this.mum_wheel2.set({ top: 418, left: -25, zIndex: 19 });
@@ -214,7 +214,7 @@ Banner.prototype.setup = function () {
   this.scene2_taxi.set({ top: 405, left: 200, zIndex: 9 });
   this.scene2_clouds.set({ top: 100, left: 30, zIndex: 6 });
   this.scene2_heart.set({ top: 284, left: 5, zIndex: 7 });
-  this.copy2.set({ autoAlpha: 0, top: 35, left: 50, zIndex: 9 });
+  this.copy2.set({ autoAlpha: 0, top: 50, left: 50, zIndex: 9 });
 
   //SCENE 3 CTA & PRICE
   this.scene3_price.set({ autoAlpha: 0, top: 225, left: 70, zIndex: 7 });
