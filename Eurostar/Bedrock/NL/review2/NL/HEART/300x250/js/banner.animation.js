@@ -11,7 +11,7 @@ Banner.prototype.start = function () {
   this.bannerHeight = this.banner.offsetHeight;
 
   // Image array for preloading
-  this.images = ['images/logo.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/eurostar_yellow.png', 'images/scene1_bkg.jpg', 'images/scene1_windmill.png', 'images/scene1_boat.png', 'images/scene1_clouds.png', 'images/scene1_heart.png', 'images/bike_mum.png', 'images/mum_wheel1.png', 'images/mum_wheel2.png', 'images/bike_dad.png', 'images/dad_wheel1.png', 'images/dad_wheel2.png', 'images/bike_boy.png', 'images/boy_wheel1.png', 'images/boy_wheel2.png', 'images/girl_wheel1.png', 'images/girl_wheel2.png', 'images/bike_girl.png', 'images/copy1.png', 'images/scene2_bus.png', 'images/scene2_clouds.png', 'images/scene2_heart.png', 'images/scene2_taxi.png', 'images/scene2_london_eye.png', 'images/scene2_bkg.jpg', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_price.png', 'images/cta.png', 'images/copy3.png', 'images/tcs.png'];
+  this.images = ['images/logo.png', 'images/white_bkg.png', 'images/train.png', 'images/eurostar.png', 'images/eurostar_yellow.png', 'images/scene1_bkg.jpg', 'images/scene1_windmill.png', 'images/scene1_boat.png', 'images/scene1_clouds.png', 'images/scene1_heart.png', 'images/bike_mum.png', 'images/mum_wheel1.png', 'images/mum_wheel2.png', 'images/bike_dad.png', 'images/dad_wheel1.png', 'images/dad_wheel2.png', 'images/bike_boy.png', 'images/boy_wheel1.png', 'images/boy_wheel2.png', 'images/girl_wheel1.png', 'images/girl_wheel2.png', 'images/bike_girl.png', 'images/copy1.png', 'images/scene2_bus.png', 'images/scene2_clouds.png', 'images/scene2_heart.png', 'images/scene2_taxi.png', 'images/scene2_london_eye.png', 'images/scene2_bkg.jpg', 'images/copy2.png', 'images/scene3_bkg.png', 'images/scene3_price.png', 'images/cta.png', 'images/dutch.png', 'images/english.png', 'images/copy3.png', 'images/tcs.png'];
 
   var _this = this;
   this.preloadImages(this.images, function () {
@@ -163,6 +163,14 @@ Banner.prototype.createElements = function () {
     backgroundImage: 'images/cta.png',
     parent: this.banner
   });
+  this.dutch = this.smartObject({
+    backgroundImage: 'images/dutch.png',
+    parent: this.banner
+  });
+  this.english = this.smartObject({
+    backgroundImage: 'images/english.png',
+    parent: this.banner
+  });
   this.tcs = this.smartObject({
     backgroundImage: 'images/tcs.png',
     parent: this.banner
@@ -201,7 +209,7 @@ Banner.prototype.setup = function () {
   //SCENE 2 LONDON
   this.scene2_bkg.set({ zIndex: 5 });
   this.train.set({ top: 140, left: -14000, zIndex: 10 });
-  this.scene2_london_eye.set({ top: 30, left: 196, zIndex: 9 });
+  this.scene2_london_eye.set({ top: 30, left: 197, zIndex: 9 });
   this.scene2_bus.set({ top: 118, left: 30, zIndex: 9 });
   this.scene2_clouds.set({ top: -50, left: 30, zIndex: 6 });
   this.scene2_heart.set({ top: 35, left: -30, zIndex: 7 });
@@ -212,6 +220,8 @@ Banner.prototype.setup = function () {
   this.scene3_price.set({ autoAlpha: 0, top: 75, left: 35, zIndex: 7 });
   this.copy3.set({ autoAlpha: 0, top: 20, left: 90, zIndex: 7 });
   this.cta.set({ autoAlpha: 0, scale: 0.4, top: 145, left: 90, zIndex: 7 });
+  this.dutch.set({ autoAlpha: 0, top: 153, left: 90, zIndex: 8 });
+  this.english.set({ autoAlpha: 0, top: 153, left: 90, zIndex: 8 });
   this.tcs.set({ autoAlpha: 0, top: 176, left: 38, zIndex: 7 });
 };
 
@@ -241,6 +251,6 @@ Banner.prototype.animate = function () {
   TweenMax.to(this.scene2_bus, 2, { left: -150, delay: 6 }), TweenMax.to(this.scene2_taxi, 4, { left: -100, delay: 6 }), TweenMax.to(this.scene2_clouds, 11, { x: -200, delay: 5 }), TweenMax.to(this.scene2_heart, 5, { rotationY: 1080, transformOrigin: "centre", delay: 5, ease: Power2.easeOut }), TweenMax.to(this.scene2_london_eye, 5, { rotation: 1080, transformOrigin: "centre", delay: 5, ease: Power2.easeOut }), TweenMax.to(this.train, 5, { left: 150, delay: 5, ease: Power4.easeOut }), TweenMax.to(this.copy2, 1, { autoAlpha: 1, delay: 5 }), TweenMax.to(this.copy2, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_bus, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_heart, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_bkg, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_taxi, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_london_eye, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.scene2_clouds, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.eurostar, 1, { autoAlpha: 0, delay: 10 }), TweenMax.to(this.train, 1, { autoAlpha: 0, delay: 10 }),
 
   //SCENE 3 CTA & PRICE
-  TweenMax.to(this.eurostar_yellow, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.scene3_price, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.tcs, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.cta, 1, { autoAlpha: 1, scale: 1, delay: 10 }), TweenMax.to(this.cta, 0.5, { scale: 1.05, repeat: 5, yoyo: true, delay: 11 })]);
+  TweenMax.to(this.eurostar_yellow, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.scene3_price, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.copy3, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.tcs, 1, { autoAlpha: 1, delay: 10 }), TweenMax.to(this.cta, 1, { autoAlpha: 1, scale: 1, delay: 10 }), TweenMax.to(this.dutch, 1, { autoAlpha: 1, scale: 1, delay: 10 }), TweenMax.to(this.dutch, 0.5, { autoAlpha: 0, delay: 11 }), TweenMax.to(this.english, 0.5, { autoAlpha: 1, scale: 1, delay: 11.5 }), TweenMax.to(this.english, 0.5, { autoAlpha: 0, scale: 1, delay: 12.5 }), TweenMax.to(this.dutch, 0.5, { autoAlpha: 1, scale: 1, delay: 13 }), TweenMax.to(this.dutch, 0.5, { autoAlpha: 0, delay: 14 }), TweenMax.to(this.english, 0.5, { autoAlpha: 1, scale: 1, delay: 14.5 }), TweenMax.to(this.english, 0.5, { autoAlpha: 0, scale: 1, delay: 15.5 }), TweenMax.to(this.dutch, 0.5, { autoAlpha: 1, scale: 1, delay: 16 }), TweenMax.to(this.cta, 0.5, { scale: 1.05, repeat: 5, yoyo: true, delay: 16 })]);
   console.log(this.timeline.totalDuration());
 };
