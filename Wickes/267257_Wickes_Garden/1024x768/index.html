@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Wickes 768x1024</title>
+		<link rel="stylesheet" type="text/css" href="css/1024x768.css">
+		
+		<style>
+         #bg-exit {
+            position: absolute;
+            width: 100%;
+            height: 95%;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 400;
+        }
+
+		</style>
+        
+        <script type="text/javascript">
+
+function bgExitHandler(e) {
+    Enabler.exitOverride('Background Exit', 'http://www.dominos.ie');
+}
+
+document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+
+</script>
+		
+	</head>
+
+	<body>
+		<div class="container" id="banner">
+        <div id="bg-exit"></div>
+			<div>
+				<img class="arrow" src="images/arrow.png" alt="Arrow" width="728" height="887" />
+				<img class="wickesLogo" src="images/wickesLogo.png" alt="Wickes logo" width="500" height="250" />
+			
+				<img class="f1" src="images/f1.png" alt="Frame one" width="376" height="482" />
+				<img class="f2" src="images/f2.jpg" alt="Frame two" width="485" height="313" />
+				<img class="cap2" src="images/caption02.png" alt="On selected Cuprinol" width="280" height="28" />
+				<img class="f3" src="images/f3.png" alt="Frame three" width="438" height="272" />
+				
+				<img class="ldir" src="images/ldir.png" alt="Frame six" width="387" height="54" />
+				<img class="cac" src="images/cac.png" alt="Frame six" width="301" height="71" />
+				
+				<img class="halfPrice1" src="images/sheds.png" alt="Half price" width="250" height="250" />
+				<img class="halfPrice2" src="images/halfPrice.png" alt="Half price" width="250" height="250" />
+				
+				<img class="tac1" src="images/tac01.png" alt="Terms and conditions 1" width="568" height="20" />
+				<img class="tac2" src="images/tac02.png" alt="Terms and conditions 1" width="568" height="20" />
+			</div>
+		</div>
+	</body>
+
+</html>

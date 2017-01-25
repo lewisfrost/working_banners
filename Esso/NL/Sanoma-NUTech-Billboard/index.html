@@ -1,0 +1,120 @@
+<!-- HTML 5 Ad Template from DoubleClick by Google -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+	<!-- SCRVERSION: screenad_interface_1.0.3 -->
+	<!-- SCRFORMAT: banner -->
+	<!-- SCRWIDTH: 970 -->
+	<!-- SCRHEIGHT: 250 -->
+	<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+	<!-- GSAP -->
+	<script src="TweenLite.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+
+    <style type="text/css">
+		#loading_dc{
+			width:100%;
+			height:100%x;
+			background-color:white;
+			z-index:10;
+		}
+		#loading_image_dc{
+			position:absolute;
+			left:50%;
+			margin-left:-15px;
+			top:50%;
+			margin-top:-15px;	
+		}
+		#container_dc{display:none;z-index:20}
+	</style>
+    
+    <script language="javascript">
+
+
+		var checkLoadedInt;
+
+		checkLoaded = function(){
+			if (screenad.isPreloaded){
+				clearInterval(checkLoadedInt);
+				politeInit();
+			}
+		}
+		
+		if (screenad.isPreloaded) {
+			politeInit();
+		} else {
+			checkLoadedInt = window.setInterval(checkLoaded, 100);
+		}
+
+		/*$(document).ready(politeInit);*/
+		
+		function politeInit(){	
+			screenad.setAlignment('banner', 'banner');
+            screenad.setSize("970px", "250px");
+            screenad.setSticky(true);
+            screenad.setZIndex(1);
+            screenad.setOffset(0, 0)
+            screenad.position();	
+			//Load in Javascript			
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', 'Exxon_Synergy_Fuels_Video_970x250.js'); 
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+			
+			//Load in CSS
+			
+			var extCSS=document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", "Exxon_Synergy_Fuels_Video_970x250.css"); 
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+			document.getElementById("container_dc").style.opacity=1;
+			document.getElementById("loading_image_dc").style.opacity=0;
+			document.getElementById("container_dc").style.display = "block";
+		}
+	</script>
+    
+</head>
+
+<body>
+	
+	<div id="loading_dc">
+		<div id="loading_image_dc"><img src="loading.gif"></div>
+	</div>
+	
+	<div id="container_dc">
+		<div id="content_dc">
+			<div id="bg"></div>
+
+			<div id="copy"><img src="copy.png" alt=""></div>
+			
+			<div id="cta"><img src="cta.png" alt="Learn more"></div>
+			<button id="background_exit_dc"></button>
+			<div id="video_container"></div>
+			<div id="video_controls_container">
+				<div id="video_controls">
+					<img id="playBtn" class="video_control_button" src="play_icon.png" />
+					<img id="pauseBtn" class="video_control_button" src="pause_icon.png" />
+					<img id="muteBtn" class="video_control_button" src="mute_icon.png" />
+					<img id="unmuteBtn" class="video_control_button" src="unmute_icon.png" />
+				</div>
+			</div>
+			<div id="replay_container">
+				<div id="replay">
+					<img id="replayBtn" src="replay_icon.png" />
+				</div>
+			</div>
+			<div id="clickToPlayContainer">
+				<div id="clickToPlay">
+					<img id="clickToPlayBtn" src="clickToPlayBtn.png" />
+				</div>
+			</div>
+		</div>
+		
+  </div>
+  
+</body>
+</html>

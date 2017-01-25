@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: relative;
+	width: 968px;
+	height: 248px;
+	border: 1px solid #666666;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	z-index: 100;
+	
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+img {
+	margin: 0;
+	display: block;
+}
+#bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #000 url('bg.jpg');
+}
+
+
+#video_container{
+	position: absolute;
+	z-index: 20;
+	top:19px;
+	left:21px;
+}
+
+#video_controls_container{
+	position: absolute;
+	z-index: 21;
+	top:19px;
+	left:21px;
+	visibility: hidden;
+}
+
+#video_controls{
+	position: relative;
+	top:0;
+	left:0;
+	width:380px;
+	height:214px;
+}
+
+.video_control_button{
+	position: absolute;
+	width:28px;
+	height:28px;
+	cursor: pointer;
+}
+
+.buttonLeft{
+	right:38px;
+	bottom:4px;
+}
+.buttonRight{
+	right:6px;
+	bottom:4px;
+}
+
+#playBtn{
+	visibility: hidden;
+}
+#pauseBtn{
+
+}
+#muteBtn{
+	visibility: hidden;
+}
+#unmuteBtn{
+	visibility: hidden;
+}
+#replay_container{
+	position: absolute;
+	z-index: 22;
+	top:19px;
+	left:21px;
+	visibility: hidden;
+}
+#replay{
+	position: relative;
+	top:0;
+	left:0;
+	width:380px;
+	height:214px;
+}
+#replayBtn{
+	position: absolute;
+	left:122px;
+	top:40px;
+	width:140px;
+	height:140px;
+	cursor: pointer;
+}
+#clickToPlayContainer{
+	position: absolute;
+	z-index: 24;
+	top:19px;
+	left:21px;
+}
+#clickToPlay{
+	position: relative;
+	top:0;
+	left:0;
+	width:380px;
+	height:214px;
+}
+#clickToPlayBtn{
+	position: absolute;
+	left:122px;
+	top:40px;
+	width:140px;
+	height:140px;
+	cursor: pointer;
+}
+
+#copy {
+	position: absolute;
+	top: 23px;
+	left: 427px;
+	z-index: 4;
+}
+
+#cta {
+	position: absolute;
+	top: 115px;
+	left: 427px;
+	z-index: 9;
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 15;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}

@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+#banner {
+	border: 1px #666666 solid;
+	width:970px;
+  	height:250px;
+	overflow:hidden;
+	}
+
+
+.container {
+  width:970px;
+  height:250px;
+  position:relative;
+  background-color:white;
+  overflow:hidden;
+  cursor: pointer;
+  opacity:0;
+}
+
+.container .img {
+  position: absolute;
+  width: 970px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.clickable {
+	cursor: pointer;
+	}
+
+/* banner images */
+
+.container .sun {
+	left: 30px;
+  	top: 116px;
+	width: 153px;
+  	height: 179px;
+	}
+	
+.sun-arm-left {
+	position: absolute;
+	left: 50px;
+  	top: 110px;
+	width: 34px;
+  	height: 46px;
+	}
+.sun-arm-right {
+	position: absolute;
+	left: 4px;
+  	top: 91px;
+	width: 31px;
+  	height: 43px;
+  	z-index: -2;
+	}
+	
+.eye-black-left {
+	position: absolute;
+  	left: 46px;
+  	top:61px;
+}
+
+.eye-black-right {
+	position: absolute;
+  	left: 37px;
+  	top: 60px;
+}
+
+.container .sky {
+	width: 970px;
+  	height: 400px;
+	background-image: url('../img/Florette-Sky.jpg');
+	}
+.container .hill-all {
+	left: -3px;
+  	top: 147px;
+  	width: 999px;
+  	height: 102px;
+	background-image: url('../img/Florette-Hill-All.png');
+	}
+.container .txt1 {
+	left: 277px;
+  	top: 92px;
+	width: 402px;
+  	height: 48px;
+	background-image: url('../img/Florette-Made-With-Sunshine.png');
+	}
+.container .txt2 {
+	left: 240px;
+  	top: 49px;
+	width: 491px;
+  	height: 49px;
+  	opacity:0;
+	background-image: url('../img/Florette-Win.png');
+	}	
+.container .packshot {
+	right: 43px;
+  	top: 60px;
+	width: 227px;
+  	height: 211px;
+	background-image: url('../img/Florette-Packshot.png');
+	}	
+.container .logo {
+	right: 7px;
+  	top: 135px;
+	width: 165px;
+  	height: 108px;
+  	opacity:0;
+	background-image: url('../img/Florette-logo.png');
+	}	
+.container .CTA {
+	right: 394px;
+  	top: 116px;
+	width: 183px;
+  	height: 49px;
+  	opacity:0;
+	background-image: url('../img/Florette-CTA.png');
+	}
+.arrow {
+	position: absolute;
+	left: 155px;
+  	top: 16px;
+	width: 11px;
+  	height: 19px;
+  	z-index: 2;
+	background-image: url('../img/Florette-CTA-arrow.png');
+	}

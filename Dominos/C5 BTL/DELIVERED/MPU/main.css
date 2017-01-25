@@ -1,0 +1,359 @@
+html {
+    overflow:hidden;
+
+}
+body{
+    width:300px;
+    height:250px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    overflow:hidden;
+    position:absolute;
+}
+
+
+
+.background{
+
+    position: absolute;
+    background:url( "bg-300x250.png" ) no-repeat ;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+
+    position: absolute;
+    background:url( "logo.png" ) no-repeat ;
+    width: 97px;
+    height: 32px;
+    left:5px;
+    bottom:7px;
+    z-index: 20;
+}
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400;
+}
+
+
+@-webkit-keyframes copy_IN { from { top:-200px; } to { top:115px; } }
+@-moz-keyframes copy_IN { from { top:-200px; } to { top:115px; } }
+@keyframes copy_IN { from { top:-200px; } to { top:115px; } }
+
+@-webkit-keyframes copy_OUT { from { top:115px; } to { top:500px; } }
+@-moz-keyframes copy_OUT { from { top:115px; } to { top:500px; } }
+@keyframes copy_OUT { from { top:115px; } to { top:500px; } }
+
+
+/* ========================== LINE 1 =================================== */
+
+.line-1{
+    background: url(line-1.png) no-repeat;
+    position: absolute;
+    top: 115px;
+    right: 500px;
+    width: 100%;
+    height: 41px;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+@-webkit-keyframes line1_IN { from { right:500px; } to { right:-20px; } }
+@-moz-keyframes line1_IN { from { right:500px; } to { right:-20px; } }
+@keyframes line1_IN { from { right:500px; } to { right:-20px; } }
+
+@-webkit-keyframes line1_OUT { from { right:-20px; } to { right:-500px; } }
+@-moz-keyframes line1_OUT { from { right:-20px; } to { right:-500px; } }
+@keyframes line1_OUT { from { right:-20px; } to { right:-500px; } }
+
+
+.line-1.show{
+    -webkit-animation:line1_IN 0.3s ease-out forwards, line1_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:line1_IN 0.3s ease-out forwards, line1_OUT 0.5s 2.5s ease-out forwards;
+    animation:line1_IN 0.3s ease-out forwards, line1_OUT 0.5s 2.5s ease-out forwards;
+}
+
+/* ========================== 2 =================================== */
+
+.two {
+    background: url(2.png) no-repeat;
+    position: absolute;
+    top:115px;
+    right:500px;
+    width: 23px;
+    height: 41px;
+    opacity: 1;
+    z-index: 4;
+}
+
+@-webkit-keyframes two_IN { from { right:500px; } to { right:205px; } }
+@-moz-keyframes two_IN { from { right:500px; } to { right:205px; } }
+@keyframes two_IN { from { right:500px; } to { right:205px; } }
+
+@-webkit-keyframes two_OUT { from { right:205px; } to { right:-500px; } }
+@-moz-keyframes two_OUT { from { right:205px; } to { right:-500px; } }
+@keyframes two_OUT { from { right:205px; } to { right:-500px; } }
+
+@-webkit-keyframes BOUNCE { from{ -webkit-transform: scale( 1 ); opacity : 1 } to { -webkit-transform: scale(1.2); opacity : 1 } }
+@-moz-keyframes BOUNCE { from{ -moz-transform: scale( 1 ); opacity : 1 } to { -moz-transform: scale(1.2); opacity : 1 } }
+@keyframes BOUNCE { from{ transform: scale( 1 ); opacity : 1 } to { transform: scale(1.2); opacity : 1 } }
+
+
+.two.show{
+    -webkit-animation:two_IN 0.3s ease-out forwards,BOUNCE 0.15s 0.5s 4 linear alternate,  two_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:two_IN 0.3s ease-out forwards,BOUNCE 0.15s 0.5s 4 linear alternate,  two_OUT 0.5s 2.5s ease-out forwards;
+    animation:two_IN 0.3s ease-out forwards,BOUNCE 0.15s 0.5s 4 linear alternate,  two_OUT 0.5s 2.5s ease-out forwards;
+}
+
+
+
+
+/* ========================== LINE 2 =================================== */
+
+.line-2{
+    background: url(line-2.png) no-repeat;
+    position: absolute;
+    top:115px;
+    right: 500px;
+    width: 100%;
+    height: 42px;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+@-webkit-keyframes line2_IN { from { right:500px; } to { right:-20px; } }
+@-moz-keyframes line2_IN { from { right:500px; } to { right:-20px; } }
+@keyframes line2_IN { from { right:500px; } to { right:-20px; } }
+
+@-webkit-keyframes line2_OUT { from { right:-20px; } to { right:-500px; } }
+@-moz-keyframes line2_OUT { from { right:-20px; } to { right:-500px; } }
+@keyframes line2_OUT { from { right:-20px; } to { right:-500px; } }
+
+
+.line-2.show{
+    -webkit-animation:line2_IN 0.3s ease-out forwards, line2_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:line2_IN 0.3s ease-out forwards, line2_OUT 0.5s 2.5s ease-out forwards;
+    animation:line2_IN 0.3s ease-out forwards, line2_OUT 0.5s 2.5s ease-out forwards;
+}
+
+
+/* ========================== PRICE =================================== */
+
+.price {
+    background: url(price.png) no-repeat;
+    position: absolute;
+    top:105px;
+    right: 500px;
+    width: 186px;
+    height: 72px;
+    opacity: 1;
+    z-index: 3;
+}
+
+@-webkit-keyframes PRICE_IN { from { right:500px; } to { right:10px; } }
+@-moz-keyframes PRICE_IN { from { right:500px; } to { right:10px; } }
+@keyframes PRICE_IN { from { right:500px; } to { right:10px; } }
+
+@-webkit-keyframes PRICE_OUT { from { right:10px; } to { right:-500px; } }
+@-moz-keyframes PRICE_OUT { from { right:10px; } to { right:-500px; } }
+@keyframes PRICE_OUT { from { right:10px; } to { right:-500px; } }
+
+@-webkit-keyframes Price_BOUNCE { from{ -webkit-transform: scale( 1 ); opacity : 1 } to { -webkit-transform: scale(1.1); opacity : 1 } }
+@-moz-keyframes Price_BOUNCE { from{ -moz-transform: scale( 1 ); opacity : 1 } to { -moz-transform: scale(1.1); opacity : 1 } }
+@keyframes Price_BOUNCE { from{ transform: scale( 1 ); opacity : 1 } to { transform: scale(1.1); opacity : 1 } }
+
+.price.show{
+    -webkit-animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+    animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+}
+
+/* ========================== LINE 3 =================================== */
+
+.line-3{
+    background: url(line-3.png) no-repeat;
+    position: absolute;
+    top:110px;
+    right:500px;
+    width: 100%;
+    height: 67px;
+    opacity: 1;
+    z-index: 3;
+}
+
+@-webkit-keyframes line3_IN { from { right:500px; } to { right:-35px; } }
+@-moz-keyframes line3_IN { from { right:500px; } to { right:-35px; } }
+@keyframes line3_IN { from { right:500px; } to { right:-35px; } }
+
+@-webkit-keyframes line3_OUT { from { right:-35px; } to { right:-500px; } }
+@-moz-keyframes line3_OUT { from { right:-35px; } to { right:-500px; } }
+@keyframes line3_OUT { from { right:-35px; } to { right:-500px; } }
+
+
+
+.line-3.show{
+    -webkit-animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+    -moz-animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+    animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+}
+
+
+
+/* ========================== T&Cs =================================== */
+
+.terms{
+    background-color:none;
+    z-index:15;
+    position:absolute;
+    top:5px;
+    left:-500px;
+    width: 35%;
+    font-size:10px;
+    color:#FFFFFF;
+	line-height: 1.25;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:right;
+}
+
+
+@-webkit-keyframes terms_IN { from { left:-500px; } to { left:185px; } }
+@-moz-keyframes terms_IN { from { left:-500px; } to { left:185px; } }
+@keyframes terms_IN { from { left:-500px; } to { left:185px; } }
+
+@-webkit-keyframes terms_OUT { from { left:190px; } to { left:500px; } }
+@-moz-keyframes terms_OUT { from { left:190px; } to { left:500px; } }
+@keyframes terms_OUT { from { left:190px; } to { left:500px; } }
+
+.terms.show{
+    -webkit-animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+    -moz-animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+    animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+}
+
+
+/* ========================== RIBBON =================================== */
+
+.ribbon {
+    background: url(ribbon.png) no-repeat;
+    position: absolute;
+    top:80px;
+    right: 500px;
+    width: 100%;
+    height: 75px;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+@-webkit-keyframes ribbon_IN { { right:500px; } to { right:-40px; } }
+@-moz-keyframes ribbon_IN{ { right:500px; } to { right:-40px; } }
+@keyframes ribbon_IN { { right:500px; } to { right:-40px; } }
+
+.ribbon.show{
+    -webkit-animation:ribbon_IN 0.3s ease-out forwards ;
+    -moz-animation:ribbon_IN 0.3s ease-out forwards ;
+    animation:ribbon_IN 0.3s ease-out forwards;
+}
+
+/* ========================== TASTIEST =================================== */
+
+.tastiest {
+    background: url(tastiest.png) no-repeat;
+    position: absolute;
+    top:38px;
+    left: 77px;
+    width:148px;
+    height: 55px;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+@-webkit-keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+@-moz-keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+@keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+
+.tastiest.show{
+    -webkit-animation:tastiest_IN 0.7s 1 ease-out forwards ;
+    -moz-animation:tastiest_IN 0.7s 1 ease-out forwards ;
+    animation:tastiest_IN 0.7s 1 ease-out forwards;
+}
+
+/* ============================doubly LOCKUP================================= */
+
+.doubly {
+    background: url(doubly.png) no-repeat;
+    position: absolute;
+    width: 206px;
+    height: 160px;
+    right:50px;
+    z-index: 10;
+    opacity: 0;
+    bottom:50px;
+}
+
+
+@-webkit-keyframes doubly { from{ -webkit-transform: scale( 0.1 ); opacity : 1 } to { -webkit-transform: scale(1.15); opacity : 1 } } 
+@-moz-keyframes doubly { from{ -moz-transform: scale( 0.1 ); opacity : 1 } to { -moz-transform: scale(1.15); opacity : 1 } }
+@keyframes doubly { from{ transform: scale( 0.1 ); opacity : 1 } to { transform: scale(1.15); opacity : 1 } }
+
+
+@-webkit-keyframes doubly2 { from{ -webkit-transform: scale( 1.15 ); opacity : 1 } to { -webkit-transform: scale(1.0); opacity : 1 } } 
+@-moz-keyframes doubly2 { from{ -moz-transform: scale( 1.15 ); opacity : 1 } to { -moz-transform: scale(1.0); opacity : 1 } }
+@keyframes doubly2 { from{ transform: scale( 1.15 ); opacity : 1 } to { transform: scale(1.0); opacity : 1 } }
+
+
+@-webkit-keyframes doubly_out { from { right:50px; } to { right:-500px; } }
+@-moz-keyframes doubly_out  { from { right:50px; } to { right:-500px; } }
+@keyframes doubly_out  { from { right:50px; } to { right:-500px; } }
+
+
+.doubly.show{
+    -webkit-animation:doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.3s 1.8s ease-in forwards; 
+    -moz-animation: doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.3s 1.8s ease-in forwards; 
+    animation: doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.3s 1.8s ease-in forwards; 
+}
+
+
+/* ==========================CTA =================================== */
+
+
+/* ========================== RIBBON =================================== */
+
+.button {
+    background: url(button.png) no-repeat;
+    position: absolute;
+    top:130px;
+    left: 105px;
+    width: 86px;
+    height: 86px;
+    opacity: 0;
+    z-index: 3;
+}
+
+@-webkit-keyframes button_IN { from { -webkit-transform: scale( 0.1); opacity : 0; } to { -webkit-transform: scale( 1 ); opacity: 1 } }
+@-moz-keyframes button_IN { from { -moz-transform: scale( 0.1 ); opacity : 0; } to { -moz-transform: scale( 1 ); opacity: 1 } }
+@keyframes button_IN { from { transform: scale( 0.1 ); opacity : 0; } to { transform: scale( 1 ); opacity: 1 } }
+
+
+
+.button.show{
+    -webkit-animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+    -moz-animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+    animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+}
+
+

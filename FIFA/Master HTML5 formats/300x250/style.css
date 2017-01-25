@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+}
+
+#content_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+	border:1px solid #666666;
+	top: 0px;
+	left: 0px;
+	background-color: #0AACFE;
+	z-index: 100;
+    overflow: hidden;
+}
+
+#expand_content_dc{
+	position: absolute;
+	width: 398px;
+	height: 398px;
+	border:1px solid #666666;
+	top: 0px;
+	left: 0px;
+    opacity:0;
+	background-color: #FFF;
+	z-index: 200;
+	overflow:hidden;
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#expand_btn_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#close_btn_dc{
+    background-image: url("Close.png");
+    height: 21px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width: 19px;
+    z-index: 600;
+    cursor: pointer
+}
+
+/* Unexpanded */
+
+.mainBg0 {
+    background-image: url("cBg0.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    z-index: 2;
+
+}
+
+.mainBg1 {
+    background-image: url("cBg1.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    left: -50px;
+    position: absolute;
+    top: 0px;
+    width: 350px;
+    z-index: 1;
+    opacity:0;
+}
+
+.player {
+    background-image: url("player.png");
+    background-repeat: no-repeat;
+    height: 216px;
+    left: 130px;
+    position: absolute;
+    top: 54px;
+    width: 98px;
+    z-index: 2;
+}
+
+.mainLogo {
+    background-image: url("mainLogo.png");
+    background-repeat: no-repeat;
+    height: 91px;
+    left: 75px;
+    position: absolute;
+    top: 32px;
+    width: 153px;
+    z-index: 6;
+    opacity:0;
+}
+
+
+.shard0 {
+    background-image: url("shard0.png");
+    background-repeat: no-repeat;
+    height: 172px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 77px;
+    width: 297px;
+    z-index: 2;
+}
+
+.shard1 {
+    background-image: url("shard1.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 228px;
+    z-index: 2;
+}
+
+.shard2 {
+    background-image: url("shard2.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 296px;
+    z-index: 2;
+}
+
+.shard3 {
+    background-image: url("shard3.png");
+    background-repeat: no-repeat;
+    height: 125px;
+    left: 200px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 99px;
+    z-index: 2;
+}
+
+.shard4 {
+}
+
+.copy0 {
+    background-image: url("copy0.png");
+    background-repeat: no-repeat;
+    height: 35px;
+    left: 116px;
+    opacity: 0;
+    position: absolute;
+    top: 33px;
+    width: 78px;
+    z-index: 3;
+}
+
+.copy1 {
+    background-image: url("copy1.png");
+    background-repeat: no-repeat;
+    height: 32px;
+    left: 70px;
+    opacity: 0;
+    position: absolute;
+    top: 65px;
+    width: 169px;
+    z-index: 3;
+}
+
+.copy2 {
+    background-image: url("copy2.png");
+    background-repeat: no-repeat;
+    height: 48px;
+    left: 107px;
+    position: absolute;
+    top: 98px;
+    opacity: 0;
+    width: 91px;
+    z-index: 3;
+}
+
+.copy3 {
+    background-image: url("copy3.png");
+    background-repeat: no-repeat;
+    height: 37px;
+    left: 81px;
+    position: absolute;
+    top: 133px;
+    opacity: 0;
+    width: 152px;
+    z-index: 3;
+}
+
+.copy4 {
+    background-image: url("copy4.png");
+    background-repeat: no-repeat;
+    height: 34px;
+    left: 52px;
+    opacity: 0;
+    position: absolute;
+    top: 168px;
+    width: 207px;
+    z-index: 4;
+}
+
+.copy5 {
+     background-image: url("copy5.png");
+    background-repeat: no-repeat;
+    height: 22px;
+    left: 52px;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    width: 132px;
+    z-index: 4;
+}
+
+.copy6 {
+    background-image: url("copy6.png");
+    background-repeat: no-repeat;
+    height: 22px;
+    left: 123px;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    width: 132px;
+    z-index: 4;
+}
+
+.cCta{
+     background-image: url("cCta.png");
+    background-repeat: no-repeat;
+    height: 38px;
+    left: 66px;
+    position: absolute;
+    top: 134px;
+    opacity:0;
+    width: 161px;
+    z-index: 6;
+}
+
+.cCtaT{
+    background-image: url("cCtaT.png");
+    background-repeat: no-repeat;
+    height: 15px;
+    left: 106px;
+    opacity: 0;
+    position: absolute;
+    top: 147px;
+    width: 76px;
+    z-index: 6;
+}
+
+.cPegi{
+    background-image: url("cPegi.png");
+    background-repeat: no-repeat;
+    height: 11px;
+    left: 261px;
+    opacity: 0;
+    position: absolute;
+    top: 182px;
+    width: 32px;
+    z-index: 6;
+}
+
+.cXbox{
+    background-image: url("cXbox.jpg");
+    background-repeat: no-repeat;
+    height: 53px;
+    left: -1px;
+    opacity: 0;
+    position: absolute;
+    top: 197px;
+    width: 300px;
+    z-index: 6;
+
+}
+
+#guide0 {
+    background-image: url("guide0.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    left: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    z-index: 9000;
+}
+
+#guide1 {
+    background-image: url("guide1.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    left: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    width: 400px;
+    z-index: 9000;
+}
+
+#close_btn_dc:hover{
+	opacity:0.7;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+body, html { background-color: #999; margin: 0; padding: 0; }
+
+#ICCC_Main { background-color: #000; display: block; overflow: hidden; width: 300px; height: 250px; margin: 0; padding: 0; position: relative;
+perspective: 500px;
+-webkit-transform-style: preserve-3d;
+-webkit-perspective: 500px;	
+}
+#ICCC_Main div { display: block; overflow: hidden; text-indent: -9999px; }
+
+
+#ICCC_Main #img_bg { background: transparent url("img_bg.jpg") 0px 0px no-repeat; width:300px; height:250px; position: absolute; top:0px; left:0px;
+background-size: 300px 250px;	
+-o-background-size: 300px 250px;	
+-webkit-background-size: 300px 250px;	
+}
+
+#ICCC_Main #bg_color { background: black; width: 300px; height:250px; position: absolute; top: 0px; left: 0px; text-indent:0; opacity:.6; }
+
+#ICCC_Main #flash_wrapper { background: transparent; width: 100%; height: 85px; position: absolute; left: 0; top: 27px; overflow: visible; }
+#ICCC_Main #flash_wrapper .flash { background: transparent url('flash.png') 0 0 no-repeat; width: 52px; height: 55px; position: absolute; bottom: 0px; mix-blend-mode: screen; }
+
+/* CONTAINER */
+#ICCC_Main #anim_container { background: transparent; width: 300px; height: 250px; position: absolute; top: 0; left: 0; }
+#ICCC_Main #container { background: transparent; width: 247px; height: 179px; position: absolute; left: 27px; top: 26px; 
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));	
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+}
+#ICCC_Main #container .borders { background: #fff; position: absolute; opacity: .7; }
+#ICCC_Main #container #border_top_left { width: 100px; height: 1px; top: 0; left: 0; }
+#ICCC_Main #container #border_top_right { width: 100px; height: 1px; top: 0; right: 0; }
+#ICCC_Main #container #border_left { width: 1px; height: 179px; top: 0; left: 0; }
+#ICCC_Main #container #border_right { width: 1px; height: 179px; top: 0; right: 0; }
+#ICCC_Main #container #border_bottom { width: 247px; height: 1px; bottom: 0; left: 0; transform-origin: 50% 50%; }
+#ICCC_Main #basketball_container { background: transparent; width: 26px; height: 26px; position: absolute; left: 138px; top: 14px; }
+#ICCC_Main #basketball_container #basketball_stroke { background: white; border-radius: 100%; width: 26px; height: 26px; position: absolute; left: 0; top: 0;  text-indent:0; }
+#ICCC_Main #basketball_container #basketball { background: transparent url("gif_basketball.gif") left top no-repeat; width:26px; height:26px; position: absolute; top: 0; left: 0;
+background-size:26px 26px;
+-o-background-size:26px 26px;
+-webkit-background-size:26px 26px;
+}
+#ICCC_Main #container #bottom_bar { background: #fff; width: 50px; height: 5px; position: absolute; left: 98px; bottom: 0; }
+#ICCC_Main #container_glow { background: transparent; width: 249px; height: 181px; position: absolute; left: 26px; top: 25px; }
+#ICCC_Main #container_glow #glow_top { background: transparent; width: 249px; height: 3px; position: absolute; top: 0; left: 0; }
+#ICCC_Main #container_glow #glow_btm { background: transparent; width: 249px; height: 3px; position: absolute; bottom: 0; left: 0; }
+#ICCC_Main #container_glow .glow_horiz_top { background: #fff; width: 100%; height: 1px; position: absolute; left: 0; top: 0; opacity: .5; }
+#ICCC_Main #container_glow .glow_horiz_mid { background: #fff; width: 100%; height: 1px; position: absolute; left: 0; top: 1px; }
+#ICCC_Main #container_glow .glow_horiz_btm { background: #fff; width: 100%; height: 1px; position: absolute; left: 0; top: 2px; opacity: .5; }
+#ICCC_Main #container_glow #glow_left { background: transparent; width: 3px; height: 181px; position: absolute; top: 0; left: 0; }
+#ICCC_Main #container_glow #glow_right { background: transparent; width: 3px; height: 181px; position: absolute; top: 0; right: 0; }
+#ICCC_Main #container_glow .glow_vert_top { background: #fff; width: 1px; height: 100%; position: absolute; left: 0px; top: 0; opacity: .5; }
+#ICCC_Main #container_glow .glow_vert_mid { background: #fff; width: 1px; height: 100%; position: absolute; left: 1px; top: 0; }
+#ICCC_Main #container_glow .glow_vert_btm { background: #fff; width: 1px; height: 100%; position: absolute; left: 2px; top: 0; opacity: .5; }
+#ICCC_Main #container_glow #glow_cover { background: transparent url("img_bg.jpg") -127px -25px no-repeat; width: 47px; height: 3px; position: absolute; top: 0; left: 101px;
+background-size: 300px 250px;	
+-o-background-size: 300px 250px;	
+-webkit-background-size: 300px 250px;	
+}
+#ICCC_Main #container_glow #glow_cover #darken { background: #000; width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: .6; }
+
+#ICCC_Main #frame_03_container,
+#ICCC_Main #frame_02_container,
+#ICCC_Main #frame_01_container { background: transparent; width: 247px; height: 179px; position: absolute; left: 27px; top: 26px; }
+#ICCC_Main #frame_01_container #frame_01_l1_container { background: transparent; width: 247px; height: 80px; position: absolute; top: 36px; left: 0; }
+#ICCC_Main #frame_01_container #frame_01_l1_container #frame_01_l1 { background: transparent url("img_content.png") 0 -1px no-repeat; width: 247px; height: 80px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_01_container #frame_01_l2_container { background: transparent; width: 247px; height: 16px; position: absolute; bottom: 28px; left: 0; }
+#ICCC_Main #frame_01_container #frame_01_l2_container #frame_01_l2 { background: transparent url("img_content.png") 0 -100px no-repeat; width: 247px; height: 16px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_02_container #frame_02_l1_container { background: transparent; width: 247px; height: 79px; position: absolute; top: 36px; left: 0; }
+#ICCC_Main #frame_02_container #frame_02_l1_container #frame_02_l1 { background: transparent url("img_content.png") 0 -133px no-repeat; width: 247px; height: 79px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_02_container #frame_02_l2_container { background: transparent; width: 247px; height: 17px; position: absolute; top: 135px; left: 0; }
+#ICCC_Main #frame_02_container #frame_02_l2_container #frame_02_l2 { background: transparent url("img_content.png") 0 -232px no-repeat; width: 247px; height: 17px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_03_container #frame_03_l1_container { background: transparent; width: 247px; height: 46px; position: absolute; top: 38px; left: 0; }
+#ICCC_Main #frame_03_container #frame_03_l1_container #frame_03_l1 { background: transparent url("img_content.png") 0 -265px no-repeat; width: 247px; height: 46px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_03_container #frame_03_l2_container { background: transparent; width: 247px; height: 17px; position: absolute; top: 102px; left: 0; }
+#ICCC_Main #frame_03_container #frame_03_l2_container #frame_03_l2 { background: transparent url("img_content.png") 0 -329px no-repeat; width: 247px; height: 17px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+#ICCC_Main #frame_03_container #frame_03_l3_container { background: transparent; width: 247px; height: 17px; position: absolute; top: 127px; left: 0; }
+#ICCC_Main #frame_03_container #frame_03_l3_container #frame_03_l3 { background: transparent url("img_content.png") 0 -354px no-repeat; width: 247px; height: 17px; position: absolute; top: 0px; left: 0px;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;
+-webkit-background-size: 280px 750px;	
+}
+
+#ICCC_Main #flare { background: transparent url("flare.png") 0 0 no-repeat; width: 300px; height: 200px; position: absolute; top: 0; left: 0;
+background-size: 300px 200px;	
+-o-background-size: 300px 200px;	
+-webkit-background-size: 300px 200px;	
+transform-origin: 50% 50%;
+-webkit-transform-origin: 50% 50%;
+}
+
+/* ENDFRAME */
+#ICCC_Main #iccc_container {background: transparent url("img_content.png") 0px -385px no-repeat; width:270px; height:70px; position: absolute; top:50px; left:15px; text-indent:0;
+background-size: 280px 750px;	
+-o-background-size: 280px 750px;	
+-webkit-background-size: 280px 750px;
+filter: drop-shadow(0px 0px 3px rgba(0,0,0,1));	
+-webkit-filter: drop-shadow(0px 0px 3px rgba(0,0,0,1));
+}
+
+#ICCC_Main #disclaimer01 {background: transparent url("img_content.png") 0px -464px no-repeat; width:80px; height:10px; position: absolute; top:190px; left:117px; text-indent:0; opacity:.5;
+background-size: 280px 750px;	
+-o-background-size: 280px 750px;	
+-webkit-background-size: 280px 750px;
+}
+
+#ICCC_Main #disclaimer02 {background: transparent url("img_content.png") 0px -480px no-repeat; width:110px; height:30px; position: absolute; top:215px; left:15px; text-indent:0; opacity:.5;
+background-size: 280px 750px;	
+-o-background-size: 280px 750px;	
+-webkit-background-size: 280px 750px;
+}
+
+/* CTA */
+#ICCC_Main #cta_container_bg, 
+#ICCC_Main #cta_container { background: white; width:140px; height:32px; position: absolute; top:150px; left:80px; text-indent:0;}
+
+#ICCC_Main #cta_container #cta_copy { background: transparent url("img_content.png") left bottom no-repeat; width:140px; height:32px; position: absolute; top:-1px; left:0px; text-indent:0; 
+background-size: 280px 750px;	
+-o-background-size: 280px 750px;	
+-webkit-background-size: 280px 750px;
+}
+
+/* STATIC GRAPHICS */
+#ICCC_Main #footer_logos {background: transparent url('img_content.png') -124px -475px no-repeat; width:155px; height:33px; position: absolute; right:21px; bottom:5px; text-indent: 0;
+background-size: 280px 750px;
+-o-background-size: 280px 750px;	
+-webkit-background-size: 280px 750px;
+}
+
+#ICCC_Main .hide { display: none; }
+
+/* UTILS */
+#ICCC_Main #loading { background-color: #000; width: 300px; height: 250px; position: absolute; top:0px; left: 0px;}
+#ICCC_Main #border { background: transparent; border: 1px solid #000; width: 298px; height: 248px; position: absolute; top: 0; left: 0;}
+#ICCC_Main #clicktag { background-color: transparent; width: 300px; height: 250px; position: absolute; top: 0; left: 0; text-indent: -9999px; cursor: pointer; z-index: 100;}
+#ICCC_Main .hide { display: none;}
+.ie #ICCC_Main #ie_bg { background: transparent url('Infiniti_ICCC_300x250_backup.jpg') no-repeat 0 0; width: 300px; height: 250px; position: absolute; top: 0; left: 0;} 

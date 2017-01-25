@@ -1,0 +1,297 @@
+html {
+	overflow:hidden;
+	
+}
+
+body{
+	background:url('background.jpg') no-repeat ;
+	height:600px;
+	margin:0;
+	padding:0;
+	width:160px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes leftthe { from { left:-200px; } to { left:14px;} }
+@keyframes leftthe  { from { left:-200px; } to { left:14px;} }
+@-moz-keyframes leftthe  { from { left:-200px; } to { left:14px;} }
+
+@-webkit-keyframes leftthe2 { from { left:-200px; } to { left:14px;} }
+@keyframes leftthe2  { from { left:-200px; } to { left:14px;} }
+@-moz-keyframes leftthe2  { from { left:-200px; } to { left:14px;} }
+
+@-webkit-keyframes rightthe { from { left:14px;} to { left:300px; } }
+@keyframes rightthe { from { left:14px;} to { left:300px; } }
+@-moz-keyframes rightthe { from { left:14px;} to { left:300px; } }
+
+@-webkit-keyframes lefttitle { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+@keyframes lefttitle { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+@-moz-keyframes lefttitle { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+
+@-webkit-keyframes lefttitle2 { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+@keyframes lefttitle2 { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+@-moz-keyframes lefttitle2 { from { left:-200px; top:60px; } to { left:17px; top:41px; } }
+
+@-webkit-keyframes righttitle { from { left:17px; top:41px; } to { left:300px; top:15px; } }
+@keyframes righttitle { from { left:17px; top:41px; } to { left:300px; top:15px; } }
+@-moz-keyframes righttitle { from { left:17px; top:41px; } to { left:300px; top:15px; } }
+
+@-webkit-keyframes lefttitle1 { from { left:-200px; top:76px; } to { left:17px; top: 47px; } }
+@keyframes lefttitle1 { from { left:-200px; top:60px; } to { left:17px; top: 47px; } }
+@-moz-keyframes lefttitle1 { from { left:-200px; top:60px; } to { left:17px; top: 47px; } }
+
+@-webkit-keyframes righttitle1 { from { left:17px; top:47px; } to { left:300px; top:15px; } }
+@keyframes righttitle1 { from { left:17px; top:47px; } to { left:300px; top:15px; } }
+@-moz-keyframes righttitle1 { from { left:17px; top:47px; } to { left:300px; top:15px; } }
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+@-webkit-keyframes slide { from { left:-200px; } to { left:-1px; } }
+@keyframes slide { from { left:-200px; } to { left:-1px;  } }
+@-moz-keyframes slide { from { left:-200px; } to { left:-1px;  } }
+
+@-webkit-keyframes slide2 { from { left:-200px; } to { left:0px; } }
+@keyframes slide2 { from { left:-200px; } to { left:0px;  } }
+@-moz-keyframes slide2 { from { left:-200px; } to { left:0px;  } }
+
+@-webkit-keyframes slide1 { from { left:-200px; } to { left:75px; } }
+@keyframes slide1 { from { left:-200px; } to { left:75px;  } }
+@-moz-keyframes slide1 { from { left:-200px; } to { left:75px;  } }
+
+@-webkit-keyframes rightslide { from { right:-200px; } to { right:30px; } }
+@keyframes rightslide { from { right:-200px; } to { right:30px; } }
+@-moz-keyframes rightslide { from { right:-200px; } to { right:30px; } }
+
+@-webkit-keyframes rightslide2 { from { right:-200px; } to { right:42px; } }
+@keyframes rightslide2 { from { right:-200px; } to { right:42px; } }
+@-moz-keyframes rightslide2 { from { right:-200px; } to { right:42px; } }
+
+@-webkit-keyframes rightslide1 { from { right:-200px; } to { right:5px; } }
+@keyframes rightslide1 { from { right:-200px; } to { right:5px; } }
+@-moz-keyframes rightslide1 { from { right:-200px; } to { right:5px; } }
+
+@-webkit-keyframes topslide { from { top: 1px; } to { top:25px; } }
+@keyframes topslide  { from { top: 1px; } to { top:25px; } }
+@-moz-keyframes topslide  { from { top: 1px; } to { top:25px; } }
+
+@-webkit-keyframes topslideup { from { top: 25px; } to { top:1px; } }
+@keyframes topslideup  { from { top: 25px; } to { top:1px; } }
+@-moz-keyframes topslideup  { from { top: 25px; } to { top:1px; } }
+
+@-webkit-keyframes bottomslide { from { top: 130px; } to { top:25px; } }
+@keyframes bottomslide  { from { top: 130px; } to { top:25px; } }
+@-moz-keyframes bottomslide  { from { top: 130px; } to { top:25px; } }
+
+@-webkit-keyframes bottomopen { from { top:45px; } to {top: 108px;} }
+@keyframes bottomopen   { from { top:45px; } to {top: 108px;} }
+@-moz-keyframes bottomopen  { from { top:45px; } to {top: 108px;} }
+
+@-webkit-keyframes bottomopen1 { from { top:45px; } to {top: 130px;} }
+@keyframes bottomopen   { from { top:45px; } to {top: 130px;} }
+@-moz-keyframes bottomopen  { from { top:45px; } to {top: 130px;} }
+
+@-webkit-keyframes bottomslide1 { from { top: 130px; } to { top:55px; } }
+@keyframes bottomslide1  { from { top: 130px; } to { top:55px; } }
+@-moz-keyframes bottomslide1  { from { top: 130px; } to { top:55px; } }
+
+
+@-webkit-keyframes priceslide { from { top: 250px; } to { top:180px; } }
+@keyframes priceslide  { from { top: 250px; } to { top:180px; } }
+@-moz-keyframes priceslide  { from { top: 250px; } to { top:180px; } }
+
+@-webkit-keyframes orderslide { from { top: -100px; } to { top:5px; } }
+@keyframes orderslide  { from { top: -100px; } to { top:5px; } }
+@-moz-keyframes orderslide  { from { top: -100px; } to { top:5px; } }
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+
+
+/* LOGO*/
+
+.the {
+	background:url(the.png);
+	position:absolute;
+	left:-200px;
+	top: 20px;
+	width:40px;
+	height:20px;
+	opacity:1;
+	
+	-webkit-animation:leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+
+    -moz-animation: leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+    animation:leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+}
+
+
+.small_pizza {
+	background:url(left-pizza.png);
+	  position: absolute;
+	  left:-200px;
+	  top: 173px;
+	  width: 160px;
+	  height: 183px;
+	  z-index:1;
+	  opacity:1;
+	  -webkit-animation:slide 0.1s 0.7s linear forwards;
+  	  -moz-animation:slide 0.1s 0.7s linear forwards;
+      animation:slide 0.1s 0.7s linear forwards;
+}
+
+.order {
+	background:url(order.png) no-repeat;
+	  position: absolute;
+	  top:400px;
+	  left:40px;
+	  width: 90px;
+	  height: 75px;
+	  z-index:1;
+	  opacity:0;
+	  background-size:cover;
+	  -webkit-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      -o-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      -moz-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+
+}
+
+
+.small_pizza2 {
+	background:url(right-pizza.png);
+	  position: absolute;
+	  right: -200px;
+	  top: 355px;
+	  width: 160px;
+	  height: 188px;
+	  z-index:1;
+	  opacity:1;
+	  -webkit-animation:rightslide1 0.1s 0.9s linear forwards;
+  	  -moz-animation:rightslide1 0.5s 1s linear forwards;
+      animation:rightslide1 0.5s 1s linear forwards;
+}
+
+
+.title {
+	background:url(midweek.png);
+	  position: absolute;
+	  left: -200px;
+	  width: 130px;
+	  height: 100px;
+	  z-index:2;
+	  opacity:1;
+	  
+	  -webkit-animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+
+  	  -moz-animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+      animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+}
+
+.title2 {
+	background:url(title2.png);
+	  position: absolute;
+	  left: -200px;
+	  width: 130px;
+	  height: 86px;
+	  z-index:2;
+	  opacity:1;
+	  
+	  -webkit-animation:lefttitle1 0.1s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+  	  -moz-animation:lefttitle1 0.1s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+      animation:lefttitle1 0.1s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+}
+
+
+.price {
+	  background:url(price.png);
+	  position: absolute;
+	  width: 90px;
+	  height: 47px;
+	  z-index:3;
+	  opacity:1;
+	  
+	  left: -200px;
+	  top: 160px;
+	
+	  -webkit-animation: slide2 0.2s 3.3s linear forwards;
+  	  -moz-animation:slide2 0.2s 3.3s linear forwards;
+      animation:slide2 0.2s 3.3s linear forwards;
+}
+
+
+.parent {
+    position:relative;
+    float:right;
+    width:160px;
+    height:600px;
+}
+.legal {
+    background-color:#006fba;
+    z-index:110;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: auto;
+    transition: all .4s;
+}
+.legal:hover {
+    width:100%;
+    /* To make sure the width is aligned with the parent div */
+    cursor:default;
+    transition: all .4s;
+}
+
+.legal-text {
+	padding:0px 3px;
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.legal-text, .legal span {
+    font-size:9px;
+    color:#FFFFFF;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.legal span {
+    display:none;
+    padding:5px 10px;
+    /* Expanded text is hidden */
+}
+.legal:hover p {
+    display:none;
+    /* the text is hidden */
+}
+.legal:hover span {
+    display:block;
+    /* Expanded text is shown */
+}
+
+
+
+
+
+

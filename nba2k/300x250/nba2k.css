@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body, html { background-color: #fff; margin: 0; padding: 0; }
+
+#nba2k { background-color: #000; display: block; overflow: hidden; width: 300px; height: 250px; margin: 0; padding: 0; position: relative;
+transform-style: preserve-3d;
+perspective: 500px;
+-webkit-transform-style: preserve-3d;
+-webkit-perspective: 500px;	
+}
+
+#nba2k div { display: block; overflow: hidden; text-indent: -9999px; }
+
+#nba2k .txt_wrapper { background-color: transparent; width: 300px; height: 250px; position: absolute; top: 0; left: 0; text-indent: 0; }
+
+#nba2k .ball_ghost,
+#nba2k #ball { background: transparent url('harden.png') right bottom no-repeat; width: 36px; height: 36px; position: absolute; left: -36px; top: 214px; }
+
+#nba2k #dust_smoke { background: transparent url('dustSmoke.jpg') 0 0 no-repeat; width: 300px; height: 250px; position: absolute; top: 0; left: 0; mix-blend-mode: lighten; }
+
+#nba2k .smoke { opacity: .7; background: transparent url('smoke.png') 0 0 no-repeat; width: 150px; height: 144px; position: absolute; left: 72px; top: 250px; mix-blend-mode: lighten; }
+
+#nba2k #ball_ghost1 { left: -15px; top: 194px; display: none; }
+#nba2k #ball_ghost2 { left: 44px; top: 120px; display: none; }
+#nba2k #ball_ghost3 { left: 100px; top: 65px; display: none; }
+#nba2k #ball_ghost4 { left: 160px; top: 34px; display: none; }
+
+#nba2k #ball_ghost1,
+#nba2k #ball_ghost2,
+#nba2k #ball_ghost3,
+#nba2k #ball_ghost4, 
+#nba2k #ball { -webkit-filter: blur(1px); -moz-filter: blur(1px); -o-filter: blur(1px); -ms-filter: blur(1px); filter: blur(1px); opacity: 1 }
+
+#nba2k #harden_bg { background: transparent url('harden_bg.jpg') 0 0 no-repeat; width: 300px; height: 250px; position: absolute; top: 0; left: 0;
+	transform: scale(1,1); -webkit-transform: scale(1,1);
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+}
+
+#nba2k #harden_bg_frame { width: 300px; height: 250px; position: absolute; top: 0; left: 0; display: none;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(60%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#nba2k #harden_ghost { background: transparent url('harden_ghost.jpg') 0 0 no-repeat; width: 215px; height: 210px; position: absolute; bottom: 0; left: 54px; mix-blend-mode: lighten; 
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+}
+
+#nba2k #harden_wrapper { background-color: transparent; width: 300px; height: 250px; position: absolute; top: 0; left: 0; overflow: visible;
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+}
+
+#nba2k #harden_wrapper #harden { background: transparent url('harden.png') 0 0 no-repeat; width: 143px; height: 174px; position: absolute; bottom: -34px; left: 45px; 
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+}
+
+#nba2k #harden_wrapper #harden_arm { background: transparent url('harden.png') right top no-repeat; width: 70px; height: 118px; position: absolute; top: 32px; right: 59px;
+	transform: rotate(-12deg);
+	-webkit-transform: rotate(-12deg);
+	transform-origin: 3% 95%;
+	-webkit-transform-origin: 3% 95%;
+}
+
+#nba2k #logo_wrapper { background-color: transparent; width: 245px; height: 42px; position: absolute; top: 6px; left: 27px; text-indent: 0; }
+
+#nba2k #logo_wrapper #logo { width: 245px; height: 42px; position: absolute; top: 0; left: 0; }
+
+#nba2k #txt_featuring_wrapper { background-color: transparent; width: 157px; height: 16px; position: absolute; top: 52px; left: 28px; text-indent: 0; }
+
+#nba2k #txt_featuring_wrapper #txt_featuring { width: 157px; height: 16px; position: absolute; top: 0; left: 0; }
+
+#nba2k #logo_2k_wrapper { background-color: transparent; width: 35px; height: 23px; position: absolute; right: 4px; bottom: 35px; text-indent: 0; }
+
+#nba2k #logo_2k_wrapper #logo_2k { width: 35px; height: 23px; position: absolute; top: 0; left: 0; }
+
+#nba2k #footer #footer_bg,
+#nba2k #footer { background-color: transparent; width: 300px; height: 30px; position: absolute; left: 0; bottom: 0; text-indent: 0; }
+
+#nba2k #footer #footer_bg { background-color: #000; opacity: .8; }
+
+#nba2k #footer #txt_story { width: 80px; height: 20px; position: absolute; top: 7px; left: 8px; }
+
+#nba2k #footer #txt_order { width: 80px; height: 30px; position: absolute; top: 0; right: 0; }
+
+#nba2k #txt_legal { width: 42px; height: 6px; position: absolute; bottom: 35px; left: 8px; opacity: .6; }
+
+#nba2k #smoke_fader,
+#nba2k #loader { background-color: #000; width: 300px; height: 250px; position: absolute; top: 0; left: 0; }
+
+#nba2k #border { background: transparent; border: 1px solid #000; width: 298px; height: 248px; position: absolute; top: 0; left: 0; z-index: 100; }
+
+#nba2k #clicktag { background-color: transparent; width: 300px; height: 250px; position: absolute; top: 0; left: 0; text-indent: -9999px; cursor: pointer; z-index: 100; }
+
+#nba2k .hide { display: none; }
+
+.ie #nba2k #ie_bg { background: transparent url('backup_300x250.jpg') 0 0 no-repeat; width: 300px; height: 250px; position: absolute; top: 0; left: 0; } 
+
+/* -------------------- Animation Declarations -------------------- */
+
+#nba2k #footer #txt_order.over path.order { 
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	fill: #FFFFFF !important;
+}
+
+#nba2k #footer #txt_order.out path.order { 
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	fill: #BBBBBB !important;
+}
+
+/* -------------------------- Animations -------------------------- */
+
+/* ---------------------------------------------- */

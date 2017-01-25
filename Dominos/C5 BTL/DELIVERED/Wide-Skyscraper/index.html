@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>160x600 WideSky</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+<!--[if lt IE 11]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    
+<style>
+
+    body,
+
+    html {
+
+        overflow: hidden
+
+    }
+
+    .background,
+
+    .logo,
+
+    body {
+
+        position: absolute
+
+    }
+
+    body {
+
+        width: 160px;
+
+        height: 600px;
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box
+
+    }
+
+    .background {
+
+        background: url(background.png) no-repeat;
+
+        width: 100%;
+
+        height: 100%
+
+    }
+
+    .logo {
+
+        background: url(logo.png) no-repeat;
+
+        width: 120px;
+
+        height: 56px;
+
+        right: 20px;
+
+        bottom: 5px;
+
+        z-index: 20
+
+    }
+
+    #bg-exit {
+
+        position: absolute;
+
+        width: 100%;
+
+        height: 90%;
+
+        top: 0;
+
+        left: 0;
+
+        cursor: pointer;
+
+        opacity: 0;
+
+        z-index: 400
+
+    }
+
+    .f1-copy,
+
+    .for-just {
+
+        z-index: 4;
+
+        position: absolute;
+
+        width: 120px
+
+    }
+
+    .f1-copy {
+
+        background: url(f1-copy.png) no-repeat;
+
+        top: 100px;
+
+        right: -100px;
+
+        height: 105px;
+
+        opacity: 1
+
+    }
+
+    @-webkit-keyframes f1-copy_IN {
+
+        from {
+
+            right: -100px
+
+        }
+
+        to {
+
+            right: 20px
+
+        }
+
+    }
+
+    @-moz-keyframes f1-copy_IN {
+
+        from {
+
+            right: -100px
+
+        }
+
+        to {
+
+            right: 20px
+
+        }
+
+    }
+
+    @keyframes f1-copy_IN {
+
+        from {
+
+            right: -100px
+
+        }
+
+        to {
+
+            right: 20px
+
+        }
+
+    }
+
+    @-webkit-keyframes f1-copy_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -100px
+
+        }
+
+    }
+
+    @-moz-keyframes f1-copy_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -100px
+
+        }
+
+    }
+
+    @keyframes f1-copy_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -100px
+
+        }
+
+    }
+
+    .f1-copy.show {
+
+        -webkit-animation: f1-copy_IN .2s ease-out forwards, f1-copy_OUT .1s 4.5s ease-out forwards;
+
+        -moz-animation: f1-copy_IN .2s ease-out forwards, f1-copy_OUT .1s 4.5s ease-out forwards;
+
+        animation: f1-copy_IN .2s ease-out forwards, f1-copy_OUT .1s 4.5s ease-out forwards
+
+    }
+
+    .for-just {
+
+        background: url(for-just.png) no-repeat;
+
+        top: 195px;
+
+        right: 20px;
+
+        height: 42px;
+
+        opacity: 0
+
+    }
+
+    @-webkit-keyframes for_new {
+
+        from {
+
+            -webkit-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes for_new {
+
+        from {
+
+            -moz-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes for_new {
+
+        from {
+
+            transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes for_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    @-moz-keyframes for_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    @keyframes for_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    .for-just.show {
+
+        -webkit-animation: for_new .3s ease-out forwards, for_OUT .4s 2.5s ease-out forwards;
+
+        -moz-animation: for_new .3s ease-out forwards, for_OUT .4s 2.5s ease-out forwards;
+
+        animation: for_new .3s ease-out forwards, for_OUT .4s 2.5s ease-out forwards
+
+    }
+
+    .price {
+
+        background: url(price.png) no-repeat;
+
+        position: absolute;
+
+        top: 240px;
+
+        right: 20px;
+
+        width: 120px;
+
+        height: 46px;
+
+        opacity: 0;
+
+        z-index: 4
+
+    }
+
+    .terms,
+
+    .upgrade-copy {
+
+        position: absolute;
+
+        width: 120px;
+
+        z-index: 5
+
+    }
+
+    @-webkit-keyframes pricenew {
+
+        from {
+
+            -webkit-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes pricenew {
+
+        from {
+
+            -moz-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes pricenew {
+
+        from {
+
+            transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes price_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    @-moz-keyframes price_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    @keyframes price_OUT {
+
+        from {
+
+            right: 20px
+
+        }
+
+        to {
+
+            right: -500px
+
+        }
+
+    }
+
+    @-webkit-keyframes priceBOUNCE {
+
+        from {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes priceBOUNCE {
+
+        from {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes priceBOUNCE {
+
+        from {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    .price.show {
+
+        -webkit-animation: pricenew .3s ease-out forwards, priceBOUNCE .15s .5s 4 linear alternate, price_OUT .4s 2.5s ease-out forwards;
+
+        -moz-animation: pricenew .3s ease-out forwards, priceBOUNCE .15s .5s 4 linear alternate, price_OUT .4s 2.5s ease-out forwards;
+
+        animation: pricenew .3s ease-out forwards, priceBOUNCE .15s .5s 4 linear alternate, price_OUT .4s 2.5s ease-out forwards
+
+    }
+
+    .upgrade-copy {
+
+        background: url(upgrade-copy.png) no-repeat;
+
+        top: 100px;
+
+        right: 20px;
+
+        height: 129px;
+
+        opacity: 0
+
+    }
+
+    @-webkit-keyframes upgrade-copy_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes upgrade-copy_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes upgrade-copy_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes upgrade-copy_OUT {
+
+        from {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes upgrade-copy_OUT {
+
+        from {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes upgrade-copy_OUT {
+
+        from {
+
+            right: 20px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    .upgrade-copy.show {
+
+        -webkit-animation: upgrade-copy_IN .2s ease-out forwards, upgrade-copy_OUT .2s 5s ease-out forwards;
+
+        -moz-animation: upgrade-copy_IN .2s ease-out forwards, upgrade-copy_OUT .2s 5s ease-out forwards;
+
+        animation: upgrade-copy_IN .2s ease-out forwards, upgrade-copy_OUT .2s 5s ease-out forwards
+
+    }
+
+    .terms {
+
+        background: url(terms.png) no-repeat;
+
+        top: 230px;
+
+        right: 15px;
+
+        height: 62px;
+
+        opacity: 0
+
+    }
+
+    @-webkit-keyframes terms_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes terms_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes terms_IN {
+
+        from {
+
+            left: -100px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes terms_OUT {
+
+        from {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes terms_OUT {
+
+        from {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes terms_OUT {
+
+        from {
+
+            right: 15px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            right: -150px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    .double-deal,
+
+    .summer,
+
+    .tasty {
+
+        position: absolute;
+
+        width: 120px;
+
+        right: 20px;
+
+        z-index: 10
+
+    }
+
+    .terms.show {
+
+        -webkit-animation: terms_IN .2s ease-out forwards, terms_OUT .2s 5s ease-out forwards;
+
+        -moz-animation: terms_IN .2s ease-out forwards, terms_OUT .2s 5s ease-out forwards;
+
+        animation: terms_IN .2s ease-out forwards, terms_OUT .2s 5s ease-out forwards
+
+    }
+
+    .summer {
+
+        background: url(roundel.png) no-repeat;
+
+        height: 121px;
+
+        opacity: 0;
+
+        top: 6px
+
+    }
+
+    @-webkit-keyframes summer_BOUNCEnew {
+
+        from {
+
+            -webkit-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes summer_BOUNCEnew {
+
+        from {
+
+            -moz-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes summer_BOUNCEnew {
+
+        from {
+
+            transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes summer_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes summer_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes summer_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    .summer.show {
+
+        -webkit-animation: summer_BOUNCEnew 1s 2 ease-in-out alternate, summer_TOP .2s 1.2s 1 ease-out forwards;
+
+        -moz-animation: summer_BOUNCEnew 1s 2 ease-in-out alternate, summer_TOP .2s 1.2s 1 ease-out forwards;
+
+        animation: summer_BOUNCEnew 1s 2 ease-in-out alternate, summer_TOP .2s 1.2s 1 ease-out forwards
+
+    }
+
+    .double-deal {
+
+        background: url(double-deal.png) no-repeat;
+
+        height: 40px;
+
+        opacity: 0;
+
+        top: 150px
+
+    }
+
+    @-webkit-keyframes double-deal_BOUNCEnew {
+
+        from {
+
+            -webkit-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes double-deal_BOUNCEnew {
+
+        from {
+
+            -moz-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes double-deal_BOUNCEnew {
+
+        from {
+
+            transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes double2 {
+
+        from {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes double2 {
+
+        from {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes double2 {
+
+        from {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1.2);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes double-deal_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes double-deal_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes double-deal_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    .double-deal.show {
+
+        -webkit-animation: double-deal_BOUNCEnew .3s ease-out forwards, double2 .15s .5s 4 linear alternate, double-deal_TOP .4s 2.5s ease-out forwards;
+
+        -moz-animation: double-deal_BOUNCEnew .3s ease-out forwards, double2 .15s .5s 4 linear alternate, double-deal_TOP .4s 2.5s ease-out forwards;
+
+        animation: double-deal_BOUNCEnew .3s ease-out forwards, double2 .15s .5s 4 linear alternate, double-deal_TOP .4s 2.5s ease-out forwards
+
+    }
+
+    .tasty {
+
+        background: url(tasty.png) no-repeat;
+
+        height: 43px;
+
+        opacity: 0;
+
+        top: 105px
+
+    }
+
+    @-webkit-keyframes tasty_new {
+
+        from {
+
+            -webkit-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes tasty_new {
+
+        from {
+
+            -moz-transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes tasty_new {
+
+        from {
+
+            transform: scale(.1);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-webkit-keyframes tasty_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes tasty_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes tasty_TOP {
+
+        from {
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            bottom: 470px;
+
+            opacity: 1
+
+        }
+
+    }
+
+    .tasty.show {
+
+        -webkit-animation: tasty_new .3s ease-out forwards, tasty_TOP .4s 2.5s ease-out forwards;
+
+        -moz-animation: tasty_new .3s ease-out forwards, tasty_TOP .4s 2.5s ease-out forwards;
+
+        animation: tasty_new .3s ease-out forwards, tasty_TOP .4s 2.5s ease-out forwards
+
+    }
+
+    .cta {
+
+        background: url(ordernow.png) no-repeat;
+
+        background-position-x: center;
+
+        position: absolute;
+
+        width: 120px;
+
+        height: 121px;
+
+        z-index: 15;
+
+        opacity: 0;
+
+        left: 20px;
+
+        top: 190px
+
+    }
+
+    @-webkit-keyframes cta_BOUNCE {
+
+        from {
+
+            -webkit-transform: scale(.9);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -webkit-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @-moz-keyframes cta_BOUNCE {
+
+        from {
+
+            -moz-transform: scale(.9);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            -moz-transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    @keyframes cta_BOUNCE {
+
+        from {
+
+            transform: scale(.9);
+
+            opacity: 1
+
+        }
+
+        to {
+
+            transform: scale(1);
+
+            opacity: 1
+
+        }
+
+    }
+
+    .cta.show {
+
+        -webkit-animation: cta_IN .2s 1 ease-out forwards;
+
+        -moz-animation: cta_IN .2s 1 ease-out forwards;
+
+        animation: cta_IN .2s 1 ease-out forwards
+
+    }
+
+    .cta.bounce {
+
+        -webkit-animation: cta_BOUNCE .3s infinite alternate;
+
+        -moz-animation: cta_BOUNCE .3s infinite alternate;
+
+        animation: cta_BOUNCE .3s infinite alternate
+
+    }
+
+</style>
+</head>
+<body>
+
+<!----------============--------------MAIN DIVS --------==============------------->    
+    
+<div id="bg-exit"></div>
+<div id="banner">
+    <div class="logo"></div>
+    <div class="background"></div>
+    <div class="f1-copy"></div>
+    <div class="for-just"></div>
+    <div class="price"></div>
+    <div class="pizza-image"></div>
+    <div class="upgrade-copy"></div>
+    <div class="double-deal"></div>
+    <div class="tasty"></div>
+    <div class="terms"></div>
+    <div class="sides"></div>
+    <div class="summer"></div>
+    <div class="cta"></div>
+    </div>
+    
+<!-----========================-------MAIN DIVS -----=========================----->      
+
+
+</body>
+
+<script type="text/javascript">
+
+    function bgExitHandler(e) {
+        Enabler.exitOverride('Background Exit', 'http://www.dominos.ie');
+    }
+
+    document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+    // ****
+
+    var irisBanner = ( function(){
+
+        var els = {
+            bannerEl : document.getElementById("banner")
+        };
+
+        var props = {
+
+        };
+
+        var actions = {
+            SHOW : "SHOW",
+            HIDE : "HIDE",
+            CTA_BOUNCE : "CTA_BOUNCE"
+        };
+
+        init();
+
+        function init(){
+            //console.log("/index/ -init ");
+
+			els.f1copyEl = setElement( ".f1-copy" );
+			els.forjustEl = setElement( ".for-just" );
+			els.priceEl = setElement( ".price" );
+            els.pizzaEl = setElement( ".pizza-image" );
+            els.sidesEl = setElement( ".sides" );
+            els.summerEl = setElement( ".summer" );
+            els.upgradecopyEl = setElement( ".upgrade-copy" );
+			els.doubledealEl = setElement( ".double-deal" );
+			els.tastyEl = setElement( ".tasty" );
+            els.termsEl = setElement( ".terms" );
+            els.ctaEl = setElement( ".cta" );
+
+            // *******
+            sequence();
+        }
+
+        /**
+         *
+         */
+        function sequence(){
+
+             var tm = 1;
+            tm += 0;
+            timer( tm, actions.SHOW, { el : els.summerEl } );       
+
+            // week banner, stars
+			
+			tm += 1;
+            timer( tm + 0.5, actions.SHOW, { el : els.f1copyEl } );
+			
+            tm += 1;
+            timer( tm + 0.5, actions.SHOW, { el : els.pizzaEl } );
+            timer( tm + 0.5, actions.SHOW, { el : els.sidesEl } );
+			
+			tm += 1;
+            timer( tm + 0.5, actions.SHOW, { el : els.forjustEl } );
+			timer( tm + 0.5, actions.SHOW, { el : els.priceEl } );
+            
+
+            tm += 3;
+            timer( tm + 0.5, actions.SHOW, { el : els.upgradecopyEl } );
+            timer( tm + 0.5, actions.SHOW, { el : els.termsEl } );
+            
+            tm += 5;
+            timer( tm + 1, actions.SHOW, { el : els.tastyEl } );
+			timer( tm + 1, actions.SHOW, { el : els.doubledealEl } );
+			
+            
+            tm += 1;
+            timer( tm + 1, actions.SHOW, { el : els.ctaEl } );
+            timer( tm + 1, actions.CTA_BOUNCE, null );
+        }
+
+
+        function timer( _delay, _action, _props ){
+
+            var d = _delay * 1000;
+
+            var to = window.setTimeout( function(){
+
+                actionRunner( _action, _props || null );
+                window.clearTimeout( to );
+            }, d );
+        }
+
+
+        function setElement( _selector ){
+            return els.bannerEl.querySelectorAll( _selector )[ 0 ];
+        }
+
+
+        function actionRunner( _action, _props ){
+
+            console.log("/index/ -actionRunner ", _action, _props );
+
+            switch( _action ){
+
+                case actions.SHOW:
+
+                    addClass( _props.el, "show", true );
+                    addClass( _props.el, "hide", false );
+
+                    break;
+
+                case actions.HIDE:
+
+                    addClass( _props.el, "show", false );
+                    addClass( _props.el, "hide", true );
+
+                    break;
+
+                case actions.PANEL_SHIFT:
+
+                    addClass( els.redPanelEl, "shift-in", true );
+                    addClass( els.starsEl, "shift-in", true );
+
+                    break;
+
+                case actions.CTA_BOUNCE:
+
+                    addClass( els.ctaEl, "bounce", true );
+
+                    break;
+            }
+        }
+
+
+        /**
+         *
+         * @param _el
+         * @param _class
+         * @param _f
+         */
+        function addClass( _el, _class, _f ){
+
+            console.log("/index/ -addClass ", _el, _class );
+
+            ( _f ) ? _el.classList.add( _class ) : _el.classList.remove( _class );
+
+        }
+
+        function prefix(){
+
+        }
+
+
+    })();
+
+
+</script>
+</html>

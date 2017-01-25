@@ -1,0 +1,386 @@
+html {
+    overflow:hidden;
+
+}
+body{
+    width:728px;
+    height:90px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    overflow:hidden;
+    position:absolute;
+}
+
+
+
+.background{
+
+    position: absolute;
+    background:url( "background.png" ) no-repeat ;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+
+    position: absolute;
+    background:url( "logo.png" ) no-repeat ;
+    width: 113px;
+    height: 37px;
+    right:5px;
+    bottom:7px;
+    z-index: 20;
+}
+
+#bg-exit {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 400;
+}
+
+
+@-webkit-keyframes copy_IN { from { top:-200px } to { top:25px; } }
+@-moz-keyframes copy_IN { from { top:-200px } to { top:25px; } }
+@keyframes copy_IN { from { top:-200px } to { top:25px; } }
+
+@-webkit-keyframes copy_OUT { from { top:25px } to { top:500px; } }
+@-moz-keyframes copy_OUT { from { top:25px } to { top:500px; } }
+@keyframes copy_OUT { from { top:25px } to { top:500px; } }
+
+
+/* ========================== PIZZA LEFT =================================== */
+
+.pizza-left{
+    background: url(pizza-left.png) no-repeat;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    opacity: 1;
+    z-index: 3;
+    
+}
+
+    @-webkit-keyframes pleft_IN { from { left:0px; } to { left:-40px; } }
+    @-moz-keyframes pleft_IN  { from { left:0px; } to { left:-40px; } }
+    @keyframes pleft_IN  { from { left:0px; } to { left:-40px; } }
+
+    @-webkit-keyframes pleft_OUT { from { left:-40px; } to { left:0px; } }
+    @-moz-keyframes pleft_OUT { from { left:-40px; } to { left:0px; } }
+    @keyframes pleft_OUT { from { left:-40px; } to { left:0px; } }
+    
+
+.pizza-left.show {
+    -webkit-animation:pleft_IN 0.2s  ease-out forwards, pleft_OUT 0.2s 8s  ease-out forwards;
+    -moz-animation:pleft_IN 0.2s  ease-out forwards, pleft_OUT 0.2s 8s ease-out forwards;
+    animation:pleft_IN 0.2s  ease-out forwards, pleft_OUT 0.2s 8s ease-out forwards;
+    
+}
+
+
+
+/* ========================== PIZZA RIGHT =================================== */
+
+.pizza-right{
+    background: url(pizza-right.png) no-repeat;
+    position: absolute;
+    top:0px;
+    left: 470px;
+    width: 100%;
+    height: 90px;
+    opacity: 1;
+    z-index: 3;    
+}
+
+    @-webkit-keyframes pright_IN { from { left: 470px; } to { left: 510px; } }
+    @-moz-keyframes pright_IN { from { left: 470px; } to { left: 510px; } }
+    @keyframes pright_IN { from { left: 470px; } to { left: 510px; } }
+
+    @-webkit-keyframes pright_OUT { from { left: 510px; } to { left: 470px; } }
+    @-moz-keyframes pright_OUT { from { left: 510px; } to { left: 470px; } }
+    @keyframes pright_OUT { from { left: 510px; } to { left: 470px; } }
+
+
+.pizza-right.show {
+    -webkit-animation:pright_IN 0.2s  ease-out forwards, pright_OUT 0.2s 8s  ease-out forwards;
+    -moz-animation:pright_IN 0.2s  ease-out forwards, pright_OUT 0.2s 8s  ease-out forwards;
+    animation:pright_IN 0.2s  ease-out forwards, pright_OUT 0.2s 8s  ease-out forwards;
+    
+}
+/* ========================== LINE 1 =================================== */
+
+.line-1{
+    background: url(line-1.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 240px;
+    width: 100%;
+    height: 41px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.line-1.show{
+    -webkit-animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+    animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+}
+
+/* ========================== 2 =================================== */
+
+.two {
+    background: url(2.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 292px;
+    width: 23px;
+    height: 41px;
+    opacity: 1;
+    z-index: 3;
+}
+
+@-webkit-keyframes BOUNCE { from{ -webkit-transform: scale( 1 ); opacity : 1 } to { -webkit-transform: scale(1.2); opacity : 1 } }
+@-moz-keyframes BOUNCE { from{ -moz-transform: scale( 1 ); opacity : 1 } to { -moz-transform: scale(1.2); opacity : 1 } }
+@keyframes BOUNCE { from{ transform: scale( 1 ); opacity : 1 } to { transform: scale(1.2); opacity : 1 } }
+
+
+.two.show{
+    -webkit-animation:copy_IN 0.3s ease-out forwards,BOUNCE 0.15s 0.5s 4 linear alternate,  copy_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:copy_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.5s 4 linear alternate, copy_OUT 0.5s 2.5s ease-out forwards;
+    animation:copy_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.5s 4 linear alternate, copy_OUT 0.5s 2.5s ease-out forwards;
+}
+
+
+
+/* ========================== LINE 2 =================================== */
+
+.line-2{
+    background: url(line-2.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 240px;
+    width: 100%;
+    height: 42px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.line-2.show{
+    -webkit-animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+    animation:copy_IN 0.3s ease-out forwards, copy_OUT 0.5s 2.5s ease-out forwards;
+}
+
+/* ========================== PRICE =================================== */
+
+.price {
+    background: url(price.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 325px;
+    width: 186px;
+    height: 72px;
+    opacity: 1;
+    z-index: 3;
+}
+
+@-webkit-keyframes PRICE_IN { from { top:-200px } to { top:12px; } }
+@-moz-keyframes PRICE_IN { from { top:-200px } to { top:12px; } }
+@keyframes PRICE_IN { from { top:-200px } to { top:12px; } }
+
+@-webkit-keyframes PRICE_OUT { from { top:12px } to { top:500px; } }
+@-moz-keyframes PRICE_OUT { from { top:12px } to { top:500px; } }
+@keyframes PRICE_OUT { from { top:12px } to { top:500px; } }
+
+
+
+@-webkit-keyframes Price_BOUNCE { from{ -webkit-transform: scale( 1 ); opacity : 1 } to { -webkit-transform: scale(1.1); opacity : 1 } }
+@-moz-keyframes Price_BOUNCE { from{ -moz-transform: scale( 1 ); opacity : 1 } to { -moz-transform: scale(1.1); opacity : 1 } }
+@keyframes Price_BOUNCE { from{ transform: scale( 1 ); opacity : 1 } to { transform: scale(1.1); opacity : 1 } }
+
+.price.show{
+    -webkit-animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+    -moz-animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+    animation:PRICE_IN 0.3s ease-out forwards, Price_BOUNCE 0.15s 0.5s 4 linear alternate, PRICE_OUT 0.5s 2.5s ease-out forwards;
+}
+
+/* ========================== LINE 3 =================================== */
+
+.line-3{
+    background: url(line-3.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 300px;
+    width: 100%;
+    height: 43px;
+    opacity: 1;
+    z-index: 3;
+}
+
+@-webkit-keyframes line3_IN { from { top:-200px } to { top:10px; } }
+@-moz-keyframes line3_IN{ from { top:-200px } to { top:10px; } }
+@keyframes line3_IN { from { top:-200px } to { top:10px; } }
+
+@-webkit-keyframes line3_OUT { from { top:10px } to { top:500px; } }
+@-moz-keyframes line3_OUT { from { top:10px } to { top:500px; } }
+@keyframes line3_OUT { from { top:10px } to { top:500px; } }
+
+
+.line-3.show{
+    -webkit-animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+    -moz-animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+    animation:line3_IN 0.3s ease-out forwards, line3_OUT 0.5s 5s ease-out forwards;
+}
+
+/* ========================== T&Cs =================================== */
+
+.terms{
+    background-color:none;
+    z-index:15;
+    position:absolute;
+    top:-400px;
+    left:260px;
+    width: 30%;
+    font-size:10px;
+    color:#FFFFFF;
+	line-height: 1.25;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+
+@-webkit-keyframes terms_IN { from { top:-400px } to { top:50px; } }
+@-moz-keyframes terms_IN{ from { top:-400px } to { top:50px; } }
+@keyframes terms_IN { from { top:-400px } to { top:50px; } }
+
+@-webkit-keyframes terms_OUT { from { top:50px } to { top:500px; } }
+@-moz-keyframes terms_OUT { from { top:50px } to { top:500px; } }
+@keyframes terms_OUT { from { top:50px } to { top:500px; } }
+
+
+.terms.show{
+    -webkit-animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+    -moz-animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+    animation:terms_IN 0.3s ease-out forwards, terms_OUT 0.5s 5s ease-out forwards;
+}
+
+
+/* ========================== RIBBON =================================== */
+
+.ribbon {
+    background: url(ribbon.png) no-repeat;
+    position: absolute;
+    top:-200px;
+    left: 235px;
+    width: 100%;
+    height: 54px;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+@-webkit-keyframes ribbon_IN { from { top:-200px } to { top:34px; } }
+@-moz-keyframes ribbon_IN{ from { top:-200px } to { top:34px; } }
+@keyframes ribbon_IN { from { top:-200px } to { top:34px; } }
+
+.ribbon.show{
+    -webkit-animation:ribbon_IN 0.3s ease-out forwards ;
+    -moz-animation:ribbon_IN 0.3s ease-out forwards ;
+    animation:ribbon_IN 0.3s ease-out forwards;
+}
+
+
+/* ========================== TASTIEST =================================== */
+
+.tastiest {
+    background: url(tastiest.png) no-repeat;
+    position: absolute;
+    top:5px;
+    left: 265px;
+    width:111px;
+    height: 40px;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+@-webkit-keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+@-moz-keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+@keyframes tastiest_IN { from { width:0; opacity: 0; } to { width:100%; opacity: 1 } }
+
+.tastiest.show{
+    -webkit-animation:tastiest_IN 0.9s 1 ease-out forwards ;
+    -moz-animation:tastiest_IN 0.9s 1 ease-out forwards ;
+    animation:tastiest_IN 0.9s 1 ease-out forwards;
+}
+
+/* ============================doubly LOCKUP================================= */
+
+.doubly {
+    background: url(doubly.png) no-repeat;
+    position: absolute;
+    width: 206px;
+    height: 160px;
+    right:255px;
+    z-index: 10;
+    opacity: 0;
+    top:-34px;
+}
+
+
+@-webkit-keyframes doubly { from{ -webkit-transform: scale( 0.1 ); opacity : 1 } to { -webkit-transform: scale(1.15); opacity : 1 } } 
+@-moz-keyframes doubly { from{ -moz-transform: scale( 0.1 ); opacity : 1 } to { -moz-transform: scale(1.15); opacity : 1 } }
+@keyframes doubly { from{ transform: scale( 0.1 ); opacity : 1 } to { transform: scale(1.15); opacity : 1 } }
+
+
+@-webkit-keyframes doubly2 { from{ -webkit-transform: scale( 1.15 ); opacity : 1 } to { -webkit-transform: scale(1.0); opacity : 1 } } 
+@-moz-keyframes doubly2 { from{ -moz-transform: scale( 1.15 ); opacity : 1 } to { -moz-transform: scale(1.0); opacity : 1 } }
+@keyframes doubly2 { from{ transform: scale( 1.15 ); opacity : 1 } to { transform: scale(1.0); opacity : 1 } }
+
+
+@-webkit-keyframes doubly_out { from{ top:0px; } to { top:300px; } }
+@-moz-keyframes doubly_out { from{ top:0px; } to { top:300px; } }
+@keyframes doubly_out  { from{ top:0px; } to { top:300px; } }
+
+.doubly.show{
+    -webkit-animation:doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.4s 1.8s ease-in forwards; 
+    -moz-animation: doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.4s 1.8s ease-in forwards; 
+    animation: doubly 0.3s  ease-out forwards, doubly2 0.1s 0.35s ease-in forwards, doubly_out 0.4s 1.8s ease-in forwards; 
+}
+
+
+/* ==========================CTA =================================== */
+
+
+.button {
+    background: url(button.png) no-repeat;
+    position: absolute;
+    top:5px;
+    left: 410px;
+    width: 79px;
+    height: 79px;
+    opacity: 0;
+    z-index: 3;
+}
+
+@-webkit-keyframes button_IN { from { -webkit-transform: scale( 0.1); opacity : 0; } to { -webkit-transform: scale( 1 ); opacity: 1 } }
+@-moz-keyframes button_IN { from { -moz-transform: scale( 0.1 ); opacity : 0; } to { -moz-transform: scale( 1 ); opacity: 1 } }
+@keyframes button_IN { from { transform: scale( 0.1 ); opacity : 0; } to { transform: scale( 1 ); opacity: 1 } }
+
+
+
+.button.show{
+    -webkit-animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+    -moz-animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+    animation:button_IN 0.3s ease-out forwards, BOUNCE 0.15s 0.1s 4 linear alternate;
+}
+
+

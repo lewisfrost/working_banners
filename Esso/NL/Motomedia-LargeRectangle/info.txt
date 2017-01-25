@@ -1,0 +1,58 @@
+Motomedia-LargeRectangle (6647839089/100344)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+screenad.clicks = new Array();
+screenad.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+1.file                  : index.html
+1.click                 : default
+
+2.file                  : synergy.gif
+2.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  CSSPlugin.min.js
+  EasePack.min.js
+  Exxon_Synergy_Fuels_Wipers_336x280.css
+  Exxon_Synergy_Fuels_Wipers_336x280.js
+  TweenLite.min.js
+  info.txt
+  loading.gif
+  cta.png
+  drop.png
+  oupdate.png
+  t.png
+  wiper.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found

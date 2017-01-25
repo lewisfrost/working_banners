@@ -1,0 +1,107 @@
+
+{
+
+	"HTMLFileName":"index.html",
+	"expanded:Images/strapline.png":"nil",
+	"pref__general__AutoKeyframeProperties":"false",
+	"expanded:Images/door.png":"nil",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"falling-hearts\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"expanded:Images/replay2.png":"nil",
+	"expanded:Images/road2.png":"nil",
+	"expanded:Images/refresh.png":"nil",
+	"viewStartY":"500",
+	"expanded:Images/message.png":"nil",
+	"expanded:Images/heart-2.png":"nil",
+	"expanded:Images/heart-3.png":"nil",
+	"expanded:Images/van.png":"nil",
+	"expanded:Images/replay.png":"nil",
+	"expanded:Images/road.png":"nil",
+	"viewStartMs":"4975",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"expanded:Images/door2.png":"nil",
+	"symbol_stage":{
+		"element_${van}":{
+			"timelineColor2":"0x326a96",
+			"animationEnabled":"true",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad"},
+		"element_${refresh}":{
+			"timelineColor2":"0x81aa62",
+			"animationEnabled":"true",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${ReplayHotspot}":{
+			"timelineColor2":"0xcbbd71",
+			"animationEnabled":"true",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${Message2}":{
+			"timelineColor2":"0x5a558a",
+			"animationEnabled":"true",
+			"timelineColor3":"0x4a485e",
+			"timelineColor":"0x63599f"},
+		"element_${MinSpend}":{
+			"timelineColor2":"0x1aa38f",
+			"animationEnabled":"true",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4"},
+		"element_${Frame}":{
+			"timelineColor2":"0x4fa275",
+			"animationEnabled":"true",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82"},
+		"element_${door}":{
+			"timelineColor2":"0x1095d2",
+			"animationEnabled":"true",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa"},
+		"defaultStageParentHeight":"250px",
+		"dummyStageParentWidth":"300px",
+		"element_${on_every_order}":{
+			"timelineColor2":"0xb099ce",
+			"animationEnabled":"true",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4"},
+		"defaultStageParentWidth":"300px",
+		"element_${road}":{
+			"timelineColor2":"0x107faa",
+			"animationEnabled":"true",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8"},
+		"element_${TCs}":{
+			"timelineColor2":"0x168c84",
+			"animationEnabled":"true",
+			"timelineColor3":"0x2a605c",
+			"timelineColor":"0x00a096"},
+		"dummyStageParentHeight":"250px"},
+	"expanded:Images/WaitroseLogo.png":"nil",
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"100",
+	"pixelsPerMs":"0.2",
+	"expanded:Images/heart-1.png":"nil",
+	"expanded:Images/GREENBTN.JPG":"nil",
+	"usedBOM":"false",
+	"nextElementColorIndex":"11",
+	"stage-Default Timeline_playhead_ms":"6706",
+	"expanded:Images/price.png":"nil",
+	"expanded:Images/product.png":"nil",
+	"expanded:Images/van2.png":"nil"}

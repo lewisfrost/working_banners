@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#ad-container #background_exit_dc { background-color: transparent; width: 100%; height: 100%; position: absolute; z-index: 450; cursor: pointer; }
+#ad-container #expand-container-dc #close-button { position: absolute; right: 14px; top: 5px; width:49px; height:17px; overflow: hidden; cursor: pointer; z-index: 1000; }
+#ad-container #expand-container-dc #close-button:hover #btn_close { fill: #fff; }
+#ad-container #expand_bg { background: transparent url('expand_bg.jpg') 0 0 no-repeat; width: 630px; height: 250px; position: absolute; right: 0; top: 0; }
+#ad-container #expand_logo_wrapper { width: 80px; height: 30px; position: absolute; right: 35px; bottom: 16px; }
+#ad-container #expand_cta_wrapper { background-color: transparent; width: 120px; height: 26px; border: 1px solid #fff; position: absolute; right: 14px; bottom: 62px; }
+#ad-container #expand_cta_wrapper #expand_cta_bg { background-color: #000; width: 120px; height: 26px; position: absolute; opacity: 0; }
+#ad-container #expand_cta_wrapper #expand_cta_txt { background-color: transparent; width: 120px; height: 26px; position: absolute; }
+#ad-container #expand_bg { background: transparent url('expand_bg.jpg') 0 0 no-repeat; width: 745px; height: 418px; position: absolute; top: 0; left: 0; 
+	transform: scale(.5,.5) rotate(15);
+}
+#ad-container #expand_particles { background: transparent url('particles.png') 0 0 no-repeat; width: 230px; height: 130px; position: absolute; top: 102px; left: 211px; }
+#ad-container #expand_heroes { background: transparent url('heroes.png') 0 0 no-repeat; width: 277px; height: 199px; position: absolute; bottom: 0; left: 170px; }
+#ad-container #expand_logo { background: transparent; width: 271px; height: 46px; position: absolute; top: 12px; left: 192px; transform: scale(1.4,1.4); -webkit-transform: scale(1.4,1.4); }
+#ad-container #expand_featuring { background: transparent; width: 185px; height: 18px; position: absolute; top: 63px; left: 227px; }
+#ad-container #expand_2k { background: transparent; width: 31px; height: 20px; position: absolute; bottom: -25px; left: 52px; }
+#ad-container #expand_rating { background: transparent url('rating.jpg') 0 0 no-repeat; width: 94px; height: 47px; position: absolute; bottom: 10px; left: 91px; }
+#ad-container #expand_legal { background: transparent; width: 42px; height: 6px; position: absolute; bottom: 10px; left: 191px; }
+#ad-container #expand_footer { background: transparent; width: 230px; height: 29px; position: absolute; bottom: 10px; right: 86px; }
+#ad-container #expand_footer #expand_story_wrapper { background: transparent; width: 123px; height: 29px; position: absolute; top: 0; left: 0; overflow: hidden; }
+#ad-container #expand_footer #expand_story_wrapper #expand_story { background: transparent; width: 123px; height: 29px; position: absolute; top: 0; left: 140px; }
+#ad-container #expand_footer #expand_order_wrapper { background: transparent; width: 106px; height: 29px; position: absolute; top: 0; right: 0; border-left: 2px solid #bbb; overflow: hidden; }
+#ad-container #expand_footer #expand_order_wrapper #expand_order { background: transparent; width: 106px; height: 29px; position: absolute; top: 0; left: -124px; }
+
+#ad-container #expand_footer #expand_order_wrapper.over #expand_order path.order { 
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	fill: #FFFFFF !important;
+}
+
+#ad-container #expand_footer #expand_order_wrapper.out #expand_order path.order { 
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	fill: #BBBBBB !important;
+}
+
+#ad-container #expand_cta_wrapper #expand_cta_bg.rollOver {
+	background: #000;
+	-moz-transition:all .5s ease-in-out;
+	-webkit-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	opacity:.3;	
+}
+
+#ad-container #expand_cta_wrapper #expand_cta_bg.rollOut {
+	background: #000;
+	-moz-transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	opacity:0;	
+}
+
+/* Div layer containing the video player and video controls. */
+#ad-container #video1_container_dc {
+	position: absolute;
+	width: 292px;
+	height: 164px;
+	top: 31px;
+	right: 87px;
+	background-color: #fff;
+	z-index: 500;
+	overflow: hidden;
+}
+
+#ad-container #video1_dc {
+	position: absolute;
+	width: 292px;
+	height: 164px;
+	top: 0;
+	left: 0;
+}
+
+#ad-container .video_controls_dc {
+	position: absolute;
+	width: 11px;
+	height:8px;
+	bottom: 7px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#ad-container .video_controls_dc:hover .controls {
+	fill: #fff;
+}
+
+#ad-container #video1_control_play_dc {
+	left: 25px;
+	display: none;
+}
+
+#ad-container #video1_control_pause_dc {
+	left: 25px;
+}
+
+#ad-container #video1_control_unmute_dc {
+	left: 10px;
+	display: none;
+}
+
+#ad-container #video1_control_mute_dc {
+	left: 10px;
+	display: none;
+}
+
+#ad-container #video1_control_replay_dc {
+	width: 67px;
+	height: 67px;
+	top: 50%;
+	left: 50%;
+	margin-left: -33.5px;
+	margin-top: -33.5px;
+	display: none;
+}
+
+#ad-container #video1_control_replay_dc:hover .replay {
+	fill: #fff;
+}
+
+#ad-container #video1_control_scrub_bar_dc {
+	background-color: transparent;
+	width: 240px;
+	height: 8px;
+	position: absolute;
+	bottom: 7px;
+	left: 40px;
+	display: block;
+	overflow: visible;
+}
+
+#ad-container #video1_control_scrub_bar_dc #scrub_bg {
+	background-color: #7A7A7B;
+	width: 240px;
+	height: 4px;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	cursor: pointer;
+}
+
+#ad-container #video1_control_scrub_bar_dc #scrub_bg_seek {
+	background-color: #d81000;
+	width: 1px;
+	height: 4px;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	cursor: pointer;
+}
+
+#ad-container #video1_control_scrub_bar_dc #scrubber {
+	background-color: transparent;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 0;
+	left: -4px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}

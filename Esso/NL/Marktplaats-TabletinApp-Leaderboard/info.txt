@@ -1,0 +1,63 @@
+Marktplaats-TabletinApp-Leaderboard (6282469729/100175)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+screenad.clicks = new Array();
+screenad.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+1.file                  : index.html
+1.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  wavecopy.png
+  copy3.png
+  synergy.jpg
+  wave.jpg
+  copy2.png
+  copy1.png
+  station.jpg
+  Exxon_Synergy_Fuels_Wipers_728x90.jpg
+  esso.jpg
+  CSSPlugin.min.js
+  EasePack.min.js
+  Exxon_Synergy_Fuels_Wipers_728x90.css
+  Exxon_Synergy_Fuels_Wipers_728x90.js
+  TweenLite.min.js
+  loading.gif
+  cta.png
+  drop.png
+  oupdate.png
+  t.png
+  wiper.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found

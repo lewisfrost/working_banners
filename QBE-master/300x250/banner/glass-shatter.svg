@@ -1,0 +1,112 @@
+<svg id="glass" width="424.99999999999994" height="346" xmlns="http://www.w3.org/2000/svg">
+ <g>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_2" points="-1.5,34.2 81,87.9 104.8,94.8 109.2,66.7 103.7,48.8 106.1,1.5 -1.5,1.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_3" points="175,1.5 106,1.5 103.7,48.8 109.3,67 105,94.9 122.9,98.5 129.5,104.5 150,104.5 171.5,107.9   177.6,102  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_4" points="264,1.2 245.8,66.5 232.7,66.5 175.4,16.8 175,1  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_5" points="176.5,49.2 214.5,59.7 214,47.7 175.4,16.3  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_6" points="232.7,65.5 214.5,59.7 214,47.7  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_7" points="175.5,49.2 175.5,59.7 210.7,107.4 232,65.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_8" points="264,1.5 296,1.5 248.7,102.2 236.5,95.6  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_9" points="423.5,-0.6666665971279144 295.20001220703125,-0.16666656732559204 285.1000061035156,20.333332747220993 302.79998779296875,29.93333312869072 423.5,94.13333389163017 " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_10" points="287.9,59.5 302.9,30.5 423.5,94.8 423.5,142 389.7,155 371.3,173 343.8,170 287.8,132.6 285.3,122.8   " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_11" points="423.5,228.9 315.4,200.4 304.4,175.6 306.4,166.2 343.9,170 371.5,173 389.7,155 423.5,142  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_12" points="301,167.2 304.7,175.6 306.6,166.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_13" points="294.5,166 294.5,176 300.5,181.7 304.4,175.6 300.3,167.2  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_14" points="295.5,191 298.1,194.3 315.9,200.4 304.7,175.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_15" points="272.9,166.2 294.5,166 294.5,176 300.5,181.7 295,191  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_16" points="285.3,21 242.1,116.2 287.2,159.7 289.8,139.3 290.5,134.3 285.3,126.1 287.9,59.5 303.4,30.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_17" points="293,148.2 289.8,139.3 287.2,159.7 290.1,163.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_18" points="303.4,166.2 293,149.8 290.1,163.5 293,166.2 298.7,166.7 301,167.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_19" points="202.4,120 235.7,79.1 244.3,69 245.8,66.5 236,66.5 233,66.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_20" points="239.1,85.6 235.7,78.9 245.8,65.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_21" points="236.5,94.8 232.7,103.2 242.1,102.4 248.7,101.7 248.7,101.7  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_22" points="231.4,119.1 242.1,103.5 250,103.5 243.3,114.4  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_23" points="232.7,103.2 229.2,119.5 232.9,116.4 242.1,102.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_24" points="242.1,116.2 231,140.5 232.9,139.5 254.7,128.4  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_25" points="219.5,170.5 232.9,140 254.7,128.6 293,166.9 223.4,170.5  " class="st0"/>
+   <path stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_26" d="m219.5,173.8c1.5,0.7 16.1,-4.3 16.1,-4.3l38.6,-2.3l23.9,27.1l17.8,6.1l-101.4,-24.8l5,-1.8z" class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_27" points="405.1,223.8 384.9,235.2 361.9,243.5 358.5,334 363,343.5 424,343.5 424.5,229.4  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_28" points="362.4,212.6 361.9,243.5 384.9,235.2 405.1,223.8  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_29" points="341.4,207 274.8,239.5 308.1,260 358.5,333.5 362.4,212.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_30" points="214.5,175.6 250,223.8 274.8,239.5 341.4,207  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_31" points="353.8,327.3 341.4,328.5 352,343.5 363,343.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_32" points="340,327.5 312,327.5 270.1,318.7 285.3,343.5 352,343.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_33" points="349.3,320.2 274.8,293.2 260.8,297.2 269,318.2 312,327.5 340,327.5 353.8,327.3  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_34" points="311,282 323.9,283.2 349.3,320.2 274.8,293.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_35" points="245.8,274.5 260.8,297.2 311,282  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_36" points="242,275.5 246,275.5 260.8,297.8 269,318.4  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_37" points="235.5,265 241.5,274.5 281.7,337.8 235.5,326.8  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_38" points="236.5,225.5 242.8,221.5 308.1,260 323.9,283.2 242,274.5 235.7,262.8  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_39" points="236.5,326.8 235.7,341.5 285.3,342.5 282.4,337.8  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_40" points="228.6,342.5 234.5,341.5 234.5,291 232,288.8  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_41" points="211,343.5 229,343.5 230.2,327.8  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_42" points="222,327.5 230,327.5 211,343.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_43" points="195.5,343.5 211,343.5 221.2,327 195.5,321.2  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_44" points="125,343.5 196,343.5 196.5,321.8 130.8,338.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_45" points="207.2,312.2 214.5,325 198,321.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_46" points="221.8,297.2 230,317.7 224.1,326.5 214.5,325 207.2,312.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_47" points="228.5,320 228.5,327 221,326.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_48" points="229.5,288.8 232.3,301.1 230,317.7 221.8,297.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_49" points="204.6,275.5 232.7,288.8 198,321.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_50" points="209.1,223.8 235.7,246 235.5,289.8 204.6,275.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_51" points="235.5,207 235.5,226 242.3,221.5 247.9,223.8  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_52" points="214.5,175.6 209.1,223.8 235.7,246 236.5,207  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_53" points="132,337.4 163.6,306.6 205.5,266 198,321.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_54" points="42.1,332.4 164.7,306.3 125,343.5 29,343.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_55" points="71,304.2 99.5,319.5 42.1,331.9  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_56" points="164.2,284.6 157.3,307.1 164,305.5 176.5,293.1 176.5,286  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_57" points="184,285.8 176.5,286 176.5,293  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_58" points="189,283.5 165,283.5 164.7,285.1 177.5,286.2 185,286.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_59" points="204.6,194.8 211.9,198.7 205.5,266.5 189,283.5 165,283.5 178.8,249 181.2,243.6  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_60" points="174.8,243.2 181.2,243.3 176.8,250.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_61" points="168.7,221.5 174.8,241.5 181.2,243.3 198.5,207.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_62" points="146.2,233.8 168.7,221.5 176.8,250.5 157.6,305.5 99.5,319.5 71,304.2  " class="st1"/>
+   <polygon  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_63" points="53,321.2 32.9,305.5 -1.5,284.2 -1.5,341 28.5,342.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_64" points="146.2,233.8 176.5,205.2 178,204.7 204.6,194.8 198.5,207.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_65" points="211,175.6 193,191 191.6,199.6 204.6,194.8  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_66" points="212.5,173 211.9,198.7 206.2,195.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_67" points="83.8,88.5 146.2,131.5 144.5,116.2 122.9,98  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_68" points="209.4,174.5 146.2,132.2 144.5,116.6 157.6,126.9 211.9,170.4 212.5,174.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_69" points="171.5,107.9 159.2,127.5 129.5,104.5 150,104.5  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_70" points="176.5,120 176.5,116.4 176.5,101 171,107.4 158.9,128.4 176.5,142  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_71" points="188.5,135 202.1,119.5 209.1,106.5 176.5,61 176.5,120  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_72" points="227,124.8 202.4,121.5 235.7,78.9 239.1,85.6 232.7,103.2  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_73" points="213.5,169.5 225.7,135 223.3,138.5 213.5,154.2  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_74" points="227,124.8 221.8,140.5 215.4,170.9 226.2,144.9 231,140.5 243.3,113.6 229.2,119.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_75" points="188.5,133.9 213.5,168.5 213.5,153 221.2,139.5 225.5,125.8 200.9,122  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_76" points="211,175.6 0,260.8 -0.5,284.2 33.4,305.5 51.7,320.2 176.5,205.2 193,191  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_77" points="209.4,173.5 198.5,173.8 198,180.8 212.5,175.6  " class="st1"/>
+   <path stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_78" d="m196.5,173.5l2,0.3l-0.5,7l-97,39.2l7,-27.5l12.8,-6.6l23.8,-2.1l10.5,-2.9c0,0 28.2,-7.3 30,-7.3c1.7,-0.2 11.4,-0.1 11.4,-0.1z" class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_79" points="186.4,158.6 185,174.5 198,174.5 211,174.6  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_80" points="154.6,137.7 146.1,173.1 152.2,180.9 183.5,175.6 183.5,174 184.5,157.4  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_81" points="154.6,137.7 112,137.5 146.1,173.1  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_82" points="108,192.5 79.8,210.8 104.2,207.5  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_83" points="83.2,226.9 78.8,210.8 94.5,208.7 94.5,222  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_84" points="100.5,220 103.4,207.5 94.5,208.7 94.5,222  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_85" points="79.6,210.8 1.2,260.3 83.7,226.9  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_86" points="22.8,246 7.5,167.2 1.2,166 0,260.8  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_87" points="0.5,144 0.5,166 6.5,167.2  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_88" points="1.2,131.5 11.4,133 1.5,144  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_89" points="83.7,136.2 11.4,133 1.5,144 22.8,246 95.5,200.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_90" points="99.5,137.5 83.7,136.2 95.5,200.6 98.5,153.7  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_91" points="108.5,159 108.5,138 99,137.5 97.7,153.7  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_92" points="112,190.4 109.5,159 98.5,153.7 95.5,200.6  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_93" points="120.8,185.9 125,182.5 128,177.2 115,156.5 109.5,159 112,190.4  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_94" points="149.5,177.2 140.7,184.1 152.7,180.9  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_95" points="128,177.2 135.5,162 149.5,177.2 140.7,184.1 120.8,185.9 125.9,180.9  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_96" points="132,159 130.8,159.7 122.5,164.6 120.8,165.6 128,177.2 135.5,162 111.5,137.5 108.5,138 108.5,159   114.5,156.5 120.5,165.6  " class="st0"/>
+   <polygon  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_97" points="-0.5,34.2 1.2,50.4 6.3,51.5 1.2,35.4  " class="st1"/>
+   <polygon  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_98" points="0,61 6.3,51.5 1.2,50.4  " class="st1"/>
+   <polygon  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_99" points="1.1,94.8 -0.1,61.5 6.3,52.5 13,52.5 29,66 26.2,113.9  " class="st0"/>
+   <polygon  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_100" points="0,96.8 1.2,131.5 32.5,133.9 48.5,130.5 26.2,113.6 1.1,94.8  " class="st1"/>
+   <path stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_101" d="m89.5,119.5c-0.8,-0.8 -41,11 -41,11l-18.3,3.3l69.3,3.7l-10,-18z" class="st1"/>
+   <path stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_102" d="m75.8,88.5l13.8,31l-41,11l-22.3,-16.9l2.7,-48.1c0,0 23.2,23.8 24,23s22.8,0 22.8,0z" class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_103" points="79.8,87.2 75.8,89.5 53,89.5 27.8,64.9 47.3,66  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_104" points="81.8,87.9 154.7,138.2 153,138.5 100,138.5 89.5,120 75.8,88.8 79.8,86.8  " class="st0"/>
+   <path  stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1"  id="svg_105" d="m1.5,36.8l4.8,15.7l6.7,0c0,0 13.9,12.1 14.8,12.4c0.9,0.4 19.5,1.1 19.5,1.1l-45.8,-29.2z" class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_106" points="193,191 191.6,199.6 178,204.7  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_107" points="176.5,120 214,170.9 211.2,169.8 176.5,142  " class="st0"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_108" points="290.4,135 290.1,140.1 293,148.2 303.4,166.2 307.3,166 343.9,170  " class="st1"/>
+   <polygon stroke="#666666" fill-opacity="0" fill="#666666" stroke-width="1" id="svg_109" points="232.3,140.3 219.4,169.4 234.5,168.9 231.4,170.9 219.5,173.8 214.5,175.9 212.5,171.5 215,171.5   226.2,145.4  " class="st0"/>
+ </g>
+</svg>

@@ -1,0 +1,42 @@
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>schwab_runner_970x250_V3</title>
+<!-- write your code here -->
+
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="schwab_runner_970x250_V3.js?1463006078739"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.schwab_runner_970x250_V3();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body onload="init();" style="background-color:#D4D4D4;margin:0px;">
+	<canvas id="canvas" width="970" height="250" style="background-color:#399FDD"></canvas>
+</body>
+</html>

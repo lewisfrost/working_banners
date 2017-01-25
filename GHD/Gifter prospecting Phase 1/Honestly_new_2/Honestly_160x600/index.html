@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="ad.size" content="width=300,height=250">
+		<meta charset="utf-8">
+		<title>160x600 Honestly</title>
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+
+
+		<style>
+			#stage {
+			  width: 160px;
+			  height: 600px;
+			  box-sizing: border-box;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  position: relative;
+			  overflow: hidden;
+			  cursor:pointer;
+			  background-image: url('bg.png');
+			}
+
+			#border {
+				width: 158px;
+			  	height: 598px;
+			  	position: absolute;
+			  	left: 0px;
+			  	top: 0px;
+			  	border: 1px solid #000;
+			  	z-index: 999;
+			}
+
+			#logo {
+				background-image: url('logo.png');
+				width: 131px;
+				height: 45px;
+				position: absolute;
+				left: 14px;
+				top: 18px;
+			}
+			#hintghd {
+				background-image: url('hintghd.png');
+				width: 63px;
+				height: 14px;
+				position: absolute;
+				left: 46px;
+				top: 572px;
+			}
+
+
+			/* TEXTS */
+			#f1_copy1, #f1_copy2, #f1_copy3, #f1_copy4, #f1_copy5, #f1_copy6,#f1_copy7,#f1_copy8,#f1_copy9{
+				position: absolute;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+			}
+
+			/* 	FRAME 1 TEXTS */
+			#female {
+				background-image: url('girl.png');
+				width: 160px;
+				height: 600px;
+				position: absolute;
+				top:0px;
+				left: 0px;
+				opacity:0;
+				z-index:1;
+			}
+
+			#f1_copy1 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy1.png');
+			}
+
+			#f1_copy2 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy2.png');
+			}
+
+			#f1_copy3 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy3.png');
+			}
+
+			#f1_copy4 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy4.png');
+			}
+
+			#f1_copy5 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy5.png');
+			}
+			#f1_copy6 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy6.png');
+			}
+			#f1_copy7 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy7.png');
+			}
+			#f1_copy8 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy8.png');
+			}
+			#f1_copy9 {
+				top: 0px;
+				left: 0px;
+				background-image: url('f1_copy9.png');
+			}
+
+
+
+			/* 	FRAME 2 TEXTS */
+
+			#f2_copy {
+				background-image: url('f2_copy.png');
+				width: 160px;
+				height: 600px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				opacity: 0;
+			}
+			#styler {
+				background-image: url('styler.png');
+				width: 160px;
+				height: 600px;
+				position: absolute;
+				left: 100px;
+				top: 0px;
+			}
+
+			#cta {
+				background-image: url('cta.png');
+				width: 160px;
+				height: 47px;
+				position: absolute;
+				left: -239px;
+				top: 102px;
+			}
+
+			#cta_arrow {
+				background-image: url('cta_arrow.png');
+				width: 17px;
+				height: 17px;
+				position: absolute;
+				left: 124px;
+				top: 14px;
+				opacity: 0;
+			}
+
+
+
+		</style>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+
+		<script type="text/javascript">
+			var stage;
+
+			function imgpreload( imgs, callback ) {
+			  "use strict";
+			  var loaded = 0;
+			  var images = [];
+			  imgs = Object.prototype.toString.apply( imgs ) === '[object Array]' ? imgs : [imgs];
+			  var inc = function() {
+			    loaded += 1;
+			    if ( loaded === imgs.length && callback ) {
+			      callback( images );
+			    }
+			  };
+			  for ( var i = 0; i < imgs.length; i++ ) {
+			    images[i] = new Image();
+			    images[i].onabort = inc;
+			    images[i].onerror = inc;
+			    images[i].onload = inc;
+			    images[i].src = imgs[i];
+			  }
+			}
+
+			function init() {
+				
+
+				// PRELOAD ASSETS
+				lib = [
+					"ghd_logo.png",
+					"hintghd.png",
+					"female.png",
+					"bg.png",
+					"f1_copy1.png",
+					"f1_copy2.png",
+					"f1_copy3.png",
+					"f1_copy4.png",
+					"f1_copy5.png",
+					"f1_copy6.png",
+					"f1_copy7.png",
+					"f1_copy8.png",
+					"f1_copy9.png",
+					"f2_copy.png",
+					"styler.png",
+					"cta.png",
+					"cta_arrow.png",
+				];
+
+
+		        imgpreload(lib, function( images ) {
+				  handleImageLoad();
+				});
+	    	}
+			
+			function init(){
+				
+				// SETUP CLICK
+				stage = document.getElementById("stage");
+				stage.addEventListener("click", function () {
+					 Enabler.exit('clickthrough');
+				});
+
+				TweenLite.to("#styler",0,{left:100})
+			    TweenLite.to("#cta",0,{left:-160})
+		            frame1Animation()
+	           }
+			   
+			   function frame1Animation(){
+		
+		            TweenLite.to("#female",1,{alpha:1, delay:0.2})
+					TweenLite.to("#f1_copy1",1,{alpha:1, delay:0.5})
+					TweenLite.to("#f1_copy2",.7,{alpha:1, delay:0.7})
+					TweenLite.to("#f1_copy3",.7,{alpha:1, delay:0.9})
+					TweenLite.to("#f1_copy4",.7,{alpha:1, delay:1.1})
+					TweenLite.to("#f1_copy5",.7,{alpha:1, delay:1.3})
+					TweenLite.to("#f1_copy6",.7,{alpha:1, delay:1.5})
+					TweenLite.to("#f1_copy7",.7,{alpha:1, delay:1.7})
+					TweenLite.to("#f1_copy8",.7,{alpha:1, delay:1.9})
+					TweenLite.to("#f1_copy9",.7,{alpha:1, delay:2.1})
+		            TweenLite.delayedCall(4.5,frame2Animation)
+	}
+			
+			function frame2Animation(){
+				
+				TweenLite.to(["#f1_copy1","#f1_copy2","#f1_copy3","#f1_copy4","#f1_copy5","#f1_copy6","#f1_copy7","#f1_copy8","#f1_copy9"],.5,{alpha:0, delay:0})
+				
+				TweenLite.to("#styler",0,{alpha:1})
+				TweenLite.to("#styler",.7,{left:"0px", ease:Quad.easeOut,delay:0.5})
+	
+			     TweenLite.to("#female",.7,{left:"-51px", ease:Quad.easeOut,delay:0.5})
+				
+				TweenLite.to("#f2_copy",1,{alpha:1, delay:0.5})
+				
+				TweenLite.delayedCall(2.5,frame3Animation)
+			}
+
+
+	   function frame3Animation(){ 	
+	   
+	   
+	          TweenLite.to("#f2_copy",1,{alpha:0, delay:0})
+			  
+			   TweenLite.to("#cta",.5,{alpha:1, delay:0.5})
+			   TweenLite.to("#cta",.5,{left:0, ease: Quad.easeOut,delay:0.5})
+			   TweenLite.to("#cta_arrow",.5,{alpha:1, delay:0.5})
+			   TweenLite.to("#cta_arrow",.25,{left: "124px",delay:0.7})
+			   TweenLite.to("#cta_arrow",.25,{left: "126px",delay:1})
+			   TweenLite.to("#cta_arrow",.25,{left: "124px",delay:1.3})
+			   TweenLite.to("#cta_arrow",.25,{left: "126px",delay:1.6})
+			   TweenLite.to("#cta_arrow",.25,{left: "124px",delay:1.9})
+			   TweenLite.to("#cta_arrow",.25,{left: "126px",delay:2.2})
+			   TweenLite.to("#cta_arrow",.25,{left: "124px",delay:2.5})
+			   TweenLite.to("#cta_arrow",.25,{left: "126px",delay:2.8,onComplete:function(){
+		}})
+		TweenLite.delayedCall(4,animreset)
+			  
+			  
+	   
+	   }
+	   
+	   var loop=0;
+	
+	function animreset(){
+		if(loop<1){
+			loop++;
+			
+			TweenLite.to(["#cta_arrow","#cta",".logo","#styler","#female"],0.5,{alpha:0})
+			
+			//TweenLite.to("#styler",0.5,{left:"0px"})
+				
+			TweenLite.to("#female",0.5,{left:"0px",delay:1,onComplete:function(){
+				TweenLite.delayedCall(0,init)	
+			}})	
+		}
+		
+	}
+	   /*var loop = 0;
+
+	    	function handleImageLoad() {
+
+		    	tl = new TimelineMax({repeat:1, repeatDelay:2});
+				tl.to(female, 1, {alpha:1}, 0.2)
+        		.to(f1_copy1, 1, {alpha:1}, 0.5).to(f1_copy1, 0.5, {alpha:0}, 4)
+        		.to(f1_copy2, 0.7, {alpha:1}, 0.7).to(f1_copy2, 0.5, {alpha:0}, 4)
+        		.to(f1_copy3, 0.7, {alpha:1}, 0.9).to(f1_copy3, 0.5, {alpha:0}, 4)
+        		.to(f1_copy4, 0.7, {alpha:1}, 1.1).to(f1_copy4, 0.5, {alpha:0}, 4)
+        		.to(f1_copy5, 0.7, {alpha:1}, 1.3).to(f1_copy5, 0.5, {alpha:0}, 4)
+        		.to(f1_copy6, 0.7, {alpha:1}, 1.5).to(f1_copy6, 0.5, {alpha:0}, 4)
+
+        		.to(f2_copy, 1, {alpha:1}, 4.5).to(f2_copy, 0.5, {alpha:0}, 7)
+        		.to(styler, .7, {left: "0px", ease:Quad.easeOut}, 4.5)
+        		.to(female, .7, {left: "-42px", ease:Quad.easeOut}, 4.5)
+
+        		.to(cta, 0.5, {alpha:1}, 7.5)
+        		.to(cta, 0.5, {left:0, ease: Quad.easeOut}, 8)
+        		.to(cta_arrow, 0.5, {alpha:1,
+        			onComplete: function() {
+        				arr_loop.restart();
+        				if (loop != 1) {
+        					fade_out.restart();
+        					loop++;
+        				}
+        			}
+        		}, 8)
+
+        		arr_loop = new TimelineMax({paused:true});
+        		arr_loop.timeScale(1.5);
+        		arr_loop.to(cta_arrow, 0.25, {left: "107px"}).to(cta_arrow, 0.25, {left: "109px"}, 0.25)
+        		.to(cta_arrow, 0.25, {left: "107px"}, 1).to(cta_arrow, 0.25, {left: "109px"}, 1.25)
+        		.to(cta_arrow, 0.25, {left: "107px"}, 2).to(cta_arrow, 0.25, {left: "109px"}, 2.25)
+
+
+				fade_out = new TimelineMax({paused:true});
+        		fade_out.to(cta, 0.5, {alpha:0}, 2)
+        		.to(female, 0.5, {alpha:0}, 2)
+	    	}*/
+
+		</script>
+	</head>
+	<body onload="init();" style="margin:0; padding:0;">
+		<div id="stage">
+			<div id="logo"></div>
+            
+			<div id="f1_copy1"></div>
+			<div id="f1_copy2"></div>
+			<div id="f1_copy3"></div>
+			<div id="f1_copy4"></div>
+			<div id="f1_copy5"></div>
+			<div id="f1_copy6"></div>
+            <div id="f1_copy7"></div>
+            <div id="f1_copy8"></div>
+            <div id="f1_copy9"></div>
+
+			<div id="female"></div>
+            <div id="hintghd"></div>
+			<div id="f2_copy"></div>
+            
+			<div id="styler"></div>
+			<div id="cta">
+				<div id="cta_arrow"></div>
+			</div>
+			<div id="border"></div>
+		</div>
+	</body>
+</html>

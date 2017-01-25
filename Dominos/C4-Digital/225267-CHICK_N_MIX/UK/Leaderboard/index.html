@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>728X90 Leaderboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css"/>
+
+<!--[if lt IE 11]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+</head>
+<body>
+
+<!----------============--------------MAIN DIVS --------==============------------->    
+    
+<div id="bg-exit"></div>
+<div id="banner">
+    <div class="background"></div>
+    <div class="logo"></div>
+    <div class="red-circle"></div>
+    <div class="price"></div>
+    <div class="copy"></div>
+    <div class="new"></div>
+    <div class="chicky"></div>
+    <div class="pizza-image"></div>
+    <div class="summer"></div>
+    <div class="cta"></div>
+
+    <div class="parent">
+        <div class="legal">
+            <p class="legal-text">Participating stores. Subject to availability. Ends 6/09/15. T&Cs apply, see dominos.co.uk</p>
+        </div>
+    </div>
+    
+<!-----========================-------MAIN DIVS -----=========================----->      
+
+
+</body>
+
+<script type="text/javascript">
+
+    function bgExitHandler(e) {
+        Enabler.exitOverride('Background Exit', 'http://www.dominos.com');
+    }
+
+    document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+    // ****
+
+    var irisBanner = ( function(){
+
+        var els = {
+            bannerEl : document.getElementById("banner")
+        };
+
+        var props = {
+
+        };
+
+        var actions = {
+            SHOW : "SHOW",
+            HIDE : "HIDE",
+            CTA_BOUNCE : "CTA_BOUNCE"
+        };
+
+        init();
+
+        function init(){
+            //console.log("/index/ -init ");
+            els.priceEl = setElement( ".price" );
+            els.pizzaEl = setElement( ".pizza-image" );
+            els.copyEl = setElement( ".copy" );
+            els.redcircleEl = setElement( ".red-circle" );
+            els.newEl = setElement( ".new" );
+            els.chickyEl = setElement( ".chicky" );
+            els.ctaEl = setElement( ".cta" );
+
+            // *******
+            sequence();
+        }
+
+        /**
+         *
+         */
+        function sequence(){
+
+            var tm = 0.3;
+            tm += 0;
+            timer( tm , actions.SHOW, { el : els.redcircleEl } ); 
+            
+            tm += 1;            
+            timer( tm + 0.1, actions.SHOW, { el : els.newEl } );
+            timer( tm + 0.4, actions.SHOW, { el : els.copyEl } );
+
+                
+            tm += 1;
+            timer( tm + 0.2, actions.SHOW, { el : els.chickyEl } );
+            
+            // week banner, stars
+            tm += 2;
+            timer( tm + 0.3, actions.SHOW, { el : els.pizzaEl } );
+
+            
+            
+            tm += 2;
+            timer( tm + 0.6, actions.SHOW, { el : els.ctaEl } );
+            timer( tm + 0.6, actions.CTA_BOUNCE, null );
+        }
+
+
+        function timer( _delay, _action, _props ){
+
+            var d = _delay * 1000;
+
+            var to = window.setTimeout( function(){
+
+                actionRunner( _action, _props || null );
+                window.clearTimeout( to );
+            }, d );
+        }
+
+
+        function setElement( _selector ){
+            return els.bannerEl.querySelectorAll( _selector )[ 0 ];
+        }
+
+
+        function actionRunner( _action, _props ){
+
+            console.log("/index/ -actionRunner ", _action, _props );
+
+            switch( _action ){
+
+                case actions.SHOW:
+
+                    addClass( _props.el, "show", true );
+                    addClass( _props.el, "hide", false );
+
+                    break;
+
+                case actions.HIDE:
+
+                    addClass( _props.el, "show", false );
+                    addClass( _props.el, "hide", true );
+
+                    break;
+
+                case actions.PANEL_SHIFT:
+
+                    addClass( els.redPanelEl, "shift-in", true );
+                    addClass( els.starsEl, "shift-in", true );
+
+                    break;
+
+                case actions.CTA_BOUNCE:
+
+                    addClass( els.ctaEl, "bounce", true );
+
+                    break;
+            }
+        }
+
+
+        /**
+         *
+         * @param _el
+         * @param _class
+         * @param _f
+         */
+        function addClass( _el, _class, _f ){
+
+            console.log("/index/ -addClass ", _el, _class );
+
+            ( _f ) ? _el.classList.add( _class ) : _el.classList.remove( _class );
+
+        }
+
+        function prefix(){
+
+        }
+
+
+    })();
+
+
+</script>
+</html>

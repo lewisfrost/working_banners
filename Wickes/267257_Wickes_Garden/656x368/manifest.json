@@ -1,0 +1,20 @@
+{
+    "version": "1.0",
+
+    "title": "Wickes 320x480 HTML Banner", 
+    "description": "",  
+
+    "width" : "320", 
+    "height": "480", 
+
+    "events": {
+        "enabled": 1, 
+        "list": { }
+    },
+
+    "clicktags": {
+        "clickTAG": "http://www.adform.com"
+    },
+
+    "source": "index.html"
+}

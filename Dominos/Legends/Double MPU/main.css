@@ -1,0 +1,254 @@
+html {
+	overflow:hidden;
+	
+}
+
+body{
+	height:600px;
+	margin:0;
+	padding:0;
+	width:300px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+/* KEYFRAMES */
+
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+
+@-webkit-keyframes topslide { from { top: 100px; } to { top:225px; } }
+@keyframes topslide  { from { top: 100px; } to { top:225px; } }
+@-moz-keyframes topslide  { from { top: 100px; } to { top:225px; } }
+
+
+
+@-webkit-keyframes bounce { from { -webkit-transform: scale(8.4); } to { -webkit-transform: scale(1.0); } }
+@-moz-keyframes bounce { from { -webkit-transform: scale(8.4); } to { -webkit-transform: scale(1.0); } }
+@keyframes bounce { from { -webkit-transform: scale(8.4); } to { -webkit-transform: scale(1.0); } }
+
+
+
+.logo {
+  background-image: url(logo.png);
+  position: absolute;
+  left: 72px;
+  bottom:30px;
+  width: 136px;
+  height: 45px;
+  z-index:100;
+  opacity:0;
+  
+  -webkit-animation: fadein 0.7s 1.5s 1 linear forwards;
+  -o-animation: fadein 0.7s 1.5s 1 linear forwards;
+  -moz-animation: fadein 0.7s 1.5s 1 linear forwards;
+  animation: fadein 0.7s 1.5s 1 linear forwards;
+}
+
+
+
+.background {
+	background:url(background.jpg);
+	  position: absolute;
+	  width: 300px;
+	  height: 600px;
+	  z-index:-100;
+	  opacity:1;
+	  -webkit-animation: bounce 1.5s 1 forwards;
+      -o-animation: bounce 1.5s 1 forwards;
+      -moz-animation: bounce 1.5s 1 forwards;
+      animation: bounce 1.5s 1 forwards;
+
+}
+
+.copy1 {
+	background:url(copy1.png);
+	position: absolute;
+	top:5px;
+	left:30px;
+	width:238px;
+	height:224px;
+	opacity:0;
+	
+	-webkit-animation: fadein 0.7s 1.2s 1 linear forwards;
+	-moz-animation: fadein 0.7s 1.2s 1 linear forwards;
+	-o-animation: fadein 0.7s 1.2s 1 linear forwards;
+	animation: fadein 0.7s 1.2s 1 linear forwards
+	
+}
+
+.copy2 {
+	background:url(copy2.png);
+	position: absolute;
+	top:100px;
+	left:69px;
+	width:156px;
+	height:87px;
+	opacity:0;
+	z-index:-1;
+	
+	-webkit-animation: fadein 0.7s 2s 1 linear forwards, topslide 0.7s 2s 1 linear forwards;
+	-moz-animation: fadein 0.7s 2s 1 linear forwards, topslide 0.7s 2s 1 linear forwards;
+	-o-animation: fadein 0.7s 2s 1 linear forwards, topslide 0.7s 2s 1 linear forwards;
+	animation: fadein 0.7s 2s 1 linear forwards, topslide 0.7s 2s 1 linear forwards;
+}
+
+
+.icons {
+	background:url(icons.png);
+	position:absolute;
+	top:341px;
+	left:72px;
+	width:148px;
+	height:166px;
+	opacity:0;
+	
+	-webkit-animation: fadein 0.5s 3s 1 linear forwards, fadeout 0.5s 6s 1 linear forwards;
+    -moz-animation: fadein 0.5s 3s 1 linear forwards, fadeout 0.5s 6s 1 linear forwards;
+	-o-animation: fadein 0.5s 3s 1 linear forwards, fadeout 0.5s 6s 1 linear forwards;
+	animation: fadein 0.5s 3s 1 linear forwards, fadeout 0.5s 6s 1 linear forwards;
+
+}
+
+.button {
+	background:url(button.png);
+	position:absolute;
+	top:341px;
+	left:72px;
+	width:148px;
+	height:166px;
+	opacity:0;
+	z-index:80;
+	overflow:hidden;
+	
+	-webkit-animation: fadein 0.5s 6s 1 linear forwards;
+	-moz-animation: fadein 0.5s 6s 1 linear forwards;
+	-o-animation: fadein 0.5s 6s 1 linear forwards;
+	animation: fadein 0.5s 6s 1 linear forwards;
+
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 150%;
+  height: 150%;
+  width: 100px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+  -webkit-animation: 2s myani linear infinite;
+  animation: 2s myani linear infinite;
+}
+@-webkit-keyframes myani {
+  0% {
+    top: 100%;
+    left: 150%;
+  }
+  100% {
+    top: -150%;
+    left: -150%;
+  }
+}
+@keyframes myani {
+  0% {
+    top: 100%;
+    left: 150%;
+  }
+  100% {
+    top: -150%;
+    left: -150%;
+  }
+}
+
+
+.parent {
+    position:relative;
+    float:left;
+    width:300px;
+    height:600px;
+}
+.legal {
+    background-color:#006fba;
+    z-index:110;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: auto;
+    transition: all .4s;
+}
+.legal:hover {
+    width:100%;
+    /* To make sure the width is aligned with the parent div */
+    cursor:default;
+    transition: all .4s;
+}
+
+.legal-text {
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.legal-text, .legal span {
+    font-size:9px;
+    color:#FFFFFF;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.legal span {
+    display:none;
+    padding:4px 5px;
+    /* Expanded text is hidden */
+}
+.legal:hover p {
+    display:none;
+    /* the text is hidden */
+}
+.legal:hover span {
+    display:block;
+    /* Expanded text is shown */
+}
+
+.hover_shine{
+    width:100%; height: 100%; 
+    background-image: url(http://i.minus.com/iuvzYDPlYu8RR.png);
+    position: absolute;
+    /*initial position*/
+    background-position: -265px 0; 
+    left:0px; top:0px; 
+    background-repeat:no-repeat;
+    /*css transition*/
+    -webkit-transition: background-position .7s ease;
+       -moz-transition: background-position .7s ease;
+         -o-transition: background-position .7s ease;
+            transition: background-position .7s ease;
+}
+.hover_shine:hover{
+    /*Final position*/
+    background-position: 10px 0;
+}
+
+
+

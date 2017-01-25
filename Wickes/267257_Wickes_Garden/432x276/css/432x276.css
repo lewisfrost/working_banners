@@ -1,0 +1,263 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+}
+
+.container {
+	position:absolute;
+	width: 432px;
+	height: 276px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #A5A5A5;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	overflow: hidden;
+}
+
+.arrow {
+	position: absolute;
+	top: 0px;
+	left: -339px;
+	-webkit-animation: bArrow1 14s forwards;
+	animation: bArrow1 14s forwards;
+}
+@-webkit-keyframes bArrow1 { 
+	0%   { left: -339px; }
+    4%  { left: 0px; }
+    92%  { left: 0px; }
+    100% { left: -339px; }
+}
+@keyframes bArrow1 { 
+	0%   { left: -339px; }
+    4%  { left: 0px; }
+    92%  { left: 0px; }
+    100% { left: -339px; }
+}
+
+.wickesLogoSmall {
+	position: absolute;
+	top: 118px;
+	right: 7px;
+	opacity: 0;
+	-webkit-animation: wLogo 14s forwards;
+	animation: wLogo 14s forwards;
+}
+@-webkit-keyframes wLogo { 
+	0%   { opacity: 0; }
+    4%  { opacity: 1; }
+    92%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes wLogo { 
+	0%   { opacity: 0; }
+    4%  { opacity: 1; }
+    92%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* F1 --------------- */
+.f1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: f1fade 2.5s forwards 0.5s;
+	animation: f1fade 2.5s forwards 0.5s;
+}
+@-webkit-keyframes f1fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes f1fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* F2 --------------- */
+.f2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: f2fade 2.5s forwards 3s;
+	animation: f2fade 2.5s forwards 3s;
+}
+@-webkit-keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.halfPrice2 {
+	position: absolute;
+	top: 20px;
+	left: -50px;
+	opacity: 0;
+	-webkit-animation: hpFade02 2.5s forwards 3s;
+	animation: hpFade02 2.5s forwards 3s;
+}
+@-webkit-keyframes hpFade02 { 
+	0%   { opacity: 0; -webkit-transform: scale(0.5); }
+    10%  { opacity: 1; -webkit-transform: scale(0.45); }
+    90%  { opacity: 1; -webkit-transform: scale(0.45); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+@keyframes hpFade02 { 
+	0%   { opacity: 0; transform: scale(0.5); }
+    10%  { opacity: 1; transform: scale(0.45); }
+    90%  { opacity: 1; transform: scale(0.45); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* F3 --------------- */
+.f3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: f2fade 2.5s forwards 5.5s;
+	animation: f2fade 2.5s forwards 5.5s;
+}
+@-webkit-keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.halfPrice3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: hpFade03 2.5s forwards 5.5s ease-out;
+	animation: hpFade03 2.5s forwards 5.5s ease-out;
+}
+@-webkit-keyframes hpFade03 { 
+	0%   { opacity: 0; -webkit-transform: scale(0.5); }
+    10%  { opacity: 1; -webkit-transform: scale(0.45); }
+    90%  { opacity: 1; -webkit-transform: scale(0.45); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+@keyframes hpFade03 { 
+	0%   { opacity: 0; transform: scale(0.5); }
+    10%  { opacity: 1; transform: scale(0.45); }
+    90%  { opacity: 1; transform: scale(0.45); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* F4 --------------- */
+.f4 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: f2fade 2.5s forwards 8s;
+	animation: f2fade 2.5s forwards 8s;
+}
+@-webkit-keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.halfPrice4 {
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	opacity: 0;
+	-webkit-animation: hpFade04 2.5s forwards 8s;
+	animation: hpFade04 2.5s forwards 8s;
+}
+@-webkit-keyframes hpFade04 { 
+	0%   { opacity: 0; -webkit-transform: scale(0.5); }
+    10%  { opacity: 1; -webkit-transform: scale(0.45); }
+    90%  { opacity: 1; -webkit-transform: scale(0.45); }
+    100% { opacity: 0; -webkit-transform: scale(0.5); }
+}
+@keyframes hpFade04 { 
+	0%   { opacity: 0; transform: scale(0.5); }
+    10%  { opacity: 1; transform: scale(0.45); }
+    90%  { opacity: 1; transform: scale(0.45); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* F5 --------------- */
+.f5 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-animation: f2fade 2.5s forwards 10.5s;
+	animation: f2fade 2.5s forwards 10.5s;
+}
+@-webkit-keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes f2fade { 
+	0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* End Frame --------------- */
+.wickesLogoBig {
+	position: absolute;
+	left: 91px;
+	top: 0px;
+	opacity: 0;
+	-webkit-animation: WLBIn 1s forwards 14s;
+	animation: WLBIn 1s forwards 14s;
+}
+@-webkit-keyframes WLBIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes WLBIn { from { opacity: 0; } to { opacity: 1; } }
+
+.ldir {
+	position: absolute;
+	left: 123px;
+	bottom: 100px;
+	opacity: 0;
+	-webkit-animation: ldirIn 1s forwards 14.5s ease-out;
+	animation: ldirIn 1s forwards 14.5s ease-out;
+}
+@-webkit-keyframes ldirIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ldirIn { from { opacity: 0; } to { opacity: 1; } }
+
+.cac {
+	position: absolute;
+	left: 144px;
+	bottom: 40px;
+	opacity: 0;
+	-webkit-animation: cacIn 1s forwards 15s;
+	animation: cacIn 1s forwards 15s;
+}
+@-webkit-keyframes cacIn { from { opacity: 0; left: 124px; } to { opacity: 1; left: 144px; } }
+@keyframes cacIn { from { opacity: 0; left: 124px; } to { opacity: 1; left: 144px; } }

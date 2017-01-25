@@ -1,0 +1,233 @@
+html {
+	overflow:hidden;
+	
+}
+
+body{
+	height:90px;
+	margin:0;
+	padding:0;
+	width:720px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+/* KEYFRAMES */
+
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+
+@-webkit-keyframes topslide { from { top: -100px; } to { top:0px; } }
+@-moz-keyframes topslide  { from { top: 250px; } to { top:305px; } }
+@keyframes topslide  { from { top: 250px; } to { top:305px; } }
+
+@-webkit-keyframes bottomslide { from { top: 0px; } to { top:-100px; } }
+@-moz-keyframes bottomslide  { from { top: 0px; } to { top:-100px; } }
+@keyframes bottomslide  { from { top: 0px; } to { top:-100px; } }
+
+@-webkit-keyframes right { from { right: -200px; opacity:0; } to { right:80px; opacity:1; } }
+@-moz-keyframes right  { from { right: -200px; opacity:0; } to { right:30px; opacity:1; } }
+@keyframes right { from { right: -200px; opacity:0; } to { right:30px; opacity:1; } }
+
+
+
+
+@-webkit-keyframes bounce { from { -webkit-transform: scale(8.4); } to { -webkit-transform: scale(1.0); } }
+@-moz-keyframes bounce { from { -moz-transform: scale(8.4); } to { -moz-transform: scale(1.0); } }
+@keyframes bounce { from { transform: scale(8.4); } to { transform: scale(1.0); } }
+
+@-webkit-keyframes zoom { from { -webkit-transform: scale(2.4);opacity:0; } to { -webkit-transform: scale(1.0);opacity:1; } }
+@-moz-keyframes zoom { from { -moz-transform: scale(2.4); } to { -moz-transform: scale(1.0); } }
+@keyframes zoom{ from { transform: scale(2.4); opacity:0; } to { transform: scale(1.0); opacity:1; } }
+
+
+
+.logo {
+  background-image: url(logo.png);
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 103px;
+  height: 35px;
+  z-index:100px;
+  opacity:0;
+  
+  -webkit-animation: fadein 0.7s 1.5s 1 linear forwards;
+  -o-animation: fadein 0.7s 1.5s 1 linear forwards;
+  -moz-animation: fadein 0.7s 1.5s 1 linear forwards;
+  animation: fadein 0.7s 1.5s 1 linear forwards;
+}
+
+
+
+.background {
+	background:url(background.jpg);
+	  position: absolute;
+	  width: 720px;
+	  height: 90px;
+	  z-index:-100;
+	  opacity:1;
+	  -webkit-animation: bounce 1s 1 forwards;
+      -o-animation: bounce 1s 1 forwards;
+      -moz-animation: bounce 1s 1 forwards;
+      animation: bounce 1s 1 forwards;
+
+}
+
+.copy1 {
+	background:url(copy1.png);
+	position: absolute;
+	top:1px;
+	left:295px;
+	width:88px;
+	height:50px;
+	opacity:0;
+	
+	-webkit-animation: zoom 0.7s 1s 1 linear forwards;
+	-moz-animation: zoom 0.7s 1s 1 linear forwards;
+	-o-animation: zoom 0.7s 1s 1 linear forwards;
+	animation: zoom 0.7s 1s 1 linear forwards;
+	
+}
+
+.icons {
+	background:url(icons.png);
+	position:absolute;
+	top:15px;
+	width:165px;
+	height:51px;
+	opacity:0;
+	
+	-webkit-animation: right 0.5s 3s 1 linear forwards;
+    -moz-animation: right 0.5s 3s 1 linear forwards;
+	-o-animation: right 0.5s 3s 1 linear forwards;
+	animation: right 0.5s 3s 1 linear forwards;
+
+}
+
+.button {
+	background:url(button.png);
+	position:absolute;
+	bottom:7px;
+	overflow:hidden;
+	left:225px;
+	width:231px;
+	height:36px;
+	z-index:100;
+	opacity:0;
+	
+	-webkit-animation: fadein 0.5s 2s 1 linear forwards;
+	-moz-animation: fadein 0.5s 2s 1 linear forwards;
+	-o-animation: fadein 0.5s 2s 1 linear forwards;
+	animation: fadein 0.5s 2s 1 linear forwards;
+
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 150%;
+  height: 150%;
+  overflow:hidden;
+  width: 100px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+  -webkit-animation: 2s myani linear infinite;
+  animation: 2s myani linear infinite;
+}
+@-webkit-keyframes myani {
+  0% {
+    top: 100%;
+    left: 150%;
+  }
+  100% {
+    top: -150%;
+    left: -150%;
+  }
+}
+@keyframes myani {
+  0% {
+    top: 100%;
+    left: 150%;
+  }
+  100% {
+    top: -150%;
+    left: -150%;
+  }
+}
+
+
+.parent {
+    position:relative;
+    float:right;
+    width:728px;
+    height:90px;
+	overflow: hidden;
+}
+.legal {
+    background-color:#006fba;
+    z-index:110;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: auto;
+    transition: all .4s;
+}
+.legal:hover {
+    width:50%;
+    /* To make sure the width is aligned with the parent div */
+    cursor:default;
+    transition: all .4s;
+}
+
+.legal-text {
+	padding:0px 4px;
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.legal-text, .legal span {
+    font-size:9px;
+    color:#FFFFFF;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.legal span {
+    display:none;
+    padding:5px 10px;
+    /* Expanded text is hidden */
+}
+.legal:hover p {
+    display:none;
+    /* the text is hidden */
+}
+.legal:hover span {
+    display:block;
+    /* Expanded text is shown */
+}
+
+
+

@@ -1,0 +1,61 @@
+Sanoma-NUTech-Billboard (6891893199/100355)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+screenad.clicks = new Array();
+screenad.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+1.file                  : index.html
+1.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  CSSPlugin.min.js
+  EasePack.min.js
+  ESSO_SYNERGY_DISCO_NL.mp4
+  ESSO_SYNERGY_DISCO_PH.mp4
+  Exxon_Synergy_Fuels_Video_970x250.css
+  Exxon_Synergy_Fuels_Video_970x250.js
+  TweenLite.min.js
+  loading.gif
+  bg.jpg
+  video_poster.jpg
+  clickToPlayBtn.png
+  copy.png
+  cta.png
+  mute_icon.png
+  pause_icon.png
+  play_icon.png
+  replay_icon.png
+  unmute_icon.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found

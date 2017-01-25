@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'have_a_nice_day_basicbold';
+    src: url('../haveanicedaybasic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham-light';
+    src: url('gamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Page elements */
+body{
+	width:300px;
+	height:250px;
+	color:#000;
+	margin:0px;
+	padding: 0px;
+}
+* a{text-decoration: none; color:#000;}
+sup{vertical-align: text-top; font-size:0.75em;}
+
+#wrapper{
+	border:1px solid #ccc;
+	/*-moz-box-shadow:    inset 0 0 0 1px #ccc;
+   -webkit-box-shadow: inset 0 0 0 1px #ccc;
+   box-shadow:         inset 0 0 0 1px #ccc;*/
+	height:248px;
+	width:298px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	cursor:pointer;
+}
+#innerwrapper{
+	cursor:pointer;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+#bg{
+	height:248px;
+	width:436px;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	background: url(../img/bg.jpg);
+}
+#logo-white{
+	position: absolute;
+	left:13px;
+	top:7px;
+	opacity:0;
+	width:110px;
+	height:40px;
+}
+#logo-white2{
+	position: absolute;
+	left:13px;
+	top:7px;
+	opacity:0;
+	width:110px;
+	height:40px;
+	z-index: 100;
+}
+#partner-logo{
+	position: absolute;
+	right:8px;
+	top:17px;
+	opacity:0;
+	width:103px;
+	height:25px;
+	z-index:98;
+	text-align:center;
+	line-height:30px;
+}
+#partner-logo2{
+	position: absolute;
+	right:8px;
+	top:17px;
+	opacity:0;
+	width:103px;
+	height:25px;
+	z-index:99;
+	text-align:center;
+	line-height:30px;
+}
+#title1, #title2, #title3{
+	text-align: center;
+	position: absolute;
+	width:300px;
+	left:-50px;
+	opacity:0;
+	z-index: 100;
+}
+
+#replay{
+	cursor:pointer; 
+	position:absolute; 
+	opacity:0;  
+	width:20px; 
+	height:20px; 
+	right:7px; 
+	bottom:7px; 
+	z-index:400;
+}
+
+#whiteboard{
+	
+	height:248px;
+	width:298px;
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	margin:auto;
+	background:#FFFFFF;
+	border:0px;
+	opacity:0;
+	z-index: 98;
+}
+#tcs{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #284b61;
+	text-align: center;
+	position: absolute;
+	height:10px;
+	top:228px;
+	width:300px;
+	left:-3px;
+	opacity:0;
+	z-index: 100;
+}
+#title4{
+	text-align: center;
+	position: absolute;
+	width:300px;
+	opacity:0;
+	z-index: 100;
+}
+.btn1{
+	text-align: center;
+	position: absolute;
+	width:300px;
+	opacity:0;
+	z-index: 100;
+}

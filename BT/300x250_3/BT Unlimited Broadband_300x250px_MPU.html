@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>300x250</title>
+	<script src="http://s0.2mdn.net/ads/studio/Enabler.js"></script>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-406417153 { visibility:hidden; }
+        #background_exit_dc{background:0,0,0,0;padding:0;margin:0;width:100%;height:100%;border:0px solid #000;position:absolute;top:0;left:0;cursor:pointer; z-index: 99;}
+    </style>
+<script>
+   AdobeEdge.loadComposition('BT%20Unlimited%20Broadband_300x250px_MPU', 'EDGE-406417153', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "300px",
+    height: "250px"
+}, {"dom":{}}, {"dom":{}});
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;" onload="init()">
+	<div id="Stage" class="EDGE-406417153">
+	</div>
+
+    
+    <button id="background_exit_dc"></button>
+
+    <script type="text/javascript">
+
+        var bgExit;
+
+        //Function to run with any animations starting on load, or bringing in s etc
+        init = function(){
+            //Add Event Listeners
+            bgExit = document.getElementById('background_exit_dc');
+            addListeners();
+            //Show Ad
+        }
+
+        //Add Event Listeners
+        addListeners = function() {
+            bgExit.addEventListener('click', bgExitHandler, false);
+        }
+
+
+        bgExitHandler = function(e) {
+            //Call Exits
+            Enabler.exit('bt_broadband_cta_300x250');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION: screenad_interface_1.0.3 -->
+<!-- SCRFORMAT: banner -->
+<!-- SCRWIDTH: 300 -->
+<!-- SCRHEIGHT: 250 -->
+
+	<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+	<!-- GSAP -->
+	<script src="TweenLite.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+    <style type="text/css">
+		#loading_dc{
+			width:100%;
+			height:100%x;
+			background-color:white;
+			z-index:10;
+		}
+		#loading_image_dc{
+			position:absolute;
+			left:50%;
+			margin-left:-15px;
+			top:50%;
+			margin-top:-15px;	
+		}
+		#container_dc{display:none;z-index:20}
+	</style>
+    
+    <script language="javascript">
+
+
+		var checkLoadedInt;
+
+		checkLoaded = function(){
+			if (screenad.isPreloaded){
+				clearInterval(checkLoadedInt);
+				politeInit();
+			}
+		}
+		
+		if (screenad.isPreloaded) {
+			politeInit();
+		} else {
+			checkLoadedInt = window.setInterval(checkLoaded, 100);
+		}
+/**/
+		
+		/*$(document).ready(politeInit);*/
+		
+		function politeInit(){	
+			screenad.setAlignment('banner', 'banner');
+            screenad.setSize("300px", "250px");
+            screenad.setSticky(true);
+            screenad.setZIndex(1);
+            screenad.setOffset(0, 0)
+            screenad.position();	
+			//Load in Javascript			
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', 'Exxon_Synergy_Fuels_Wipers_300x250.js'); 
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+			
+			//Load in CSS
+			
+			var extCSS=document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", "Exxon_Synergy_Fuels_Wipers_300x250.css"); 
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+			document.getElementById("container_dc").style.opacity=1;
+			document.getElementById("loading_image_dc").style.opacity=0;
+			document.getElementById("container_dc").style.display = "block";
+		}
+	</script>
+    
+<body marginheight="0">
+	
+	<div id="loading_dc">
+		<div id="loading_image_dc" ><img src="loading.gif"></div>
+	</div>
+	
+	<div id="container_dc" >
+		<div id="content_dc" >
+			<div id="bg"></div>
+			<div id="station" ><img src="station.jpg" alt=""></div>
+			<div id="o" class="o" ><img src="oupdate.png"></div>
+			<div id="o1" class="o1" ><img src="t.png"></div>
+			<div id="o2" class="o2" ><img src="t.png"></div>
+			<div id="rain" >
+				<div class="drop"></div>
+			</div>
+			<div id="wipers">
+				<div id="wiper1" class="wipe1"><img src="wiper.png" alt=""></div>
+				<div id="wiper2" class="wipe2"><img src="wiper.png" alt=""></div>
+			</div>
+			<div id="copy1" ><img src="copy1.png" alt=""></div>
+			<div id="copy2" ><img src="copy2.png" alt=""></div>
+			<div id="copy3" ><img src="copy3.png" alt=""></div>
+			<div id="synergy" ><img src="synergy.jpg" alt=""></div>
+			<div id="wave" ><img src="wave.jpg" alt=""></div>
+			<div id="wavecopy" ><img src="wavecopy.png" alt=""></div>
+			<div id="esso"><img src="esso.jpg" alt=""></div>
+			<div id="cta"><img src="cta.png" alt="Learn more"></div>
+		</div>
+		<button id="background_exit_dc"></button>
+  </div>
+  
+
+</body></html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	
+	
+	 <meta name="ad.size" content="width=728,height=90">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	
+     <style type="text/css">
+	
+		#loading_dc{
+			width:100%;
+			height:100%;
+			background-color:white;
+			z-index:10;
+		}
+		#loading_image_dc{
+			position:absolute;
+			left:50%;
+			margin-left:-15px;
+			top:50%;
+			margin-top:-15px;	
+		}
+		#container_dc{
+			display:none;z-index:20
+		}
+	
+	#content_dc{
+	display:none;
+	opacity:0;
+	
+	}
+	</style> 
+	<link rel="stylesheet" type="text/css" href="728x90_Banner.css" media="screen" />
+	
+	
+	<script type="text/javascript" src="728x90_banner.js"></script>
+	
+    <script language="javascript">
+	 var clickTag = "http://www.maille.com";
+
+	function onLoadComplete(){
+	 document.getElementById('loading_dc').style.display="none";
+		init();
+	}
+	</script>   
+</head>
+<body id="body" onload="onLoadComplete()">
+<!-- Loading Animation -->
+	<div id="loading_dc">
+        <div id="loading_image_dc"><img src="loading.gif"></div>    
+    </div>
+    
+    <div id="container_dc">
+        <div id="content_dc">
+       <div id="background"></div>
+       <div id="copy1"></div>
+       <div id="copy2"></div>
+       <div id="copy3"></div>
+        <div id="usecode"></div>
+      <div id="cta"></div>
+     
+ 	 <div id="maille"></div>
+       <div id="logo"></div>
+       
+        </div>
+        
+         <button id="background_exit_dc"></button>
+        
+      </div>            
+
+   
+	
+
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: relative;
+	width: 968px;
+	height: 498px;
+	border: 1px solid #666666;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	z-index: 100;
+	
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+img {
+	margin: 0;
+	display: block;
+}
+#bg {
+	width: 968px;
+	height: 498px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#copy1 {
+	width: 419px;
+	height: 264px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+#copy2 {
+	width: 419px;
+	height: 264px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+#copy3 {
+	width: 419px;
+	height: 264px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+#cta {
+	position: absolute;
+	width: 419px;
+	height: 264px;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
+
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}

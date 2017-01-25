@@ -1,0 +1,350 @@
+html {
+	overflow:hidden;
+
+}
+body{
+	background:url('background.jpg') no-repeat ;
+	height:90px;
+	margin:0;
+	padding:0;
+	width:728px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+/* KEYFRAMES */
+
+/* pizza-image_IN */
+@-webkit-keyframes pizza-image_IN { from { top:300px; } to { top:4px; } }
+@-moz-keyframes pizza-image_IN { from { top:300px; } to { top:4px; } }
+@keyframes pizza-image_IN { from { top: 300px; } to { top:4px; } }
+
+/* red-panel_IN */
+@-webkit-keyframes red-panel_IN { from { left:-200px;} to { left:8px; } }
+@-moz-keyframes red-panel_IN { from { left:-200px;} to { left:8px; } }
+@keyframes red-panel_IN { from { left:-200px;} to { left:8px; } }
+
+/* star-ring_IN */
+@-webkit-keyframes star-ring_IN { from { width:0; opacity: 0; left:64px; } to { width:34%; opacity: 1; left:64px;} }
+@-moz-keyframes star-ring_IN { from { width:0; opacity: 0; left:64px; } to { width:34%; opacity: 1; left:64px;} }
+@keyframes star-ring_IN { from { width:0; opacity: 0; left:64px; } to { width:34%; opacity: 1; left:64px;} }
+
+/* text-wipe_IN */
+@-webkit-keyframes text-wipe_IN { from { width:0; opacity : 1; } to { width:100%; opacity : 1 } }
+@-moz-keyframes text-wipe_IN { from { width:0; opacity : 1; } to { width:100%; opacity : 1 } }
+@keyframes text-wipe_IN { from { width:0; opacity : 1; } to { width:100%; opacity : 1 } }
+
+/* text-wipe_OUT */
+@-webkit-keyframes text-wipe_OUT { from { width:100%; opacity : 1; } to { width:0; opacity : 1 } }
+@-moz-keyframes text-wipe_OUT { from { width:100%; opacity : 1; } to { width:0; opacity : 1 } }
+@keyframes text-wipe_OUT { from { width:100%; opacity : 1; } to { width:0; opacity : 1 } }
+
+/* feed-panel_IN */
+@-webkit-keyframes feed-panel_IN { from { top: -100px; opacity:0; } to { top:2px; opacity:1; } }
+@-moz-keyframes feed-panel_IN { from { top: -100px; opacity:0; } to { top:2px; opacity:1; } }
+@keyframes feed-panel_IN { from { top: -100px; opacity:0; } to { top:2px; opacity:1; } }
+
+/* fifty-text_IN */
+@-webkit-keyframes fifty-text_IN { from { -webkit-transform: scale( 2.5 ) rotate( 45deg ); opacity : 0; } to { -webkit-transform: scale( 1 ) rotate( 0deg ); opacity: 1 } }
+@-moz-keyframes fifty-text_IN { from { -moz-transform: scale( 2.5 ) rotate( 45deg ); opacity : 0; } to { -moz-transform: scale( 1 ) rotate( 0deg ); opacity: 1 } }
+@keyframes fifty-text_IN { from { transform: scale( 2.5 ) rotate( 45deg ); opacity : 0; } to { transform: scale( 1 ) rotate( 0deg ); opacity: 1 } }
+
+
+@-webkit-keyframes fifty-pulse { from {-webkit-transform: scale(1.0);} to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes fifty-pulse { from {-moz-transform: scale(1.0);} to { -moz-transform: scale(1.2); }
+}
+@keyframes fifty-pulse { from {transform: scale(1.0);} to {transform: scale(1.2); }
+}
+
+
+
+
+/* fifty-text_OUT */
+@-webkit-keyframes fifty-text_OUT { from { -webkit-transform: scale(1); opacity : 1; } to { -webkit-transform: scale(0.2); opacity: 0 } }
+@-moz-keyframes fifty-text_OUT { from { -moz-transform: scale(1); opacity : 1; } to { -moz-transform: scale(0.2); opacity: 0 } }
+@keyframes fifty-text_OUT { from { transform: scale(1); opacity : 1; } to { transform: scale(0.2); opacity: 0 } }
+
+
+/* Order now bounce */
+
+@-webkit-keyframes order { to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes order{
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes order {
+   to { transform: scale(1.2); }
+}
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+
+
+
+.pizza-image{
+    background:url(pizza.png);
+    position: absolute;
+    top: 300px;
+    left:370px;
+    width: 150px;
+    height: 90px;
+    z-index:1;
+    opacity:1;
+}
+
+.pizza-image.show{
+    -webkit-animation:pizza-image_IN 0.3s ease-out forwards;
+    -moz-animation:pizza-image_IN 0.3s ease-out forwards;
+    animation:pizza-image_IN 0.3s ease-out forwards;
+
+}
+
+.pizza-image.hide{
+
+}
+
+/* === */
+
+.red-panel {
+    background: url( red-panel-no-stars.png );
+    position: absolute;
+    left: -400px;
+    top:7px;
+    width: 305px;
+    height: 78px;
+    z-index:2;
+    opacity:1;
+}
+
+.red-panel.show{
+    -webkit-animation:red-panel_IN 0.2s 1 ease-in-out forwards;
+    -moz-animation:red-panel_IN 0.2s 1 ease-in-out forwards;
+    animation:red-panel_IN 0.2s 1 ease-in-out forwards;
+}
+
+.red-panel.hide{
+
+}
+
+/* === */
+
+.star-ring{
+    background: url( star-ring.png );
+    position: absolute;
+    left: 15px;
+    top:10px;
+    width: 266px;
+    height: 68px;
+    z-index:2;
+    opacity:0;
+}
+
+.star-ring.show{
+    -webkit-animation: star-ring_IN 1s 1 ease-in forwards;
+    -moz-animation: star-ring_IN 1s 1 ease-in forwards;
+    animation: star-ring_IN 1s 1 ease-in forwards;
+}
+
+/* === */
+
+.get-pizzas-text {
+    background:url(get-pizzas.png) no-repeat;
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    width: 0;
+    height: 24px;
+    z-index:2;
+}
+
+.get-pizzas-text.show{
+    -webkit-animation: text-wipe_IN 0.3s 1 ease-in forwards;
+    -moz-animation: text-wipe_IN 0.3s 1 ease-in forwards;
+    animation: text-wipe_IN 0.3s 1 ease-in forwards;
+}
+
+.get-pizzas-text.hide{
+    -webkit-animation: text-wipe_OUT 0.5s 1 linear forwards;
+    -moz-animation: text-wipe_OUT 0.5s 1 linear forwards;
+    animation: text-wipe_OUT 0.5s 1 linear forwards;
+
+}
+
+/* === */
+
+.order {
+	background:url(order.png) no-repeat;
+	  position: absolute;
+	  top:10px;
+	  right:145px;
+	  width: 85px;
+	  height: 75px;
+	  z-index:10;
+	  opacity:0;
+	  background-size:cover;
+
+}
+
+.order.show{
+    -webkit-animation: fadein 0.2s 0.2s 1 linear forwards, order .3s infinite alternate;
+    -moz-animation: fadein 0.2s 0.2s 1 linear forwards, order .3s infinite alternate;
+    animation: fadein 0.2s 0.2s 1 linear forwards, order .3s infinite alternate;
+
+}
+
+/* === */
+
+
+.fifty-text {
+    background:url(fifty.png);
+    position: absolute;
+    left:120px;
+    top:7px;
+    width: 95px;
+    height: 70px;
+    z-index:4;
+    opacity:0;
+}
+
+.fifty-text.show{
+    -webkit-animation: fifty-text_IN 0.2s 1 ease-out forwards, fifty-pulse 0.5s 0.5s alternate infinite;
+    -moz-animation: fifty-text_IN 0.2s 1 ease-out forwards, fifty-pulse 0.5s 0.5s alternate infinite;
+    animation: fifty-text_IN 0.2s 1 ease-out forwards, fifty-pulse 0.5s 0.5s alternate infinite;
+}
+
+.fifty-text.hide{
+    -webkit-animation: fifty-text_OUT 0.2s 1 ease-in forwards;
+    -moz-animation: fifty-text_OUT 0.2s 1 ease-in forwards;
+    animation: fifty-text_OUT 0.2s 1 ease-in forwards;
+
+}
+
+/* === */
+
+.spend-text {
+    background:url(spend.png) no-repeat;
+    position: absolute;
+    width: 0;
+    height: 23px;
+    z-index:10;
+
+    left: 65px;
+    top: 32px;
+}
+
+.spend-text.show{
+    -webkit-animation: text-wipe_IN 0.5s 1 ease-in forwards;
+	-moz-animation: text-wipe_IN 0.5s 1 ease-in forwards;
+	animation: text-wipe_IN 0.5s 1 ease-in forwards;
+
+
+}
+
+.spend-text.hide{
+    -webkit-animation: text-wipe_OUT 0.3s 1 linear forwards;
+    -moz-animation: text-wipe_OUT 0.3s 1 linear forwards;
+    animation: text-wipe_OUT 0.3s 1 linear forwards;
+}
+
+/* === */
+
+.feed-panel {
+    background:url(feedme.png);
+    position: absolute;
+    width: 109px;
+    height: 55px;
+    z-index:1;
+    opacity:0;
+
+    left: 330px;
+    top: -100px;
+}
+
+.feed-panel.show{
+    -webkit-animation:feed-panel_IN 0.3s ease-out forwards;
+    -moz-animation:feed-panel_IN 0.3s ease-out forwards;
+    animation:feed-panel_IN 0.3s ease-out forwards;
+
+}
+
+.feed-panel.hide{
+
+}
+
+/* === */
+
+.sunday-text {
+    background:url(sunday.png) no-repeat;
+    position: absolute;
+    width: 0;
+    height: 27px;
+    z-index:10;
+
+    left: 70px;
+    top: 32px;
+}
+
+.sunday-text.show{
+    -webkit-animation: text-wipe_IN 0.5s 1 ease-in forwards;
+    -moz-animation: text-wipe_IN 0.5s 1 ease-in forwards;
+    animation: text-wipe_IN 0.5s 1 ease-in forwards;
+	
+}
+
+
+/* legals ................................................ */
+.parent {
+    position:relative;
+    float:left;
+	left:1px;
+    width:728px;
+    height:90px;
+}
+.legal {
+    background-color:#006da7;
+    z-index:110;
+    position:absolute;
+    bottom:0px;
+    right:0;
+    width: auto;
+}
+.legal:hover {
+    width:32%;
+    /* To make sure the width is aligned with the parent div */
+    cursor:default;
+}
+
+.legal-text {
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.legal-text, .legal span {
+    font-size:9px;
+    color:#FFFFFF;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.legal span {
+    display:none;
+    padding:4px 5px;
+    /* Expanded text is hidden */
+}
+.legal:hover p {
+    display:none;
+    /* the text is hidden */
+}
+.legal:hover span {
+    display:block;
+    /* Expanded text is shown */
+}

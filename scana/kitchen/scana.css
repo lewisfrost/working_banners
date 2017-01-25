@@ -1,0 +1,35 @@
+/*--------------------- Globals ---------------------*/
+:focus { outline:none; }
+::-moz-focus-inner { border:0; }
+html, body { background-color: #fff; margin: 0; padding: 0; }
+#scana { color: #fff; background-color: #fff; position: absolute; top: 0px; left: 0px; width: 300px; height: 250px; overflow: hidden; font-family:Arial, Helvetica, sans-serif;
+transform-style: preserve-3d;
+perspective: 1000px;
+-webkit-transform-style: preserve-3d;
+-webkit-perspective: 1000;		
+}
+#scana div { display: block; overflow: hidden; position: absolute; }
+#scana svg { position: absolute; }
+#scana #scene { width: 420px; height: 250px; left: 0px; }
+#scana #scene #bg { background: transparent url('bg.jpg') 0 0 no-repeat; width: 420px; height: 250px; }
+#scana #counter { background: transparent url('counter.png') 0 0 no-repeat; width: 420px; height: 250px; }
+#scana #scene #bear_items { background: transparent; width: 300px; height: 250px; }
+#scana #scene #bear_bg_wrapper,
+#scana #scene #bear_wrapper { width: 170px; height: 250px; }
+#scana #scene #bear_bg_wrapper #bear_bg { width: 4080px; height: 250px; }
+#scana #scene #bear_wrapper #bear { width: 4080px; height: 250px; mix-blend-mode: multiply; }
+#scana #side_bar { background: transparent url('bg_white.png') 0 0 no-repeat; width: 125px; height: 250px; right: 0px; }
+#scana #side_bar #quote_wrapper { width: 102px; height: 74px; left: 11px; top: 29px; }
+#scana #side_bar #quote_wrapper .line { background: #0a99d6; width: 96px; height: 1px; left: 3px; }
+#scana #side_bar #quote_wrapper #top_line { top: 0px; }
+#scana #side_bar #quote_wrapper #btm_line { bottom: 0px; }
+#scana #side_bar #cta { background: #26296b; width: 76px; height: 15px; border: 1px solid #0392d1; right: 22px; bottom: 7px; }
+#scana #logo_glow { background: transparent url('logo_glow.png') 0 0 no-repeat; width: 115px; height: 38px; right: 7px; bottom: 26px; }
+
+#scana #btn_replay { z-index: 9999; text-indent: 0; width: 20px; height: 20px; right: 5px; top: 5px; cursor: pointer; transform-origin: 50% 55%; -webkit-transform-origin: 50% 55%; }
+
+/*--------------------- IE/Utilities ---------------------*/
+#scana #border { background: transparent; border: 1px solid #939393; width: 298px; height: 248px; position: absolute; top: 0; left: 0; }
+#scana #background_exit { display: block; overflow: hidden; background: transparent; width: 100%; height: 100%; position: absolute;  }
+#scana #loading { z-index: 99999; background: #fff; width: 100%; height: 100%; }
+#scana .hide { display: none; }

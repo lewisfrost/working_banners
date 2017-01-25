@@ -1,0 +1,221 @@
+html, body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body.is-expanded{
+    background-color: #000;
+}
+
+
+#ad-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#viewport{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#collapse{
+    cursor: pointer;
+}
+
+.container *{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.container.is-active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container .inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container *{
+    box-sizing: border-box;
+}
+
+.inner img{
+    position: absolute;
+}
+
+.inner img.bg{
+    width: 100%;
+}
+
+.inner img.video-thumb{
+    z-index: 1;
+    cursor: pointer;
+}
+
+.inner .text-block{
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 130%;
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.inner img.tap-action-graphic{
+    width: 54%;
+    margin-left: 11%;
+    margin-top: 1.5%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: fade_IN 0.2s 3s 1 ease-out forwards;
+}
+@-webkit-keyframes fade_IN { from { opacity : 0 } to { opacity : 1 } }
+
+
+#expand-close-btn, #video-close-btn {
+    background : url( "close_button.png" ) no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0.25rem;
+    right: 0.25rem;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+img.cta{
+    width: 80%;
+    margin: auto 10%;
+    margin-top: 115%;
+
+    z-index: 1;
+}
+
+.disclaimer{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+#video-overlay{
+    /* NOTE size set via js */
+    z-index: 2;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+#glass{
+    /* NOTE size set via js */
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.85 );
+    z-index: 2;
+    display: none;
+}
+
+#glass.is-active{
+    display: block;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ............................... */
+/* ========== PORTRAIT =========== */
+/* ............................... */
+@media screen and (orientation:portrait) {
+
+    .container .portrait.inner{
+        display: block;
+    }
+
+    .container .landscape.inner{
+        display: none;
+    }
+
+    .inner img.video-thumb{
+        width: 85%;
+        margin: 0 7.3%;
+        margin-top: 35%;
+    }
+
+    .inner .text-block{
+        width: 80%;
+        margin: auto 10%;
+        margin-top: 72%;
+    }
+
+    .inner .disclaimer{
+        font-size: 56%;
+        margin-top: 137%;
+    }
+}
+
+/* ............................... */
+/* ========== LANDSCAPE =========== */
+/* ............................... */
+@media screen and (orientation:landscape) {
+
+
+    .container .portrait.inner{
+        display: none;
+    }
+
+    .container .landscape.inner{
+        display: block;
+    }
+
+    .inner img.video-thumb{
+        width: 28%;
+        margin-left: 22%;
+        margin-top: 11%;
+    }
+
+    .inner .text-block{
+        font-size: 47%;
+        line-height: 120%;
+        width: 26%;
+        margin-left: 50.5%;
+        margin-top: 11.5%;
+    }
+
+    img.cta{
+        width: 22%;
+        margin-left: 51%;
+        margin-top: 28%;
+        z-index: 2;
+    }
+
+    .inner .disclaimer{
+        font-size: 30%;
+        margin-top: 36%;
+    }
+}

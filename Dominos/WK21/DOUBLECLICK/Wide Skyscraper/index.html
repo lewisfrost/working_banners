@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>160x600 Wide Sky</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css"/>
+    <style>
+        #bg-exit {
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 400;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--[if lt IE 11]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="bg-exit"></div>
+<div id="banner">
+    <div class="pizza-image"></div>
+    <div class="red-panel"></div>
+    <div class="badge-image"></div>
+    <div class="star-ring"></div>
+    <div class="get-pizzas-text"></div>
+    <div class="fifty-text"></div>
+    <div class="spend-text"></div>
+    <div class="feed-panel"></div>
+    <div class="sunday-text"></div>
+
+    <div class="cta"></div>
+
+    <div class="frame-border"></div>
+
+    <div class="parent">
+        <div class="legal">
+            <p class="legal-text">*Boring Legals here</p> <span>Offer cannot be used in conjunction with any other offer. T&Cs apply, see boring legal stuff at dominos.co.uk</span>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+
+    function bgExitHandler(e) {
+        Enabler.exitOverride('Background Exit', 'http://www.dominos.ie');
+    }
+
+    document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+    // ****
+
+    var irisBanner = ( function(){
+
+        var els = {
+            bannerEl : document.getElementById("banner")
+        };
+
+        var props = {
+
+        };
+
+        var actions = {
+            SHOW : "SHOW",
+            HIDE : "HIDE",
+            PANEL_SHIFT : "PANEL_SHIFT",
+            CTA_BOUNCE : "CTA_BOUNCE"
+        };
+
+        init();
+
+        function init(){
+            //console.log("/index/ -init ");
+
+            els.pizzaEl = setElement( ".pizza-image" );
+            els.badgeImageEl = setElement( ".badge-image" );
+            els.redPanelEl = setElement( ".red-panel" );
+            els.starsEl = setElement( ".star-ring" );
+            els.getPizzasEl = setElement( ".get-pizzas-text" );
+            els.fiftyTextEl = setElement( ".fifty-text" );
+            els.spendTextEl = setElement( ".spend-text" );
+            els.feedPanelEl = setElement( ".feed-panel" );
+            els.sundayTextEl = setElement( ".sunday-text" );
+            els.ctaEl = setElement( ".cta" );
+
+            // *******
+            sequence();
+        }
+
+        /**
+         *
+         */
+        function sequence(){
+
+            var tm = 0.5;
+
+            // pizza
+            tm += 0;
+            timer( tm, actions.SHOW, { el : els.pizzaEl } );
+
+            // week banner, stars
+            tm += 0.3;
+
+            timer( tm, actions.SHOW, { el : els.badgeImageEl } );
+            timer( tm + 0.4, actions.SHOW, { el : els.redPanelEl } );
+            timer( tm + 0.8, actions.SHOW, { el : els.starsEl } );
+
+            // get pizza text
+            tm += 0.9;
+            timer( tm, actions.SHOW, { el : els.getPizzasEl } );
+
+            // fifty text, get pizza text
+            tm += 0.5;
+            timer( tm, actions.SHOW, { el : els.fiftyTextEl } );
+
+            tm += 2;
+            timer( tm, actions.HIDE, { el : els.getPizzasEl } );
+
+            tm += 0.4;
+            timer( tm, actions.HIDE, { el : els.fiftyTextEl } );
+
+            tm += 0.1;
+            timer( tm, actions.PANEL_SHIFT, null );
+
+            //return;
+
+            // spend text
+            tm += 0.2;
+            timer( tm, actions.SHOW, { el : els.spendTextEl } );
+
+            // feed panel
+            tm += 0.2;
+            timer( tm, actions.SHOW, { el : els.feedPanelEl } );
+
+            // spend text
+            tm += 1;
+            timer( tm, actions.HIDE, { el : els.spendTextEl } );
+
+            // cta
+            timer( tm + 0.3, actions.SHOW, { el : els.ctaEl } );
+            //timer( tm + 0.7, actions.CTA_BOUNCE, null );
+
+            // sunday text
+            tm += 1.3;
+            timer( tm, actions.SHOW, { el : els.sundayTextEl } );
+            timer( tm + 0.3, actions.CTA_BOUNCE, null );
+        }
+
+
+        function timer( _delay, _action, _props ){
+
+            var d = _delay * 1000;
+
+            var to = window.setTimeout( function(){
+
+                actionRunner( _action, _props || null );
+                window.clearTimeout( to );
+            }, d );
+        }
+
+
+        function setElement( _selector ){
+            return els.bannerEl.querySelectorAll( _selector )[ 0 ];
+        }
+
+
+        function actionRunner( _action, _props ){
+
+            console.log("/index/ -actionRunner ", _action, _props );
+
+            switch( _action ){
+
+                case actions.SHOW:
+
+                    addClass( _props.el, "show", true );
+                    addClass( _props.el, "hide", false );
+
+                    break;
+
+                case actions.HIDE:
+
+                    addClass( _props.el, "show", false );
+                    addClass( _props.el, "hide", true );
+
+                    break;
+
+                case actions.PANEL_SHIFT:
+
+                    addClass( els.redPanelEl, "shift-in", true );
+                    addClass( els.starsEl, "shift-in", true );
+
+                    break;
+
+                case actions.CTA_BOUNCE:
+
+                    addClass( els.ctaEl, "bounce", true );
+
+                    break;
+            }
+        }
+
+
+        /**
+         *
+         * @param _el
+         * @param _class
+         * @param _f
+         */
+        function addClass( _el, _class, _f ){
+
+            console.log("/index/ -addClass ", _el, _class );
+
+            ( _f ) ? _el.classList.add( _class ) : _el.classList.remove( _class );
+
+        }
+
+        function prefix(){
+
+        }
+
+
+    })();
+
+
+</script>
+</html>

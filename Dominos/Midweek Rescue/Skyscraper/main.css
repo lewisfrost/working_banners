@@ -1,0 +1,264 @@
+html {
+	overflow:hidden;
+	
+}
+
+body{
+	background:url('background.jpg') no-repeat ;
+	height:600px;
+	margin:0;
+	padding:0;
+	width:120px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes leftthe { from { left:-200px; } to { left:7px;} }
+@keyframes leftthe  { from { left:-200px; } to { left:7px;} }
+@-moz-keyframes leftthe  { from { left:-200px; } to { left:7px;} }
+
+@-webkit-keyframes leftthe2 { from { left:-200px; } to { left:7px;} }
+@keyframes leftthe2  { from { left:-200px; } to { left:7px;} }
+@-moz-keyframes leftthe2  { from { left:-200px; } to { left:7px;} }
+
+@-webkit-keyframes rightthe { from { left:7px;} to { left:300px; } }
+@keyframes rightthe { from { left:7px;} to { left:300px; } }
+@-moz-keyframes rightthe { from { left:7px;} to { left:300px; } }
+
+@-webkit-keyframes lefttitle { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@keyframes lefttitle { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@-moz-keyframes lefttitle { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+
+@-webkit-keyframes lefttitle2 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@keyframes lefttitle2 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@-moz-keyframes lefttitle2 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+
+@-webkit-keyframes righttitle { from { left:12px; top:35px; } to { left:200px; top:5px; } }
+@keyframes righttitle { from { left:12px; top:35px; } to { left:200px; top:5px; } }
+@-moz-keyframes righttitle { from { left:12px; top:35px; } to { left:200px; top:5px; } }
+
+@-webkit-keyframes lefttitle1 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@keyframes lefttitle1 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+@-moz-keyframes lefttitle1 { from { left:-200px; top:70px; } to { left:12px; top:35px; } }
+
+@-webkit-keyframes righttitle1 { from { left:12px; top:35px; } to { left:300px; top:5px; } }
+@keyframes righttitle1 { from { left:12px; top:35px; } to { left:300px; top:5px; } }
+@-moz-keyframes righttitle1 { from { left:12px; top:35px; } to { left:300px; top:5px; } }
+
+
+@-webkit-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@keyframes fadein { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadein { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeout { from { opacity:1; } to { opacity:0; } }
+
+@-webkit-keyframes slide { from { left:-200px; } to { left:-2px; } }
+@keyframes slide { from { left:-200px; } to { left:-2px;  } }
+@-moz-keyframes slide { from { left:-200px; } to { left:-2px;  } }
+
+@-webkit-keyframes slide2 { from { left:-200px; } to { left:2px; } }
+@keyframes slide2 { from { left:-200px; } to { left:2px;  } }
+@-moz-keyframes slide2 { from { left:-200px; } to { left:2px;  } }
+
+@-webkit-keyframes slide1 { from { left:-200px; } to { left:35px; } }
+@keyframes slide1 { from { left:-200px; } to { left:35px;  } }
+@-moz-keyframes slide1 { from { left:-200px; } to { left:35px;  } }
+
+@-webkit-keyframes rightslide { from { right:-200px; } to { right:30px; } }
+@keyframes rightslide { from { right:-200px; } to { right:30px; } }
+@-moz-keyframes rightslide { from { right:-200px; } to { right:30px; } }
+
+@-webkit-keyframes rightslide2 { from { right:-200px; } to { right:22px; } }
+@keyframes rightslide2 { from { right:-200px; } to { right:22px; } }
+@-moz-keyframes rightslide2 { from { right:-200px; } to { right:22px; } }
+
+@-webkit-keyframes rightslide1 { from { right:-200px; } to { right:0px; } }
+@keyframes rightslide1 { from { right:-200px; } to { right:0px; } }
+@-moz-keyframes rightslide1 { from { right:-200px; } to { right:0px; } }
+
+
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+
+.the {
+	background:url(the.png);
+	position:absolute;
+	left:-200px;
+	top: 13px;
+	width:40px;
+	height:20px;
+	opacity:1;
+	
+	-webkit-animation:leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+
+    -moz-animation: leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+    animation:leftthe2 0.2s 1.4s 1 linear forwards, rightthe 0.2s 2.8s linear forwards, leftthe 0.2s 6.2s 1 linear forwards;
+}
+
+
+.big_pizza {
+	background:url(left-pizza.png);
+	  position: absolute;
+	  left:-200px;
+	  top: 180px;
+	  width:125px;
+	  height: 155px;
+	  z-index:1;
+	  opacity:1;
+	  
+	  -webkit-animation:slide 0.1s 0.5s linear forwards;
+  	  -moz-animation:slide 0.1s 0.5s linear forwards;
+      animation:slide 0.1s 0.5s linear forwards;
+}
+
+.order {
+	background:url(order.png);
+	  position: absolute;
+	  top:415px;
+	  right:20px;
+	  width: 90px;
+	  height: 85px;
+	  z-index:1;
+	  opacity:0;
+	  background-size:cover;
+	  -webkit-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      -o-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      -moz-animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+      animation: fadein 0.2s 7s 1 linear forwards, bounce .3s infinite alternate;
+
+}
+
+.small_pizza2 {
+	background:url(right-pizza.png);
+	  position: absolute;
+	  right: -200px;
+	  top: 341px;
+	  width: 130px;
+	  height: 162px;
+	  z-index:1;
+	  opacity:1;
+	  -webkit-animation:rightslide1 0.1s 0.9s linear forwards;
+  	  -moz-animation:rightslide1 0.1s 1s linear forwards;
+      animation:rightslide1 0.1s 1s linear forwards;
+}
+
+
+.title {
+	background:url(midweek.png);
+	  position: absolute;
+	  left: -200px;
+	  width: 96px;
+	  height: 81px;
+	  z-index:2;
+	  opacity:1;
+	  
+	  -webkit-animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+  	  -moz-animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+      animation:lefttitle2 0.2s 1.4s 1 linear forwards, righttitle 0.2s 2.8s linear forwards, lefttitle 0.2s 6.2s 1 linear forwards;
+}
+
+.title2 {
+	background:url(title3.png);
+	  position: absolute;
+	  left: -200px;
+	  top: 45px;
+	  width: 98px;
+	  height: 68px;
+	  z-index:2;
+	  opacity:1;
+	  
+	   -webkit-animation:lefttitle1 0.2s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+  	  -moz-animation:lefttitle1 0.2s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+      animation:lefttitle1 0.2s 3.3s 1 linear forwards, righttitle1 0.2s 6s linear forwards;
+}
+
+
+.price {
+	  background:url(price.png);
+	  position: absolute;
+	  width: 76px;
+	  height: 40px;
+	  z-index:3;
+	  opacity:1;
+	  
+	  left: -200px;
+	  top: 140px;
+	
+	  -webkit-animation: slide2 0.8s 3.3s linear forwards;
+  	  -moz-animation:slide2 0.8s 3.3s linear forwards;
+      animation:slide2 0.8s 3.3s linear forwards;  
+}
+
+
+.parent {
+    position:relative;
+    float:right;
+    width:120px;
+    height:600px;
+}
+.legal {
+    background-color:#006fba;
+    z-index:110;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    transition: all .4s;
+}
+.legal:hover {
+    width:100%;
+    /* To make sure the width is aligned with the parent div */
+    cursor:default;
+    transition: all .4s;
+}
+
+.legal-text {
+	padding:0px 10px;
+	margin-top: 4px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.legal-text, .legal span {
+    font-size:9px;
+    color:#FFFFFF;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.legal span {
+    display:none;
+    padding:5px 10px;
+    /* Expanded text is hidden */
+}
+.legal:hover p {
+    display:none;
+    /* the text is hidden */
+}
+.legal:hover span {
+    display:block;
+    /* Expanded text is shown */
+}
+
+
+
+
+
+

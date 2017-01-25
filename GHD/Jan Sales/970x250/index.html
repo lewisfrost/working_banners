@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="ad.size" content="width=970,height=250">
+		<title>970x250 GHD Get the hint</title>
+		<script type="text/javascript">
+			// SET ADVERT ATTRIBUTES
+			var clickTag = "#";
+		</script>
+		<style>
+
+			* {
+				background-repeat: no-repeat;
+			}
+			body{ margin: 0; padding:0; }
+			#stage {
+			  width: 970px;
+			  height: 250px;
+			  box-sizing: border-box;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  background-image: url('f1.jpg');
+			  background-repeat: no-repeat;
+			  background-position: left top;
+			  background-color: #fff;
+			  position: relative;
+			  overflow: hidden;
+			  cursor:pointer;
+			}
+
+
+			#border {
+				width: 968px;
+			  	height: 248px;
+			  	position: absolute;
+			  	left: 0px;
+			  	top: 0px;
+			  	border: 1px solid #000;
+			  	z-index: 9999;
+			}
+
+			#logo {
+				background-image: url('ghd_logo.png');
+				width: 970px;
+				height: 250px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 2;
+			}
+
+			#preloader{
+				width: 100%;
+				height: 100%;
+			  	position: absolute;
+			  	left: 0px;
+			  	top: 0px;
+			  	background: url('preloader.gif') center center no-repeat;
+			  	z-index: 9999;
+			}
+
+
+			.wrap {
+				position: relative;
+			}
+
+			/* TEXTS */
+			#t1, #t2, #t3, #t4, #t5, #t6, #t7 {
+				position: absolute;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				left: 0;
+				top: 0;
+				z-index: 0;
+			}
+
+			#t1 {
+				background-image: url('t1.png');
+			}
+
+			#t2 {
+				background-image: url('t2.png');
+			}
+
+			#t3 {
+				background-image: url('t3.png');
+			}
+
+			#t4 {
+				background-image: url('t4.png');
+			}
+
+			#t5 {
+				background-image: url('t5.png');
+			}
+
+			#t6 {
+				background-image: url('t6.png');
+			}
+
+			#t7 {
+				background-image: url('t7.png');
+			}
+
+			#f2 {
+				background-image: url('f1.jpg');
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity: 0;
+				z-index: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			}
+
+			#slideIn {
+				position: relative;
+				height: 100%;
+				width: 487px;
+				top: 251px;
+				left: 385px;
+			}
+
+			#styler {
+				background-image: url('250x250-styler.jpg');
+				width: 326px;
+				height: 250px;
+				position: absolute;
+				left: 0px;
+				top: 0;
+				z-index: 2;
+			}
+
+			#send_hint_btn {
+				background-image: url('send_hint_btn.png');
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 300px;
+				top: -251px;
+				opacity: 0;
+				z-index: 2;
+			}
+
+			#send_arr {
+				background-image: url('send_arr.png');
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left:412px;
+				top: 13px;
+				opacity: 0;
+				z-index: 2;
+			}
+
+			#fade {
+				background-color: #fff;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 999;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			}
+
+		</style>
+
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"> </script>
+		<script type="text/javascript">
+			var tl = false;
+			var video;
+			var videoStatus = false;
+			// If true, start function. If false, listen for INIT.
+			window.onload = function() {
+			  if (Enabler.isInitialized()) {
+			      enablerInitHandler();
+			  } else {
+			      Enabler.addEventListener(studio.events.StudioEvent.INIT,
+					enablerInitHandler);
+			  }
+			}
+
+			function enablerInitHandler() {
+			    if (Enabler.isPageLoaded()) {
+				    pageLoadedHandler();
+				  } else {
+				    Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED,
+				    	pageLoadedHandler);
+				  }
+			}
+
+			function pageLoadedHandler() {
+				politeLoad(['https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js',
+	            'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineMax.min.js',
+	            'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js',
+	            'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js'],
+					function () {
+						// CHECK IF AD IS VISIBLE
+						if (Enabler.isVisible()) {
+							adVisibilityHandler();
+						} else {
+						    Enabler.addEventListener(studio.events.StudioEvent.VISIBLE,
+						    adVisibilityHandler);
+						}
+					}
+				);
+			}
+
+			function adVisibilityHandler() {
+			    // AD IS VISIBLE
+			    init();
+			}
+
+			// FUNCTION TO POLITE LOAD JS SCRIPTS
+			function politeLoad(urls, onComplete) {
+			    var l = urls.length,
+			        loaded = 0,
+			        checkProgress = function() {
+			            if (++loaded === l && onComplete) {
+			                onComplete();
+			            }
+			        },
+			        i;
+			    for (i = 0; i < l; i++) {
+			        Enabler.loadScript(urls[i], checkProgress);
+			    }
+			}
+
+		    // CHECK IF ANDROID or iOS DEVICE
+			var ua = navigator.userAgent.toLowerCase();
+			var isAndroid = /android/.test(ua) && /mobile/.test(ua);
+			var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+		    var canPlay = false;
+
+
+		    function imgpreload( imgs, callback ) {
+			  "use strict";
+			  var loaded = 0;
+			  var images = [];
+			  imgs = Object.prototype.toString.apply( imgs ) === '[object Array]' ? imgs : [imgs];
+			  var inc = function() {
+			    loaded += 1;
+			    if ( loaded === imgs.length && callback ) {
+			      callback( images );
+			    }
+			  };
+			  for ( var i = 0; i < imgs.length; i++ ) {
+			    images[i] = new Image();
+			    images[i].onabort = inc;
+			    images[i].onerror = inc;
+			    images[i].onload = inc;
+			    images[i].src = imgs[i];
+			  }
+			}
+
+
+			function init () {
+
+				// SETUP CLICK
+				stage = document.getElementById("stage");
+				stage.addEventListener("click", function () {
+					 Enabler.exit('clickthrough');
+				});
+
+				var stage;
+				var lib;
+
+				// PRELOAD ASSETS
+				lib = [
+						"ghd_logo.png",
+						"t1.png",
+						"t2.png",
+						"t3.png",
+						"t4.png",
+						"t5.png",
+						"t6.png",
+						"t7.png",
+						"250x250-styler.jpg",
+						"send_hint_btn.png?new=1",
+						"send_arr.png?new=1"
+				];
+
+				imgpreload(lib, function( images ) {
+				  handleImageLoad();
+				});
+
+	            function handleImageLoad () {
+	            	preloader.style.display = "none";
+
+					var loop = 0;
+
+					tl = new TimelineMax({repeat:1, repeatDelay:4.5, onStart: tl_start, onRepeat: tl_start});
+	        		tl.to(fade, 0.1, {alpha: 0});
+	        		if (canPlay) {
+	        			tl.to(video, 0.2, {alpha: 1});
+	        		}
+	        		tl.to(t1, 0.7, {alpha:1}, 0.5)
+	        		.to(t2, 0.7, {alpha:1}, 0.7)
+	        		.to(t3, 0.7, {alpha:1}, 0.9)
+	        		.to(t4, 0.7, {alpha:1}, 1.1)
+	        		.to(t5, 0.7, {alpha:1}, 1.3)
+	        		.to(t6, 0.7, {alpha:1}, 1.5)
+	        		.to(t7, 0.7, {alpha:1}, 2.7)
+	        		.to(f2, 0.2, {alpha: 1}, 4.5)
+	        		//.to(f2, 2.5, {left: 0, ease: Linear.easeNone}, 1.6)
+	        		.to(slideIn, 2.4, {top: 0, ease: Linear.easeNone}, 4.7)
+	        		.to(send_hint_btn, 0.5, {alpha:1,top: 44, ease: Quad.easeOut}, 6.5)
+	        		.to(send_arr, 0.5, {alpha:1,
+	        			onComplete: function() {
+	        				arr_loop.restart();
+	        				if (loop != 1) {
+	        					fade_out.restart();
+	        					loop++;
+	        				}
+	        			}
+	        		}, 7);
+
+	        		fade_out = new TimelineMax({paused:true});
+	        		fade_out.to(fade, 0.5, {alpha:1}, 4)
+
+	        		arr_loop = new TimelineMax({paused:true});
+	        		arr_loop.timeScale(1.5);
+	        		arr_loop.to(send_arr, 0.5, {left: "415px"}).to(send_arr, 0.5, {left: "412px"}, 0.5)
+	        		.to(send_arr, 0.5, {left: "415px"}, 1.5).to(send_arr, 0.5, {left: "412px"}, 2)
+	        		.to(send_arr, 0.5, {left: "415px"}, 3).to(send_arr, 0.5, {left: "412px"}, 3.5);
+
+	        		var time = 0;
+
+
+		        	function tl_start() {
+		        	}
+
+	            }
+
+	            var vis = (function(){
+				    var stateKey,
+				        eventKey,
+				        keys = {
+				                hidden: "visibilitychange",
+				                webkitHidden: "webkitvisibilitychange",
+				                mozHidden: "mozvisibilitychange",
+				                msHidden: "msvisibilitychange"
+				    };
+				    for (stateKey in keys) {
+				        if (stateKey in document) {
+				            eventKey = keys[stateKey];
+				            break;
+				        }
+				    }
+				    return function(c) {
+				        if (c) document.addEventListener(eventKey, c);
+				        return !document[stateKey];
+				    }
+				})();
+
+				// check if current tab is active or not
+				vis(function(){
+
+				    if(vis()){
+
+				        // tween resume() code goes here
+						setTimeout(function(){
+							if (tl) {
+				            	tl.resume();
+				            }
+				            if (canPlay) {
+				            	if (videoStatus == true) {
+				            		video.play();
+				            	}
+				            }
+				        },300);
+
+				    } else {
+
+				        if (tl) {
+			            	tl.pause();
+			            }
+
+				        if (canPlay) {
+			            	video.pause();
+			            }
+				    }
+				});
+
+			}
+
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="stage">
+				<div id="f2"></div>
+				<div id="hidden">
+		    	</div>
+				<div id="logo"></div>
+
+
+				<div id="t1"></div><div id="t2"></div><div id="t3"></div>
+				<div id="t4"></div><div id="t5"></div><div id="t6"></div>
+				<div id="t7"></div>
+
+				<div id="slideIn">
+					<div id="styler"></div>
+				</div>
+
+				<div id="send_hint_btn"><div id="send_arr"></div></div>
+
+				<div id="fade"></div>
+				<div id="border"></div>
+				<div id="preloader"></div>
+			</div>
+
+		</div>
+	</body>
+</html>

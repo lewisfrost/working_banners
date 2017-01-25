@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Waitrose';
+	src: url("Waitrose-Regular.eot");
+	src: url("Waitrose-Regular.eot?#iefix") format('embedded-opentype'),
+			url("Waitrose-Regular.woff") format('woff'),
+			url("Waitrose-Regular.TTF") format('truetype'),
+			url("Waitrose-Regular.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Waitrose';
+	src: url("Waitrose-Bold.eot");
+	src: url("Waitrose-Bold.eot?#iefix") format('embedded-opentype'),
+			url("Waitrose-Bold.woff") format('woff'),
+			url("Waitrose-Bold.TTF") format('truetype'),
+			url("Waitrose-Bold.svg") format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+.classname {
+font-family: 'Waitrose'', Arial;
+}

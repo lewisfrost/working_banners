@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>120X600 Skyscraper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <style>
+         #bg-exit {
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 400;
+        }
+
+		</style>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <!--[if lt IE 11]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="bg-exit"></div>
+    <div id="banner">
+    <div class="logo"></div>
+    <div class="flash"></div>
+    <div class="big_pizza"></div>
+    <div class="small_pizza"></div>
+ 	<div class="small_pizza2"></div>
+    <div class="doughnuts"></div>
+    <div class="order"></div>
+    <div class="the"></div>
+    <div class="price"></div>
+    <div class="siren"></div>
+    <div class="line-up"><div class="line"></div></div>
+    <div class="title"></div>
+    <div class="title2"></div>
+    <div class="parent">
+        <div class="legal">
+            <p class="legal-text">*Boring Legals here</p> <span>Cannot be used in conjunction with any other offer. Premium bases charged as extra. Participating stores only. Valid until 25/06/15 (Mon to Thurs only). T&Cs and restrictions apply - see dominos.ie</span>
+        </div>
+    </div>
+ 
+</body>
+<script type="text/javascript">
+
+function bgExitHandler(e) {
+    Enabler.exitOverride('Background Exit', 'http://www.dominos.ie');
+}
+
+document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+
+</script>
+</html>

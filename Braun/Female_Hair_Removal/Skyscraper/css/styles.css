@@ -1,0 +1,284 @@
+    /*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Images
+3.0 Copy Elements
+4.0 CTA
+5.0 Sprites
+6.0 Miscellaneous
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+/*--------------------------------------------------------------
+2.0 Images
+--------------------------------------------------------------*/
+#prod1 {
+    background: url("../images/p1.png");
+    left: 0px;
+    top:400px;
+    z-index: 2;
+}
+#prod2
+{   
+    background: url("../images/p2.png");
+    left: 0px;
+    opacity: 1;
+    z-index: 2;
+}
+#prod3
+{  
+    background: url("../images/p3.png");
+    left: 0px;
+    top:400px;
+    z-index: 2;
+}
+.prod{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 160px;
+    height: 600px; 
+    z-index: 2;  
+    opacity: 0; 
+}
+#bkg {
+    background: url("../images/bkg.jpg");
+    width: 160px;
+    height: 600px;
+    top: -43px;
+    left: 0px;
+}
+#logo {
+    position: absolute;
+    background: url("../images/logo.jpg");
+    width: 79px;
+    height: 41px;
+    top: 0px;
+    z-index: 2;
+    right: 0px;
+}
+
+#ribbon {
+    position: absolute;
+    background: url("../images/ribbon.png");
+    width: 25px;
+    height: 21px;
+    top: 527px;
+    right: 3px;
+    z-index: 2;
+    opacity: 0;
+}
+/*--------------------------------------------------------------
+3.0 Copy Elements 
+--------------------------------------------------------------*/
+#copy1{
+    position: absolute;
+    background: url("../images/FEHR_160x600.png");
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0;
+}
+#copy2{
+    position: absolute;
+    background: url("../images/FEHR_160x600.png");
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0;
+}
+#copy3{
+    position: absolute;
+    background: url("../images/copy3.png");
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0;
+}
+#copy4{
+    position: absolute;
+    background: url("../images/copy4.png");
+    top: -45px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0;
+}
+/*#tcs{
+    position: absolute;
+    background: url("../images/tcs.png");
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    opacity: 0;
+}*/
+#offerBar{
+    position: absolute;
+    background: url("../images/offer.jpg");
+    top:600px;
+    left: 0px;
+    width: 160px;
+    height: 40px;
+    z-index: 3;
+    opacity: 1;
+}
+/*--------------------------------------------------------------
+4.0 CTA Elements
+--------------------------------------------------------------*/
+#clickthrough {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    cursor: pointer;
+    width: 160px;
+    height: 600px;
+    background-color: #009de5;
+    opacity: 0;
+}
+#cta{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("../images/cta.png");
+    width: 160px;
+    height: 600px;
+    z-index: 3;
+    opacity: 0;
+}
+/*--------------------------------------------------------------
+5.0 Sprites
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+6.0 Miscellaneous
+--------------------------------------------------------------*/
+
+#lineV {
+    position: absolute;
+    width: 2px;
+    height: 600px;
+    background-color: #ec008c;
+    top: 600px;
+    left: 142px;   
+}
+
+#lineH {
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: #ec008c;
+    top: 540px;
+    z-index: 2;
+    left: 160px;   
+}
+
+.wrapper {
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    background-color: #000;
+    position: relative;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+#overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 600px;
+    background-color: #000;
+    z-index: 0;
+    opacity: 0;
+}
+
+#blackTop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 220px;
+    background-color: #000  ;
+    z-index: 1;
+    opacity: 1;
+}
+
+#blackBottom {
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    width: 160px;
+    height: 200px;
+    background-color: #000;
+    z-index: 1;
+    opacity: 1;
+}

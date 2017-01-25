@@ -1,0 +1,178 @@
+/* Div layer for the entire banner. */
+h1, h2, p {
+  font-weight: normal;
+  font-size: 15px;
+  padding: 0px;
+  margin: 1px;
+}
+
+#container_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+#content_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: Arial, Verdana,sans-serif;
+  color: #fff;
+  font-size: 15px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  
+}
+
+/* Delay css animations until page has loaded*/
+/*
+.preload * {
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -webkit-animation: none !important;;
+  animation: none !important;
+}
+*/
+
+
+
+#content_dc {
+
+background:url("background.jpg") no-repeat top left;
+}
+
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#copy1,#copy2,#copy3,#maille,#logo,#cta,#usecode{
+ opacity:0;
+  -webkit-opacity:0;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  position:absolute;
+  display:block;
+  width:300px;
+  height:250px;
+  top:0px;
+  left:0px;
+  
+}
+
+
+#copy1{
+background:url('copy1.png') top left no-repeat;
+
+}
+
+#copy2{
+background:url('copy2.png') top left no-repeat;
+
+}
+
+#copy3{
+background:url('copy3.png') top left no-repeat;
+
+}
+
+#logo{
+opacity:1;
+-webkit-opacity:1;
+background:url('logo.png') top left no-repeat;
+
+}
+#maille{
+opacity:1;
+-webkit-opacity:1;
+background:url('maille_com.png') top left no-repeat;
+}
+
+#cta{
+
+background:url('cta.png') top left no-repeat;
+
+}
+
+#usecode{
+background:url('usecode.png') top left no-repeat;
+}
+
+
+
+.fadeIn {
+  -webkit-animation: fadeUpAnim ease-in-out .8s 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation: fadeUpAnim ease-in-out .8s 0s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOutAnim ease-in-out .8s 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation: fadeOutAnim ease-in-out .8s 0s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeUpAnim {
+  0% {
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-opacity: 1;
+  }
+}
+
+@keyframes fadeUpAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOutAnim {
+  0% {
+    -webkit-opacity: 1;
+  }
+
+  100% {
+    -webkit-opacity: 0;
+  }
+}
+
+@keyframes fadeOutAnim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

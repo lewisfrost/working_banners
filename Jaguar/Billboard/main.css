@@ -1,0 +1,244 @@
+/*---------------- WEBFONTS  ------------------*/
+
+
+
+body {
+	background-color: #ffffff;
+}
+
+#wrapper {
+	position:relative;
+	cursor: pointer;
+
+	border: 1px solid #000000;
+	width: 940px;
+	height: 250px;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+
+#wrapper video {
+	position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: none;
+}
+
+#wrapper .video1  {
+	opacity: 0;
+	z-index: 1;
+	left: 249px;
+	-webkit-animation:  header_in 0.1s 0s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+    -moz-animation:  header_in 0.1s 0s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+    animation: header_in 0.1s 0s ease-out forwards, header_out 0.5s 3s ease-out forwards;
+
+}
+
+#wrapper .video2 {
+
+	opacity: 0;
+	left: 249px;
+	z-index: 2;
+	-webkit-animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    -moz-animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+
+}
+
+#wrapper .video3 {
+	z-index: 3;
+	opacity: 0;
+	left: 249px;
+	-webkit-animation: header_in 0.5s 7s ease-out forwards, header_out 0.5s 9s ease-out forwards;
+    -moz-animation: header_in 0.5s 7s ease-out forwards, header_out 0.5s 9s ease-out forwards;
+    animation: header_in 0.5s 7s ease-out forwards, header_out 0.5s 9s ease-out forwards;
+
+}
+
+
+/*---------------- HEADER KEYFRAMES  ------------------*/
+
+@-webkit-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes header_in { from { opacity:0; } to { opacity:1; } }
+@keyframes header_in { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes header_out { from { opacity:1; } to { opacity:0; } }
+@keyframes header_out { from { opacity:1; } to { opacity:0; } }
+
+@-webkit-keyframes header_outt { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes header_outt { from { opacity:1; } to { opacity:0; } }
+@keyframes header_outt { from { opacity:1; } to { opacity:0; } }
+
+
+
+/*----------------  END FRAME T&CS  ------------------*/
+
+#wrapper .tcs {
+	position: absolute;
+	width: 282px;
+	bottom:15px;
+	right: 10px;
+	opacity: 0;
+	z-index: 13;
+
+	-webkit-animation: header_in 0.5s 12s ease-out forwards;
+    -moz-animation: header_in 0.5s 12s ease-out forwards;
+    animation: header_in 0.5s 12s ease-out forwards;
+
+}
+
+
+/*---------------- END FRAME IMAGE  ------------------*/
+
+
+#wrapper .dark {
+	position: absolute;
+	width: 776px;
+  	left: 0px;
+    opacity: 0;
+    z-index: 7;
+    
+	-webkit-animation: header_in 0.5s 9s ease-out forwards, header_out 0.5s 12s ease-out forwards;
+    -moz-animation: header_in 0.5s 9s ease-out forwards, header_out 0.5s 12s ease-out forwards;
+    animation: header_in 0.5s 9s ease-out forwards, header_out 0.5s 12s ease-out forwards;
+}
+
+/*---------------- END FRAME IMAGE  ------------------*/
+
+
+#wrapper .endframe  {
+	position: absolute;
+	width: 776px;
+  	left: 0px;
+    opacity: 0;
+    z-index: 8;
+    
+	-webkit-animation: header_in 1s 11s ease-out forwards;
+    -moz-animation: header_in 1s 11s ease-out forwards;
+    animation: header_in 1s 11s ease-out forwards;
+}
+
+
+
+/*---------------- FRAME 1  ------------------*/
+
+#wrapper .frame1 {
+	position: absolute;
+	
+	width:118px;
+	top: 130px;
+  	left: 80px;
+  	z-index: 4;
+  	opacity:0;
+    
+  	-webkit-animation: header_in 0.5s 2s ease-out forwards;
+    -moz-animation: header_in 0.5s 2s ease-out forwards;
+    animation: header_in 0.5s 2s ease-out forwards;
+    
+}
+
+
+/*---------------- FRAME 2  ------------------*/
+
+#wrapper .frame2 {
+	position: absolute;
+	width:117px;
+
+	top: 130px;
+  	left: 210px;
+  	z-index: 5;
+  	opacity:0;
+    
+  	-webkit-animation: header_in 0.5s 3.5s ease-out forwards;
+    -moz-animation: header_in 0.5s 3.5s ease-out forwards;
+    animation: header_in 0.5s 3.5s ease-out forwards;
+    
+}
+
+/*---------------- FRAME 3  ------------------*/
+
+#wrapper .frame3 {
+	position: absolute;
+	width:118px;
+	top: 130px;
+  	left: 340px;
+  	z-index: 6;
+  	opacity:0;
+    
+   	-webkit-animation: header_in 0.5s 5s ease-out forwards;
+    -moz-animation: header_in 0.5s 5s ease-out forwards;
+    animation: header_in 0.5s 5s ease-out forwards;
+    
+}
+
+
+/*---------------- HEADER  ------------------*/
+
+#wrapper .header {
+	position: absolute;
+	width:160px;
+	top: 265px;
+  	left: 65px;
+  	opacity:0;
+  	z-index: 9;
+    
+  	-webkit-animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    -moz-animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    animation: header_in 0.5s 3s ease-out forwards, header_out 0.5s 6s ease-out forwards;
+    
+}
+
+
+/*---------------- HEADER 2  ------------------*/
+
+#wrapper .header-2 {
+	position: absolute;
+	width:193px;
+	top: 40px;
+  	right: 100px;
+  	z-index: 10;
+
+    opacity:0;
+    
+    -webkit-animation: header_in 0.5s 12s ease-out forwards;
+    -moz-animation: header_in 0.5s 12s ease-out forwards;
+    animation: header_in 0.5s 12s ease-out forwards;
+    
+    
+}
+
+
+
+
+/*---------------- CTA  ------------------*/
+
+#wrapper #cta-button {
+	position: absolute;
+	z-index: 11;
+	height: 25px;
+	width: 135px;
+	top: 97px;
+  	right: 158px;
+  	opacity: 0;
+  	background-color: #971f30;
+}
+
+#wrapper #cta-button #cta-text {
+	position: absolute;
+	font-family: 'Arial', serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	top: 6px;
+  	left: 10px;
+}
+
+#wrapper #cta-button #cta-arrow {
+	position: absolute;
+	height: 10px;
+	top: 8px;
+  	left: 113px;
+}
+

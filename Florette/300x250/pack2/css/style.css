@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+#banner {
+	border: 1px #666666 solid;
+	width:300px;
+  	height:250px;
+	overflow:hidden;
+	}
+
+
+.container {
+  width:300px;
+  height:250px;
+  position:relative;
+  background-color:white;
+  overflow:hidden;
+  cursor: pointer;
+  //border: 1px solid #111;
+  opacity:0;
+}
+
+.container .img {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.clickable {
+	cursor: pointer;
+	}
+
+/* banner images */
+
+.container .sun {
+	left: -27px;
+  	top: 110px;
+	width: 130px;
+  	height: 130px;
+	}
+	
+.sun-arm-left {
+	position: absolute;
+	left: 54px;
+  	top: 75px;
+	width: 27px;
+  	height: 37px;
+	}
+.sun-arm-right {
+	position: absolute;
+	left: 17px;
+  	top: 60px;
+	width: 24px;
+  	height: 33px;
+  	z-index: -2;
+	}
+	
+.eye-black-left {
+	position: absolute;
+  	left: 52px;
+  	top:46px;
+}
+
+.eye-black-right {
+	position: absolute;
+  	left: 45px;
+  	top: 45px;
+}
+
+.container .sky {
+	width: 300px;
+  	height: 376px;
+	background-image: url('../img/Florette-Sky.jpg');
+	}
+.container .hill-1 {
+	left: -7px;
+  	top: 165px;
+  	width: 360px;
+  	height: 86px;
+	background-image: url('../img/Florette-Hill-01.png');
+	}
+.container .hill-2 {
+	left: -7px;
+  	top: 167px;
+  	width: 322px;
+  	height: 83px;
+	background-image: url('../img/Florette-Hill-02.png');
+	}
+.container .hill-3 {
+	left: -7px;
+  	top: 152px;
+  	width: 367px;
+  	height: 98px;
+	background-image: url('../img/Florette-Hill-03.png');
+	}
+.container .hill-4 {
+	left: -7px;
+  	top: 146px;
+  	width: 342px;
+  	height: 104px;
+	background-image: url('../img/Florette-Hill-04.png');
+	}
+.container .hill-5 {
+	left: -7px;
+  	top: 137px;
+  	width: 356px;
+  	height: 113px;
+	background-image: url('../img/Florette-Hill-05.png');
+	}
+.container .txt1 {
+	left: 50px;
+  	top: 173px;
+	width: 209px;
+  	height: 27px;
+	background-image: url('../img/Florette-Made-With-Sunshine.png');
+	}
+.container .txt2 {
+	left: 85px;
+  	top: 24px;
+	width: 144px;
+  	height: 55px;
+  	opacity:0;
+	background-image: url('../img/Florette-Win.png');
+	}	
+.container .packshot {
+	left: 53px;
+  	top: 260px;
+	width: 196px;
+  	height: 165px;
+	background-image: url('../img/Florette-Packshot.png');
+	}	
+.container .logo {
+	left: 105px;
+  	top: 176px;
+	width: 101px;
+  	height: 66px;
+  	opacity:0;
+	background-image: url('../img/Florette-logo.png');
+	}	
+.container .CTA {
+	left: 95px;
+  	top: 96px;
+	width: 121px;
+  	height: 33px;
+  	opacity:0;
+	background-image: url('../img/Florette-CTA.png');
+	}
+.arrow {
+	position: absolute;
+	left: 95px;
+  	top: 10px;
+	width: 9px;
+  	height: 14px;
+  	z-index: 2;
+	background-image: url('../img/Florette-CTA-arrow.png');
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

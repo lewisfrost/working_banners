@@ -1,0 +1,63 @@
+Sanoma-RON-MediumRectangle (3233878335/100336)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+screenad.clicks = new Array();
+screenad.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+1.file                  : index.html
+1.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  wavecopy.png
+  copy1.png
+  copy3.png
+  copy2.png
+  esso.jpg
+  station.jpg
+  wave.jpg
+  CSSPlugin.min.js
+  EasePack.min.js
+  Exxon_Synergy_Fuels_Wipers_300x250.css
+  Exxon_Synergy_Fuels_Wipers_300x250.js
+  TweenLite.min.js
+  info.txt
+  loading.gif
+  synergy.jpg
+  cta.png
+  drop.png
+  oupdate.png
+  t.png
+  wiper.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found

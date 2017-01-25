@@ -1,0 +1,264 @@
+
+body {
+	 background-color:#FFFFFF;
+	 margin:0px;
+	 padding:0px;
+	 width:300px;
+	 height:250px;
+	 overflow: hidden;
+	}
+
+	#container {
+		/*container css*/
+		position: absolute;
+		width: 298px;
+		height: 248px;
+		cursor:pointer;
+		opacity:0;
+		overflow: hidden;
+		border: 1px solid gray;
+	}
+
+	#demoCanvas {
+		/*canvas css*/
+		width:300px;
+		height:250px;
+		margin:0px;
+		padding:0px;
+		z-index:30;
+		position: absolute;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	#background {
+		position:absolute;
+		background-image:url("../images/BG_PARALLAX2.jpg");
+		top:0px;
+		left:0px;
+		width:900px;
+		height:500px;
+		z-index:-1;
+	}
+
+	#eeLogo {
+		position:absolute;
+		background-image:url("../images/eeLogo.png");
+		top:0px;
+		left:0px;
+		opacity:0;
+		width:300px;
+		height:250px;
+		z-index:200;
+	}
+
+	#sLogo {
+		position: absolute;
+	    background-image: url("../images/s7.png");
+	    top: 17px;
+	    left: -7px;
+	    opacity: 0;
+	    width: 288px;
+	    height: 250px;
+	    z-index: 30;
+	    background-size: 100%;
+	}
+
+	#hookMask {
+		position: absolute;
+	    background-image: url("../images/hookMask.png");
+	    top: 0px;
+	    left: 0px;
+	    opacity: 0;
+	    width: 300px;
+	    height: 250px;
+	    z-index: 20;
+	}
+	
+	#BGmask1 {
+		position:absolute;
+		background-image:url("../images/BG_mask1.png");
+		top:0px;
+		left:0px;
+		width:300px;
+		height:250px;
+		visibility: hidden;
+		z-index: 19;
+		
+	}
+
+	#BGmask2 {
+		position:absolute;
+		background-image:url("../images/BG_mask2.png");
+		top:0px;
+		left:0px;
+		width:300px;
+		height:250px;
+		visibility: hidden;
+		z-index: 19;
+		
+	}
+
+	#BGmask3 {
+		position:absolute;
+		background-image:url("../images/BG_mask3.png");
+		top:0px;
+		left:0px;
+		width:300px;
+		height:250px;
+		visibility: hidden;
+		z-index: 19;
+		
+	}
+
+	#BGmask4 {
+		position:absolute;
+		background-image:url("../images/BG_mask4.png");
+		top:0px;
+		left:0px;
+		width:300px;
+		height:250px;
+	 	visibility: hidden;
+	 	z-index: 19;
+		
+	}
+
+	#dotContainer{
+	    position: absolute;
+   	 	width: 340px;
+    	height: 250px;
+    	top: -20px;
+    	left: -31px;
+    	z-index: 100;
+    	overflow: hidden;
+    	z-index: 15;
+    	opacity: 1;
+	}
+
+	#content{
+		background-image:url("../images/dotBg.png");
+		background-repeat: repeat;
+		position: absolute;
+	    width: 920px;
+	    height: 500px;
+	    top: 0px;
+	    left:-10px;
+	    z-index: 100;
+	    overflow: hidden;
+	    z-index:15;
+	    opacity: 1;
+	}
+
+	#frame3_txt {
+		width: 300px;
+	    height: 250px;
+	    top: 0px;
+	    left: 0px;
+	    position: absolute;
+	    opacity: 0;
+	    z-index: 30;
+	    background-image: url('../images/frame3_txt.png');
+	}
+
+	/*#dotholder {
+		position:absolute;
+		background-image:url("../images/dots.png");
+		width:900px;
+		height:1000px;
+		top:-42;
+		left:-34px;
+		visibility: visible;
+		z-index:-1;
+	}*/
+
+	/* the following is the CSS for the samsung phone*/
+
+	#simo2 {
+        background-image: url("../images/SIMO_2.png");
+	    height: 242px;
+	    left: 321px;
+	    position: absolute;
+	    top: 52px;
+	    width: 120px;
+	    z-index: 100;
+	    background-size: 100%;
+	}
+
+	/* CTA CSS*/
+	#cta {
+		position: absolute;
+	    width: 300px;
+	    height: 250px;
+	    background-image: url("../images/EE_DEM-GEN_300x250_CTA.png");
+	    top: 0px;
+	    left: 10px;
+	    opacity: 0;
+	    z-index: 20;
+
+	}
+
+	#hookCont {
+		width:300px;
+		height:250px;
+		top:15px;
+		left:0px;
+		opacity:0;
+		position:absolute;
+		z-index:20;
+	}
+
+		/*hook_txt png css*/
+	#hook_txt {
+		position:absolute;
+		background-image:url("../images/hook_txt1.png");
+		width:300px;
+		height:250px;
+		top:0px;
+		opacity:1;
+		left:0px;
+		XXvisibility: hidden;
+		z-index: 20;
+	}
+
+	/* sprite sheet css container*/
+	#spriteContainer {
+		position: absolute;
+		width:300px;
+		height:250px;
+		XXbackground-image:url("../images/spritesheet.png");
+		/* change the timing to speed up/slow down steps = images in sequence*/
+
+	}
+
+	#particleContainer {
+	    width:300px;
+	    height:250px;
+	    position:absolute;
+	    z-index:3;
+	    top:0px;
+	    left:0px;
+
+	}
+
+	#endFrameCopy {
+		position: absolute;
+	    background-image: url("../images/end_frame_txt.png");
+	    width: 300px;
+	    height: 250px;
+	    top: 0px;
+	    left: 0px;
+	    opacity: 0;
+	    z-index: 20;
+	}
+
+	#speedTestLogo {
+		position:absolute;
+		background-image:url("../images/speedTestLogo.png");
+		width:300px;
+		height:250px;
+		top:0px;
+		left:0px;
+		opacity:0;
+		z-index: 20;
+	}

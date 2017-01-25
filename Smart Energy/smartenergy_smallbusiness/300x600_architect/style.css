@@ -1,0 +1,32 @@
+body, body * {border: 0; outline: 0; padding: 0; margin: 0;}
+#container {width: 300px;height: 600px;background-color: #fff;position: relative;margin: 0 auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;box-sizing: border-box;overflow: hidden;border: 1px solid black;}
+#top-panel{ position: absolute; display:block; width:300px; height:194px; left:0px; top:0px; background-color: white;}
+#copy1{position:absolute; display:block; width:210px; height:65px; top:101px; left:24px; background: url(images/copy1.jpg) no-repeat;}
+#bottom-panel{ position: absolute; display:block; width:300px; height:193px; left:0px; top:407px; background-color: white;}
+
+#cta{ position: absolute;top: 37px;left: 23px; width:162px; height:32px; background: url(images/cta.jpg) no-repeat; opacity: 1;}
+#hashtag{ position: absolute;top: 169px;left: 23px; width:111px; height:15px; background: url(images/hashtag.png) no-repeat; opacity: 1;}
+#logo{ position: absolute;top: 118px;right: 12px; width:112px; height:65px; background: url(images/logo.png) no-repeat; opacity: 1;}
+
+/*#play-video{position: absolute;top: 219px;left: 46px; width:133px; height:17px; background: url(images/hashtag.jpg) no-repeat; opacity: 1;}*/
+
+#intro{ position:absolute; display:block; width:300px; height:600px; background: url(images/overlay.jpg) no-repeat;}
+
+#video{position:absolute; display:block; left:-1px; top:194px; width:300px; height:213px;}
+#overlay {display:block; position:absolute; top:194px; left:0px; width:300px; height:213px; cursor: pointer;}
+#key { position: absolute;top:265px; left:37px; width:225px; height:70px; background: url(images/key.png) no-repeat; opacity: 0; }
+
+#controls{position: absolute; display:block; width:300px; height:213px; /*top:89px; left:132px;*/}
+#play-video{display:none; width:300px; height:213px; background: url(images/play-button.png) no-repeat;}
+#pause-video{display:block; width:300px; height:213px; background: url(images/pause-button.png) no-repeat;}
+
+
+#sound{cursor:pointer; position: absolute; display:block; top:203px; right:6px; width:20px; height: 20px;}
+#mute-video{display:block; width:16px; height:12px; background: url(images/unmute.png) no-repeat;}
+#unmute-video{display:none; width:18px; height:12px; background: url(images/mute.png) no-repeat;}
+
+#endframe{position:absolute; display:none; opacity:0; width:300px; height:600px; background: url(images/endframe.jpg) no-repeat;}
+
+#replay{cursor:pointer; position:absolute; display:none; opacity:1;  width:20px; height:20px; right:7px; top:222px; background: url(images/replay-button.png) no-repeat;}
+
+#end-replay{cursor:pointer; position:absolute; display:none; opacity:1;  width:35px; height:35px; left:133px; top:283px; background: url(images/end-replay-button.png) no-repeat;}

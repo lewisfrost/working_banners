@@ -1,0 +1,344 @@
+    html {
+        overflow:hidden;
+
+    }
+    body{
+        width:300px;
+        height:250px;
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        overflow:hidden;
+        position:absolute;
+        font-family: arial;
+        color:#FFFFFF;
+        font-size:25px;
+    }
+
+    #banner{
+        background-color: #000000;    
+        width: 100%;
+        height: 100%;
+    }
+
+    .frame-border{
+        width:94%;
+        height:72%;
+        position: absolute;
+        border: 10px solid #cf230a;
+    }
+
+    .logo {
+        width:110px;
+        height: 37px;
+        position: absolute;
+        bottom:7px;
+        right:1px;
+    }
+
+
+    /* generic animations */
+
+    @-webkit-keyframes fade-IN { from { opacity: 0; } to { opacity: 1; } }
+    @-moz-keyframes fade-IN { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fade-IN { from { opacity: 0; } to { opacity: 1; } }
+
+    @-webkit-keyframes fade-OUT { from { opacity: 1; } to { opacity: 0; } }
+    @-moz-keyframes fade-OUT { from { opacity: 1; } to { opacity: 0; } }
+    @keyframes fade-OUT { from { opacity: 1; } to { opacity: 0; } }
+
+
+    /* ============================TEXT FRAME 1================================= */
+
+    .text_1{
+        position: absolute;
+        top:10px;
+        text-align:center;
+        width: 100%;
+        height: 160px;
+        opacity: 0;
+        font-weight:bold;
+
+
+
+    }
+
+    .text_1.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+    .text_1.hide {
+        -webkit-animation:fade-OUT 0.3s ease-out forwards;
+        -moz-animation: fade-OUT 0.3s ease-out forwards;
+        animation: fade-OUT 0.3s ease-out forwards;
+
+    }
+
+
+    /* ===========================TEXT FRAME 2================================== */
+
+    .text_2{
+        position: absolute;
+        top:10px;
+        text-align:center;
+        width: 100%;
+        height: 160px;
+        opacity: 0;
+        font-weight:bold;
+
+
+    }
+
+
+    .text_2.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+    .text_2.hide {
+        -webkit-animation:fade-OUT 0.3s ease-out forwards;
+        -moz-animation: fade-OUT 0.3s ease-out forwards;
+        animation: fade-OUT 0.3s ease-out forwards;
+
+    }
+
+    /* ==========================TEXT FRAME 3=================================== */
+
+    .text_3{
+        position: absolute;
+        top:0px;
+        text-align:center;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.6em;
+
+
+    }
+
+
+    .text_3.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+    .text_3.hide {
+        -webkit-animation:fade-OUT 0.3s ease-out forwards;
+        -moz-animation: fade-OUT 0.3s ease-out forwards;
+        animation: fade-OUT 0.3s ease-out forwards;
+
+    }
+
+    /* ==========================TEXT FRAME 3 - SECOND HEADING=================================== */
+
+    .text_4{
+        position: absolute;
+        top:35px;
+        text-align:center;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.65em;
+
+
+    }
+
+
+    .text_4.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* =========================TEXT FRAME 3 - THIRD HEADING==================================== */
+
+    .text_5{
+        position: absolute;
+        top:70px;
+        text-align:center;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.3em;
+
+
+    }
+
+
+    .text_5.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* ==========================TEXT FRAME 4=================================== */
+
+    .text_6{
+        position: absolute;
+        top: 90px;
+        text-align:center;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.7em;
+
+
+    }
+
+
+    .text_6.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* ==========================TEXT FRAME 5=================================== */
+
+    .text_7{
+        position: absolute;
+        bottom:13px;
+        left:30px;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.5em;
+
+
+    }
+
+
+    .text_7.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* ==========================TERMS & CONDITIONS=================================== */
+
+    .terms {
+        position: absolute;
+        bottom:0px;
+        left:25px;
+        width: 90%;
+        opacity: 0;
+        font-weight:bold;
+        font-size:0.3em;
+
+
+    }
+
+
+    .terms.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* ===========================CAR IMAGE================================== */
+
+    .car_image{
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        width: 100%;
+        height:0;
+        opacity: 0;
+        font-weight:bold;
+
+
+    }
+
+
+    .car_image.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+    .car_image.hide {
+        -webkit-animation:fade-OUT 0.3s ease-out forwards;
+        -moz-animation: fade-OUT 0.3s ease-out forwards;
+        animation: fade-OUT 0.3s ease-out forwards;
+
+    }
+
+    /* ===========================MINISTRY OF FINANCE IMAGE================================== */
+
+    .MOF_image{
+        position: absolute;
+        top: 85px;
+        left: 105px;
+        width: 100%;
+        opacity: 0;
+        font-weight:bold;
+
+
+    }
+
+
+    .MOF_image.show {
+        -webkit-animation: fade-IN 0.3s ease-out forwards;
+        -moz-animation: fade-IN 0.3s ease-out forwards;
+        animation: fade-IN 0.3s ease-out forwards;
+    }
+
+
+    /* =============================CHEVRON LEFT================================ */
+
+    .chevron_left {
+        position:absolute;
+        bottom:20px;
+        left:15px;
+        opacity:0;
+        -webkit-animation: p7fadeL 1s forwards 13.5s;
+        animation: p7fadeL 1s forwards 13.5s;
+    }
+
+    @-webkit-keyframes p7fadeL { 
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @keyframes p7fadeL { 
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* =============================CHEVRON RIGHT=============================== */
+
+
+    .chevron_right {
+        position:absolute;
+        bottom:20px;
+        left:15px;
+        opacity:0;
+        -webkit-animation: p7fadeR 1s forwards 13.8s;
+        animation: p7fadeR 1s forwards 13.8s;
+    }
+
+    @-webkit-keyframes p7fadeR { 
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @keyframes p7fadeR { 
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 0; }
+        100% { opacity: 1; }
+    }

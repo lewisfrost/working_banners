@@ -1,0 +1,20 @@
+{
+    "version": "1.0",
+
+    "title": "Wickes 768x1024 HTML Banner", 
+    "description": "",  
+
+    "width" : "768", 
+    "height": "1024", 
+
+    "events": {
+        "enabled": 1, 
+        "list": { }
+    },
+
+    "clicktags": {
+        "clickTAG": "http://www.adform.com"
+    },
+
+    "source": "index.html"
+}

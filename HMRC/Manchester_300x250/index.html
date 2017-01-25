@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>300x250</title>
+<meta name="ad.size" content="width=300,height=250">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+
+<script>
+	var clickTag = "http://google.com";
+	function init(){
+		frame1Animation()
+		addevents()
+	}
+	function addevents(){
+		document.getElementById("bannerCTA").addEventListener("click", trackClick);	
+	}
+	function trackClick(){
+		window.open(clickTag,'_blank');
+	}
+	function frame1Animation(){
+        TweenLite.to(".line1",0.5,{y:-19, ease:Quad.easeOut, delay:0})
+        TweenLite.to(".line2",0.5,{y:53, ease:Quad.easeOut, delay:0})
+		TweenLite.to(".copy1",0.5,{alpha:1, delay:0.5})
+        TweenLite.to(".copy2",0.5,{alpha:1, delay:1})
+        TweenLite.delayedCall(3.5,frame2Animation)
+	}
+	function frame2Animation(){
+		TweenLite.to(".line1",0.5,{alpha:0, ease:Quad.easeOut, delay:0})
+        TweenLite.to(".line2",0.5,{alpha:0, ease:Quad.easeOut, delay:0})
+		TweenLite.to(".copy1",0.5,{alpha:0, delay:0})
+        TweenLite.to(".copy2",0.5,{alpha:0, delay:0});
+        TweenLite.to(".copy3",0.5,{alpha:1, delay:1});
+        TweenLite.delayedCall(3,frame3Animation)
+	}
+	function frame3Animation(){
+        //TweenLite.to(".bg",0.5,{alpha:0, delay:0});
+        TweenLite.to(".copy3",0.5,{alpha:0, delay:0});
+		TweenLite.to(".end_frame_copy1",0.5,{alpha:1, ease:Quad.easeOut, delay:0.5})
+		TweenLite.to(".end_frame_logos",0.5,{alpha:1, ease:Quad.easeOut, delay:1.5})
+
+		TweenLite.to(".ctaImg",0.5,{alpha:1, delay:1})
+		//TweenLite.to(".cta",0.5,{y:0, ease:Quad.easeOut, delay:0})
+	}
+	
+	function ctaRollOver(){
+		TweenLite.to(".ctaImg",0,{css:{top:-20}})
+	}
+	function ctaRollOut(){
+		TweenLite.to(".ctaImg",0,{css:{top:0}})
+	}
+	
+</script>
+
+<style>
+*{margin:0; padding:0;}
+.ad{position:relative; top:0; left:0; width:300px; height:250px; background-color:#007ac1; overflow: hidden;}
+.frame1,.frame2, .frame3,.frame4{width:300px; height:250px; top:0px; left:0px; position:absolute;}
+.border{position:absolute; top:0; left:0; z-index:3;}
+.clickTag{width:300px;height:250px;display: block;position:absolute;cursor:pointer;left:0px;top:0px; z-index: 8;}
+.bg{position:absolute; top:0px; left:0px;}
+
+.copy1{position:absolute; top:28px; left:58px; width:184px; height:50px; opacity: 0;}
+.copy2{position:absolute; top:95px; left:77px; width:146px; height:24px; opacity: 0;}
+.copy3{position:absolute; top:33px; left:69px; width:162px; height:41px; opacity: 0;}
+    .line1{position:absolute; top:35px; left:40px; width:220px; height:1px; opacity: 1;}
+    .line2{position:absolute; top:35px; left:40px; width:220px; height:2px; opacity: 1;}
+
+.end_frame_copy1{position: absolute; top: 0px; left: 0px; width:300px; height:250px; opacity: 0; }
+.end_frame_logos{position: absolute; top: 148px; left: 0px; width:300px; height:102px; opacity: 0;}
+
+.ctaImg{position:absolute;top:91px; left:65px; width:170px; height:40px; opacity:0; z-index:10; cursor:pointer; overflow:hidden; !important;}
+
+</style>
+
+</head>
+<body onLoad="init()">
+	<div class="ad">
+        <div class="clickTag" id="bannerCTA"></div>
+<!--        <div class="border"><img src="border.png"/></div>-->
+    	<div class="frame1">
+        <img class="bg" src="background.jpg"/>
+            <img class="copy1" src="copy01.png"/>
+            <img class="copy2" src="copy02.png"/> 
+            <img class="line1" src="line.png"/>
+            <img class="line2" src="line_1.png"/>
+        </div>
+        <div class="frame2">
+        	<img class="copy3" src="copy03.png"/>
+            <img class="end_frame_copy1" src="EF01.jpg"/>
+            <img class="end_frame_logos" src="EFlogos.jpg"/>
+            <div class="cta" onClick="trackClick()">
+                <img class="ctaImg" src="EF02.png" alt="cta_image"> 
+            </div>
+        </div>
+	</div>
+</body>
+</html>

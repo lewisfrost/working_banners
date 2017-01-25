@@ -1,0 +1,39 @@
+html,body { margin: 0;}
+div{ position:absolute; }
+#container { background: #FFF; width: 300px; height: 250px; overflow: hidden; box-sizing: border-box; position: relative; border: solid black 1px; display:none; cursor: pointer;}
+
+#kitchen{ width:300px; height:215px; background-color: white; overflow: hidden;}
+#copy{ width:300px; height:250px; background-color: white; overflow: hidden; opacity:0;}
+
+/* OVEN */
+#of1{ background: url(oven-door.png); width:163px; height:160px;left: 69px;top: 25px; opacity:0; z-index: 2;}
+#of2{ background: url(oven-left-door.png); width:73px; height:214px; left:0px; top:0px; opacity:0;}
+#of3{ background: url(oven-right-door.png); width:74px; height:215px;left: 225px; top:0px; opacity:0;}
+#of4{ background: url(oven-top-drawer.png); width:165px; height:215px;left: 68px; top:0px; opacity:0;}
+
+/* HOB */
+#hf1{ background: url(hob.png); width:286px; height:102px;left: 8px;top: 10px; opacity:0; z-index: 2;}
+#hf2{ background: url(hob-counter-top.png); width:300px; height:120px; left:0px; top:16px; opacity:0;}
+#hf3{ background: url(hob-counter-middle.png); width:265px; height:129px;left: 26px;top: 113px; opacity:0;}
+#hf4{ background: url(hob-counter-left.png); width:300px; height:138px;left: 0px;top: 113px; opacity:0;}
+/*#hf5{ background: url(hob-counter-right.png); width:27px; height:138px;left: 273px;top: 113px; opacity:1;}*/
+#hf6{ background: url(hob-knob.png); width:39px; height:22px;left: 145px;top: 129px; opacity:0;}
+
+/* DISHWASHER */
+#df1{ background: url(dw.png); width:214px; height:189px;left: 32px;top: 9px; opacity:0;z-index: 2;}
+#df2{ background: url(dw-door.png); width:171px; height:172px;left: 33px;top: 34px; opacity:0;z-index: 3;}
+#df3{ background: url(dw-cabinet.png); width:300px; height:206px;left: 0px;top: 5px; opacity:0;z-index: 2;}
+#df4{ background: url(dw-cabinet-right.png); width:99px; height:197px;left: 199px;top: 19px;opacity:0;z-index: 3;}
+#df5{ background: url(dw-cabinet-left.png);width:69px; height:177px;left: 0px;top: 11px; opacity:0;z-index: 1;}
+/*#df6{ display:none; background: url(dw-closed-door.png);width: 199px; height:233px;left: 136px;top: 46px; opacity:0;z-index: 1;}*/
+
+/*COPY*/
+#l1{ background: url(l1.jpg); width:209px; height:119px; left:48px; top:51px; opacity:0;}
+#l22{ background: url(l22.jpg); width:157px; height:117px; left:73px;top: 38px; opacity:0;}
+/*#l31{ background: url(l31.png); width:211px; height:14px;left: 43px;top: 74px; opacity:0;}*/
+#l32{ background: url(l32.png); width:192px; height:63px;left: 52px;top: 73px; opacity:0;}
+/*#l332{ background: url(l332.jpg); width:134px; height:15px;left: 110px;top: 154px; opacity:0;}*/
+
+#logo{background: url(logo.png); width:133px; height:25px; left:159px; top:219px;}
+#endframe{background: url(endframe.jpg); width:300px; height:250px; left:0px; top:0px; opacity:0; display:none;}
+#legals{background: url(legals.png); width:300px; height:101px; left:0px; top:227px; opacity:0; display: none;}
