@@ -188,8 +188,8 @@ Banner.prototype.setup = function () {
   this.logo.set({ left: 261, top: -7, zIndex: 22 });
   this.white_bkg.set({ left: 364, top: 0, zIndex: 22 });
   this.eurostar.set({ autoAlpha: 0, top: 30, left: 620, zIndex: 21 });
-  this.eurostar_yellow.set({ autoAlpha: 0, top: 30, left: 620, zIndex: 21 });
-  this.blue_square.set({ left: 606, zIndex: 20 });
+  this.eurostar_yellow.set({ autoAlpha: 0, top: 26, left: 594, zIndex: 21 });
+  this.blue_square.set({ left: 580, zIndex: 20 });
 
   //SCENE 1 HOLLAND
   this.scene1_bkg.set({ zIndex: 15 });
@@ -226,9 +226,9 @@ Banner.prototype.setup = function () {
   this.scene3_price.set({ autoAlpha: 0, top: 18, left: 210, zIndex: 7 });
   this.tcs.set({ autoAlpha: 0, top: 76, left: 485, zIndex: 21 });
   this.copy3.set({ autoAlpha: 0, top: 20, left: 30, zIndex: 7 });
-  this.cta.set({ autoAlpha: 0, scale: 0.4, top: 31, left: 475, zIndex: 21 });
-  this.dutch.set({ autoAlpha: 0, top: 39, left: 474, zIndex: 22 });
-  this.english.set({ autoAlpha: 0, top: 39, left: 474, zIndex: 22 });
+  this.cta.set({ autoAlpha: 0, scale: 0.4, top: 31, left: 465, zIndex: 21 });
+  this.dutch.set({ autoAlpha: 0, top: 39, left: 464, zIndex: 22 });
+  this.english.set({ autoAlpha: 0, top: 39, left: 464, zIndex: 22 });
 };
 
 /**
