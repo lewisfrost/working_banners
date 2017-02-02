@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.ad {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 468px;
+	height: 60px;
+	background-color: #FFF;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.frame1, .frame2{
+	width: 468px;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+	user-select: none;
+}
+.clickTag {
+	width: 468px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: rgba(255,255,255,0);
+}
+
+.whiteBg_logo {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	opacity: 0;
+	z-index: 10;
+}
+.bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 1;
+}
+.food {
+	position: absolute;
+	top: 28px;
+	left: 46px;
+	opacity: 0;
+	z-index: 3;
+}
+
+.tray {
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.lid {
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	opacity: 0;
+	z-index: 4;
+}
+
+.lid2{
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	opacity: 0;
+	z-index: 4;
+}
+
+.hand{
+	position: absolute;
+	top: -57px;
+	left: 102px;
+	opacity: 0;
+	z-index: 3;
+}
+
+.logo {
+	position: absolute;
+	right:0px;
+	top: 0px;
+	opacity: 0;
+	z-index: 6;
+}
+
+.copy1 {
+	position: absolute;
+	left: 265px;
+	top: 14px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.copy2 {
+	position: absolute;
+	left: 306px;
+	top: 14px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.copy3{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 728px;
+	height: 90px;
+	opacity: 0;
+	z-index: 4;
+}
+.copy4 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 2;
+}
+
+
+.train {
+	position: absolute;
+	left: -14000px;
+	top: 15px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.track {
+	position: absolute;
+	left: -1px;
+	bottom:0px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.copy5 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 2;
+}
+.copy6 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.copy7 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.copy8 {
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 2;
+}
+
+.cta_copy {
+	position: absolute;
+	left: 447px;
+	top: 44px;
+	width: 72px;
+	height: 8px;
+	opacity: 0;
+	z-index: 6;
+}
+.cta_bg {
+	position: absolute;
+	left: 430px;
+	top: 35px;
+	width: 105px;
+	height: 25px;
+	opacity: 0;
+	z-index: 5;
+}
+.tcs {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 468px;
+	height: 60px;
+	opacity: 0;
+	z-index: 5;
+}
