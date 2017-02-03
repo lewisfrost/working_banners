@@ -5,8 +5,9 @@
 
 .ad {
 	position: relative;
-	top: 0;
-	left: 0;
+ 	margin-left: auto;
+    margin-right: auto;
+    top:150px;
 	width: 160px;
 	height: 600px;
 	background-color: #FFF;
@@ -54,15 +55,15 @@
 }
 .food {
 	position: absolute;
-	top: 283px;
-	left: 84px;
+	top: 290px;
+	left: 35px;
 	opacity: 0;
 	z-index: 3;
 }
 
 .tray {
 	position: absolute;
-	top: 326px;
+	bottom: 0px;
 	left: 0px;
 	opacity: 0;
 	z-index: 2;
@@ -70,31 +71,31 @@
 
 .lid {
 	position: absolute;
-	top: 257px;
-	left: 64px;
+	top: 273px;
+	left: 26px;
 	opacity: 0;
 	z-index: 4;
 }
 
 .lid2{
 	position: absolute;
-	top: 257px;
-	left: 58px;
+	top: 273px;
+	left: 26px;
 	opacity: 0;
 	z-index: 4;
 }
 
 .hand{
 	position: absolute;
-	top: 193px;
-	left: 122px;
+	top: 230px;
+	left: 60px;
 	opacity: 0;
 	z-index: 3;
 }
 
 .logo {
 	position: absolute;
-	left: 87px;
+	left: 20px;
 	bottom: 20px;
 	opacity: 0;
 	z-index: 2;
@@ -102,7 +103,7 @@
 
 .copy1 {
 	position: absolute;
-	left: 29px;
+	left: 8px;
 	top: 121px;
 	opacity: 0;
 	z-index: 2;
@@ -110,7 +111,7 @@
 
 .copy2 {
 	position: absolute;
-	left: 74px;
+	left: 33px;
 	top: 127px;
 	opacity: 0;
 	z-index: 2;
@@ -120,7 +121,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 4;
@@ -129,7 +130,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 2;
@@ -156,7 +157,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 2;
@@ -165,7 +166,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 2;
@@ -175,7 +176,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 2;
@@ -185,7 +186,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 300px;
+	width: 160px;
 	height: 600px;
 	opacity: 0;
 	z-index: 2;
@@ -193,8 +194,8 @@
 
 .cta_copy {
 	position: absolute;
-	left: 110px;
-	top: 394px;
+	left: 40px;
+	top: 355px;
 	width: 79px;
 	height: 11px;
 	opacity: 0;
@@ -202,8 +203,8 @@
 }
 .cta_bg {
 	position: absolute;
-	left: 93px;
-	top: 387px;
+	left: 24px;
+	top: 347px;
 	width: 111px;
 	height: 26px;
 	opacity: 0;
@@ -212,7 +213,7 @@
 .tcs {
 	position: absolute;
 	left: 0px;
-	top: 0px;
+	top: -40px;
 	width: 160px;
 	height: 600px;
 	opacity: 0;

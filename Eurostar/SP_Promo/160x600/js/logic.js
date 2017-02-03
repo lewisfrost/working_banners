@@ -6,15 +6,15 @@
 
 	function trackClick(){
 		window.open(clickTag,'_blank');//DCM
-        //Enabler.exit('300x600_exit'); // DC Studio
+        //Enabler.exit('160x600_exit'); // DC Studio
 	}
 
 	function frame1Animation(){
 		TweenLite.set(".bg",{alpha:1})
 		TweenLite.set([".whiteBg_logo",".lid",".tray"],{x:0, alpha:1})
-		TweenLite.set(".hand",{x:190, alpha:1})
+		TweenLite.set(".hand",{x:150, alpha:1})
 		
-		TweenLite.to('.whiteBg_logo',2.6,{x:300, delay:1, ease:Cubic.easeOut});
+		TweenLite.to('.whiteBg_logo',2.6,{x:160, delay:1, ease:Cubic.easeOut});
 		TweenLite.to('.logo',1,{alpha:1, ease:Quad.easeIn, delay: 1.8});
 		TweenLite.to('.copy1',1,{alpha:1, ease:Quad.easeIn, delay: 2.25});
 		TweenLite.to('.food',0,{alpha:1, delay:5.75});
@@ -22,8 +22,8 @@
 		TweenLite.to('.hand',0.5,{x:0, ease:Quad.easeOut, delay:5});
 		TweenLite.to('.lid',0,{alpha:0, delay:5.75});
 		TweenLite.to('.lid2',0,{alpha:1, delay:5.75});
-		TweenLite.to('.lid2',3,{rotation: 35, scale:0.8, transformOrigin: "100% 100%", x: 70, y: -340, ease: Power2.easeOut, delay:5.75});
-		TweenLite.to('.hand',3,{rotation: 35, scale:0.8, transformOrigin: "100% 100%", x: 128, y: -280, ease: Power2.easeOut, delay:5.75});
+		TweenLite.to('.lid2',3,{rotation: 35, scale:0.8, transformOrigin: "100% 100%", x: 85, y: -355, ease: Power2.easeOut, delay:5.75});
+		TweenLite.to('.hand',3,{rotation: 35, scale:0.8, transformOrigin: "100% 100%", x: 130, y: -320, ease: Power2.easeOut, delay:5.75});
 		TweenLite.to('.copy1',1,{alpha:0, ease:Quad.easeOut, delay: 4.75});
 		TweenLite.to('.copy2',1,{alpha:1, ease:Quad.easeIn, delay: 5.75});
 		TweenLite.delayedCall(8,frame2Animation)
@@ -36,7 +36,7 @@
 		TweenLite.to('.copy4',1,{alpha:1, ease:Quad.easeIn, delay: .8});
 
 		TweenLite.to('.track',1,{alpha:1, delay: 1.3});
-		TweenLite.to('.train',5,{alpha:1, left: 150, rotationZ:0.03, z:0.03, ease: Power4.easeOut, delay: 1});
+		TweenLite.to('.train',5,{alpha:1, left: 20, rotationZ:0.03, z:0.03, ease: Power4.easeOut, delay: 1});
 		TweenLite.delayedCall(7,frame3Animation)
 	}
 	  
