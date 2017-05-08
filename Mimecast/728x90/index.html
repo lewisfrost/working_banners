@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>728x90</title>
+<meta name="ad.size" content="width=728,height=90">
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+<script>
+
+	var clickTag = "https://www.google.com";
+	var loop=0;
+	var count=0;
+	
+	function init(){
+		frame1Animation()
+		addevents()
+		spiral_anim()
+	}
+
+	function addevents(){
+		document.getElementById("bannerCTA").addEventListener("click", trackClick);
+	}
+
+	function trackClick(){
+		window.open(clickTag, '_blank');
+	}
+
+	function frame1Animation(){
+		TweenLite.set([bg, logo, spiral, spiral_copy],{opacity:1});
+
+		TweenLite.to(copy1,0.5,{opacity:1, ease:Quad.easeIn, delay:0.2});
+
+		TweenLite.to(copy1,0.5,{opacity:0, ease:Quad.easeOut, delay:3.0});
+		TweenLite.to(copy2,0.5,{opacity:1, ease:Quad.easeIn, delay:3.5});
+
+		TweenLite.to(copy2,0.5,{opacity:0, ease:Quad.easeOut, delay:6.5});
+		TweenLite.to([copy3,cta],0.5,{opacity:1, ease:Quad.easeIn, delay:7.0});
+    	TweenLite.delayedCall(9.5,aminReset);
+		TweenLite.delayedCall(28,stop_anim)
+	}
+
+	function stop_anim(){
+		count=1;
+		TweenLite.to([".spiral_zoom1",".spiral_zoom2",".spiral_zoom3"],1,{opacity:0, ease:Quad.easeIn});
+	}
+
+	function spiral_anim(){
+		if(count==0){
+			TweenLite.set(".spiral_zoom1",{opacity:1, scale:1, delay:0});
+			TweenLite.set(".spiral_zoom2",{opacity:1, scale:1, delay:2.5});
+			TweenLite.set(".spiral_zoom3",{opacity:1, scale:1, delay:5.0});
+
+			TweenLite.to(".spiral_zoom1",4.0,{scale:2.0, ease:Linear.easeNone, delay:0});
+			TweenLite.to(".spiral_zoom2",4.0,{scale:2.0, ease:Linear.easeNone, delay:2.5});
+			TweenLite.to(".spiral_zoom3",4.0,{scale:2.0, ease:Linear.easeNone, delay:5.0});
+
+
+			TweenLite.to([".spiral_zoom1",".spiral_zoom2",".spiral_zoom3"],1,{opacity:0, ease:Quad.easeIn, delay:7.0});
+	    	TweenLite.delayedCall(7.0,spiral_anim);
+	    }
+
+	}
+
+	function aminReset(){
+	    loop++;
+	    if(loop<3){
+			TweenLite.to([copy3,cta],0.5,{opacity:0, ease:Quad.easeOut});
+			TweenLite.set([".spiral_zoom1",".spiral_zoom2",".spiral_zoom3"],{scale:1, opacity:0});
+	        TweenLite.delayedCall(0.5,frame1Animation);
+	    }
+	}
+
+	
+
+</script>
+
+<style>
+	*{margin: 0; padding: 0}
+	#ad{ position: relative; top: 0; left: 0; width: 728px; height: 90px; background-color: #ffffff; border:1px solid #000000; box-sizing: border-box; overflow: hidden; }
+	#frame1{position: absolute;  top: 0; left: 0; width: 728px; height: 90px; overflow: hidden;}
+	.clickTag{position: absolute; top: 0; left: 0; width: 728px; height: 90px; background-color: rgba(255,255,255,0); display: block; cursor: pointer; z-index: 999;}
+	#bg{position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; }
+	#logo,#copy1,#copy2,#copy3,#cta{position: absolute; top: 0; left: 0; z-index: 2; opacity: 0; }
+	#spiral_copy{position: absolute; top: 0; left: 0; opacity: 0; z-index: 20;}
+	#spiral{position: absolute; top: 30px; left: 624px; opacity: 0; z-index: 3;}
+
+	#mask{position: absolute; top: 30px; left: 628px; width: 52px; height: 52px; background-color: rgba(255,255,255,0);
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-khtml-border-radius: 50%;
+		border-radius: 50%;
+		overflow: hidden;
+		box-sizing: border-box;
+		z-index:6;
+		}
+	.spiral_zoom1, .spiral_zoom2, .spiral_zoom3{position: absolute; top: 0; left: 0; opacity: 0; z-index: 10;}
+	
+</style>
+
+
+</head>
+<body onLoad="init()">
+	<div id="ad">
+		<div id="frame1">
+			<div class="clickTag" id="bannerCTA"></div>
+			<img id="bg" src="bg.jpg" />
+			<img id="logo" src="logo.png" />
+			<img id="copy1" src="copy1.png" />
+			<img id="copy2" src="copy2.png" />
+			<img id="copy3" src="copy3.png" />
+			<img id="cta" src="cta.png" />
+			<img id="spiral" src="spiral.png" />
+		
+			<div id="mask">
+				<img class="spiral_zoom1" src="spiral_zoom.png" />
+				<img class="spiral_zoom2" src="spiral_zoom.png" />
+				<img class="spiral_zoom3" src="spiral_zoom.png" />
+			</div>
+			
+			<img id="spiral_copy" src="spiral_copy.png" />
+		</div>
+	</div>
+
+</body>
+</html>
