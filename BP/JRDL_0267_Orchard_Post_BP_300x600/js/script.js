@@ -44,12 +44,12 @@ function frame3Anim(){
 function frame4Anim(){
 	 tw.to(mask2,2, {width:23, ease: Power4.easeInOut, delay:0})
 	 tw.to(copy4,0.65, {alpha:0, ease:Quad.easeInOut, delay:0.65})
-	 tw.to(cta,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.3})
 	 tw.delayedCall(1.5,frame5Anim)
 }
 function frame5Anim(){
 	 for(var i=0; i<imgArr2.length; i++){
         tw.set('#'+String(imgArr2[i]),{alpha:1, delay:i*0.04}); 
+	 	tw.to(cta,0.65, {alpha:1, ease:Quad.easeIn, delay:0.75})
     }
 }
 
