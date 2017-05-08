@@ -30,12 +30,13 @@
 		TweenLite.set([bg, logo, spiral, spiral_copy],{opacity:1});
 
 		TweenLite.to(copy1,0.5,{opacity:1, ease:Quad.easeIn, delay:0.2});
+		TweenLite.to(cta,0.5,{opacity:1, ease:Quad.easeIn, delay:0.5});
 
 		TweenLite.to(copy1,0.5,{opacity:0, ease:Quad.easeOut, delay:3.0});
 		TweenLite.to(copy2,0.5,{opacity:1, ease:Quad.easeIn, delay:3.5});
 
 		TweenLite.to(copy2,0.5,{opacity:0, ease:Quad.easeOut, delay:6.5});
-		TweenLite.to([copy3,cta],0.5,{opacity:1, ease:Quad.easeIn, delay:7.0});
+		TweenLite.to(copy3,0.5,{opacity:1, ease:Quad.easeIn, delay:7.0});
     	TweenLite.delayedCall(9.5,aminReset);
 		TweenLite.delayedCall(28,stop_anim)
 	}
