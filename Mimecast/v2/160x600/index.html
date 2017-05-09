@@ -30,14 +30,44 @@
 		TweenLite.set([bg, logo],{opacity:1});
 		TweenLite.to(copy1,0.5,{opacity:1, ease:Quad.easeIn, delay:0.2});
 		TweenLite.to(cta,0.5,{opacity:1, ease:Quad.easeIn, delay:0.5});
+		TweenLite.to(arrow,0.5,{opacity:1, ease:Quad.easeIn, delay:1});
 
 		TweenLite.to(copy1,0.5,{opacity:0, ease:Quad.easeOut, delay:3.0});
 		TweenLite.to(copy2,0.5,{opacity:1, ease:Quad.easeIn, delay:3.5});
 
 		TweenLite.to(copy2,0.5,{opacity:0, ease:Quad.easeOut, delay:6.5});
 		TweenLite.to(copy3,0.5,{opacity:1, ease:Quad.easeIn, delay:7.0});
-    	TweenLite.delayedCall(9.5,aminReset);
-		TweenLite.delayedCall(0,spiral_anim)
+
+		/*arrow movement*/
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:7.0});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:7.1});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:7.2});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:7.3});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:7.4});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:7.5});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:7.6});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:7.7});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:7.8});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:7.9});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:8.0});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:8.1});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:8.2});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:8.3});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:8.4});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:8.5});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:8.6});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:8.7});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:8.8});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:8.9});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:9.0});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:9.1});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:9.2});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:9.3});
+		TweenLite.to(arrow,0.1,{x:2, ease:Quad.easeOut, delay:9.4});
+		TweenLite.to(arrow,0.1,{x:0, ease:Quad.easeOut, delay:9.5});
+		TweenLite.to(arrow,0,{opacity:0, delay:9.6});
+    	TweenLite.delayedCall(9.6,aminReset);
+		TweenLite.delayedCall(0,spiral_anim);
 	}
 
 	function spiral_anim(){
@@ -77,6 +107,7 @@
 	#spiral_copy2{position: absolute; bottom: 76px; left: 61px; opacity: 0; z-index: 20;}
 	#spiral_copy3{position: absolute; bottom: 95px; left: 97px; opacity: 0; z-index: 20;}
 	#spiral{position: absolute; top: 125px; left: 208px; opacity: 0; z-index: 3;}
+	#arrow{position: absolute; top: 0; left: 0; opacity: 0; z-index: 20;}
 
 	#mask{position: absolute; display:none; top: 125px; left: 212px; width: 57px; height: 57px; background-color: rgba(255,255,255,0); border-radius: 30px; overflow: hidden;}
 	#spiral_zoom1,#spiral_zoom2,#spiral_zoom3{position: absolute; top: 0; left: 0; opacity: 0; z-index: 10;}
@@ -95,14 +126,7 @@
 			<img id="copy2" src="copy2.png" />
 			<img id="copy3" src="copy3.png" />
 			<img id="cta" src="cta.png" />
-			<!--<img id="spiral" src="spiral.png" />-->
-		
-			<!--<div id="mask">
-				<img id="spiral_zoom1" src="spiral_zoom.png" />
-				<img id="spiral_zoom2" src="spiral_zoom.png" />
-				<img id="spiral_zoom3" src="spiral_zoom.png" />
-			</div>-->
-			
+			<img id="arrow" src="arrow.png" />
 			<img id="spiral_copy1" src="spiral_copy1.png" />
             <img id="spiral_copy2" src="spiral_copy2.png" />
             <img id="spiral_copy3" src="spiral_copy3.png" />
