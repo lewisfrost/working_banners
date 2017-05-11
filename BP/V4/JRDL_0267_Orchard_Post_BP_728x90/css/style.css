@@ -94,12 +94,12 @@
 	z-index:3
 }
 
-/*#mask2{
+#mask2{
 	position: absolute; 
 	top: 0px; 
 	left: 0px;
-	width: 34px; 
-	height: 90px; 
+	width: 728px; 
+	height: 25px; 
 	opacity:1;
 	z-index:3;
 	overflow:hidden;
@@ -107,19 +107,12 @@
 
 #line2{
 	position: absolute; 
-	top: 24px; 
+	top: 0px; 
 	left: 0px;
 	opacity:1;
 	z-index:3
 }
 
-#copy4{
-	position: absolute; 
-	top:0px; 
-	left: 0px;
-    opacity: 0;
-	z-index:3
-}*/
 
 #cta{
 	position:absolute; 

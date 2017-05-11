@@ -27,13 +27,15 @@ function frame2Anim(){
      tw.to(copy1,1, {alpha:0, ease:Quad.easeOut, delay:.6})
 	 tw.to(mask,2, {width:486, ease: Power4.easeInOut, delay:0})
 	 
+	 tw.to(mask2,1, {height:72, ease: Power4.easeOut, delay:1.7})
 	 tw.to(copy2,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.5})
-	 tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.7})
+	 tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.9})
      tw.delayedCall(5,frame3Anim)
 }
 
 function frame3Anim(){
-     tw.to([copy2,copy3],0.65, {alpha:0, ease:Quad.easeInOut, delay:0})
+	 tw.to(mask2,0.65, {height:19, ease: Power4.easeInOut, delay:0})
+     tw.to([copy2,copy3],0.65, {alpha:0, ease:Quad.easeInOut, delay:.5})
      tw.delayedCall(0.5,frame4Anim)
 }
 
