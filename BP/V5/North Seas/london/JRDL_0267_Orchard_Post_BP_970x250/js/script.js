@@ -16,13 +16,13 @@ function initbanner(){
 
 function frame1Anim(){
      tw.to(copy1,1, {alpha:1, ease:Quad.easeIn, delay:0})
-	 tw.to(mask,3, {width:630, ease: Power4.easeOut, delay:0.5})
+	 tw.to(mask,3, {width:681, ease: Power4.easeOut, delay:0.5})
 	 tw.delayedCall(5,frame2Anim)
 }
 
 function frame2Anim(){
      tw.to(copy1,0.65, {alpha:0, ease:Quad.easeInOut, delay:.6})
-	 tw.to(mask,2, {width:438, ease: Power4.easeInOut, delay:0})
+	 tw.to(mask,2, {width:487, ease: Power4.easeInOut, delay:0})
 	 
 	 tw.to(copy2,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.5})
 	 tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.7})
@@ -32,12 +32,12 @@ function frame2Anim(){
 function frame3Anim(){
 	tw.to([copy2,copy3],0.65, {alpha:0, ease:Quad.easeInOut, delay:0})
 	tw.to(copy4,0.65, {alpha:1, ease:Quad.easeInOut, delay:0.65})
-	tw.to(mask2,2, {width:656, ease: Quad.easeInOut, delay:0.5})
+	tw.to(mask2,2, {width:687, ease: Quad.easeInOut, delay:0.5})
 	tw.delayedCall(7,frame4Anim)
 }
 
 function frame4Anim(){
-	 tw.to(mask2,2, {width:438, ease: Power4.easeInOut, delay:0})
+	 tw.to(mask2,2, {width:468, ease: Power4.easeInOut, delay:0})
 	 tw.to(copy4,0.65, {alpha:0, ease:Quad.easeInOut, delay:0.65})
 	 tw.delayedCall(1.5,frame5Anim)
 }
