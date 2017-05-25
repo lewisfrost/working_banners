@@ -21,11 +21,13 @@ function initbanner(){
 
 function frame1Anim(){
      tw.to(copy1,1, {alpha:1, ease:Quad.easeIn, delay:0})
+	 tw.to(mask,3, {width:254, ease: Power4.easeOut, delay:0.5})
 	 tw.delayedCall(5,frame2Anim)
 }
 
 function frame2Anim(){
      tw.to(copy1,1, {alpha:0, ease:Quad.easeOut, delay:.6})
+	 tw.to(mask,2, {width:18, ease: Power4.easeInOut, delay:0})
 	 
 	 tw.to(copy2,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.2})
 	 tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.4})

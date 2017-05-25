@@ -68,7 +68,7 @@
 	z-index:3
 }
 
-/*#mask{
+#mask{
 	position: absolute; 
 	top: 0px; 
 	left: 0px;
@@ -88,13 +88,15 @@
 	z-index:3;
 	overflow:hidden;
 }
+
+
 #line, #line2{
 	position: absolute; 
 	top: 0px; 
 	left: 0px;
 	opacity:1;
 	z-index:3
-}*/
+}
 #copy2{
 	position: absolute; 
 	top: 0px; 
