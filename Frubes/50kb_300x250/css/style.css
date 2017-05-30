@@ -1,0 +1,89 @@
+body {
+  width: 300px;
+  height: 250px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 298px;
+  height: 248px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+#dudeBubble {
+  {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  }
+}
+.dude {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+ }
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.pack {
+  position: absolute;
+  top: 91px;
+  left: 58px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.txt1 {
+  position: absolute;
+  top: 85px;
+  left: 21px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.txt2 {
+  position: absolute;
+  top: 130px;
+  left: 27px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.cta {
+  position: absolute;
+  top: 74px;
+  left: 205px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
