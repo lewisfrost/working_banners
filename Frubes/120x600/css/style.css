@@ -44,7 +44,16 @@ body {
   border: none;
   opacity: 0;
   visibility:hidden;
-  z-index:20;
+  z-index:22;
+}
+.tcs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:30;
 }
 
 #dudeBubble {
@@ -93,8 +102,8 @@ body {
 
 .pack {
   position: absolute;
-  top: 391px;
-  left: 9px;
+  top: 390px;
+  left: 7px;
   border: none;
   opacity: 0;
   visibility:hidden;
@@ -134,8 +143,15 @@ body {
   visibility:hidden;
 }
 
-
-
+.cartoon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  opacity: 1;
+  visibility:hidden;
+  z-index:20;
+}
 
 
 

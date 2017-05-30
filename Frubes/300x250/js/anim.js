@@ -66,8 +66,8 @@ function startAnim() {
       TweenLite.set( cta, { scale:0, alpha: 1, delay:0 })
       TweenLite.to( cta,2, {ease:Elastic. easeOut.config(1, 0.4), scale:1,  delay:7 })
 
-        TweenLite.set("#dudeBubble",{scale:.59, y:0, x:0, delay:5 })
-        TweenLite.set([bubble,dude], {scale:1, x:0, y:0, delay:5});
+      TweenLite.set("#dudeBubble",{scale:.59, y:0, x:0, delay:5 })
+      TweenLite.set([bubble,dude], {scale:1, x:0, y:0, delay:5});
 
       TweenLite.delayedCall(11,doEndFade);
   }
