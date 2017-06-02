@@ -25,34 +25,37 @@
 	var fold_anim = ['flip1','flip2','flip3','flip4','flip5','flip6','flip7','flip8','flip9','flip10','flip11','flip12','flip13','flip14','flip15','flip16','flip17','flip18','flip19','flip20','flip21','flip22','flip23','flip24'];
 	
 	var fold_anim_fadeOut = ['flip1','flip2','flip3','flip4','flip5','flip6','flip7','flip8','flip9','flip10','flip11','flip12','flip13','flip14','flip15','flip16','flip17','flip18','flip19','flip20','flip21','flip22','flip23'];
-
+	
 	function frame1Animation(){
 		TweenLite.set(logo,{opacity:1});
-
-		TweenLite.to(copy1,0.5,{opacity:1, ease:Quad.easeIn, delay:0.2});
-		TweenLite.to(mask,1.5,{width:230, ease:Quad.easeInOut, delay:0.7});
-		TweenLite.to(copy2,0.5,{opacity:1, ease:Quad.easeIn, delay:2.0});
-		TweenLite.delayedCall(3.0,frame2Animation)
-	}
-	function frame2Animation(){
 		TweenLite.set(img1,{opacity:1, delay:0});
 
 		for(var i=0; i<fold_anim.length; i++){
 			TweenLite.set('#'+String(fold_anim[i]),{alpha:1, delay:i*0.04}); 
 		}
-		TweenLite.delayedCall(0.04,frame3Animation)
+		TweenLite.delayedCall(0.04,frame2Animation)
 	}
 
-	function frame3Animation(){
+	function frame2Animation(){
 		for(var i=0; i<fold_anim_fadeOut.length; i++){
 			TweenLite.set('#'+String(fold_anim_fadeOut[i]),{alpha:0, delay:i*0.04}); 
 		}
-		TweenLite.to(img2,0.5,{opacity:1, ease:Quad.easeIn, delay:3.0});
-		TweenLite.to(img3,0.5,{opacity:1, ease:Quad.easeIn, delay:5.5});
-
-		TweenLite.to(copy2,0.5,{opacity:0, ease:Quad.easeOut, delay:7.0});
-		TweenLite.to(cta,0.5,{opacity:1, ease:Quad.easeIn, delay:7.5});
+		TweenLite.delayedCall(0.5,frame3Animation)
 	}
+	
+	function frame3Animation(){
+		TweenLite.to(copy1,1,{opacity:1, ease:Quad.easeIn, delay:0.2});
+		TweenLite.to(mask,1.5,{width:228, ease:Quad.easeInOut, delay:1.2});
+		TweenLite.to(copy2,1,{opacity:1, ease:Quad.easeIn, delay:2.5});
+		
+		TweenLite.to(copy2,0.5,{opacity:0, ease:Quad.easeOut, delay:5.5});
+		TweenLite.to(cta,0.5,{opacity:1, ease:Quad.easeIn, delay:6});
+		
+		TweenLite.to(img2,1.5,{opacity:1, ease:Quad.easeIn, delay:7});
+		TweenLite.to(img3,1.5,{opacity:1, ease:Quad.easeIn, delay:11.5});
+		
+		}
+	
 
 </script>
 

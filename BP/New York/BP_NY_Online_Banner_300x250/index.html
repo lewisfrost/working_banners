@@ -28,29 +28,34 @@
 
 	function frame1Animation(){
 		TweenLite.set(logo,{opacity:1});
-
-		TweenLite.to(copy1,0.5,{opacity:1, ease:Quad.easeIn, delay:0.2});
-		TweenLite.to(mask,1.5,{width:228, ease:Quad.easeInOut, delay:0.7});
-		TweenLite.to(copy2,0.5,{opacity:1, ease:Quad.easeIn, delay:2.0});
-		TweenLite.delayedCall(3.5,frame2Animation)
-	}
-	function frame2Animation(){
+		
 		TweenLite.set(img1,{opacity:1, delay:0});
 
 		for(var i=0; i<fold_anim.length; i++){
 			TweenLite.set('#'+String(fold_anim[i]),{alpha:1, delay:i*0.04}); 
 		}
-		TweenLite.delayedCall(0.04,frame3Animation)
+		TweenLite.delayedCall(0.04,frame2Animation)
 	}
 
-	function frame3Animation(){
+	function frame2Animation(){
 		for(var i=0; i<fold_anim_fadeOut.length; i++){
 			TweenLite.set('#'+String(fold_anim_fadeOut[i]),{alpha:0, delay:i*0.04}); 
 		}
-		TweenLite.to(cta,0.5,{opacity:1, ease:Quad.easeIn, delay:0.8});
-		TweenLite.to(img2,0.5,{opacity:1, ease:Quad.easeIn, delay:3.0});
-		TweenLite.to(img3,0.5,{opacity:1, ease:Quad.easeIn, delay:5.5});
+		
+		TweenLite.delayedCall(0.5,frame3Animation)
 	}
+	
+	function frame3Animation(){
+		TweenLite.to(copy1,1,{opacity:1, ease:Quad.easeIn, delay:0.2});
+		TweenLite.to(mask,1.5,{width:245, ease:Quad.easeInOut, delay:1.2});
+		TweenLite.to(copy2,1,{opacity:1, ease:Quad.easeIn, delay:2.5});
+		TweenLite.to(cta,1,{opacity:1, ease:Quad.easeIn, delay:3.5});
+		
+		TweenLite.to(img2,1.5,{opacity:1, ease:Quad.easeIn, delay:5});
+		TweenLite.to(img3,1.5,{opacity:1, ease:Quad.easeIn, delay:9.5});
+		
+		}
+	
 
 </script>
 
