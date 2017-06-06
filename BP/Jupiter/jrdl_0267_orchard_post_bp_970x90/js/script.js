@@ -71,15 +71,12 @@ function initbanner(){
 
      tw.set(flip22,{alpha:0, delay:1.10})
      tw.set(flip23,{alpha:1, delay:1.10})
-
-     tw.set(flip23,{alpha:0, delay:1.15})
-     tw.set(flip24,{alpha:1, delay:1.15})
 	
 }
 
 function frame1Anim(){
      tw.to(copy1,1, {alpha:1, ease:Quad.easeIn, delay:0})
-	 tw.to(mask,3, {width:595, ease: Power4.easeOut, delay:0.5})
+	 tw.to(mask,3, {width:580, ease: Power4.easeOut, delay:0.5})
 	 tw.delayedCall(5,frame2Anim)
 }
 
@@ -94,7 +91,7 @@ function frame2Anim(){
 }
 
 function frame3Anim(){
-	 tw.to(mask2,0.65, {height:19, ease: Power4.easeInOut, delay:0})
+	 tw.to(mask2,0.65, {height:17, ease: Power4.easeInOut, delay:0})
      tw.to([copy2,copy3],0.65, {alpha:0, ease:Quad.easeInOut, delay:0})
      tw.delayedCall(0.5,frame4Anim)
 }
@@ -102,7 +99,7 @@ function frame3Anim(){
 function frame4Anim(){
 	tw.to(cta,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.0})
 
-     tw.set(flip24,{alpha:0, delay:0})
+     tw.set(flip23,{alpha:0, delay:0})
      tw.set(flip25,{alpha:1, delay:0})
 
      tw.set(flip25,{alpha:0, delay:0.05})
@@ -173,6 +170,12 @@ function frame4Anim(){
 
      tw.set(flip47,{alpha:0, delay:1.15})
      tw.set(flip48,{alpha:1, delay:1.15})
+	 
+	 tw.set(flip48,{alpha:0, delay:1.20})
+     tw.set(flip49,{alpha:1, delay:1.20})
+	 
+	 tw.set(flip49,{alpha:0, delay:1.25})
+     tw.set(flip50,{alpha:1, delay:1.25})
 
 }
 

@@ -1,0 +1,118 @@
+<!DOCtYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=970, height=250">
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+<script>
+
+	var clickTag = "http://wwww.google.com";
+	
+	function init(){
+		frame1Animation()
+		addevents()
+	}
+
+	function addevents(){
+		document.getElementById("bannerCTA").addEventListener("click", trackClick);
+	}
+
+	function trackClick(){
+		window.open(clickTag, '_blank');
+	}
+
+	var fold_anim = ['flip1','flip2','flip3','flip4','flip5','flip6','flip7','flip8','flip9','flip10','flip11','flip12','flip13','flip14','flip15','flip16','flip17','flip18','flip19','flip20','flip21','flip22','flip23','flip24'];
+	
+	var fold_anim_fadeOut = ['flip1','flip2','flip3','flip4','flip5','flip6','flip7','flip8','flip9','flip10','flip11','flip12','flip13','flip14','flip15','flip16','flip17','flip18','flip19','flip20','flip21','flip22','flip23'];
+
+	function frame1Animation(){
+		TweenLite.set(logo,{opacity:1});
+		
+		TweenLite.set(img1,{opacity:1, delay:0});
+
+		for(var i=0; i<fold_anim.length; i++){
+			TweenLite.set('#'+String(fold_anim[i]),{alpha:1, delay:i*0.04}); 
+		}
+		TweenLite.delayedCall(0.04,frame2Animation)
+	}
+
+	function frame2Animation(){
+		for(var i=0; i<fold_anim_fadeOut.length; i++){
+			TweenLite.set('#'+String(fold_anim_fadeOut[i]),{alpha:0, delay:i*0.04}); 
+		}
+		
+		TweenLite.delayedCall(0.5,frame3Animation)
+	}
+	
+	function frame3Animation(){
+		TweenLite.to(copy1,1,{opacity:1, ease:Quad.easeIn, delay:0.2});
+		TweenLite.to(mask,1.5,{width:367, ease:Quad.easeInOut, delay:1.2});
+		TweenLite.to(copy2,1,{opacity:1, ease:Quad.easeIn, delay:2.5});
+		TweenLite.to(cta,1,{opacity:1, ease:Quad.easeIn, delay:3.5});
+		
+		TweenLite.to(img2,1.5,{opacity:1, ease:Quad.easeIn, delay:5});
+		TweenLite.to(img3,1.5,{opacity:1, ease:Quad.easeIn, delay:9.5});
+		
+		}
+
+</script>
+
+<style>
+	*{margin: 0; padding: 0}
+	#ad{ position: relative; top: 0; left: 0; width: 970px; height: 250px; background-color: #ffffff; border:1px solid #000000; box-sizing: border-box; overflow: hidden; }
+	#frame1{position: absolute;  top: 0; left: 0; width: 970px; height: 250px; overflow: hidden;}
+	.clickTag{position: absolute; top: 0; left: 0; width: 970px; height: 250px; background-color: rgba(255,255,255,0); display: block; cursor: pointer; z-index: 999;}
+
+	#logo{position: absolute; top: 0; left: 0; z-index: 10; opacity: 0;}
+	#img1,#img2,#img3{position: absolute; bottom: 0; right: 0; opacity: 0; z-index: 2;}
+	#flip1,#flip2,#flip3,#flip4,#flip5,#flip6,#flip7,#flip8,#flip9,#flip10,#flip11,#flip12,#flip13,#flip14,#flip15,#flip16,#flip17,#flip18,#flip19,#flip20,#flip21,#flip22,#flip23,#flip24{position: absolute; top: 0; left: 0; opacity: 0; z-index: 9;}
+	#copy1,#copy2,#copy3,#cta,#line{position: absolute; top: 0; left: 0; opacity: 0; z-index: 10;}
+	#line{position: absolute; top: 0; left: 0; opacity: 1; z-index: 10;}
+	#mask{position: absolute; top: 0; left: 0; width: 134px; height: 250px; overflow: hidden;}
+	
+</style>
+
+
+</head>
+<body onLoad="init()">
+	<div id="ad">
+		<div id="frame1">
+			<div class="clickTag" id="bannerCTA"></div>
+			<img id="logo" src="logo.png" />
+			<img id="img1" src="img1.jpg" />
+			<img id="img2" src="img2.jpg" />
+			<img id="img3" src="img3.jpg" />
+			<img id="copy1" src="copy1.png" />
+			<img id="copy2" src="copy2.png" />
+			<img id="cta" src="cta.png" />
+			<div id="mask">
+				<img id="line" src="line.png" />
+			</div>
+			<img id="flip1" src="flip1.png" />
+			<img id="flip2" src="flip2.png" />
+			<img id="flip3" src="flip3.png" />
+			<img id="flip4" src="flip4.png" />
+			<img id="flip5" src="flip5.png" />
+			<img id="flip6" src="flip6.png" />
+			<img id="flip7" src="flip7.png" />
+			<img id="flip8" src="flip8.png" />
+			<img id="flip9" src="flip9.png" />
+			<img id="flip10" src="flip10.png" />
+			<img id="flip11" src="flip11.png" />
+			<img id="flip12" src="flip12.png" />
+			<img id="flip13" src="flip13.png" />
+			<img id="flip14" src="flip14.png" />
+			<img id="flip15" src="flip15.png" />
+			<img id="flip16" src="flip16.png" />
+			<img id="flip17" src="flip17.png" />
+			<img id="flip18" src="flip18.png" />
+			<img id="flip19" src="flip19.png" />
+			<img id="flip20" src="flip20.png" />
+			<img id="flip21" src="flip21.png" />
+			<img id="flip22" src="flip22.png" />
+			<img id="flip23" src="flip23.png" />
+			<img id="flip24" src="flip24.png" />
+		</div>
+	</div>
+</body>
