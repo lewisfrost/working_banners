@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding:0;
+}
+.ad{
+	position:relative;
+	top:0;
+	left:0;
+	width:300px;
+	height:250px; 
+	background-color:#fff; 
+	overflow: hidden;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.frame1,.frame2,.frame3{
+	width:300px; 
+	height:250px; 
+	top:0px; 
+	left:0px; 
+	position:absolute;
+}
+.clickTag{
+	width:300px; 
+	height:250px;
+	background-color: rgba(255,255,255,0);
+	display:block; 
+	position:absolute; 
+	cursor:pointer; 
+	left:0px; 
+	top:0px; 
+	z-index: 8;
+}
+
+#bg{
+	position: absolute; 
+	bottom: 0; 
+	right: 0;
+	opacity:1;
+	z-index:1
+}
+#flip1,#flip2,#flip3,#flip4,#flip5,#flip6,#flip7,#flip8,#flip9,#flip10,#flip11,#flip12,#flip13,#flip14,#flip15,#flip16,#flip17,#flip18,#flip19,#flip20,
+#flip21,#flip22,#flip23,#flip24,#flip25,#flip26,#flip27,#flip28,#flip29,#flip30,#flip31,#flip32,#flip33,#flip34,#flip35,#flip36,#flip37,#flip38,#flip39,#flip40,
+#flip41,#flip42,#flip43,#flip44,#flip45{
+	position: absolute;
+	bottom: 0; 
+	right: 0;
+	opacity:0;
+	z-index:2
+}
+
+#mask{
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+	width: 18px; 
+	height: 250px; 
+	opacity:1;
+	z-index:3;
+	overflow:hidden;
+}
+
+#line{
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+	opacity:1;
+	z-index:3
+}
+
+
+#copy1{
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+	opacity:0;
+	z-index:3
+}
+
+#copy2{
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+    opacity: 0;
+	z-index:3
+}
+#copy3{
+	position: absolute; 
+	top:0px; 
+	left: 0px;
+    opacity: 0;
+	z-index:3
+}
+
+
+
+#cta{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	width:300px; 
+	height:250px; 
+	z-index:10; 
+    opacity: 0;
+	cursor:pointer; 
+}
+.ctaImg{
+	position:absolute; 
+	top:0px; 
+	left:0px;
+}
