@@ -71,7 +71,7 @@ function initbanner(){
 
 function frame1Anim(){
      tw.to(copy1,1, {alpha:1, ease:Quad.easeIn, delay:0})
-	 tw.to(mask,3, {width:260, ease: Power4.easeOut, delay:0.5})
+	 tw.to(mask,2, {width:186, ease: Power4.easeOut, delay:0.5})
 	 tw.delayedCall(5,frame2Anim)
 }
 
