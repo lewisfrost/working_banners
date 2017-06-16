@@ -64,16 +64,16 @@ function initbanner(){
 
 function frame1Anim(){
      tw.to(copy1,1, {alpha:1, ease:Quad.easeIn, delay:0})
-	 tw.to(mask,3, {width:250, ease: Power4.easeOut, delay:0.5})
-	 tw.delayedCall(5,frame2Anim)
+     tw.to(mask,2, {width:152, ease: Power4.easeOut, delay:0.5})
+     tw.delayedCall(5,frame2Anim)
 }
 
 function frame2Anim(){
      tw.to(copy1,0.65, {alpha:0, ease:Quad.easeInOut, delay:.6})
-	 tw.to(mask,2, {width:17, ease: Power4.easeInOut, delay:0})
-	 
-	 tw.to(copy2,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.5})
-	 tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.7})
+     tw.to(mask,2, {width:17, ease: Power4.easeInOut, delay:0})
+
+     tw.to(copy2,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.5})
+     tw.to(copy3,0.65, {alpha:1, ease:Quad.easeInOut, delay:1.7})
      tw.delayedCall(5,frame3Anim)
 }
 
