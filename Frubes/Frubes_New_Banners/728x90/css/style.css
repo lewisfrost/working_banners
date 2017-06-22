@@ -27,8 +27,8 @@ body {
 }
 .spot {
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -76px;
+  left: 113px;
   border: none;
   opacity: 0;
   visibility:hidden;

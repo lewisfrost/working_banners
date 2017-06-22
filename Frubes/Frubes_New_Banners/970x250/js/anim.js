@@ -9,6 +9,7 @@ var logo = document.getElementsByClassName("logo");
 var spot = document.getElementsByClassName("spot");
 var minimo = document.getElementsByClassName("minimo");
 var flash = document.getElementsByClassName("flash");
+var bubble = document.getElementsByClassName("bubble");
 
 var loopcount = 0;
 
@@ -44,9 +45,18 @@ function startAnim() {
     TweenLite.set(txt1, {visibility:"visible",y:-190,opacity:1});
     TweenLite.set(txt2, {visibility:"visible",y:-210,opacity:1});
     TweenLite.set(cta, {visibility:"visible",scale:0,y:0});
- 	TweenLite.set(flash, {visibility:"visible"});
- 
-    TweenLite.to([".logo",".spot"],0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
+ 	TweenLite.set(bubble, {visibility:"visible",scale:0});
+	TweenLite.set('.flash_img', {visibility:"visible"});
+	TweenLite.to(logo,0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
+	TweenLite.to([".bubble"], 0.75, { ease: Power2.easeIn, scale:13, y:9, delay:0})
+	TweenLite.to([".bubble"], 0.2, {alpha:0, delay:.75 })
+	TweenLite.delayedCall(0.75,frame1Animation);
+}
+	
+	
+	
+	function frame1Animation(){
+	TweenLite.to(".spot",0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
     TweenLite.to([".txt1"],1,{y:0, ease: Power4.easeInOut, delay:0});
     TweenLite.to([".txt1"],1,{y:190, ease: Power4.easeInOut, delay:3});
     TweenLite.to([".txt2"],1,{y:0, ease: Power4.easeInOut, delay:3});
@@ -78,7 +88,7 @@ function startAnim() {
       if (loopcount == 0) {
 
         TweenLite.to([cta,minimo,tcs], 0.5, { alpha: 0, ease:Quad.easeIn, delay:0 })
-
+		TweenLite.to([".bubble"], 0, {alpha:1, scale:0, delay:0, y:0 })
           TweenLite.delayedCall(0.5,startAnim);
       }
       loopcount+=1;
