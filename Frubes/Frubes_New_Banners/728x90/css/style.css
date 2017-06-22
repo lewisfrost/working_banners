@@ -1,0 +1,132 @@
+body {
+  width: 728px;
+  height: 90px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 726px;
+  height: 88px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.spot {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+.bg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: none;
+  opacity: 1;
+  visibility:hidden;
+}
+.flash_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:3;
+}
+
+
+.pack {
+  position: absolute;
+  top: 14px;
+  left: 480px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:2;
+}
+
+
+
+
+.txt1 {
+  position: absolute;
+  top: 11px;
+  left: 184px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.txt2 {
+  position: absolute;
+  top: 25px;
+  left: 204px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.tcs {
+  position: absolute;
+  top: 8px;
+  left: 409px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.minimo {
+  position: absolute;
+  top: 15px;
+  left: 482px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.bubble {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  width:95px;
+  height:90px;
+  border: none;
+  opacity: 1;
+  visibility:hidden;
+}
+
+.cta {
+  position: absolute;
+  top: -17px;
+  left: 224px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
+
+
+
+
+
+

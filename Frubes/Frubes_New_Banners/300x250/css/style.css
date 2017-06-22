@@ -1,0 +1,111 @@
+body {
+  width: 300px;
+  height: 250px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 298px;
+  height: 248px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+#dudeBubble {
+  {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  }
+}
+.dude {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+}
+.bubble {
+  position: absolute;
+  top: 76px;
+  left: 94px;
+  width:181px;
+  height:196px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.flash_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:3;
+}
+.pack {
+  position: absolute;
+  top: 91px;
+  left: 58px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.txt1 {
+  position: absolute;
+  top: 73px;
+  left: 35px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.txt2 {
+  position: absolute;
+  top: 118px;
+  left: 43px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.cta {
+  position: absolute;
+  top: 86px;
+  left: 179px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}

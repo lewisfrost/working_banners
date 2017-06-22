@@ -1,0 +1,141 @@
+body {
+  width: 300px;
+  height: 600px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 298px;
+  height: 598px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+#dudeBubble {
+  {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+/*  visibility:hidden;*/
+}
+}
+
+.dude {
+  position: absolute;
+  top: 114px;
+  left: 52px;
+  border: none;
+  opacity: 0;
+ /* visibility:hidden;*/
+}
+
+.bubble {
+  position: absolute;
+  top: 191px;
+  left: 108px;
+  width:181px;
+  height:196px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+.bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.flash_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:300px;
+  height:600px;
+  border: none;
+  opacity: 0;
+  background:#ffffff;
+  visibility:hidden;
+  z-index:3;
+}
+
+
+
+.pack {
+  position: absolute;
+  top: 202px;
+  left: 25px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
+
+.txt1 {
+  position: absolute;
+  top: 127px;
+  left: 28px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.txt2 {
+  position: absolute;
+  top: 195px;
+  left: 39px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.cta {
+  position: absolute;
+  top: 369px;
+  left: 135px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
+
+
+
+
+
+

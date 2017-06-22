@@ -1,0 +1,158 @@
+body {
+  width: 120px;
+  height: 600px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 118px;
+  height: 598px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 39px;
+  left: 6px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+#dudeBubble {
+  {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+/*  visibility:hidden;*/
+}
+}
+
+.dude {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+ /* visibility:hidden;*/
+}
+
+.bubble {
+  position: absolute;
+  top: 183px;
+  left: 8px;
+  width:181px;
+  height:196px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+.bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.flash_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:120px;
+  height:600px;
+  border: none;
+  opacity: 0;
+  background:#ffffff;
+  visibility:hidden;
+  z-index:3;
+}
+
+
+
+.pack {
+  position: absolute;
+  top: 392px;
+  left: 9px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
+
+.txt1 {
+  position: absolute;
+  top: 152px;
+  left: 13px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.txt2 {
+  position: absolute;
+  top: 185px;
+  left: 18px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.cta {
+  position: absolute;
+  top: 275px;
+  left: 2px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.cartoon {
+  position: absolute;
+  top: 354px;
+  left: 14px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.legal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  z-index:10;
+  visibility:hidden;
+}
+
+
+
+
+
+
+
+
+

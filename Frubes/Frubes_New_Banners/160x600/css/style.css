@@ -1,0 +1,158 @@
+body {
+  width: 160px;
+  height: 600px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#container_dc {
+  position: absolute;;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 158px;
+  height: 598px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 11px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+  z-index:4;
+}
+
+#dudeBubble {
+  {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  opacity: 0;
+/*  visibility:hidden;*/
+}
+}
+
+.dude {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+ /* visibility:hidden;*/
+}
+
+.bubble {
+  position: absolute;
+  top: 183px;
+  left: 26px;
+  width:181px;
+  height:196px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+.bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.flash_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:160px;
+  height:600px;
+  border: none;
+  opacity: 0;
+  background:#ffffff;
+  visibility:hidden;
+  z-index:3;
+}
+
+
+
+.pack {
+  position: absolute;
+  top: 391px;
+  left: 10px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
+
+.txt1 {
+  position: absolute;
+  top: 145px;
+  left: 17px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.txt2 {
+  position: absolute;
+  top: 191px;
+  left: 23px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+
+.cta {
+  position: absolute;
+  top: 301px;
+  left: 31px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.cartoon {
+  position: absolute;
+  top: 384px;
+  left: 45px;
+  border: none;
+  opacity: 0;
+  visibility:hidden;
+}
+.legal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  opacity: 0;
+  z-index:10;
+  visibility:hidden;
+}
+
+
+
+
+
+
+
+
+
