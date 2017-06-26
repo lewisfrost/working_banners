@@ -47,6 +47,7 @@ function startAnim() {
 	TweenLite.set(bubble, {visibility:"visible",scale:1,y:0});
 	TweenLite.set('.flash_img', {visibility:"visible"});
 	TweenLite.to(logo,0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
+	TweenLite.set(".bubble",{alpha:1, scale:0, delay:0 })
 	TweenLite.to([".bubble"], 0.75, { ease: Power2.easeIn, scale:6, y:4, delay:0})
 	TweenLite.to([".bubble"], 0.5, {alpha:0, delay:.75 })
 	
@@ -65,23 +66,23 @@ function startAnim() {
     TweenLite.to([".pack"],0.5,{opacity:1,ease: Power4.easeOut, delay:3});
     TweenLite.to([".pack"],2,{ease:Elastic. easeOut.config(1, 0.4),scale:1,delay:4});
 
-    TweenLite.to([".txt2",".pack"],1,{y:58, ease: Power4.easeInOut, delay:8});
-    TweenLite.to([".tcs"],1,{opacity:1, ease: Power4.easeInOut, delay:10.2});
+    TweenLite.to([".txt2",".pack"],0.5,{y:95, ease: Quad.easeIn, delay:8});
+	TweenLite.to(".spot",0.5,{y:95, ease: Quad.easeIn, delay:8});
+    TweenLite.to([".tcs"],1,{opacity:1, ease: Power4.easeInOut, delay:9.5});
     TweenLite.to([".spot"],1,{opacity:0, ease: Power4.easeInOut, delay:8.5});
-    TweenLite.to([".cta"],0.5,{opacity:1,ease: Power4.easeOut, delay:9});
-    TweenLite.to([".cta"],2,{ease:Elastic. easeOut.config(1, 0.4),scale:1,delay:9.5});
+    TweenLite.to([".cta"],0.5,{opacity:1,ease: Power4.easeOut, delay:8});
+    TweenLite.to([".cta"],2,{ease:Elastic. easeOut.config(1, 0.4),scale:1,delay:8.5});
 
-    TweenLite.to([".minimo"],2,{y:0,ease:Elastic. easeOut.config(1, 0.4),delay:10});
+    TweenLite.to([".minimo"],2,{y:0,ease:Elastic. easeOut.config(1, 0.4),delay:9});
 
-    TweenLite.delayedCall(15,doEndFade);
+    TweenLite.delayedCall(13.5,doEndFade);
   }
 
   function doEndFade() {
       if (loopcount == 0) {
 
         TweenLite.to([cta,minimo,tcs], 0.5, { alpha: 0, ease:Quad.easeIn, delay:0 })
-		TweenLite.to([".bubble"], 0, {alpha:1, scale:0, delay:0 })
-          TweenLite.delayedCall(0.5,startAnim);
+        TweenLite.delayedCall(0.5,startAnim);
       }
       loopcount+=1;
   }
