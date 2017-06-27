@@ -1,6 +1,5 @@
 var bg = document.getElementsByClassName("bg");
 var tcs = document.getElementsByClassName("tcs");
-var blobs = document.getElementsByClassName("blobs");
 var pack = document.getElementsByClassName("pack");
 var txt1 = document.getElementsByClassName("txt1");
 var txt2 = document.getElementsByClassName("txt2");
@@ -8,7 +7,6 @@ var cta = document.getElementsByClassName("cta");
 var logo = document.getElementsByClassName("logo");
 var spot = document.getElementsByClassName("spot");
 var minimo = document.getElementsByClassName("minimo");
-var flash = document.getElementsByClassName("flash");
 var bubble = document.getElementsByClassName("bubble");
 
 var loopcount = 0;
@@ -47,7 +45,6 @@ function startAnim() {
     TweenLite.set(txt2, {visibility:"visible",y:-210,opacity:1});
     TweenLite.set(cta, {visibility:"visible",scale:0,y:0});
     TweenLite.set(bubble, {visibility:"visible",scale:0});
-    TweenLite.set('.flash_img', {visibility:"visible"});
     TweenLite.to(logo,0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
     TweenLite.to([".bubble"], 0.75, { ease: Power2.easeIn, scale:13, y:9, delay:0})
     TweenLite.to([".bubble"], 0.2, {alpha:0, delay:.75 })
@@ -63,12 +60,6 @@ function frame1Animation(){
     TweenLite.to([".txt1"],1,{y:0, ease: Power4.easeInOut, delay:0});
     TweenLite.to([".txt1"],1,{y:190, ease: Power4.easeInOut, delay:3});
     TweenLite.to([".txt2"],1,{y:0, ease: Power4.easeInOut, delay:3});
-
-    TweenLite.to(".flash", 0.2, {css:{filter: "brightness(3)", alpha:1}, delay:3.2});
-    TweenLite.to(".flash", 0.2, {css:{"-webkit-filter": "brightness(3)", alpha:1}, delay:3.2});
-
-    TweenLite.to(".flash", 0.5, {css:{filter: "brightness(3)", alpha:0}, delay:3.5});
-    TweenLite.to(".flash", 0.5, {css:{"-webkit-filter": "brightness(3)", alpha:0}, delay:3.5});
 
     TweenLite.to([".pack"],0.5,{opacity:1,ease: Power4.easeOut, delay:3});
     TweenLite.to([".pack"],2,{ease:Elastic. easeOut.config(1, 0.4),scale:1,delay:4});

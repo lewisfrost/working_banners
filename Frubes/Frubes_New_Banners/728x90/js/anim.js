@@ -1,6 +1,5 @@
 var bg = document.getElementsByClassName("bg");
 var tcs = document.getElementsByClassName("tcs");
-var blobs = document.getElementsByClassName("blobs");
 var pack = document.getElementsByClassName("pack");
 var txt1 = document.getElementsByClassName("txt1");
 var txt2 = document.getElementsByClassName("txt2");
@@ -45,7 +44,6 @@ function startAnim() {
     TweenLite.set(txt2, {visibility:"visible",y:-90,opacity:1});
     TweenLite.set(cta, {visibility:"visible",scale:0,y:0});
 	TweenLite.set(bubble, {visibility:"visible",scale:0});
-	TweenLite.set('.flash_img', {visibility:"visible"});
 	TweenLite.to(logo,0.5,{opacity:1, ease: Power1.easeInOut, delay:0});
 	TweenLite.set(".bubble",{alpha:1, scale:0, delay:0 })
 	TweenLite.to([".bubble"], 0.75, { ease: Power2.easeIn, scale:7, delay:0})

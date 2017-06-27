@@ -115,16 +115,6 @@ body {
   visibility:hidden;
 }
 
-.flash{
-	position: absolute;
-  top: 0px;
-  left: 0px;
-  border: none;
-  opacity: 0;
-  visibility:hidden;
-  
-}
-
 
 
 
