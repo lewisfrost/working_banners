@@ -69,7 +69,7 @@ function startAnim() {
     TweenLite.to([".cta"],0.5,{opacity:1,ease: Power4.easeOut, delay:8});
     TweenLite.to([".cta"],2,{ease:Elastic. easeOut.config(1, 0.4),scale:1,delay:8.5});
 
-    TweenLite.to([".minimo"],2,{y:0,ease:Elastic. easeOut.config(1, 0.4),delay:9});
+    TweenLite.to([".minimo"],.65,{y:0,ease: Power4.easeOut,delay:9});
 
     TweenLite.delayedCall(13.5,doEndFade);
   }

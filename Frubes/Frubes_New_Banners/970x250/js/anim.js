@@ -72,7 +72,7 @@ function frame1Animation(){
 
     TweenLite.to([".tcs"],1,{opacity:1, ease: Power4.easeInOut, delay:9});
 
-    TweenLite.to([".minimo"],2,{y:0,ease:Elastic. easeOut.config(1, 0.4),delay:8.0});
+    TweenLite.to([".minimo"],.65,{y:0, ease: Power4.easeOut, delay:8.0});
     TweenLite.delayedCall(13.5,doEndFade);
 }
 
