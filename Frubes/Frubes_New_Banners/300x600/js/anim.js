@@ -37,7 +37,7 @@ function startAnim() {
       TweenLite.set(logo, {visibility:"visible"});
       TweenLite.set(logo2, {visibility:"visible"});
       TweenLite.set(dude, {visibility:"visible"});
-      TweenLite.set(bubble, {visibility:"visible", scale:1, x:0, y:0});
+      TweenLite.set(bubble, {visibility:"visible", scale:0.36, x:0, y:0});
       TweenLite.set(bg, {visibility:"visible" ,opacity:0 });
       TweenLite.set(tcs, {visibility:"visible"});
 
@@ -48,26 +48,30 @@ function startAnim() {
       TweenLite.set(cta, {visibility:"visible"});
 	  TweenLite.set(flash_img, {visibility:"visible"});
 
-      TweenLite.to([logo, logo2, dude, ".bubble"], .5, { ease: Power1.easeInOut, alpha:1 })
-      TweenLite.to(".bubble", 0, { ease: Power1.easeInOut, scale:.35, y:0 })
+      TweenLite.to(dudeBubble, 0, {scale:1.2, alpha:1, x:5, y:-45, delay:0 })
+	  	
+      TweenLite.to([logo, logo2, dude,bubble], .5, { ease: Power1.easeInOut, alpha:1 })
+	  
+	  TweenLite.to(dudeBubble, 0.75, { ease: Quad.easeOut, scale:1.5, x:-20, y:-150, delay:.5 })
+	  
+	  TweenLite.to(bubble, 0.75, { ease: Power2.easeIn, scale:2.9, x:-53, y:5, delay:1.25 })
+	  TweenLite.to(bubble, 2, {alpha:0, delay:1.75 })
 
-      //TweenLite.to("#dudeBubble", 3, { ease: Power1.easeInOut, scale:.86, x:38, y:-46, delay:0 })
-      TweenLite.to([".bubble"], 0.75, { ease: Power2.easeIn, scale:2.9, x:-77, y:-47, delay:.5 })
-	  TweenLite.to([".bubble"], 2, {alpha:0, delay:1.3 })
-      TweenLite.to([bg], 1, { ease: Power4.easeOut, alpha: 1 ,delay:1.3 })
+	  
+	  TweenLite.to([bg], 1, { ease: Power4.easeOut, alpha: 1 ,delay:2.3 })	
 
       
-	  TweenLite.to(".flash_img", 0.2, {css:{filter: "brightness(3)", alpha:1}, delay:1.2});
-      TweenLite.to(".flash_img", 0.2, {css:{"-webkit-filter": "brightness(3)", alpha:1}, delay:1.2});
+	  TweenLite.to(".flash_img", 0.2, {css:{filter: "brightness(1)", alpha:1}, delay:1.8});
+      TweenLite.to(".flash_img", 0.2, {css:{"-webkit-filter": "brightness(1)", alpha:1}, delay:1.8});
 
-      TweenLite.to(".flash_img", 0.5, {css:{filter: "brightness(3)", alpha:0}, delay:1.5});
-      TweenLite.to(".flash_img", 0.5, {css:{"-webkit-filter": "brightness(3)", alpha:0}, delay:1.5});
-
-      TweenLite.set(dude,{alpha:0, delay:1.2});
+      TweenLite.to(".flash_img", 0.5, {css:{filter: "brightness(1)", alpha:0}, delay:2.1});
+      TweenLite.to(".flash_img", 0.5, {css:{"-webkit-filter": "brightness(1)", alpha:0}, delay:2.1});
+	  
+	  TweenLite.set(dude,{alpha:0, delay:1.9});
 	  
 	
 	  TweenLite.set( pack, {scale:0, alpha:1, delay:0})
-      TweenLite.to( pack, 2, {ease:Elastic. easeOut.config(1, 0.4),scale:1, delay:1.8})
+      TweenLite.to( pack, 2, {ease:Elastic. easeOut.config(1, 0.4),scale:1, delay:2.5})
       TweenLite.to( pack, 1, { ease: Power4.easeInOut, x: 300, delay:5 })
 
       TweenLite.set([ txt1,txt2],{x: -220, alpha:1, delay:0})
@@ -86,8 +90,8 @@ function startAnim() {
   function doEndFade() {
       if (loopcount == 0) {
 
-        TweenLite.to([cta,bg,txt1,txt2 ], 0.5, { alpha: 0, ease:Quad.easeIn, delay:0 })
-        TweenLite.delayedCall(0.5,startAnim);
+        TweenLite.to([cta,bg,txt1,txt2 ], 0.65, { alpha: 0, ease:Quad.easeIn, delay:0 })
+        TweenLite.delayedCall(0.65,startAnim);
       }
       loopcount+=1;
   }

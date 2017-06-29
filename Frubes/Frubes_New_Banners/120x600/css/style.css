@@ -42,6 +42,8 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
+  width:120px;
+  height:600px;
   border: none;
   opacity: 0;
 /*  visibility:hidden;*/
@@ -50,8 +52,10 @@ body {
 
 .dude {
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
+  width:120px;
+  height:600px;
   border: none;
   opacity: 0;
  /* visibility:hidden;*/
@@ -59,7 +63,7 @@ body {
 
 .bubble {
   position: absolute;
-  top: 183px;
+  top: 185px;
   left: 8px;
   width:181px;
   height:196px;
