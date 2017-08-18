@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/* setup */
+body {
+  margin: 0;
+  padding: 0;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    
+}
+html, body {
+    padding:0;border:0;margin:0;
+}
+div {
+    position: absolute;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+
+/* positioning classes */
+.topLeft {
+    top: 0px;
+    left: 0px;
+}
+.topRight {
+    top: 0px;
+    right: 0px;
+}
+.botLeft {
+    bottom: 0px;
+    left: 0px;
+}
+.botRight {
+    bottom: 0px;
+    right: 0px;
+}
+.fullSize {
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 600px;
+}
+
+/* master banner div */
+#bannerTime {
+    background-color: #395ea9;
+    overflow: hidden;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* border */
+#bannerBorder {
+    border: 1px solid #4a4d4e;
+    width: 158px;
+    height: 598px;
+    visibility: visible;
+}
+
+/* bg colour */
+#bannerBg {
+    background:#395ea9;
+}
+
+
+/* BANNER SPECIFIC DIV CLASSES BELOW */
+#type_1 {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/type_1.png);
+}
+
+#type_2 {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/type_2.png);
+}
+
+#type_3 {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/type_3.png);
+}
+
+#logo {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/logo.png);
+}
+#cta {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/cta.png);
+}
+
+#tagline {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/tagline.png);
+}
+
+#peacock_animation {
+    left: -1422px;
+    top: -1249px;
+    width: 2000px;
+    height: 2000px;
+}
+
+#peacock {
+    left: 1348px;
+    top: 1419px;
+    width: 303px;
+    height: 416px;
+    background-image: url(images/peacock_2x.png);
+}
+
+#feathers1 {
+    left: 0px;
+    top: 132px;
+    width: 3000px;
+    height: 2080px;
+    background-image: url(images/feathers7.svg);
+}
+
+#feathers2 {
+    left: 612px;
+    top: 712px;
+    width: 1774px;
+    height: 1390px;
+    background-image: url(images/feathers5.svg);
+}
+
+#feathers3 {
+    left: 973px;
+    top: 1085px;
+    width: 1055px;
+    height: 891px;
+    background-image: url(images/feathers6.svg);
+}
+
+#feathers4 {
+    left: 1197px;
+    top: 1297px;
+    width: 605px;
+    height: 474px;
+    background-image: url(images/feathers5.svg);
+}
+
+#feathers5 {
+    left: 1330px;
+    top: 1426px;
+    width: 340px;
+    height: 287px;
+    background-image: url(images/feathers6.svg);
+}
+
+#white_box {
+    width: 160px;
+    height: 600px;
+    background-image: url(images/white_box.png);
+}
+
+#eye {
+    left: 1495px;
+    top: 1464px;
+    width: 14px;
+    height: 12px;
+    background-image: url(images/eye.png);
+}
