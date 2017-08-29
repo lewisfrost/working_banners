@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/* setup */
+body {
+  margin: 0;
+  padding: 0;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    
+}
+html, body {
+    padding:0;border:0;margin:0;
+}
+div {
+    position: absolute;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+
+/* positioning classes */
+.topLeft {
+    top: 0px;
+    left: 0px;
+}
+.topRight {
+    top: 0px;
+    right: 0px;
+}
+.botLeft {
+    bottom: 0px;
+    left: 0px;
+}
+.botRight {
+    bottom: 0px;
+    right: 0px;
+}
+.fullSize {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+}
+
+/* master banner div */
+#bannerTime {
+    background-color: #996699;
+    overflow: hidden;
+    cursor: pointer;
+    visibility: hidden;
+	margin:0 auto;
+}
+
+/* border */
+#bannerBorder {
+    border: 1px solid #4a4d4e;
+    width: 298px;
+    height: 248px;
+    visibility: visible;
+}
+
+/* bg colour */
+#bannerBg {
+    background:#996699;
+}
+
+
+/* BANNER SPECIFIC DIV CLASSES BELOW */
+#type_1 {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/type_1.png);
+}
+
+#type_2 {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/type_2.png);
+}
+
+#type_3 {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/type_3.png);
+}
+
+#logo {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/logo.png);
+}
+#cta {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/cta.png);
+}
+
+#tagline {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/tagline.png);
+}
+
+/* main div of butterfly */
+
+#butterfly_animation1 {
+    left: 300px;
+    top: 240px;
+    width: 121px;
+    height: 105px;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+#butterfly_animation2 {
+    left: -150px;
+    top: 150px;
+    width: 121px;
+    height: 105px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+#butterfly_animation3 {
+    left: 90px;
+    top: 70px;
+    width: 121px;
+    height: 105px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+/* main div of butterfly */
+
+
+/* properties of all three butterflys */
+#butterfly1 {
+    left: 0;
+    top: 0;
+    width: 121px;
+    height: 105px;
+    background-image: url(images/butterfly.svg);
+}
+#butterfly2 {
+    left: 0;
+    top: 0;
+    width: 121px;
+    height: 105px;
+    background-image: url(images/butterfly.svg);
+}
+#butterfly3 {
+    left: 0;
+    top: 0;
+    width: 121px;
+    height: 105px;
+    background-image: url(images/butterfly.svg);
+}
+/* properties of all three butterflys end */
+
+/* left and right feather properties */
+
+/*right feather properties */
+#feather_right1 {
+	position:absolute;
+    left: 61px;
+    top: 0px;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_right.svg);
+    -ms-transform-origin: left; /* IE 9 */
+    -webkit-transform-origin: left; /* Chrome, Safari, Opera */
+    transform-origin: left;
+}
+#feather_right2 {
+	position:absolute;
+    left: 61px;
+    top: 0px;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_right.svg);
+    -ms-transform-origin: left; /* IE 9 */
+    -webkit-transform-origin: left; /* Chrome, Safari, Opera */
+    transform-origin: left;
+}
+#feather_right3 {
+	position:absolute;
+    left: 61px;
+    top: 0px;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_right.svg);
+    -ms-transform-origin: left; /* IE 9 */
+    -webkit-transform-origin: left; /* Chrome, Safari, Opera */
+    transform-origin: left;
+}
+/*right feather properties end */
+
+/*left feather properties */
+#feather_left1 {
+	position:absolute;
+    right: 61px;
+    top: 0;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_left.svg);
+	-ms-transform-origin: right; /* IE 9 */
+    -webkit-transform-origin: right; /* Chrome, Safari, Opera */
+    transform-origin: right;
+}
+#feather_left2 {
+	position:absolute;
+    right: 61px;
+    top: 0;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_left.svg);
+	-ms-transform-origin: right; /* IE 9 */
+    -webkit-transform-origin: right; /* Chrome, Safari, Opera */
+    transform-origin: right;
+}
+#feather_left3 {
+	position:absolute;
+    right: 61px;
+    top: 0;
+    width: 60px;
+    height: 104px;
+    background-image: url(images/feather_left.svg);
+	-ms-transform-origin: right; /* IE 9 */
+    -webkit-transform-origin: right; /* Chrome, Safari, Opera */
+    transform-origin: right;
+}
+/*right feather properties end */
+
+/* left and right feather properties end */
+
+#white_box {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/white_box.png);
+}
+
