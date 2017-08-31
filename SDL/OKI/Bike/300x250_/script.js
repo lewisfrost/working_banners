@@ -67,12 +67,12 @@ function startBanner() {
 		
 		tl.to("#byke_animation", 6, {scale:1.25, force3D:true, rotationZ:0.01, x:70, y:-46},"-=6.7");
 		tl.to(".bannerBg_img", 6, {scale:1.25, force3D:true, rotationZ:0.01, x:-38, y:-20},"-=6.7");
-		tl.to(["#front_wheel","#back_wheel"], 6, {rotation:630, rotationZ:0.01, force3D:true, esae:Linear.easeNone},"-=6.7");
-		tl.to("#byke_animation", 0.7, {scale:4.3, x:384, y:-128, force3D:false, ease: Quad.easeInOut});
+		tl.to(["#front_wheel","#back_wheel"], 6, {rotation:700, rotationZ:0.01, force3D:true, esae:Linear.easeNone},"-=6.7");
+		tl.to("#byke_animation", 2.5, {scale:4.3, x:384, y:-128, force3D:false, ease: Quad.easeInOut});
 		
-		tl.to(["#front_wheel","#back_wheel"], 0.7, {rotation:700, force3D:false, rotationZ:0.01, ease: Quad.easeInOut},"-=0.7");
+		//tl.to(["#front_wheel","#back_wheel"], 0.7, {rotation:700, force3D:false, rotationZ:0.01, ease: Quad.easeInOut},"-=0.7");
 		tl.to(".bannerBg_img", 0.7, {scale:2, x:-50, y:-50},"-=0.7");
-        tl.to("#byke_animation", 0.7, {ease: Power2.easeInOut, autoAlpha:0}, "+=1");
+        tl.to("#byke_animation", 0.7, {ease: Power2.easeInOut, autoAlpha:0}, "+=2.5");
 		tl.set(".end_frame", {autoAlpha:1},"-=0.5");
     
     
