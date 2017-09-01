@@ -8,8 +8,7 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
     
 }
 html, body {
@@ -44,8 +43,8 @@ div {
 .fullSize {
     top: 0;
     left: 0;
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
 	overflow:hidden;
 }
 
@@ -61,8 +60,8 @@ div {
 /* border */
 #bannerBorder {
     border: 1px solid #4a4d4e;
-    width: 298px;
-    height: 248px;
+    width: 726px;
+    height: 88px;
     visibility: visible;
 	overflow:hidden;
 }
@@ -74,96 +73,95 @@ div {
 .bannerBg_img {
 	position:absolute;
 	top:0;
-	left:0;
-	width:300px;
+	left:0px;
+	width:888px;
 	opacity:0;
-	height:250px;
+	height:90px;
 	overflow:hidden;
+	background:#e74e19;
 }
 
 .end_frame {
 	position:absolute;
 	top:0;
 	left:0;
-	width:300px;
+	width:728px;
 	opacity:0;
-	height:250px;
+	height:90px;
 }
 
 /* BANNER SPECIFIC DIV CLASSES BELOW */
 #type_1 {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/type_1.png);
 }
 
 #type_2 {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/type_2.png);
 }
 
 #type_3 {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/type_3.png);
 }
 
 #logo {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/logo.png);
 }
 #cta {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/cta.png);
 }
 
 #tagline {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/tagline.png);
 }
 
 #byke_animation {
-    left: 0;
-    top:  0;
-    width: 300px;
+    left: 32px;
+    top:  9px;
+    width: 165px;
 	overflow:hidden;
 	opacity:0;
-    height: 250px;
+    height: 75px;
 }
 
 #byke {
     left: 0;
     top: 0;
-    width: 300px;
-    height: 250px;
+    width: 165px;
+    height: 75px;
     background-image: url(images/byke.svg);
 }
 
 #front_wheel {
-    left: 192px;
-    top: 66px;
-    width: 95px;
-    height: 95px;
+    right: 0px;
+    bottom: 0px;
+    width: 56px;
+    height: 56px;
 	background-size:100%;
 }
 
 #back_wheel {
-    left: 13px;
-    top: 107px;
-    width: 95px;
-    height: 95px;
+    left: 0px;
+    bottom: 0px;
+    width: 56px;
+    height: 56px;
 	background-size:100%;
 }
 
-
-
 #white_box {
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
     background-image: url(images/white_box.png);
 }
 
@@ -174,3 +172,6 @@ div {
     height: 12px;
     background-image: url(images/eye.png);
 }
+img {
+	image-rendering: auto;
+	}
