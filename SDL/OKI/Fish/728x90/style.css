@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+/* setup */
+body {
+  margin: 0;
+  padding: 0;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    
+}
+html, body {
+    padding:0;border:0;margin:0;
+}
+div {
+    position: absolute;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+img{
+	width:100%;
+}
+
+/* positioning classes */
+.topLeft {
+    top: 0px;
+    left: 0px;
+}
+.topRight {
+    top: 0px;
+    right: 0px;
+}
+.botLeft {
+    bottom: 0px;
+    left: 0px;
+}
+.botRight {
+    bottom: 0px;
+    right: 0px;
+}
+.fullSize {
+    top: 0;
+    left: 0;
+    width: 728px;
+    height: 90px;
+}
+
+/* master banner div */
+#bannerTime {
+    background-color: #53c4d1;
+    overflow: hidden;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* border */
+#bannerBorder {
+    border: 1px solid #4a4d4e;
+    width: 726px;
+    height: 88px;
+    visibility: visible;
+	z-index:4;
+}
+
+/* bg colour */
+#bannerBg {
+    background:#53c4d1;
+}
+
+
+/* BANNER SPECIFIC DIV CLASSES BELOW */
+#type_1 {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/type_1.png);
+}
+
+#type_2 {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/type_2.png);
+}
+
+#type_3 {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/type_3.png);
+}
+
+#logo {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/logo.png);
+}
+#cta {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/cta.png);
+}
+
+#tagline {
+    width: 728px;
+    height: 90px;
+	z-index:5;
+    background-image: url(images/tagline.png);
+}
+
+ #fish_animation{
+    left: 0px;
+    top: 0px;
+	opacity:1;
+    width: 728px;
+    height: 90px;
+	z-index:4;
+}
+ .fish_body{
+	position: absolute;
+	z-index:88;
+	top:0;
+	left:0;
+}
+
+#bigfishL1 {
+    left: 476px;
+    top: 16px;
+	opacity:0;
+    width: 91px;
+	height:auto;
+	position:absolute;
+}
+#fingL1 {
+    left: 76px;
+    top: 8px;
+	opacity:1;
+    width: 15px;
+	height:34px;
+	position:absolute;
+}
+
+#bigfishL2 {
+    left: 445px;
+    top: -35px;
+	opacity:0;
+    width: 92px;
+    height:50px;
+	position:absolute;
+}
+#fingL2 {
+    left: 76px;
+    top: 8px;
+	opacity:1;
+    width: 15px;
+	height:34px;
+	position:absolute;
+}
+#bigfishL3 {
+    left: 148px;
+    top: 40px;
+	opacity:0;
+    width: 92px;
+    height:50px;
+	position:absolute;
+}
+#fingL3 {
+    left: 76px;
+    top: 8px;
+	opacity:1;
+    width: 15px;
+	height:34px;
+	position:absolute;
+}
+#bigfishL4 {
+    left: 98px;
+    top: 21px;
+	opacity:0;
+    width: 80px;
+    height:44px;
+	position:absolute;
+	z-index:2;
+}
+#fingL4 {
+    left: 69px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishL5 {
+    left: 110px;
+    top: -27px;
+	opacity:0;
+    width: 80px;
+    height:43px;
+	position:absolute;
+}
+#fingL5 {
+    left: 70px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishL6 {
+    left: -83px;
+    top: 41px;
+	opacity:0;
+    width: 81px;
+    height:45px;
+	position:absolute;
+}
+#fingL6 {
+    left: 70px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+
+#bigfishR1 {
+    left: 660px;
+    top: 66px;
+	opacity:0;
+    width: 80px;
+    height:44px;
+	position:absolute;
+    
+}
+#fingR1 {
+    right: 69px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishR2 {
+    left: 580px;
+    top: 0px;
+	opacity:0;
+    width: 89px;
+    height:49px;
+	position:absolute;
+   
+}
+#fingR2 {
+    right: 77px;
+    top: 7px;
+	opacity:1;
+    width: 15px;
+	height:auto;
+	position:absolute;
+}
+#bigfishR3 {
+    left: 380px;
+    top: 9px;
+	opacity:0;
+    width: 80px;
+    height:44px;
+	position:relative;
+  
+}
+#fingR3 {
+    right: 70px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishR4 {
+    left: 250px;
+    top: 77px;
+	opacity:0;
+    width: 80px;
+    height:44px;
+	position:absolute;
+   
+}
+#fingR4 {
+    right: 70px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishR5 {
+    left: 220px;
+    top: 4px;
+	opacity:0;
+    width: 80px;
+    height:44px;
+	position:absolute;
+    
+}
+#fingR5 {
+    right: 70px;
+    top: 7px;
+	opacity:1;
+    width: 12px;
+	height:auto;
+	position:absolute;
+}
+#bigfishR6 {
+    left: 27px;
+    top: 8px;
+	opacity:0;
+    width: 89px;
+    height:49px;
+	position:absolute;
+    
+}
+#fingR6 {
+    right: 77px;
+    top: 7px;
+	opacity:1;
+    width: 15px;
+	height:auto;
+	position:absolute;
+}
+
+#Smallfish1 {
+    left: 307px;
+    top: 24px;
+	opacity:0;
+    width: 30px;
+    height:15px;
+    background-image: url(images/Smallfish.svg);
+}
+#Smallfish2 {
+    left: 335px;
+    top: 33px;
+	opacity:0;
+    width: 19px;
+    height:10px;
+    background-image: url(images/Smallfish.svg);
+}
+#Smallfish3 {
+    left: -57px;
+    top: 16px;
+	opacity:0;
+    width: 30px;
+    height:15px;
+    background-image: url(images/Smallfish.svg);
+}
+#Smallfish4 {
+    left: 663px;
+    top: 35px;
+	opacity:0;
+    width: 30px;
+    height:15px;
+    background-image: url(images/Smallfish.svg);
+}
+#Smallfish5 {
+    left: -57px;
+    top: 60px;
+	opacity:0;
+    width: 19px;
+    height:11px;
+    background-image: url(images/Smallfish.svg);
+}
+#Smallfish6 {
+    left: 694px;
+    top: 42px;
+	opacity:0;
+    width: 18px;
+    height:11px;
+    background-image: url(images/Smallfish.svg);
+}
+
+#white_box {
+    width: 728px;
+    height: 90px;
+    background-image: url(images/white_box.png);
+	z-index:1;
+}
+
+#bg {
+    width: 728px;
+    height: 90px;
+    background-image: url(images/bg.jpg);
+}
+#end_frame{
+	width:728px;
+	height:90px;
+	opacity:0;
+	background-image: url(images/end_frame.png);
+}
